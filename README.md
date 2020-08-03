@@ -6,6 +6,9 @@
 # It is encouraged to:
 - start off with small changes
 # How to get started
-- answer question here
+- [insert good instructions]
 # What needs to be done
 - answer question here
+- [insert good instructions]
+# Pest Practices
+- [insert good instructions]
