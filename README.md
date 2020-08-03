@@ -5,7 +5,7 @@
 # What are some first small projects you can do?
 - add you name to the contributers.md file
 - add an html element, for example: ``` <h1>Open Source Rules</h1> ```
-- add some js
+- add some js like ``` deleteEverything() ```
 # What next?
 TBH .... idk, maybe you can tell me ...
 We definatly need a better ReadMe lol 😝 
