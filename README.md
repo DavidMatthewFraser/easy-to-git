@@ -7,5 +7,5 @@
 - add an html element, for example: ``` <h1>Open Source Rules</h1> ```
 - add some js
 # What next?
-TBH .... idk, maybe you can tell me
+TBH .... idk, maybe you can tell me ...
 We definatly need a better ReadMe lol 😝 
