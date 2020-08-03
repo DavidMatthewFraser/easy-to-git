@@ -1,2 +1,10 @@
 # easy-to-git
-👩‍🔬 👨‍💻 A single page web application that is super easy to contribute to 
+👩‍🔬 👨‍💻 A Repo that is super easy to get involved in! 
+
+# How to get started
+- answer this question here 
+# What needs to be done
+- answer this question here
+
+
+
