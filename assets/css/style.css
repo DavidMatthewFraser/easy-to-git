@@ -6,3 +6,53 @@
 body{
   background-color: #fa61de;
 }
+#reviewFade{
+  margin-top: 45px;
+  background:transparent;
+  width: 80%;
+  height: 58vh;
+  border: none;
+  margin-left: 10%;
+  padding: 5%;
+  border-radius: 61px;
+  box-shadow: rgba(0, 0, 0, .5);
+}
+#reviewFade .d-block{
+  margin-top: 5%;
+}
+#reviewFade .carousel-inner{
+  height: 100%;
+}
+blockquote{
+  font-style: normal;
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.rev_div{
+  width: 79%;
+  height: 100%;
+  margin-left: 10%;
+}
+.rev_div p{
+  text-align: center;
+  padding: 2%;
+  font-size: 1.6em;
+  line-height: 1em;
+}
+.rev_div p img{
+  margin: 3%;
+}
+#reviewFade .carousel-control-prev,#reviewFade .carousel-control-next{
+  opacity: 0.1;
+}
+#reviewFade .carousel-control-prev:hover,#reviewFade .carousel-control-next:hover{
+  opacity: 0.7;
+}
+.btn_div{
+  text-align: center;
+}
+@media(max-width:768px){
+  .rev_div p{
+    font-size: 1.0em;
+  }
+}
