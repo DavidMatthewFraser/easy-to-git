@@ -13,7 +13,7 @@ Intuitively, you would clone this repository and push a change to it afterwards.
 * Log into github and when you're ready, make a pull request.
 ## What changes do we expect in the files?
 Here we'll add some examples...
-- add you name to the contributers.md file
+- add your name to the contributers.md file
 - add your name to the ``` <footer> names of contributors here </footer> ``` in index.html
 - add an html element, for example: ``` <h1>Open Source Rules</h1> ```
 - add some js, for example: ```logHello()```
@@ -21,3 +21,5 @@ Here we'll add some examples...
 # What next?
 TBH .... idk, maybe you can tell me ...
 We definatly need a better ReadMe lol 😝 
+
+Note: To see the live version of the `master` branch, visit https://davidmatthewfraser.github.io/easy-to-git/
