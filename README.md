@@ -2,7 +2,6 @@
 The idea of this repo is to get you started with git and github.
 ## The very basics
 Git and Github are different tools but work together. Git opens up a version control flow in your local workspace. And Git is used by Github to control the remote repository. 
-
 Github is a host of Git files, this is, a computer where we can store data. 
 ### So can you repeat, how are those different?
 Because Github is a different computer, when we create our remote repository, we set permissions for people to see the code, fork it, and push to it. So the remote repository automatically becomes a collaboration tool. While Git controls the project, we need a repote repository to collaborate, and that is Github.

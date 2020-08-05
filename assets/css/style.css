@@ -56,3 +56,11 @@
     font-size: 1.0em;
   }
 }
+
+.show-time{
+  position:absolute;
+  top:0;
+  right:50px;
+  padding-top:20px;
+  font-size:1.3rem;
+}
