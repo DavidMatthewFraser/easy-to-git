@@ -210,6 +210,10 @@ footer {
 #reviewFade .carousel-control-prev:hover,#reviewFade .carousel-control-next:hover{
   opacity: 0.7;
 }
+.hidden {
+  display: none;
+}
+
 .btn_div{
   text-align: center;
 }
@@ -217,4 +221,12 @@ footer {
   .rev_div p{
     font-size: 1.0em;
   }
+}
+
+.show-time{
+  position:absolute;
+  top:0;
+  right:50px;
+  padding-top:20px;
+  font-size:1.3rem;
 }
