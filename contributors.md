@@ -3,4 +3,5 @@
 - [Fortune Okon](https://github.com/fort3)
 - [Randell Dawson](https://github.com/RandellDawson)
 - [Biscuitmanz](https://github.com/Syntappz)
+- [theTradeCoder](https://github.com/thetradecoder)
 
