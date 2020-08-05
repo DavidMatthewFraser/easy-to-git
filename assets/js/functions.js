@@ -3,7 +3,7 @@
 function changeButtonName(button) {
   var currentBtnText = $(button).text();
   var buttonAction = currentBtnText.includes('see') ? 'hide' : 'see';
-  $(button).text('Click to ' + buttonAction + ' Comments Slide');
+  $(button).text('Click to ' + buttonAction + ' Comments');
 }
 
 // toggle function
