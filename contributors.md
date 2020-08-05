@@ -5,4 +5,4 @@
 - [Biscuitmanz](https://github.com/Syntappz)
 - [Emmanuel Zelarayán](https://github.com/EmmaVZ89)
 - [theTradeCoder](https://github.com/thetradecoder)
-
+- [Benjamin Thorpe](https://github.com/benjithorpe)
