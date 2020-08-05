@@ -4,16 +4,34 @@
 <head>
   <meta charset="utf-8">
   <title>EasyToGit</title>
+  <link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+/>
   <link rel='stylesheet' href='assets/css/style.css' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
-<body>
+<body> 
+  <header class="header">
+    <div class="my-container flex">
+      <div class="logo-wrap">
+        <img id="logo" src="assets/img/e2g.png" />
+        <h3>Easy to HTML</h3>
+      </div>
+      <div class="contributors-btn">contributors</div>
+    </div>
+  </header>
   <div class='fluid-container purple-background'>
-    <img id='logo' src='assets/img/e2g.png'>
-    <h1>Easy to HTML</h1>
-    <h2>Hello from Nowhereland :-)</h2>
+
+    
+    <div class="panel">
+      <!-- contributor components are here - add your name to the array in contributors.js -->
+    </div>
+    <main class="main">
+      <div class="my-container">
+        <h2 class="greeting">Hello from Nowhereland :-)</h2>
     <p>Ha! for future writers, remember that the javascript on the head shouldn't include things like event handlers or
       the code can potentially break!</p>
 
@@ -68,12 +86,11 @@
         </a>
       </div>
     </section>
-
-    <footer>
-      <p><i>Contributors</i></p>
-      <ul>
-        <li>David Fraser</li>
-      </ul>
+      </div>
+    
+  </main>
+  <footer class="center">
+    
     </footer>
 
 
@@ -86,6 +103,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
+        <script type="module" src="assets/js/contributorsPanel.js"></script>
     <script src='assets/js/functions.js'></script>
   </body>
 </html>
