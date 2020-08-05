@@ -4,8 +4,10 @@
   border-radius: 50%;
 }
 body{
-  background-color: #fa61de;
+  background-color: #f1a7e4;
 }
+
+/*Carousel Style*/
 #reviewFade{
   margin-top: 45px;
   background:transparent;
