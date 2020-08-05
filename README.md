@@ -15,6 +15,7 @@ Intuitively, you would clone this repository and push a change to it afterwards.
 ## What changes do we expect in the files?
 Here we'll add some examples...
 - add you name to the contributers.md file
+- add your name to the ``` <footer> names of contributors here </footer> ``` in index.html
 - add an html element, for example: ``` <h1>Open Source Rules</h1> ```
 - add some js, for example: ```logHello()```
 
