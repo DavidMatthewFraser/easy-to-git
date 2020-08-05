@@ -1,21 +1,95 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>EasyToGit</title>
-    <link rel='stylesheet' href='assets/css/style.css' type='text/css'>
-    <script src='assets/js/functions.js'></script>
-  </head>
-  <body>
-    <img id='logo' src='assets/img/e2g.png'>
-    <h1>Easy to HTML</h1>
-    <h2>Hello from Nowhereland :-)</h2>
-    <p>Ha! for future writers, remember that the javascript on the head shouldn't include things like event handlers or the code can potentially break!</p>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>EasyToGit</title>
+  <link rel='stylesheet' href='assets/css/style.css' type='text/css'>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <img id='logo' src='assets/img/e2g.png'>
+  <h1>Easy to HTML</h1>
+  <h2>Hello from Nowhereland :-)</h2>
+  <p>Ha! for future writers, remember that the javascript on the head shouldn't include things like event handlers or
+    the code can potentially break!</p>
+    <div class="btn_div">
+      <button id="btn_com" class="btn btn-primary"> Click to see Comments Slide</button>
+    </div>
+
+
+    <!-- a section including a carousel slide from bootstrap.-->
+  <section id="randSec">
+    <p>
+      <h2 style="margin-left: 6%;
+        margin-top: 4%;">Carousel Comments Slide</h2>
+    </p>
+    <div id="reviewFade" class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner" style="color: black; font-family: 'cardo';">
+        <div class="carousel-item active" data-interval="20000">
+          <div class="d-block w-100">
+            <div class="rev_div">
+              <p><img src="./assets/img/quote.svg" alt="quote" style="width: 4%; height: 4%;float: left;"><br> comment
+                something exciting here!
+                <img src="./assets/img/quote-2.svg" alt="quote" style="width: 4%; height: 4%;float: right;">
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-interval="20000">
+          <div class="d-block w-100">
+            <div class="rev_div">
+              <p><img src="./assets/img/quote.svg" alt="quote" style="width: 4%; height: 4%;float: left;"><br> comment
+                something here too! <img src="./assets/img/quote-2.svg" alt="quote"
+                  style="width: 4%; height: 4%;float: right;"></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-interval="10000">
+          <div class="d-block w-100">
+            <div class="rev_div">
+              <p><img src="./assets/img/quote.svg" alt="quote" style="width: 4%; height: 4%;float: left;"><br> You might
+                as well say something here if you skipped the rest :) or add yours <img src="./assets/img/quote-2.svg"
+                  alt="quote" style="width: 4%; height: 4%;float: right;"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#reviewFade" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#reviewFade" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+
   <footer>
-      <p><i>Contributors</i></p>
-      <ul>
-          <li>David Fraser</li>
-      </ul>
+    <p><i>Contributors</i></p>
+    <ul>
+      <li>David Fraser</li>
+    </ul>
   </footer>
+
+
+  <!-- Scripts -->
+  <!-- Moved the js script from the head tag to the bottom of the body tag and also moved the footer into the body tag (reason: best practices :)) -->
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+
+  <script src='assets/js/functions.js'></script>
+
+</body>
+
 </html>
