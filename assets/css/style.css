@@ -3,14 +3,13 @@
   width: 100px;
   border-radius: 50%;
 }
-body{
+.purple-background, html {
   background-color: #f1a7e4;
 }
 
 /*Carousel Style*/
 #reviewFade{
   margin-top: 45px;
-  background:transparent;
   width: 80%;
   height: 58vh;
   border: none;
