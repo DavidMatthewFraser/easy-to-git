@@ -32,6 +32,10 @@ const contributors = [
 			githubName: "benjithorpe",
 			displayName: "Benjamin I. Thorpe",
 		},
+		{
+			githubName: "gwmatthews",
+			displayName: "George W. Matthews",
+		}
 
 	];
 const sidePanel = document.querySelector(".panel");
