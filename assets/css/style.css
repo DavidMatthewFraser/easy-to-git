@@ -10,12 +10,32 @@ body {
   color: #333;
   font-family: sans-serif;
 }
+body::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f5f5f5;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.44, #440239),
+    color-stop(0.72, #620050),
+    color-stop(0.86, #440039)
+  );
+}
 
 main {
   position: relative;
   padding-top: 80px;
   min-height: 90vh;
-
 }
 
 .header {
@@ -54,7 +74,7 @@ main {
   padding: 80px 20px 20px 20px;
   right: -400px;
   width: 400px;
-  height: 100vh;
+  height: 100%;
   background: #1f011a;
   transition: 0.7s ease;
   color: white;
@@ -63,6 +83,28 @@ main {
   border-left: 15px solid #620050;
   overflow-y: auto;
 }
+
+/* .panel::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+} */
+
+.panel::-webkit-scrollbar {
+  width: 0px;  
+  background: transparent;
+}
+
+/* .panel::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.44, #440239),
+    color-stop(0.72, #620050),
+    color-stop(0.86, #440039)
+  );
+} */
 
 .contributor {
   width: 100%;
@@ -118,7 +160,6 @@ main {
 .github-btn:hover {
   color: white;
   text-decoration: none;
-
 }
 
 .github-btn i {
@@ -165,12 +206,15 @@ main {
   cursor: pointer;
 }
 
-.purple-background, html {
+.purple-background,
+html {
   background-color: #f1a7e4;
+  position: relative;
+  min-height: 100vh;
 }
 
 /*Carousel Style*/
-#reviewFade{
+#reviewFade {
   margin-top: 45px;
   width: 80%;
   height: 58vh;
@@ -178,39 +222,41 @@ main {
   margin-left: 10%;
   padding: 5%;
   border-radius: 61px;
-  box-shadow: rgba(0, 0, 0, .5);
+  box-shadow: rgba(0, 0, 0, 0.5);
 }
 
-#reviewFade .d-block{
+#reviewFade .d-block {
   margin-top: 5%;
 }
 
-#reviewFade .carousel-inner{
+#reviewFade .carousel-inner {
   height: 100%;
 }
 
-.rev_div{
+.rev_div {
   width: 79%;
   height: 100%;
   margin-left: 10%;
 }
 
-.rev_div p{
+.rev_div p {
   text-align: center;
   padding: 2%;
   font-size: 1.6em;
   line-height: 1em;
 }
 
-.rev_div p img{
+.rev_div p img {
   margin: 3%;
 }
 
-#reviewFade .carousel-control-prev,#reviewFade .carousel-control-next{
+#reviewFade .carousel-control-prev,
+#reviewFade .carousel-control-next {
   opacity: 0.1;
 }
 
-#reviewFade .carousel-control-prev:hover,#reviewFade .carousel-control-next:hover{
+#reviewFade .carousel-control-prev:hover,
+#reviewFade .carousel-control-next:hover {
   opacity: 0.7;
 }
 
@@ -218,16 +264,16 @@ main {
   display: none;
 }
 
-.btn_div{
+.btn_div {
   text-align: center;
 }
 
-@media(max-width:768px){
-  .rev_div p{
-    font-size: 1.0em;
+@media (max-width: 768px) {
+  .rev_div p {
+    font-size: 1em;
   }
 }
 
-.show-time{
-  font-size:1.3rem;
+.show-time {
+  font-size: 1.3rem;
 }
