@@ -4,10 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>EasyToGit</title>
+    <!-- Fontawesome CDN-->
     <link
     rel="stylesheet"
     href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
     <link rel='stylesheet' href='assets/css/style.css' type='text/css'>
+    <!-- Bootstrap CDN-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   </head>
   <body>
@@ -17,6 +19,7 @@
           <img id="logo" src="assets/img/e2g.png" />
           <h3>Easy to HTML</h3>
         </div>
+        <!-- Clock -->
         <div class="show-time">
             <span id="date"></span>
             <span id="time"></span>
@@ -30,10 +33,24 @@
       </div>
       <main class="main">
         <div class="my-container">
+          
+          
+      <!--added a google search option by Mamun Abdullah-->
+          
+          <div class="google-search-container">
+            <form id="googleSearch">
+             <div class="btn-group">
+               <input id="searchMe" class="google-search" type="text" placeholder="Google Search" />
+               <button type="submit" class="btn btn-lg btn-primary">Search</button>
+             </div>
+            </form>
+          </div>
+      
+          
         <h2 class="greeting">Hello from Nowhereland :-)</h2>
         <p>Ha! for future writers, remember that the javascript on the head shouldn't include things like event handlers or
           the code can potentially break!</p>
-
+            <a href='https://davidmatthewfraser.github.io/easy-to-git/puzzles/puzzle1'><button class='btn btn-deault'>Puzzle One Prototype</button></a>
         <div class="btn_div">
           <button id="btn_com" class="btn btn-primary">Click to see Comments</button>
         </div>
@@ -89,13 +106,16 @@
       </main>
     </div>
     <!-- Scripts -->
-    <!-- Moved the js script from the head tag to the bottom of the body tag and also moved the footer into the body tag (reason: best practices :)) -->
+    <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.js"
       integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-      </script>
+    </script>
+    <!-- Contributor Panel -->
     <script src="assets/js/contributorsPanel.js"></script>
+    <!-- General Functions -->
     <script src='assets/js/functions.js'></script>
   </body>
 </html>
