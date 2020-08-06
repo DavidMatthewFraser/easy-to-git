@@ -229,8 +229,9 @@ html {
   margin-top: 5%;
 }
 
-#reviewFade .carousel-inner {
-  height: 100%;
+#reviewFade .carousel-inner{
+  height: 50%;
+  background-color: #fdc4ff;
 }
 
 .rev_div {
@@ -250,14 +251,13 @@ html {
   margin: 3%;
 }
 
-#reviewFade .carousel-control-prev,
-#reviewFade .carousel-control-next {
-  opacity: 0.1;
+#reviewFade .carousel-control-prev,#reviewFade .carousel-control-next{
+  margin-top: -200px;
+  opacity: 0.5;
 }
 
-#reviewFade .carousel-control-prev:hover,
-#reviewFade .carousel-control-next:hover {
-  opacity: 0.7;
+#reviewFade .carousel-control-prev:hover,#reviewFade .carousel-control-next:hover{
+  opacity: 1;
 }
 
 .hidden {
