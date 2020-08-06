@@ -1,38 +1,43 @@
 // add github name here
 const contributors = [
-  {
-    githubName: "DavidMatthewFraser",
-    displayName: "david fraser",
-  },
-  {
-    githubName: "Syntappz",
-    displayName: "Biscuitmanz",
-  },
-  {
-    githubName: "RandellDawson",
-    displayName: "Randell Dawson",
-  },
-  {
-    githubName: "thetradecoder",
-    displayName: "Mamun Abdullah",
-  },
-  {
-    githubName: "santimirandarp",
-    displayName: "Santiago Miranda",
-  },
-  {
-    githubName: "fort3",
-    displayName: "Fortune Okon",
-  },
-  {
-    githubName: "EmmaVZ89",
-    displayName: "Emmanuel Zelarayan",
-  },
-  {
-    githubName: "benjithorpe",
-    displayName: "Benjamin I. Thorpe",
-  },
-];
+		{
+			githubName: "DavidMatthewFraser",
+			displayName: "david fraser",
+		},
+		{
+			githubName: "Syntappz",
+			displayName: "Biscuitmanz",
+		},
+		{
+			githubName: "RandellDawson",
+			displayName: "Randell Dawson",
+		},
+	 	{
+			githubName: "thetradecoder",
+			displayName: "Mamun Abdullah",
+		},
+		{
+			githubName: "santimirandarp",
+			displayName: "Santiago Miranda",
+		},
+		{
+			githubName: "fort3",
+			displayName: "Fortune Okon",
+		},
+		{
+			githubName: "EmmaVZ89",
+			displayName: "Emmanuel Zelarayan",
+		},
+		{
+			githubName: "benjithorpe",
+			displayName: "Benjamin I. Thorpe",
+		},
+		{
+			githubName: "gwmatthews",
+			displayName: "George W. Matthews",
+    }
+	];
+
 const sidePanel = document.querySelector(".panel");
 const panelButton = document.querySelector(".contributors-btn");
 const main = document.querySelector(".main");
