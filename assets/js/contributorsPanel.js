@@ -3,6 +3,7 @@
 // feel free to add a role if not it will default to contributor
 
 const contributors = [
+
   {
     githubName: "DavidMatthewFraser",
     displayName: "david fraser",
@@ -43,7 +44,13 @@ const contributors = [
     displayName: "Benjamin I. Thorpe",
     role: "",
   },
+  {
+    githubName: "gwmatthews",
+    displayName: "George W. Matthews",
+    role: "",
+  }
 ];
+
 const sidePanel = document.querySelector(".panel");
 const panelButton = document.querySelector(".contributors-btn");
 const main = document.querySelector(".main");
