@@ -1,4 +1,4 @@
-console.log('test') 
+console.log('test')
 const contributors = [
 		{
 			githubName: "DavidMatthewFraser",
@@ -32,7 +32,7 @@ const contributors = [
 			githubName: "benjithorpe",
 			displayName: "Benjamin I. Thorpe",
 		},
-	 
+
 	];
 const sidePanel = document.querySelector(".panel");
 const panelButton = document.querySelector(".contributors-btn");
@@ -50,16 +50,16 @@ const panel = () => {
 		const avatar = githubName ? `${url}.png` : defaultAvatar;
 		const github = githubName ? "github" : "no link";
 		const noLink = githubName ? '' : 'no-link'
-		
+
 		return ` <div class="contributor">
 						<div class="flex">
 							<div class="avatar">
 								<img src="${avatar}" alt="github-avatar" />
 							</div>
-		
+
 							<h4 class="name">${displayName}</h4>
 						</div>
-		
+
 						<div class="github-wrap">
 							<a class="github-btn ${noLink}" target="_" ${href}>
 								<i class="fab fa-github-alt"></i>
