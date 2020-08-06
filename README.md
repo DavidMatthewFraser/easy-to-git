@@ -26,7 +26,7 @@ Intuitively, you would clone this repository and push a change to it afterwards.
 ## What changes do we expect in the files?
 Here we'll add some examples...
 - add your name to the contributers.md file
-- add your github name to the ``` contributors array ``` in the contributors.js 
+- add your github name to the ``` contributors array ``` in the contributorsPanel.js 
 - add an html element, for example: ``` <h1>Open Source Rules</h1> ```
 - add some js, for example: ```logHello()```
 
