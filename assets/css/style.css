@@ -84,17 +84,17 @@ main {
   overflow-y: auto;
 }
 
-.panel::-webkit-scrollbar-track {
+/* .panel::-webkit-scrollbar-track {
   background-color: #f5f5f5;
   border-radius: 10px;
-}
+} */
 
 .panel::-webkit-scrollbar {
-  width: 10px;
-  background-color: #f5f5f5;
+  width: 0px;  
+  background: transparent;
 }
 
-.panel::-webkit-scrollbar-thumb {
+/* .panel::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-image: -webkit-gradient(
     linear,
@@ -104,7 +104,7 @@ main {
     color-stop(0.72, #620050),
     color-stop(0.86, #440039)
   );
-}
+} */
 
 .contributor {
   width: 100%;
