@@ -1,16 +1,177 @@
 /*Easy to CSS*/
-#logo{
-  width: 100px;
-  border-radius: 50%;
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
-body{
+
+body {
+  overflow-x: hidden;
+  background-color: #f3f3f3;
+  color: #333;
+  font-family: sans-serif;
+}
+
+main {
+  position: relative;
+  padding-top: 80px;
+  min-height: 90vh;
+
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: #900e78;
+  color: white;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.logo-wrap {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+#logo {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin-right: 20px;
+  border: solid 2px #6c1288;
+}
+
+.my-container {
+  width: 100%;
+  max-width: 1660px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.panel {
+  position: absolute;
+  padding: 80px 20px 20px 20px;
+  right: -400px;
+  width: 400px;
+  height: 100vh;
+  background: #1f011a;
+  transition: 0.7s ease;
+  color: white;
+  opacity: 0;
+  z-index: 5;
+  border-left: 15px solid #620050;
+  overflow-y: auto;
+}
+
+.contributor {
+  width: 100%;
+  padding: 25px 20px;
+  border-bottom: 1px solid rgb(224, 224, 224);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contributor:last-child {
+  border: none;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+.name {
+  font-weight: 300;
+  font-size: 15px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+.avatar img {
+  width: 100%;
+}
+
+.github-wrap {
+  width: 50px;
+}
+
+.github-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 15%;
+  overflow: hidden;
+  background: #3b0632;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  margin: auto;
+  color: white;
+}
+
+.github-btn:hover {
+  color: white;
+  text-decoration: none;
+
+}
+
+.github-btn i {
+  font-size: 30px;
+}
+
+.no-link {
+  cursor: default;
+  color: #aaa;
+}
+
+.link-text {
+  padding-top: 5px;
+  text-align: center;
+  font-size: 10px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+.greeting {
+  padding: 20px 0;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contributors-btn {
+  letter-spacing: 0.5px;
+  padding: 18px 20px;
+  border-radius: 5px;
+  background: #b9189c;
+  text-transform: uppercase;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.purple-background, html {
   background-color: #f1a7e4;
 }
 
 /*Carousel Style*/
 #reviewFade{
   margin-top: 45px;
-  background:transparent;
   width: 80%;
   height: 58vh;
   border: none;
@@ -19,37 +180,54 @@ body{
   border-radius: 61px;
   box-shadow: rgba(0, 0, 0, .5);
 }
+
 #reviewFade .d-block{
   margin-top: 5%;
 }
+
 #reviewFade .carousel-inner{
   height: 100%;
 }
+
 .rev_div{
   width: 79%;
   height: 100%;
   margin-left: 10%;
 }
+
 .rev_div p{
   text-align: center;
   padding: 2%;
   font-size: 1.6em;
   line-height: 1em;
 }
+
 .rev_div p img{
   margin: 3%;
 }
+
 #reviewFade .carousel-control-prev,#reviewFade .carousel-control-next{
   opacity: 0.1;
 }
+
 #reviewFade .carousel-control-prev:hover,#reviewFade .carousel-control-next:hover{
   opacity: 0.7;
 }
+
+.hidden {
+  display: none;
+}
+
 .btn_div{
   text-align: center;
 }
+
 @media(max-width:768px){
   .rev_div p{
     font-size: 1.0em;
   }
+}
+
+.show-time{
+  font-size:1.3rem;
 }

@@ -1,0 +1,50 @@
+<style>
+  strong {
+  font-size: 1.25em;
+}
+#cellPanel{
+  display: flex;
+}
+.camperCell{
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: silver;
+  padding: 20px;
+  margin: 5px;
+  border-radius: 10px;
+}
+.camperCell > h1 {
+  font-size: 1em;
+}
+.camperCell > img {
+  border-radius: 50%;
+  width: 100px;
+}
+  #davidfraser{
+    color: blue;
+  }
+  #camper2{
+    color: purple;
+  }
+</style>
+
+<h1>Puzzel #1</h1>
+
+<h3><strong>Description:</strong> You've added your name to the contributors.md file, now its time to change some code.
+In the div below, add a new div and give it a class of 'camperCell' and a unique id. Inside that div, add an h1 element that has your name, an image that has a picture/avatar of you, and a p element that contains your favorite quote. Finally, add some custom styling by targeting your custom id in the style tag above.</h3>
+<div id='cellPanel'>
+  <div class='camperCell' id='davidfraser'>
+    <h1>David Fraser</h1>
+    <img src='https://avatars2.githubusercontent.com/u/47202564?s=460&u=35c8f87e6b9e00267c22664efd668db3b4ad7491&v=4' alt='davidProfPic'>
+    <p>"Imagination is more important than knowledge." - Albert Einstein</p>
+  </div>
+  <div class='camperCell' id='camper2'>
+    <h1>Camper2</h1>
+    <img src='https://lh3.googleusercontent.com/proxy/hOHbo0DcS0oP4PB3hdnBERlxGvN7z-0ZbL_cDCVO6PysCiKU0LBxyWGdpirimL-9j69a9GyUa6_seNvRF67jXgyOHf-6SsOS7lyXCzks7TYJug' alt='davidProfPic'>
+    <p>"Life would be tragic if it weren't funny." - Stephen Hawking</p>
+  </div>
+
+</div>
