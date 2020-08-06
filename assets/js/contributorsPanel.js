@@ -17,8 +17,8 @@ const contributors = [
 			displayName: "Mamun Abdullah",
 		},
 		{
-			githubName: "santimirandarp",
-			displayName: "Santiago Miranda",
+			githubName: "misterybodon",
+			displayName: "Mister Nobody",
 		},
 		{
 			githubName: "fort3",
