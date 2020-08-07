@@ -1,24 +1,24 @@
 <head>
   <!-- Fontawesome CDN-->
   <link
-  rel="stylesheet"
-  href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
-  
-  <style>
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+  />
 
-    body{
+  <style>
+    body {
       font-family: monospace;
     }
-    
+
     strong {
       font-size: 1.25em;
     }
-    
-    #cellPanel{
+
+    #cellPanel {
       display: flex;
     }
-    
-    .camperCell{
+
+    .camperCell {
       width: 200px;
       display: flex;
       flex-direction: column;
@@ -30,113 +30,145 @@
       border-radius: 10px;
       border: 5px grey solid;
       box-shadow: 2.5px 5px #4f4d46;
-
     }
-    
+
     .camperCell > h1 {
       font-size: 1em;
     }
-    
+
     .camperCell > img {
       border-radius: 50%;
       width: 100px;
     }
-    
-    #description{
+
+    #description {
       background-color: #dedede;
       padding: 10px;
     }
-    
+
     #description > h1 {
       text-align: center;
       font-style: bold;
       margin-left: 5%;
     }
-    
+
     #description > p {
       margin-left: 5%;
       margin-right: 5%;
       font-size: 1.25em;
       line-height: 50px;
     }
-    
+
     #description > ol {
       margin-left: 5%;
       font-size: 1.25em;
       line-height: 50px;
     }
-    
-    #yourWork{
+
+    #yourWork {
       padding: 10px;
       text-align: center;
       background-color: #f2f2f2;
     }
-    
-    @media (max-width: 920px) { 
-      #description > p, #description > ol {
-        font-size: .75em;
+
+    @media (max-width: 920px) {
+      #description > p,
+      #description > ol {
+        font-size: 0.75em;
         line-height: 25px;
       }
-      #cellPanel{
+      #cellPanel {
         flex-direction: column;
         justify-content: center;
         align-items: center;
       }
     }
-    
+
     /* Add your unique styles below*/
 
-    #davidfraser{
+    #davidfraser {
       color: blue;
     }
 
-    #camper2{
+    #camper2 {
       color: purple;
     }
-
   </style>
-  
 </head>
 <body>
+  <div id="description">
+    <p>
+      <a href="https://davidmatthewfraser.github.io/easy-to-git/"
+        ><i class="fas fa-home"></i> Return Home</a
+      >
+    </p>
 
-<div id='description'>
+    <h1>Puzzle #1</h1>
 
-  <p><a href='https://davidmatthewfraser.github.io/easy-to-git/'><i class="fas fa-home"></i> Return Home</a></p>
-  
-  <h1> Puzzle #1</h1>
-  
-  <p><u><strong>Description:</strong></u> Now that you've added your name to the contributors.md file, its time to change some actual code. The following exercise will have you add your own camper cell, html elements, and custom styling.</p>
-  <p><u><strong>Puzzel:</strong></u></p>
-  <ol>
-    <li>In the cellPanel div, add your own div and give it a class of 'camperCell'</li>
-    <li>Give your div a unique id</li>
-    <li>Inside your div, add an h1 element that has your name</li>
-    <li>Inside your div, add an image that has a picture/avatar of you</li>
-    <li>Inside your div, add a p element that contains your favorite quote</li>
-    <li>Add any custom styling by targeting your custom id in the provided style tag</li>
-  </ol>
-</div>
-
-<div id='yourWork'>
-
-  <h1>Camper Cells</h1>
-
-  <div id='cellPanel'>
-
-  <!-- Add your camperCell Here -->
-
-  <div class='camperCell' id='davidfraser'>
-    <h1>David Fraser</h1>
-    <img src='https://avatars2.githubusercontent.com/u/47202564?s=460&u=35c8f87e6b9e00267c22664efd668db3b4ad7491&v=4' alt='davidProfPic'>
-    <p>"Alone we can do so little; together we can do so much." – Helen Keller</p>
+    <p>
+      <u><strong>Description:</strong></u> Now that you've added your name to
+      the contributors.md file, its time to change some actual code. The
+      following exercise will have you add your own camper cell, html elements,
+      and custom styling.
+    </p>
+    <p>
+      <u><strong>Puzzle:</strong></u>
+    </p>
+    <ol>
+      <li>
+        In the cellPanel div, add your own div and give it a class of
+        'camperCell'
+      </li>
+      <li>Give your div a unique id</li>
+      <li>Inside your div, add an h1 element that has your name</li>
+      <li>Inside your div, add an image that has a picture/avatar of you</li>
+      <li>
+        Inside your div, add a p element that contains your favorite quote
+      </li>
+      <li>
+        Add any custom styling by targeting your custom id in the provided style
+        tag
+      </li>
+    </ol>
   </div>
 
-  <div class='camperCell' id='camper2'>
-    <h1>Camper2</h1>
-    <img src='https://avatars1.githubusercontent.com/u/583231?s=460&u=a59fef2a493e2b67dd13754231daf220c82ba84d&v=4' alt='davidProfPic'>
-    <p>“Be the change that you wish to see in the world.” ― Mahatma Gandhi</p>
+  <div id="yourWork">
+    <h1>Camper Cells</h1>
+
+    <div id="cellPanel">
+      <!-- Add your camperCell Here -->
+
+      <div class="camperCell" id="davidfraser">
+        <h1>David Fraser</h1>
+        <img
+          src="https://avatars2.githubusercontent.com/u/47202564?s=460&u=35c8f87e6b9e00267c22664efd668db3b4ad7491&v=4"
+          alt="davidProfPic"
+        />
+        <p>
+          "Alone we can do so little; together we can do so much." – Helen
+          Keller
+        </p>
+      </div>
+
+      <div class="camperCell" id="camper2">
+        <h1>Camper2</h1>
+        <img
+          src="https://avatars1.githubusercontent.com/u/583231?s=460&u=a59fef2a493e2b67dd13754231daf220c82ba84d&v=4"
+          alt="davidProfPic"
+        />
+        <p>
+          “Be the change that you wish to see in the world.” ― Mahatma Gandhi
+        </p>
+      </div>
+
+      <div class="camperCell" id="camper2">
+        <h1>Biscuitman</h1>
+        <img src="https://github.com/syntappz.png" alt="syntappz profile" />
+        <p>
+          “I eat Green Berets for breakfast. And right now, I’m very hungry!.” ―
+          John Matrix
+        </p>
+      </div>
+    </div>
   </div>
-  </div>
-</div>
-  
 </body>
