@@ -6,7 +6,6 @@
 
 body {
   overflow-x: hidden;
-  background-color: #f3f3f3;
   color: #333;
   font-family: sans-serif;
 }
@@ -32,7 +31,7 @@ body::-webkit-scrollbar-thumb {
   );
 }
 
-main {
+.main {
   position: relative;
   padding-top: 80px;
   min-height: 90vh;
