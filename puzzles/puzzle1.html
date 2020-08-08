@@ -1,0 +1,208 @@
+<head>
+  <!-- Fontawesome CDN-->
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+  />
+
+  <style>
+    body {
+      font-family: monospace;
+    }
+
+    strong {
+      font-size: 1.25em;
+    }
+
+    #cellPanel {
+      display: flex;
+    }
+
+    .camperCell {
+      width: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: silver;
+      padding: 20px;
+      margin: 5px;
+      border-radius: 10px;
+      border: 5px grey solid;
+      box-shadow: 2.5px 5px #4f4d46;
+    }
+
+    .camperCell > h1 {
+      font-size: 1em;
+    }
+
+    .camperCell > img {
+      border-radius: 50%;
+      width: 100px;
+    }
+
+    #description {
+      background-color: #dedede;
+      padding: 10px;
+    }
+
+    #description > h1 {
+      text-align: center;
+      font-style: bold;
+      margin-left: 5%;
+    }
+
+    #description > p {
+      margin-left: 5%;
+      margin-right: 5%;
+      font-size: 1.25em;
+      line-height: 50px;
+    }
+
+    #description > ol {
+      margin-left: 5%;
+      font-size: 1.25em;
+      line-height: 50px;
+    }
+
+    #yourWork {
+      padding: 10px;
+      text-align: center;
+      background-color: #f2f2f2;
+    }
+
+    @media (max-width: 920px) {
+      #description > p,
+      #description > ol {
+        font-size: 0.75em;
+        line-height: 25px;
+      }
+      #cellPanel {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    /* Add your unique styles below*/
+
+    #davidfraser {
+      color: #5b45a3;
+      background: #45a3a3;
+      border-color: #4f25d9;
+    }
+
+    #camper2 {
+      color: purple;
+    }
+
+    #biscuit {
+      color: #f0296c;
+      background: #333;
+      border: solid 5px #d61052;
+    }
+    div#theTradeCoder{
+      background-color:#00182b;
+      color:#bbbbbb;
+      border:5px solid #00182b;
+      box-shadow: 3px 6px orange;
+    }
+    #emmavz {
+      color: #55ff55;
+      background: #0055ff;
+      border: solid 5px #55ff55;
+    }
+  </style>
+</head>
+<body>
+  <div id="description">
+    <p>
+      <a href="../index.html"
+        ><i class="fas fa-home"></i> Return Home</a
+      >
+    </p>
+
+    <h1>Puzzle #1</h1>
+
+    <p>
+      <u><strong>Description:</strong></u> Now that you've added your name to
+      the contributors.md file, its time to change some actual code. The
+      following exercise will have you add your own camper cell, html elements,
+      and custom styling.
+    </p>
+    <p>
+      <u><strong>Puzzle:</strong></u>
+    </p>
+    <ol>
+      <li>
+        In the cellPanel div, add your own div and give it a class of
+        'camperCell'
+      </li>
+      <li>Give your div a unique id</li>
+      <li>Inside your div, add an h1 element that has your name</li>
+      <li>Inside your div, add an image that has a picture/avatar of you</li>
+      <li>
+        Inside your div, add a p element that contains your favorite quote
+      </li>
+      <li>
+        Add any custom styling by targeting your custom id in the provided style
+        tag
+      </li>
+    </ol>
+  </div>
+
+  <div id="yourWork">
+    <h1>Camper Cells</h1>
+
+    <div id="cellPanel">
+      <!-- Add your camperCell Here -->
+
+      <div class="camperCell" id="davidfraser">
+        <h1>David Fraser</h1>
+        <img
+          src="https://avatars2.githubusercontent.com/u/47202564?s=460&u=35c8f87e6b9e00267c22664efd668db3b4ad7491&v=4"
+          alt="davidProfPic"
+        />
+        <p>
+          "Alone we can do so little; together we can do so much." – Helen
+          Keller
+        </p>
+      </div>
+
+      <div class="camperCell" id="camper2">
+        <h1>Camper2</h1>
+        <img
+          src="https://avatars1.githubusercontent.com/u/583231?s=460&u=a59fef2a493e2b67dd13754231daf220c82ba84d&v=4"
+          alt="davidProfPic"
+        />
+        <p>
+          “Be the change that you wish to see in the world.” ― Mahatma Gandhi
+        </p>
+      </div>
+
+      <div class="camperCell" id="biscuit">
+        <h1>Biscuitman</h1>
+        <img src="https://github.com/syntappz.png" alt="syntappz profile" />
+        <p>
+          “I eat Green Berets for breakfast. And right now, I’m very hungry!.” ―
+          John Matrix
+        </p>
+      </div>
+      
+      <div id="theTradeCoder" class="camperCell">
+        <h1>Mamun Abdullah</h1>
+        <img src="https://res.cloudinary.com/tradecoder/image/upload/v1596337811/me/me-1_kqtvd6.jpg" alt="Mamun's photo"/>
+        <p><q>If there's NO INPUT, there'll be NO OUTPUT</q><br/> - Mamun Abdullah</p>        
+      </div>
+    
+      <div class="camperCell" id="emmavz">
+        <h1>Emmanuel Zelarayán</h1>
+        <img src="https://avatars3.githubusercontent.com/u/65980591?s=460&u=de713198558bb8df17b79aaa096fd165334b55a0&v=4" alt="EmmanuelProfile" />
+        <p>
+          "Many of life's failures are people who did not realize how close they were to success when they gave up." -Thomas A. Edison
+        </p>
+      </div>
+    
+    </div>
+  </div>
+</body>
