@@ -5,6 +5,9 @@
     href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
   />
 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
   <style>
     body {
       font-family: monospace;
@@ -14,10 +17,9 @@
       font-size: 1.25em;
     }
 
-    #cellPanel {
+    /* #cellPanel {
       display: flex;
-      flex-wrap: wrap;
-    }
+    } */
 
     .camperCell {
       width: 200px;
@@ -78,11 +80,11 @@
         font-size: 0.75em;
         line-height: 25px;
       }
-      #cellPanel {
+      /* #cellPanel {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-      }
+      } */
     }
 
     /* Add your unique styles below*/
@@ -113,14 +115,19 @@
       background: #0055ff;
       border: solid 5px #55ff55;
     }
+
+    #sparrow {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      border-color:darkcyan;
+    }
   </style>
 </head>
+
 <body>
   <div id="description">
     <p>
-      <a href="../index.html"
-        ><i class="fas fa-home"></i> Return Home</a
-      >
+      <a href="../index.html">
+        <i class="fas fa-home"></i> Return Home</a>
     </p>
 
     <h1>Puzzle #1</h1>
@@ -131,79 +138,83 @@
       following exercise will have you add your own camper cell, html elements,
       and custom styling.
     </p>
+
     <p>
       <u><strong>Puzzle:</strong></u>
     </p>
+
     <ol>
-      <li>
-        In the cellPanel div, add your own div and give it a class of
-        'camperCell'
-      </li>
+      <li>In the cellPanel div, add your own div and give it a class of 'camperCell'</li>
       <li>Give your div a unique id</li>
       <li>Inside your div, add an h1 element that has your name</li>
       <li>Inside your div, add an image that has a picture/avatar of you</li>
-      <li>
-        Inside your div, add a p element that contains your favorite quote
-      </li>
-      <li>
-        Add any custom styling by targeting your custom id in the provided style
-        tag
-      </li>
+      <li>Inside your div, add a p element that contains your favorite quote</li>
+      <li>Add any custom styling by targeting your custom id in the provided style tag</li>
     </ol>
   </div>
 
   <div id="yourWork">
     <h1>Camper Cells</h1>
 
-    <div id="cellPanel">
+    <div id="cellPanel" class="row p-4">
       <!-- Add your camperCell Here -->
 
-      <div class="camperCell" id="davidfraser">
+      <div class="camperCell col-md-5 col-lg-2" id="davidfraser">
         <h1>David Fraser</h1>
         <img
           src="https://avatars2.githubusercontent.com/u/47202564?s=460&u=35c8f87e6b9e00267c22664efd668db3b4ad7491&v=4"
-          alt="davidProfPic"
-        />
-        <p>
-          "Alone we can do so little; together we can do so much." – Helen
-          Keller
+          alt="davidProfPic" />
+        
+          <p>
+          "Alone we can do so little; together we can do so much." – Helen Keller
         </p>
       </div>
 
-      <div class="camperCell" id="camper2">
+      <div class="camperCell col-md-5 col-lg-2" id="camper2">
         <h1>Camper2</h1>
         <img
           src="https://avatars1.githubusercontent.com/u/583231?s=460&u=a59fef2a493e2b67dd13754231daf220c82ba84d&v=4"
-          alt="davidProfPic"
-        />
+          alt="davidProfPic" />
+        
         <p>
           “Be the change that you wish to see in the world.” ― Mahatma Gandhi
         </p>
       </div>
 
-      <div class="camperCell" id="biscuit">
+      <div class="camperCell col-md-5 col-lg-2" id="biscuit">
         <h1>Biscuitman</h1>
         <img src="https://github.com/syntappz.png" alt="syntappz profile" />
+        
         <p>
           “I eat Green Berets for breakfast. And right now, I’m very hungry!.” ―
           John Matrix
         </p>
       </div>
       
-      <div id="theTradeCoder" class="camperCell">
+      <div id="theTradeCoder" class="camperCell col-md-5 col-lg-2">
         <h1>Mamun Abdullah</h1>
         <img src="https://res.cloudinary.com/tradecoder/image/upload/v1596337811/me/me-1_kqtvd6.jpg" alt="Mamun's photo"/>
+        
         <p><q>If there's NO INPUT, there'll be NO OUTPUT</q><br/> - Mamun Abdullah</p>        
       </div>
     
-      <div class="camperCell" id="emmavz">
+      <div class="camperCell col-md-5 col-lg-2" id="emmavz">
         <h1>Emmanuel Zelarayán</h1>
-        <img src="https://avatars3.githubusercontent.com/u/65980591?s=460&u=de713198558bb8df17b79aaa096fd165334b55a0&v=4" alt="EmmanuelProfile" />
+        <img src="https://avatars3.githubusercontent.com/u/65980591?s=460&u=de713198558bb8df17b79aaa096fd165334b55a0&v=4"
+        alt="EmmanuelProfile" />
+        
         <p>
           "Many of life's failures are people who did not realize how close they were to success when they gave up." -Thomas A. Edison
         </p>
       </div>
     
+      <div class="camperCell col-md-5 col-lg-2" id="sparrow">
+        <h1>Benjamin Thorpe</h1>
+        <img src="https://avatars0.githubusercontent.com/u/61359802?v=4" alt="benjamin">
+
+        <p><q>Stay Hungry, Stay Foolish</q> - Steve Jobs</p>
+      </div>
+
     </div>
   </div>
 </body>

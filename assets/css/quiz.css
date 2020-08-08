@@ -142,9 +142,9 @@ body::-webkit-scrollbar-thumb {
 
 .quiz-wrap {
     display: flex;
+    flex-wrap: wrap-reverse;
 }
 .quiz-container {
-  min-width: 600px;
   width: 100%;
   background: white;
   min-height: 520px;
@@ -166,7 +166,7 @@ body::-webkit-scrollbar-thumb {
   background: white;
   display: none;
   animation-duration: .7s;
-  
+  padding: 10px;
 
 }
 .question {
@@ -185,7 +185,6 @@ body::-webkit-scrollbar-thumb {
   background: #5f1735;
   border-radius: 5px;
   color: white;
-  min-width: 200px;
   text-transform: capitalize;
   margin-top: 5px;
   cursor: pointer;
@@ -280,6 +279,7 @@ body::-webkit-scrollbar-thumb {
 
 .quiz-section-wrap {
   flex-grow: 1;
+  
 }
 
 .quiz-selector-wrap {
@@ -364,4 +364,23 @@ body::-webkit-scrollbar-thumb {
 
 
 
+@media (max-width: 1024px) {
+  .quiz-selector-wrap, .quiz-sections-wrap {
+    width: 100%;
+    
+  }
+  .quiz-section-chooser {
+    margin: 10px auto 50px auto;
+    
+  }
+}
 
+@media (max-width: 600px) {
+  .quiz-section-chooser {
+    width: 100%;
+    
+  }
+  .answers {
+    width: 100%;
+  }
+}

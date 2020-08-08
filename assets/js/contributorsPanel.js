@@ -3,53 +3,43 @@
 // feel free to add a role if not it will default to contributor
 
 const contributors = [
-
-  {
-    githubName: "DavidMatthewFraser",
-    displayName: "david fraser",
-    role: "owner",
-  },
-  {
-    githubName: "Syntappz",
-    displayName: "Biscuitmanz",
-    role: "UX/UI",
-  },
-  {
-    githubName: "RandellDawson",
-    displayName: "Randell Dawson",
-    role: "",
-  },
-  {
-    githubName: "thetradecoder",
-    displayName: "Mamun Abdullah",
-    role: "",
-  },
-  {
-    githubName: "santimirandarp",
-    displayName: "Santiago Miranda",
-    role: "",
-  },
-  {
-    githubName: "fort3",
-    displayName: "Fortune Okon",
-    role: "",
-  },
-  {
-    githubName: "EmmaVZ89",
-    displayName: "Emmanuel Zelarayan",
-    role: "",
-  },
-  {
-    githubName: "benjithorpe",
-    displayName: "Benjamin I. Thorpe",
-    role: "",
-  },
-  {
-    githubName: "gwmatthews",
-    displayName: "George W. Matthews",
-    role: "",
-  }
-];
+		{
+			githubName: "DavidMatthewFraser",
+			displayName: "david fraser",
+		},
+		{
+			githubName: "Syntappz",
+			displayName: "Biscuitmanz",
+		},
+		{
+			githubName: "RandellDawson",
+			displayName: "Randell Dawson",
+		},
+	 	{
+			githubName: "thetradecoder",
+			displayName: "Mamun Abdullah",
+		},
+		{
+			githubName: "misterybodon",
+			displayName: "Mister Nobody",
+		},
+		{
+			githubName: "fort3",
+			displayName: "Fortune Okon",
+		},
+		{
+			githubName: "EmmaVZ89",
+			displayName: "Emmanuel Zelarayan",
+		},
+		{
+			githubName: "benjithorpe",
+			displayName: "Benjamin I. Thorpe",
+		},
+		{
+			githubName: "gwmatthews",
+			displayName: "George W. Matthews",
+    }
+	];
 
 const sidePanel = document.querySelector(".panel");
 const panelButton = document.querySelector(".contributors-btn");
