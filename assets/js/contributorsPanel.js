@@ -1,4 +1,7 @@
 // add github name here
+
+// feel free to add a role if not it will default to contributor
+
 const contributors = [
 		{
 			githubName: "DavidMatthewFraser",
@@ -43,10 +46,49 @@ const panelButton = document.querySelector(".contributors-btn");
 const main = document.querySelector(".main");
 let panelOpen = false;
 
+const getFollowers = async (name) => {
+  const url = `https://api.github.com/users/${name}`;
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+    if (data.message) {
+      throw data.message;
+    } else {
+      return { followers: data.followers, repos: data.public_repos };
+    }
+  } catch (error) {
+    console.error(error);
+    return { followers: 0, repos: 0 };
+  }
+};
+
+const appendComponents = (contributorComponent) => {
+  contributors.forEach(async (contributor) => {
+    const component = contributorComponent(contributor);
+    sidePanel.innerHTML += component;
+  });
+};
+
+const fetchFollowers = async (contributorComponent) => {
+  for (let contributor of contributors) {
+    if (contributor.githubName) {
+      const { followers } = await getFollowers(contributor.githubName);
+      contributor.followers = followers;
+    }
+  }
+  appendComponents(contributorComponent);
+};
+
 const panel = () => {
   const githubUrl = (name) => `https://github.com/${name}`;
-
-  const contributorComponent = ({ githubName, displayName }) => {
+  const contributorComponent = ({
+    githubName,
+    displayName,
+    role,
+    followers,
+  }) => {
+    displayName =
+      displayName.length > 18 ? displayName.slice(0, 18) + "..." : displayName;
     const url = githubUrl(githubName);
     const defaultAvatar = `https://api.adorable.io/avatars/60/${displayName}.png`;
 
@@ -55,32 +97,34 @@ const panel = () => {
     const github = githubName ? "github" : "no link";
     const noLink = githubName ? "" : "no-link";
 
-    return ` <div class="contributor">
-						<div class="flex">
-							<div class="avatar">
-								<img src="${avatar}" alt="github-avatar" />
-							</div>
-
-							<h4 class="name">${displayName}</h4>
-						</div>
-
-						<div class="github-wrap">
-							<a class="github-btn ${noLink}" target="_" ${href}>
-								<i class="fab fa-github-alt"></i>
-							</a>
-							<p class="link-text ${noLink}">${github}</p>
-						</div>
-					</div>`;
+    return `
+  <div class="contributor">
+    <div class="flex">
+      <div class="avatar-wrap">
+        <div class="avatar">
+          <img src="${avatar}" alt="github-avatar" />  
+        </div>
+      </div>
+      <div>
+         <h4 class="name">${displayName}</h4>
+         <p class="followers">followers: ${followers || 0}</p>
+         <div class="role">
+           <p>${role || "contributor"}</p>
+         </div>
+      </div>
+    </div>
+    <div class="github-wrap">
+      <a class="github-btn ${noLink}" target="_" ${href}>
+        <i class="fab fa-github-alt"></i>
+      </a>
+      <p class="link-text ${noLink}">${github}</p>
+    </div>
+</div>`;
   };
-
-  contributors.forEach((contributor) => {
-    const component = contributorComponent(contributor);
-    sidePanel.innerHTML += component;
-  });
+  fetchFollowers(contributorComponent);
 };
 
 const closeFromMain = () => {
-  console.log("clicked");
   if (panelOpen) {
     closePanel();
   }
@@ -97,7 +141,6 @@ const openPanel = () => {
   sidePanel.style.right = 0;
   sidePanel.style.opacity = 1;
   panelOpen = !panelOpen;
-  console.log(panelOpen);
   main.addEventListener("click", closeFromMain);
 };
 
