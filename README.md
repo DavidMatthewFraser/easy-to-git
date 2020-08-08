@@ -29,6 +29,11 @@ Here we'll add some examples...
 - add an html element, for example: ``` <h1>Open Source Rules</h1> ```
 - add some js, for example: ```logHello()```
 
+## Add to Quiz
+To add some questions to the quiz open quizQuestions.js file and add a question with some answers and add the correct answer thats it!,
+you can add to html, css or javascript. 
+
+
 ## Overwhelmed by commands?
 
 Check out <a href='https://www.shortcutfoo.com/app/dojos/git'>Shorfoo</a>, and learn some commmands while playing.
