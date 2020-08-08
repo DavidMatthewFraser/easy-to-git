@@ -3,7 +3,6 @@
 // feel free to add a role if not it will default to contributor
 
 const contributors = [
-<<<<<<< HEAD
 		{
 			githubName: "DavidMatthewFraser",
 			displayName: "david fraser",
