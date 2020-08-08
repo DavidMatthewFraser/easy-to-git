@@ -235,8 +235,10 @@ main {
 }
 
 .contributors-btn {
+  text-align: center;
   letter-spacing: 0.5px;
   padding: 18px 20px;
+  margin: 5px;
   border-radius: 5px;
   background: #b9189c;
   text-transform: uppercase;
@@ -315,6 +317,7 @@ html {
 .show-time {
   font-size: 1.3rem;
 }
+
 .google-search-container{
   display:flex;
   flex-direction:row;
@@ -322,6 +325,7 @@ html {
   padding:20px;
   background-color:transparent;
 }
+
 .google-search{
   /*width:350px;
   height:50px;*/
