@@ -1,6 +1,6 @@
 # Hello and Welcome
 ## It should be a fun time doing the codez with all yall!
-### You can check out tutorials such as <a href='https://github.com/firstcontributions/first-contributions/blob/master/README.md' target='_blank'>this one</a> to get famaliar with the git hubz
+### You can check out tutorials such as <a href='https://github.com/firstcontributions/first-contributions/blob/master/README.md'>this one</a> to get famaliar with the git hubz
 
 # Easy to git
 The idea of this repo is to get you started with Git and GitHub.
@@ -35,12 +35,12 @@ Here we'll add some examples...
 
 ## Overwhelmed by commands?
 
-Check out <a href='https://www.shortcutfoo.com/app/dojos/git' target='_blank'>Shorfoo</a>, and learn some commmands while playing.
+Check out <a href='https://www.shortcutfoo.com/app/dojos/git'>Shorfoo</a>, and learn some commmands while playing.
 
 # What next?
 TBH .... idk, maybe you can tell me ...
 We definitely need a better ReadMe lol 😝 
 
 
-Note: To see the live version of the `master` branch, visit <a href='https://davidmatthewfraser.github.io/easy-to-git/' target='_blank'>our website</a> 
+Note: To see the live version of the `master` branch, visit <a href='https://davidmatthewfraser.github.io/easy-to-git/'>our website</a> 
 
