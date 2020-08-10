@@ -58,8 +58,8 @@ const cssQuestions = [
   },
   {
     question: "What is the correct HTML for referring to an external style sheet?",
-    answers: ["<stylesheet>mystyle.css</stylesheet>", "<link rel=\"stylesheet\" type=\"text/css\" href=\"mystyle.css\">", " <style src=\"mystyle.css\">"],
-    correctAnswer: "<link rel=\"stylesheet\" type=\"text/css\" href=\"mystyle.css\">",
+    answers: ["<stylesheet>mystyle.css</stylesheet>", `<link rel="stylesheet" type="text/css" href="mystyle.css">`, "<style src=\"mystyle.css\">"],
+    correctAnswer: `<link rel="stylesheet" type="text/css" href="mystyle.css">`,
   },
   {
     question: "Which position is not affected by the top, bottom, left, and right properties",

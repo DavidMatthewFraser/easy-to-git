@@ -29,6 +29,7 @@ const answer = (answer) => {
   const text = answer.includes("<")
     ? `<code>${answer.replace("<", "&lt;").replace(">", "&gt;")}</code>`
     : answer;
+   
   return `<div class="answer flex">
     <div class="answer-button flex-center">
       <div class="answer-circle"></div>
@@ -110,8 +111,7 @@ function showQuestion(question) {
         $(this).find(".answer-circle").css("background", "white");
         const textNode = $(this).find(".answer-text");
         const text = textNode.text().toLowerCase();
-
-        if (text === correctAnswer) {
+        if (text === correctAnswer.toLowerCase()) {
           addToCorrect();
         }
         if (question < chosenSection.length - 1) {
