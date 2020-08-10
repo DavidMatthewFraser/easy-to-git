@@ -314,6 +314,13 @@ html {
   width: 70%;
 }
 
+.website-navigation{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (max-width: 768px) {
   .rev_div p {
     font-size: 1em;
