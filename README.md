@@ -1,6 +1,6 @@
 # Easy to Git
-- The idea of this repo is to get you started with Git and GitHub.
-- Note: To see the live version of the `master` branch, visit https://davidmatthewfraser.github.io/easy-to-git/
+#### The idea of this repo is to get you started with Git and GitHub.
+#### Note: To see the live version of the `master` branch, visit https://davidmatthewfraser.github.io/easy-to-git/
 
 ## The very basics
 Git and GitHub are different tools but work together. Git is a program you run on *your machine*, and it's useful to interact with the remote code-repository. This remote host of files is GitHub.
