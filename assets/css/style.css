@@ -321,6 +321,12 @@ html {
   align-items: center;
 }
 
+@media (max-width: 450px) {
+  .buttons-container{
+    width: 100%;
+  }
+}
+
 @media (max-width: 768px) {
   .rev_div p {
     font-size: 1em;
