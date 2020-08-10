@@ -307,6 +307,26 @@ html {
   text-align: center;
 }
 
+.buttons-container{
+  background-color: #c69dfc;
+  padding: 40px;
+  border-radius: 10px;
+  width: 70%;
+}
+
+.website-navigation{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 450px) {
+  .buttons-container{
+    width: 100%;
+  }
+}
+
 @media (max-width: 768px) {
   .rev_div p {
     font-size: 1em;
