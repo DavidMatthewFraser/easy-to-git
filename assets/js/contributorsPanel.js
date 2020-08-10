@@ -3,47 +3,57 @@
 // feel free to add a role if not it will default to contributor
 
 const contributors = [
-		{
-			githubName: "DavidMatthewFraser",
-			displayName: "david fraser",
-		},
-		{
-			githubName: "Syntappz",
-			displayName: "Biscuitmanz",
-		},
-		{
-			githubName: "RandellDawson",
-			displayName: "Randell Dawson",
-		},
-	 	{
-			githubName: "thetradecoder",
-			displayName: "Mamun Abdullah",
-		},
-		{
-			githubName: "misterybodon",
-			displayName: "Mister Nobody",
-		},
-		{
-			githubName: "fort3",
-			displayName: "Fortune Okon",
-		},
-		{
-			githubName: "EmmaVZ89",
-			displayName: "Emmanuel Zelarayan",
-		},
-		{
-			githubName: "benjithorpe",
-			displayName: "Benjamin I. Thorpe",
-		},
-		{
-			githubName: "gwmatthews",
-			displayName: "George W. Matthews",
-    },
-    {
-      githubName: "VJ1224",
-      displayName: "Vansh Jain",
-    }
-	];
+  {
+    githubName: "DavidMatthewFraser",
+    displayName: "david fraser",
+    role: "Owner",
+  },
+  {
+    githubName: "Syntappz",
+    displayName: "Biscuitmanz",
+    role: "UX/UI",
+  },
+  {
+    githubName: "RandellDawson",
+    displayName: "Randell Dawson",
+    role: "",
+  },
+  {
+    githubName: "thetradecoder",
+    displayName: "Mamun Abdullah",
+    role: "",
+  },
+  {
+    githubName: "misterybodon",
+    displayName: "Mister Nobody",
+    role: "",
+  },
+  {
+    githubName: "fort3",
+    displayName: "Fortune Okon",
+    role: "",
+  },
+  {
+    githubName: "EmmaVZ89",
+    displayName: "Emmanuel Zelarayan",
+    role: "",
+  },
+  {
+    githubName: "benjithorpe",
+    displayName: "Benjamin I. Thorpe",
+    role: "",
+  },
+  {
+    githubName: "gwmatthews",
+    displayName: "George W. Matthews",
+    role: "",
+  },
+  {
+    githubName: "VJ1224",
+    displayName: "Vansh Jain",
+    role: "",
+  },
+];
 
 const sidePanel = document.querySelector(".panel");
 const panelButton = document.querySelector(".contributors-btn");
@@ -128,24 +138,16 @@ const panel = () => {
   fetchFollowers(contributorComponent);
 };
 
-const closeFromMain = () => {
-  if (panelOpen) {
-    closePanel();
-  }
-};
-
 const closePanel = () => {
   sidePanel.style.right = "-400px";
   sidePanel.style.opacity = 0;
   panelOpen = !panelOpen;
-  main.removeEventListener("click", closeFromMain);
 };
 
 const openPanel = () => {
   sidePanel.style.right = 0;
   sidePanel.style.opacity = 1;
   panelOpen = !panelOpen;
-  main.addEventListener("click", closeFromMain);
 };
 
 const togglePanel = () => {
