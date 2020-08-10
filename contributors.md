@@ -10,3 +10,4 @@
 - [Mister Nobody](https://github.com/misterybodon)
 - [Luke Howsam](https://github.com/luke-h1)
 - [Vansh Jain](https://github.com/VJ1224)
+- [tfrick47](https://github.com/tfrick47)
