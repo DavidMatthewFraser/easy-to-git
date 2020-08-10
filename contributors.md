@@ -9,3 +9,4 @@
 - [George Matthews](https://github.com/gwmatthews)
 - [Mister Nobody](https://github.com/misterybodon)
 - [Luke Howsam](https://github.com/luke-h1)
+- [Vansh Jain](https://github.com/VJ1224)

@@ -38,6 +38,10 @@ const contributors = [
 		{
 			githubName: "gwmatthews",
 			displayName: "George W. Matthews",
+    },
+    {
+      githubName: "VJ1224",
+      displayName: "Vansh Jain",
     }
 	];
 
