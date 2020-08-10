@@ -106,7 +106,7 @@ const panel = () => {
     <div class="flex">
       <div class="avatar-wrap">
         <div class="avatar">
-          <img src="${avatar}" alt="github-avatar" />  
+          <img src="${avatar}" alt="github-avatar" />
         </div>
       </div>
       <div>
@@ -135,14 +135,14 @@ const closeFromMain = () => {
 };
 
 const closePanel = () => {
-  sidePanel.style.right = "-400px";
+  sidePanel.style.height = "0px";
   sidePanel.style.opacity = 0;
   panelOpen = !panelOpen;
   main.removeEventListener("click", closeFromMain);
 };
 
 const openPanel = () => {
-  sidePanel.style.right = 0;
+  sidePanel.style.height = "100%";
   sidePanel.style.opacity = 1;
   panelOpen = !panelOpen;
   main.addEventListener("click", closeFromMain);
