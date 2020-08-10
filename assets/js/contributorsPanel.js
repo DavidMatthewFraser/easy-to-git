@@ -131,14 +131,14 @@ const closeFromMain = () => {
 };
 
 const closePanel = () => {
-  sidePanel.style.width = "0px";
+  sidePanel.style.height = "0px";
   sidePanel.style.opacity = 0;
   panelOpen = !panelOpen;
   main.removeEventListener("click", closeFromMain);
 };
 
 const openPanel = () => {
-  sidePanel.style.width = "400px";
+  sidePanel.style.height = "100%";
   sidePanel.style.opacity = 1;
   panelOpen = !panelOpen;
   main.addEventListener("click", closeFromMain);
