@@ -1,6 +1,6 @@
 
 # Easy to Git 
-The idea of this repo is to get you started with Git and GitHub.
+The idea of this repo is to get you started with Git and GitHub.<br/>
 <img align="right" width="450" src="https://i.ibb.co/Qp6RJcK/easypic.png" alt="git status" />
 Note: To see the live version of the `master` branch, visit https://davidmatthewfraser.github.io/easy-to-git/
 
