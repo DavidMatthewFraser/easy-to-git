@@ -38,9 +38,29 @@ const htmlQuestions = [
     answers: ["<frame>", "<inline>", "<iframe>", "<inline frame>"],
     correctAnswer: "<iframe>",
   },
+  {
+    question: "Which of the following characters indicates the closing of a tag?",
+    answers: [".", "\\", "/", ","],
+    correctAnswer: "/",
+  },
+  {
+    question: "How is the document type initialized in HTML5.?",
+    answers: ["<DOCTYPE html>", "<!DOCTYPE>", "<!DOCTYPE html>", "</DOCTYPE html>"],
+    correctAnswer: "<!DOCTYPE html>",
+  },
 ];
 
 const cssQuestions = [
+  {
+    question: "What does CSS stand for?",
+    answers: ["Colourful Style Sheets", "Cascading Style Sheets", "Computer Style Sheets", "Creative Style Sheets"],
+    correctAnswer: "Cascading Style Sheets",
+  },
+  {
+    question: "What is the correct HTML for referring to an external style sheet?",
+    answers: ["<stylesheet>mystyle.css</stylesheet>", "<link rel=\"stylesheet\" type=\"text/css\" href=\"mystyle.css\">", " <style src=\"mystyle.css\">"],
+    correctAnswer: "<link rel=\"stylesheet\" type=\"text/css\" href=\"mystyle.css\">",
+  },
   {
     question: "Which position is not affected by the top, bottom, left, and right properties",
     answers: ["relative", "absolute", "fixed", "static"],
