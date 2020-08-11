@@ -57,6 +57,11 @@ const htmlQuestions = [
     question: "Who is the creator of HTML?",
     answers: ["Bill Gates", "Charles Babbage", "Tim Berners-Lee", "Google"],
     correctAnswer: "Tim Berners-Lee",
+  },
+  {
+    question: "Which of these adds a line break?",
+    answers: ["<break>", "<lb>", "<br>", "<linebreak>"],
+    correctAnswer: "<br>",
   }
 ];
 
