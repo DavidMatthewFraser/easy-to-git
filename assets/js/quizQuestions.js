@@ -48,6 +48,11 @@ const htmlQuestions = [
     answers: ["<DOCTYPE html>", "<!DOCTYPE>", "<!DOCTYPE html>", "</DOCTYPE html>"],
     correctAnswer: "<!DOCTYPE html>",
   },
+  {
+    question: "Who is the creator of HTML?",
+    answers: ["Bill Gates", "Charles Babbage", "Tim Berners-Lee", "Google"],
+    correctAnswer: "Tim Berners-Lee",
+  },
 ];
 
 const cssQuestions = [
@@ -99,6 +104,12 @@ const javascriptQuestions = [
     answers: ["alertBox(\"Hello World\")", "alert(\"Hello World\")", "message(\"Hello World\")", "print(\"Hello World\")"],
     correctAnswer: "alert(\"Hello World\")",
   }
+  {
+    question: "Which of the following is used to convert an input from prompt() to a number?",
+    answers: ["int()", "Number()", "alert()", "Math.floor()"],
+    correctAnswer: "Number()",
+  }
 ];
+
 
 const sections = [htmlQuestions, cssQuestions, javascriptQuestions];
