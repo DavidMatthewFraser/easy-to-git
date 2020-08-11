@@ -49,10 +49,15 @@ const htmlQuestions = [
     correctAnswer: "<!DOCTYPE html>",
   },
   {
+    question: "How is the document type initialized in HTML5.?",
+    answers: ["<DOCTYPE html>", "<!DOCTYPE>", "<!DOCTYPE html>", "</DOCTYPE html>"],
+    correctAnswer: "<!DOCTYPE html>",
+  },
+  {
     question: "Who is the creator of HTML?",
     answers: ["Bill Gates", "Charles Babbage", "Tim Berners-Lee", "Google"],
     correctAnswer: "Tim Berners-Lee",
-  },
+  }
 ];
 
 const cssQuestions = [
@@ -63,8 +68,8 @@ const cssQuestions = [
   },
   {
     question: "What is the correct HTML for referring to an external style sheet?",
-    answers: ["<stylesheet>mystyle.css</stylesheet>", `<link rel="stylesheet" type="text/css" href="mystyle.css">`, "<style src=\"mystyle.css\">"],
-    correctAnswer: `<link rel="stylesheet" type="text/css" href="mystyle.css">`,
+    answers: ["<stylesheet>mystyle.css</stylesheet>", "<link rel=\"stylesheet\" type=\"text/css\" href=\"mystyle.css\">", " <style src=\"mystyle.css\">"],
+    correctAnswer: "<link rel=\"stylesheet\" type=\"text/css\" href=\"mystyle.css\">",
   },
   {
     question: "Which position is not affected by the top, bottom, left, and right properties",
@@ -89,27 +94,6 @@ const javascriptQuestions = [
     answers: ["0", "undefined", "null", "'false'"],
     correctAnswer: "'false'",
   },
-  {
-    question: "Inside which HTML element does the JavaScript go?",
-    answers: ["<js>", "<javascript>", "<script>", "<execute>"],
-    correctAnswer: "<script>",
-  },
-  {
-    question: "An external JavaScript file must contain the <script> tag.",
-    answers: ["True", "False"],
-    correctAnswer: "False",
-  },
-  {
-    question: "How do you write 'Hello World' in an alert box?",
-    answers: ["alertBox(\"Hello World\")", "alert(\"Hello World\")", "message(\"Hello World\")", "print(\"Hello World\")"],
-    correctAnswer: "alert(\"Hello World\")",
-  }
-  {
-    question: "Which of the following is used to convert an input from prompt() to a number?",
-    answers: ["int()", "Number()", "alert()", "Math.floor()"],
-    correctAnswer: "Number()",
-  }
 ];
-
 
 const sections = [htmlQuestions, cssQuestions, javascriptQuestions];
