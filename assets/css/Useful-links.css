@@ -1,0 +1,164 @@
+:root {
+  --main: #D4B506;
+  --peach: #dba7a2;
+  --light-main: #F6BA07;
+  --border-radius: 10px;
+  --box-shadow: 10px 10px 25px -19px #2f2f2f8f;
+  --linear-background: linear-gradient(0deg, var(--main), var(--light-main));
+}
+
+
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin-top: 8rem;
+  color: #333;
+  background: #eeeeee;
+  font-family: 'Nunito', sans-serif;
+  /* font-family: sans-serif; */
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f5f5f5;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #000;
+}
+
+.header {
+  width: 100%;
+  background: var(--linear-background);
+  color: white;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.logo-wrap {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+#logo {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin-right: 20px;
+  border: solid 2px var(--main);
+}
+
+.container {
+    width: 100%;
+    max-width: 1460px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.header-container {
+  width: 100%;
+  max-width: 1660px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.back-button {
+  letter-spacing: 0.5px;
+  padding: 18px 20px;
+  border-radius: 5px;
+  background: #EBE104;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+  text-shadow: 1px 1px #000;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h3 {
+  padding: 30px 20px;
+}
+
+h1 {
+  text-align: center;
+}
+.description {
+  margin: 2rem;
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+.description p {
+  margin: 1rem 0;
+}
+
+.info-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  background: #f8fa7a;
+  width: 100%;
+  padding: 1rem;
+}
+
+.info-container ul{
+  list-style: none;
+  padding: 0;
+}
+
+.info-container h3{
+  margin: 1rem 2rem;
+  padding: 1rem;
+  border-left: 2px solid #000;
+}
+
+.info-container li{
+  padding: 1rem;
+}
+
+.info-container a{
+  margin: 0.5rem;
+}
+
+.list {
+  min-width: 50%;
+  height: 8rem;
+  overflow: auto;
+  margin-top: 2rem;
+}
+
+.list::-webkit-scrollbar{
+  background: #fff;
+  width: 6px;
+}
+
+.list::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 5px;
+}
+
+
+@media (max-width: 768px){
+  .list {
+    min-width: 100%
+  }
+
+}
