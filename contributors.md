@@ -1,5 +1,5 @@
 # Contributors
-- [David Fraser](https://github.com/DavidMatthewFraser)
+- [David Fraser](https://github.com/DavidMatthewFraser) - davidfraserwebdev@gmail.com
 - [Fortune Okon](https://github.com/fort3)
 - [Randell Dawson](https://github.com/RandellDawson)
 - [Biscuitmanz](https://github.com/Syntappz)
