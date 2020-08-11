@@ -15,8 +15,6 @@ strong {
 
 .camperCell {
     background-color: silver;
-    padding: 15px;
-    margin: 5px;
     border-radius: 10px;
     border: 5px grey solid;
     box-shadow: 2.5px 5px #4f4d46;
@@ -39,6 +37,7 @@ header {
   background-color: #dedede;
   padding: 10px;
   font-size: 20px;
+
 }
 
 header > ol > li {
@@ -47,13 +46,16 @@ header > ol > li {
 }
 
 #profiles {
-    margin: 20px auto;
     text-align: center;
 }
 
 #profiles > h1 {
     text-align: center;
     margin: 30px auto;
+}
+
+#cellPanel{
+  padding: 10px;
 }
 
 /* ==================================================================================================================== */
@@ -94,12 +96,12 @@ div#theTradeCoder{
 }
 
 #tfrick47 {
-      background-color: orange;
-      border: 6px solid darkgreen;
-      box-shadow: 2px 3px 3px 3px gray;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
+  background-color: orange;
+  border: 6px solid darkgreen;
+  box-shadow: 2px 3px 3px 3px gray;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
-    #tfrick47 img {
-      border: 1px solid black;
-    }
+#tfrick47 img {
+  border: 1px solid black;
+}
