@@ -84,6 +84,21 @@ const javascriptQuestions = [
     answers: ["0", "undefined", "null", "'false'"],
     correctAnswer: "'false'",
   },
+  {
+    question: "Inside which HTML element does the JavaScript go?",
+    answers: ["<js>", "<javascript>", "<script>", "<execute>"],
+    correctAnswer: "<script>",
+  },
+  {
+    question: "An external JavaScript file must contain the <script> tag.",
+    answers: ["True", "False"],
+    correctAnswer: "False",
+  },
+  {
+    question: "How do you write 'Hello World' in an alert box?",
+    answers: ["alertBox(\"Hello World\")", "alert(\"Hello World\")", "message(\"Hello World\")", "print(\"Hello World\")"],
+    correctAnswer: "alert(\"Hello World\")",
+  }
 ];
 
 const sections = [htmlQuestions, cssQuestions, javascriptQuestions];
