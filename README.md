@@ -6,10 +6,13 @@ Note: To see the live version of the `master` branch, visit https://davidmatthew
 
 ## The very basics
 Git and GitHub are different tools but work together. Git is a program you run on *your machine*, and it's useful to interact with the remote code-repository. This remote host of files is GitHub.
+
 ### Github is Collaboration
 When someone creates a remote repository, then permissions for people to interact with the code are set. The remote repository automatically becomes a collaboration tool; and that's Github main usage.
+
 ### Github Runs Git
 Something a bit confusing is that Github itself uses Git to keep track of the remote project. The more we understand our local copy, the more we will understand Github. 
+
 ## Steps to collaborate on this repo
 * Fork the repository (first you need to create a GitHub account)
 * Clone it from your fork to your local storage (`git clone https://github.com/yourUserHere/easy-to-git`)
