@@ -1,0 +1,40 @@
+body{
+  background-color: black;
+}
+
+.navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 200px;
+}
+
+.btn {
+  width: 150px;
+  margin-top: 20px;
+}
+
+#title {
+  color: #8efafa;
+}
+
+#solar-system > img {
+  width: 100px;
+}
+
+/*Your Space Objects*/
+
+#davids_planet{
+  position: absolute;
+  margin-top: 300px;
+  margin-left: 300px;
+}
+
+#davids_spaceship{
+  position: absolute;
+  margin-top: 500px;
+  margin-left: 50px;
+}
