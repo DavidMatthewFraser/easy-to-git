@@ -140,7 +140,7 @@ h1 {
 
 .list {
   min-width: 50%;
-  height: 8rem;
+  height: 8rem; 
   overflow: auto;
   margin-top: 2rem;
 }
