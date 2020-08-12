@@ -13,11 +13,19 @@ strong {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+#cellPanel{
+  margin:0 10%;
+  display: flex;
+  justify-content: center;
+}
+
 .camperCell {
     background-color: silver;
     border-radius: 10px;
     border: 5px grey solid;
     box-shadow: 2.5px 5px #4f4d46;
+    margin: 7px;
+    min-width: 300px;
 }
 
 .camperCell h1 {
@@ -54,10 +62,7 @@ header > ol > li {
     margin: 30px auto;
 }
 
-#cellPanel{
-  margin-left: 10%;
-  margin-right: 10%;
-}
+
 
 /* ==================================================================================================================== */
 /* Add your unique styles below*/
@@ -105,4 +110,10 @@ div#theTradeCoder{
 
 #tfrick47 img {
   border: 1px solid black;
+}
+
+@media (max-width: 600px) {
+  .camperCell {
+    min-width: 100%;
+  }
 }
