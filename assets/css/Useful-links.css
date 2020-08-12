@@ -162,3 +162,10 @@ h1 {
   }
 
 }
+
+@media (max-width: 400px){
+  body {
+    margin-top: 10rem;
+  }
+
+}
