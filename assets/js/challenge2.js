@@ -1,37 +1,52 @@
-$('document').ready(function(){
-  console.log('worked')
+$("document").ready(function () {
   spaceshipTimer();
+  loadInstructions();
 });
 
+const popup = $(".intructions-popup");
+
+async function loadInstructions() {
+  const res = await fetch("../challenges/instructions-2.txt");
+  const text = await res.text();
+  $(".instructions").text(text);
+}
+
+$(".instructions-open").click(() => popup.show("ease"));
+$(".close-instructions").click(() => popup.hide("ease"));
+$(".png-link").click(() => window.open("https://www.pngguru.com/", "_blank"));
+
 // David's spaceship Logic
-let spaceship = document.getElementById('davids_spaceship');
-var timer;
-var x = 300;
-var y = 40;
+let spaceship = document.getElementById("davids_spaceship");
+
+let timer;
+let x = 300;
+let y = 40;
+
 let spaceshipTimer = () => {
   startTimer();
-}
+};
+
 function startTimer() {
   x++;
   y--;
-  updatePostion(x,y)
+  updatePostion(x, y);
   timer = setTimeout(startTimer, 10);
-  terminate(y)
+  terminate(y);
 }
 
 function stopTimer() {
   clearTimeout(timer);
 }
 
-function updatePostion(x,y){
-  console.log(x,y)
-  spaceship.style.left =  x + 'px';
-  spaceship.style.top =  y + 'px';
+function updatePostion(x, y) {
+  // console.log(x,y)
+  spaceship.style.left = x + "px";
+  spaceship.style.top = y + "px";
 }
 
-function terminate(y){
-  if (y < -500){
-    console.log('terminate')
+function terminate(y) {
+  if (y < -500) {
+    // console.log('terminate')
     stopTimer();
     $("#davids_spaceship").remove();
   }
