@@ -12,10 +12,21 @@
     <link rel='stylesheet' href='../assets/css/challenge2.css' type='text/css'>
   </head>
   <body>
-  <div class='container-fluid'>
+
+    <div class="intructions-popup">
+      <div class="center-wrap">
+        <h3>Instructions</h3>
+        <p class="instructions"></p>
+        <button class='close-instructions btn btn-primary text-center'>Close</button>
+      </div>
+      
+    </div>
+  
+  <div class="container-fluid">
+
     <div class='navbar'>
       <a href='../index.html'><button class='btn btn-primary animated bounce'>Home</button></a>
-      <a download href="Instructions-2.txt" target='_blank'><button class='btn btn-primary animated shake'>Instructions</button></a>
+      <button class='instructions-open btn btn-primary animated shake'>Instructions</button>
       <a href='https://gitter.im/Easy-To-Git/community' target="_blank"><button class='btn btn-primary animated wobble'>Get Help</button></a>
     </div>
     <h1 id='title' class='text-center'>Open-Source Solar System</h1>

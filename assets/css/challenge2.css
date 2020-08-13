@@ -1,8 +1,44 @@
-body{
+body {
   background-color: black;
+  position: relative;
 }
 
-.navbar{
+.intructions-popup {
+  position: fixed;
+  width: 100%;
+  min-height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: 20;
+  background: #000000ab;
+  display: none;
+  
+}
+.intructions-popup h3 {
+  align-items: center;
+}
+
+.center-wrap {
+  width: 700px;
+  background: white;
+  text-align: center;
+  padding: 20px;
+  white-space: pre-wrap;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 20px auto;
+  border-radius: 10px;
+  animation-duration: .2s;
+}
+
+.instructions {
+  font-weight: bold;
+  color: #2e2e2e;
+  text-align: left;
+  padding: 10px;
+}
+
+.navbar {
   position: fixed;
   top: 0;
   left: 0;
@@ -27,14 +63,20 @@ body{
 
 /*Your Space Objects*/
 
-#davids_planet{
+#davids_planet {
   position: absolute;
   margin-top: 300px;
   margin-left: 300px;
 }
 
-#davids_spaceship{
+#davids_spaceship {
   position: absolute;
   margin-top: 500px;
   margin-left: 50px;
+}
+
+@media (max-width: 1024px) {
+  .center-wrap {
+    width: 100%;
+  }
 }
