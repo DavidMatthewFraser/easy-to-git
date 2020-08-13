@@ -333,6 +333,12 @@ html {
   }
 }
 
+@media screen and (max-width: 550px) {
+  .rev_div > p {
+    font-size: 22px;
+  }
+}
+
 .show-time {
   font-size: 1.3rem;
 }
