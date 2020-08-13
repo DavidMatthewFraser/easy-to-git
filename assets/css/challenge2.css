@@ -14,6 +14,7 @@ body {
 .main {
   position: relative;
   z-index: 1;
+  min-height: 100vh;
 }
 
 
@@ -86,22 +87,33 @@ body {
   color: #8efafa;
 }
 
-#solar-system > img {
-  width: 100px;
-}
+
 
 /*Your Space Objects*/
 
 #davids_planet {
+  width: 100px;
   position: absolute;
   margin-top: 300px;
   margin-left: 300px;
+ 
 }
 
 #davids_spaceship {
+  width: 100px;
   position: absolute;
   margin-top: 500px;
   margin-left: 50px;
+  
+
+}
+
+#biscuit_ufo {
+  position: absolute;
+  width: 300px;
+  top: -30px;
+  
+  
 }
 
 #emma_planet {
