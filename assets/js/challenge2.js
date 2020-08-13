@@ -13,6 +13,7 @@ async function loadInstructions() {
 
 $(".instructions-open").click(() => popup.show("ease"));
 $(".close-instructions").click(() => popup.hide("ease"));
+$(".png-link").click(() => window.open("https://www.pngguru.com/", "_blank"));
 
 // David's spaceship Logic
 let spaceship = document.getElementById("davids_spaceship");

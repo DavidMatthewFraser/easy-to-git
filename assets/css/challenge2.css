@@ -17,6 +17,7 @@ body {
 }
 
 
+
 .intructions-popup {
   position: fixed;
   width: 100%;
@@ -43,6 +44,7 @@ body {
   margin: 20px auto;
   border-radius: 10px;
   animation-duration: .2s;
+  position: relative;
 }
 
 .instructions {
@@ -51,6 +53,19 @@ body {
   text-align: left;
   padding: 10px;
 }
+
+.png-link {
+  color: rgb(11, 34, 88);
+  padding: 15px 25px;
+  border: solid rgb(11, 34, 88) 2px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
 
 .navbar {
   position: fixed;
