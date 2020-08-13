@@ -142,10 +142,14 @@ const javascriptQuestions = [
     correctAnswer: 'alert("Hello World")',
   },
   {
-    question:
-      "Which of the following is used to convert an input from prompt() to a number?",
+    question: "Which of the following is used to convert an input from prompt() to a number?",
     answers: ["int()", "Number()", "alert()", "Math.floor()"],
     correctAnswer: "Number()",
+  },
+  {
+    question: "What is the file extension for JavaScript?",
+    answers: [".j", ".jscript", ".js", ".jasc"],
+    correctAnswer: ".js"
   },
 ];
 
