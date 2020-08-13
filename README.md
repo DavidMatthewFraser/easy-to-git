@@ -21,7 +21,7 @@ Something a bit confusing is that Github itself uses Git to keep track of the re
 * Push to your repository on GitHub.
 * Log into GitHub and when you're ready, make a pull request. (Or do a pull request from your local machine?)   Do we even need to fork first??
 
-### A few notes
+### Keep your banch updated!!
 For keeping track of the changes in the original, remote repository (this one) an *upstream* needs to be set. The upstream is set using `git remote add upstream https://github.com/DavidMatthewFraser/easy-to-git`. And that's how you feed yourself of other collaborators' changes.
 
 So you'll be working with two remotes: your fork and the upstream. And you'll be working with only one local copy.
@@ -30,6 +30,9 @@ To *fetch* the changes from the upstream to your local repo run `git fetch upstr
 And to *merge* those changes with your local repo run `git merge upstream/master`. This command merges the master branch of upstream with your master branch.
 
 We end up updated.
+
+For an in-depth youtube video on this topic, check out
+https://www.youtube.com/watch?v=M7ZYkjOWr6g
 
 ## What changes do we expect in the files?
 Here we'll add some examples...
