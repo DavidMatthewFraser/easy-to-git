@@ -1,0 +1,33 @@
+Welcome to Challenge #2!
+
+It's time to have some fun :)
+
+Description: The page you just came from is our Open-Source Solar System. In this challenge, you will add your own 'space object' to the solar system and give it an animation using Animate.css.
+
+Steps:
+
+1. Find an image of a spaceship, planet, star, Ufo, etc ... 
+(Make sure the image has a transparent background color)
+
+2. Add an <img> tag under <div id='solar-system'></div> and link to the image you found with the src attribute
+
+4. Give your image a unique id, ex: id='davids_planet'
+
+5. Modify your image's position in  challenge2.css by targeting your unique id
+
+(Note: use position: absolute)
+
+6. Animate.css is already imported, apply an animation by giving your
+
+image class='animated bounce' (you can replace bounce with any animations found on
+
+https://animate.style/ such as flash, pulse, shake and so on)
+
+7. (optional) Feel free to add any custom javascript to assets/js/challenge2.js
+
+8. Make a merge request with your changes
+
+- Good Job, You've added a space object to our Open_Source Solar System!
+
+(Note: Don't be afraid to make mistakes or ask questions) 
+

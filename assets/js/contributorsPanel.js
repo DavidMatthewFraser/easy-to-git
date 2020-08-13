@@ -53,6 +53,11 @@ const contributors = [
     displayName: "Vansh Jain",
     role: "",
   },
+  {
+    githubName: "Devansh3712",
+    displayName: "Devansh Singh",
+    role: "",
+  },
 ];
 
 const sidePanel = document.querySelector(".panel");
