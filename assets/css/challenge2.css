@@ -1,7 +1,7 @@
 body {
   position: relative;
   background: url('../img/sky.jpg');
-  
+
 }
 .cover {
   width: 100%;
@@ -27,7 +27,7 @@ body {
   z-index: 20;
   background: #000000ab;
   display: none;
-  
+
 }
 .intructions-popup h3 {
   align-items: center;
@@ -103,6 +103,68 @@ body {
   margin-top: 500px;
   margin-left: 50px;
 }
+
+#emma_planet {
+  position: absolute;
+  right: 2rem;
+  top: 10rem;
+  transform: rotate(-10deg);
+  animation-name: jupiter;
+  animation-duration: 5s;
+  animation-timing-function:  linear;
+  animation-iteration-count: infinite;
+}
+@keyframes jupiter {
+  0%{
+    right: 2rem;
+    top: 10rem;
+  }
+  25%{
+    right: 2.5rem;
+    top: 10.5rem;
+  }
+  50%{
+    right: 3rem;
+    top: 10rem;
+  }
+  75%{
+    right: 2.5rem;
+    top: 9.5rem;
+  }
+  100%{
+    right: 2rem;
+    top: 10rem;
+  }
+}
+#emma_star {
+  position: absolute;
+  right: 10rem;
+  top: 5rem;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: white;
+  animation: star;
+  animation-duration: 1.5s;
+  animation-timing-function:  linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes star {
+  0%{
+    background: #555;
+  }
+  50%{
+    background: #fff;
+  }
+  100%{
+    width: 5px;
+    height: 5px;
+    background: #fff;
+    box-shadow: 2px 2px 4px #fff, -2px -2px 4px #fff, -2px 2px 4px #fff, 2px -2px 4px #fff;
+  }
+}
+
 
 @media (max-width: 1024px) {
   .center-wrap {
