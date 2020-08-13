@@ -6,7 +6,7 @@ $("document").ready(function () {
 const popup = $(".intructions-popup");
 
 async function loadInstructions() {
-  const res = await fetch("../challenges/instructions-2.txt");
+  const res = await fetch("../challenges/instructions.txt");
   const text = await res.text();
   $(".instructions").text(text);
 }
