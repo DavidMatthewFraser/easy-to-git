@@ -4,7 +4,7 @@ It's time to have some fun :)
 
 
 Description: The page you just came from is our Open-Source Solar System.
-In this challenge, you will ad your own 'space object' 
+In this challenge, you will add your own 'space object' 
 to the solar system and give it an animation using Animate.css.
 
 
