@@ -5,7 +5,7 @@ The idea of this repo is to get you started with Git and GitHub.
 <img align="right" width="450" src="https://i.ibb.co/Qp6RJcK/easypic.png" alt="git status" />
 Live version of `master`: https://davidmatthewfraser.github.io/easy-to-git/
 <br>
-Community: https://gitter.im/Easy-To-Git/community
+**ASK QUESTIONS HERE**: https://gitter.im/Easy-To-Git/community
 ## The very basics
 Git and GitHub are different tools but work together. Git is a program you run on *your machine*, and it's useful to interact with the remote code-repository. This remote host of files is GitHub.
 
