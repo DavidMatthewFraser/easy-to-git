@@ -43,16 +43,7 @@ const htmlQuestions = [
     answers: [".", "\\", "/", ","],
     correctAnswer: "/",
   },
-  {
-    question: "How is the document type initialized in HTML5.?",
-    answers: [
-      "<DOCTYPE html>",
-      "<!DOCTYPE>",
-      "<!DOCTYPE html>",
-      "</DOCTYPE html>",
-    ],
-    correctAnswer: "<!DOCTYPE html>",
-  },
+
   {
     question: "How is the document type initialized in HTML5.?",
     answers: [
