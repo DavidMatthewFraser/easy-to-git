@@ -1,6 +1,7 @@
 body {
   position: relative;
-  background: url('../img/sky.jpg');
+  background: url("../img/sky.jpg");
+  overflow: hidden;
 }
 
 .cover {
@@ -42,7 +43,7 @@ body {
   line-height: 16px;
   margin: 20px auto;
   border-radius: 10px;
-  animation-duration: .2s;
+  animation-duration: 0.2s;
   position: relative;
 }
 
@@ -64,7 +65,6 @@ body {
   cursor: pointer;
   border-radius: 5px;
 }
-
 
 .navbar {
   position: fixed;
@@ -115,28 +115,28 @@ body {
   transform: rotate(-10deg);
   animation-name: jupiter;
   animation-duration: 5s;
-  animation-timing-function:  linear;
+  animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
 
 @keyframes jupiter {
-  0%{
+  0% {
     right: 2rem;
     top: 10rem;
   }
-  25%{
+  25% {
     right: 2.5rem;
     top: 10.5rem;
   }
-  50%{
+  50% {
     right: 3rem;
     top: 10rem;
   }
-  75%{
+  75% {
     right: 2.5rem;
     top: 9.5rem;
   }
-  100%{
+  100% {
     right: 2rem;
     top: 10rem;
   }
@@ -152,29 +152,30 @@ body {
   background: white;
   animation: star;
   animation-duration: 1.5s;
-  animation-timing-function:  linear;
+  animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
 
 @keyframes star {
-  0%{
+  0% {
     background: #555;
   }
-  50%{
+  50% {
     background: #fff;
   }
-  100%{
+  100% {
     width: 5px;
     height: 5px;
     background: #fff;
-    box-shadow: 2px 2px 4px #fff, -2px -2px 4px #fff, -2px 2px 4px #fff, 2px -2px 4px #fff;
+    box-shadow: 2px 2px 4px #fff, -2px -2px 4px #fff, -2px 2px 4px #fff,
+      2px -2px 4px #fff;
   }
 }
 
 #terris_comet {
   position: absolute;
-  top:  750px;
+  top: 750px;
   left: -750px;
   animation: comet;
   animation-duration: 1s;
@@ -183,8 +184,14 @@ body {
 }
 
 @keyframes comet {
-  from {top: 750px; left: -750px}
-  to {top: -350px; left: 1300px}
+  from {
+    top: 750px;
+    left: -750px;
+  }
+  to {
+    top: -350px;
+    left: 1300px;
+  }
 }
 
 @media (max-width: 1024px) {
