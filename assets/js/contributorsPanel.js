@@ -59,7 +59,7 @@ const contributors = [
     role: "",
   },
   {
-    githubName: "tfrick47",
+    githubName: "terrifricker",
     displayName: "Terri Fricker",
     roll: ""
   }
