@@ -6,7 +6,6 @@
 
 body {
   overflow-x: hidden;
-  background-color: #f3f3f3;
   color: #333;
   font-family: sans-serif;
 }
@@ -73,10 +72,10 @@ main {
 
 .panel {
   position: absolute;
-  padding: 80px 20px 20px 20px;
-  right: -400px;
+  padding: 0px 20px 20px 20px;
   width: 400px;
-  height: 100%;
+  right: 0;
+  height: 0;
   background: #1f011a;
   transition: 0.7s ease;
   color: white;
@@ -308,9 +307,35 @@ html {
   text-align: center;
 }
 
+.buttons-container{
+  background-color: #c69dfc;
+  padding: 40px;
+  border-radius: 10px;
+  width: 70%;
+}
+
+.website-navigation{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 450px) {
+  .buttons-container{
+    width: 100%;
+  }
+}
+
 @media (max-width: 768px) {
   .rev_div p {
     font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .rev_div > p {
+    font-size: 22px;
   }
 }
 

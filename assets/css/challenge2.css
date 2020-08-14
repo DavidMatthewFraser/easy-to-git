@@ -1,0 +1,185 @@
+body {
+  position: relative;
+  background: url('../img/sky.jpg');
+
+}
+.cover {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background: #000000d5;
+  z-index: 0;
+}
+
+.main {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+}
+
+
+
+.intructions-popup {
+  position: fixed;
+  width: 100%;
+  min-height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: 20;
+  background: #000000ab;
+  display: none;
+
+}
+.intructions-popup h3 {
+  align-items: center;
+}
+
+.center-wrap {
+  width: 700px;
+  background: white;
+  text-align: center;
+  padding: 20px;
+  white-space: pre-wrap;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 20px auto;
+  border-radius: 10px;
+  animation-duration: .2s;
+  position: relative;
+}
+
+.instructions {
+  font-weight: bold;
+  color: #2e2e2e;
+  text-align: left;
+  padding: 10px;
+}
+
+.png-link {
+  color: rgb(11, 34, 88);
+  padding: 15px 25px;
+  border: solid rgb(11, 34, 88) 2px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 200px;
+}
+
+.btn {
+  width: 150px;
+  margin-top: 20px;
+}
+
+#title {
+  color: #8efafa;
+}
+
+
+
+/*Your Space Objects*/
+
+#davids_planet {
+  width: 100px;
+  position: absolute;
+  margin-top: 300px;
+  margin-left: 300px;
+ 
+}
+
+#davids_spaceship {
+  width: 100px;
+  position: absolute;
+  margin-top: 500px;
+  margin-left: 50px;
+  
+
+}
+
+#biscuit_ufo {
+  position: absolute;
+  width: 300px;
+  top: -30px;
+  
+  
+}
+
+#emma_planet {
+  position: absolute;
+  right: 2rem;
+  top: 10rem;
+  transform: rotate(-10deg);
+  animation-name: jupiter;
+  animation-duration: 5s;
+  animation-timing-function:  linear;
+  animation-iteration-count: infinite;
+}
+@keyframes jupiter {
+  0%{
+    right: 2rem;
+    top: 10rem;
+  }
+  25%{
+    right: 2.5rem;
+    top: 10.5rem;
+  }
+  50%{
+    right: 3rem;
+    top: 10rem;
+  }
+  75%{
+    right: 2.5rem;
+    top: 9.5rem;
+  }
+  100%{
+    right: 2rem;
+    top: 10rem;
+  }
+}
+#emma_star {
+  position: absolute;
+  right: 10rem;
+  top: 5rem;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: white;
+  animation: star;
+  animation-duration: 1.5s;
+  animation-timing-function:  linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes star {
+  0%{
+    background: #555;
+  }
+  50%{
+    background: #fff;
+  }
+  100%{
+    width: 5px;
+    height: 5px;
+    background: #fff;
+    box-shadow: 2px 2px 4px #fff, -2px -2px 4px #fff, -2px 2px 4px #fff, 2px -2px 4px #fff;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .center-wrap {
+    width: 100%;
+  }
+}

@@ -1,0 +1,119 @@
+
+#home {
+    background-color: #dedede;
+    margin: 0px;
+    position: sticky;
+    top: 0px;
+    padding: 5px;
+    z-index: 20;
+}
+
+strong {
+  font-size: 1.5em;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#cellPanel{
+  margin:0 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.camperCell {
+    background-color: silver;
+    border-radius: 10px;
+    border: 5px grey solid;
+    box-shadow: 2.5px 5px #4f4d46;
+    margin: 7px;
+    min-width: 300px;
+}
+
+.camperCell h1 {
+    font-size: 1.5em;
+}
+
+.camperCell img {
+  border-radius: 50%;
+  width: 150px;
+}
+
+.camperCell p {
+    font-size: 1.3em;
+}
+
+header {
+  background-color: #dedede;
+  padding: 10px;
+  font-size: 20px;
+
+}
+
+header > ol > li {
+  margin-left: 5%;
+  margin-bottom: 10px;
+}
+
+#profiles {
+    text-align: center;
+}
+
+#profiles > h1 {
+    text-align: center;
+    margin: 30px auto;
+}
+
+
+
+/* ==================================================================================================================== */
+/* Add your unique styles below*/
+
+#davidfraser {
+  color: #5b45a3;
+  background: #45a3a3;
+  border-color: #4f25d9;
+}
+
+#camper2 {
+  color: purple;
+}
+
+#biscuit {
+  color: #f0296c;
+  background: #333;
+  border: solid 5px #d61052;
+}
+
+div#theTradeCoder{
+  background-color:#00182b;
+  color:#bbbbbb;
+  border:5px solid #00182b;
+  box-shadow: 3px 6px orange;
+}
+
+#emmavz {
+  color: #55ff55;
+  background: #0055ff;
+  border: solid 5px #55ff55;
+}
+
+#sparrow {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  border-color:darkcyan;
+}
+
+#tfrick47 {
+  background-color: orange;
+  border: 6px solid darkgreen;
+  box-shadow: 2px 3px 3px 3px gray;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#tfrick47 img {
+  border: 1px solid black;
+}
+
+@media (max-width: 600px) {
+  .camperCell {
+    min-width: 100%;
+  }
+}
