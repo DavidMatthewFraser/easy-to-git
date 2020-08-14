@@ -96,7 +96,7 @@ body {
   position: absolute;
   margin-top: 300px;
   margin-left: 300px;
- 
+
 }
 
 #davids_spaceship {
@@ -104,7 +104,7 @@ body {
   position: absolute;
   margin-top: 500px;
   margin-left: 50px;
-  
+
 
 }
 
@@ -112,12 +112,13 @@ body {
   position: absolute;
   width: 300px;
   top: -30px;
-  
-  
+
+
 }
 
 #emma_planet {
   position: absolute;
+  width: 10rem;
   right: 2rem;
   top: 10rem;
   transform: rotate(-10deg);
