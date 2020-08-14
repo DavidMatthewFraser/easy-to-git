@@ -1,8 +1,8 @@
 body {
   position: relative;
   background: url('../img/sky.jpg');
-
 }
+
 .cover {
   width: 100%;
   height: 100vh;
@@ -17,8 +17,6 @@ body {
   min-height: 100vh;
 }
 
-
-
 .intructions-popup {
   position: fixed;
   width: 100%;
@@ -28,8 +26,8 @@ body {
   z-index: 20;
   background: #000000ab;
   display: none;
-
 }
+
 .intructions-popup h3 {
   align-items: center;
 }
@@ -87,8 +85,6 @@ body {
   color: #8efafa;
 }
 
-
-
 /*Your Space Objects*/
 
 #davids_planet {
@@ -96,7 +92,6 @@ body {
   position: absolute;
   margin-top: 300px;
   margin-left: 300px;
- 
 }
 
 #davids_spaceship {
@@ -104,20 +99,17 @@ body {
   position: absolute;
   margin-top: 500px;
   margin-left: 50px;
-  
-
 }
 
 #biscuit_ufo {
   position: absolute;
   width: 300px;
   top: -30px;
-  
-  
 }
 
 #emma_planet {
   position: absolute;
+  width: 10rem;
   right: 2rem;
   top: 10rem;
   transform: rotate(-10deg);
@@ -126,6 +118,7 @@ body {
   animation-timing-function:  linear;
   animation-iteration-count: infinite;
 }
+
 @keyframes jupiter {
   0%{
     right: 2rem;
@@ -148,6 +141,7 @@ body {
     top: 10rem;
   }
 }
+
 #emma_star {
   position: absolute;
   right: 10rem;
@@ -162,6 +156,7 @@ body {
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
+
 @keyframes star {
   0%{
     background: #555;
