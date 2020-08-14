@@ -29,7 +29,7 @@ const answer = (answer) => {
   const text = answer.includes("<")
     ? `<code>${answer.replace(/</g, "&lt;").replace(/>/g, "&gt;")}</code>`
     : answer;
-   
+
   return `<div class="answer flex">
     <div class="answer-button flex-center">
       <div class="answer-circle"></div>
@@ -97,9 +97,11 @@ function showQuestion(question) {
   cleanAnswers();
   // startTimer(question);
   const currentQuestion = chosenSection[question];
-
+  const questionText = currentQuestion.question.endsWith("?")
+    ? currentQuestion.question
+    : currentQuestion.question + "?";
   $(".slide-amount").text(`${question + 1} / ${chosenSection.length}`);
-  $(".question").text(currentQuestion.question + "?");
+  $(".question").text(questionText);
   $.each(currentQuestion.answers, (index, item) => {
     $(".answers").append(answer(item));
   });
