@@ -27,7 +27,7 @@ const addToCorrect = () => correct++;
 
 const answer = (answer) => {
   const text = answer.includes("<")
-    ? `<code>${answer.replace("<", "&lt;").replace(">", "&gt;")}</code>`
+    ? `<code>${answer.replace(/</g, "&lt;").replace(/>/g, "&gt;")}</code>`
     : answer;
    
   return `<div class="answer flex">
