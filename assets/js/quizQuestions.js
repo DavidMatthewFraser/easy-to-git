@@ -86,7 +86,7 @@ const htmlQuestions = [
   },
   {
     question: "In which element would I usually find <footer>?",
-    answers: ["<header>, <body>, <head>, <nav>"],
+    answers: ["<header>", "<body>", "<head>", "<nav>"],
     correctAnswer: "<body>"
   }
 ];
