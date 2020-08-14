@@ -177,6 +177,20 @@ body {
   }
 }
 
+#terris_comet {
+  position: absolute;
+  top:  750px;
+  left: -750px;
+  animation: comet;
+  animation-duration: 1s;
+  animation-delay: 3s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes comet {
+  from {top: 750px; left: -750px}
+  to {top: -350px; left: 1300px}
+}
 
 @media (max-width: 1024px) {
   .center-wrap {
