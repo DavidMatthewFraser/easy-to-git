@@ -9,6 +9,17 @@ body {
   color: #333;
   font-family: sans-serif;
 }
+
+body::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f5f5f5;
+}
+
 body::-webkit-scrollbar-track {
   background-color: #f5f5f5;
   border-radius: 10px;
@@ -319,6 +330,9 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+#dropdownMenuLink{
+  background-color: #b9189c;
 }
 
 @media (max-width: 450px) {
