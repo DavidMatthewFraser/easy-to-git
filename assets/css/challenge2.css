@@ -4,6 +4,7 @@ body {
   overflow:hidden;
   width:100%;
 }
+
 .cover {
   width: 100%;
   height: 100vh;
@@ -18,8 +19,6 @@ body {
   min-height: 100vh;
 }
 
-
-
 .intructions-popup {
   position: fixed;
   width: 100%;
@@ -29,8 +28,8 @@ body {
   z-index: 20;
   background: #000000ab;
   display: none;
-
 }
+
 .intructions-popup h3 {
   align-items: center;
 }
@@ -45,7 +44,7 @@ body {
   line-height: 16px;
   margin: 20px auto;
   border-radius: 10px;
-  animation-duration: .2s;
+  animation-duration: 0.2s;
   position: relative;
 }
 
@@ -68,7 +67,6 @@ body {
   border-radius: 5px;
 }
 
-
 .navbar {
   position: fixed;
   top: 0;
@@ -88,8 +86,6 @@ body {
   color: #8efafa;
 }
 
-
-
 /*Your Space Objects*/
 
 #davids_planet {
@@ -97,7 +93,6 @@ body {
   position: absolute;
   margin-top: 300px;
   margin-left: 300px;
- 
 }
 
 #davids_spaceship {
@@ -105,50 +100,49 @@ body {
   position: absolute;
   margin-top: 500px;
   margin-left: 50px;
-  
-
 }
 
 #biscuit_ufo {
   position: absolute;
   width: 300px;
   top: -30px;
-  
-  
 }
 
 #emma_planet {
   position: absolute;
+  width: 10rem;
   right: 2rem;
   top: 10rem;
   transform: rotate(-10deg);
   animation-name: jupiter;
   animation-duration: 5s;
-  animation-timing-function:  linear;
+  animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
+
 @keyframes jupiter {
-  0%{
+  0% {
     right: 2rem;
     top: 10rem;
   }
-  25%{
+  25% {
     right: 2.5rem;
     top: 10.5rem;
   }
-  50%{
+  50% {
     right: 3rem;
     top: 10rem;
   }
-  75%{
+  75% {
     right: 2.5rem;
     top: 9.5rem;
   }
-  100%{
+  100% {
     right: 2rem;
     top: 10rem;
   }
 }
+
 #emma_star {
   position: absolute;
   right: 10rem;
@@ -159,22 +153,24 @@ body {
   background: white;
   animation: star;
   animation-duration: 1.5s;
-  animation-timing-function:  linear;
+  animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
+
 @keyframes star {
-  0%{
+  0% {
     background: #555;
   }
-  50%{
+  50% {
     background: #fff;
   }
-  100%{
+  100% {
     width: 5px;
     height: 5px;
     background: #fff;
-    box-shadow: 2px 2px 4px #fff, -2px -2px 4px #fff, -2px 2px 4px #fff, 2px -2px 4px #fff;
+    box-shadow: 2px 2px 4px #fff, -2px -2px 4px #fff, -2px 2px 4px #fff,
+      2px -2px 4px #fff;
   }
 }
 #nobody_se{
@@ -201,6 +197,26 @@ width:10%;
    left:2000px;
   }
 
+#terris_comet {
+  position: absolute;
+  top: 750px;
+  left: -750px;
+  animation: comet;
+  animation-duration: 1s;
+  animation-delay: 3s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes comet {
+  from {
+    top: 750px;
+    left: -750px;
+  }
+  to {
+    top: -350px;
+    left: 1300px;
+  }
+}
 
 @media (max-width: 1024px) {
   .center-wrap {

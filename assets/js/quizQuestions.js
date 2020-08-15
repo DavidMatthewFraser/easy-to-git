@@ -43,16 +43,7 @@ const htmlQuestions = [
     answers: [".", "\\", "/", ","],
     correctAnswer: "/",
   },
-  {
-    question: "How is the document type initialized in HTML5.?",
-    answers: [
-      "<DOCTYPE html>",
-      "<!DOCTYPE>",
-      "<!DOCTYPE html>",
-      "</DOCTYPE html>",
-    ],
-    correctAnswer: "<!DOCTYPE html>",
-  },
+
   {
     question: "How is the document type initialized in HTML5.?",
     answers: [
@@ -73,6 +64,22 @@ const htmlQuestions = [
     answers: ["<break>", "<lb>", "<br>", "<linebreak>"],
     correctAnswer: "<br>",
   },
+  {
+    question: "Where in my html code would I place a line that determines the size of the viewport?",
+    answers: ["<body>", "<header>", "<footer>", "<head>"],
+    correctAnswer: "<head>"
+  },
+  {
+    question: "In what order should the following tags be located?",
+    answers: ["<html>, <body>, <head>", "<body>, <html>, <head>",
+              "<head>, <body> <html>", "<html>, <head>, <body>"],
+    correctAnswer: "<html>, <head>, <body>"
+  },
+  {
+    question: "In which element would I usually find <footer>?",
+    answers: ["<header>", "<body>", "<head>", "<nav>"],
+    correctAnswer: "<body>"
+  }
 ];
 
 const cssQuestions = [
