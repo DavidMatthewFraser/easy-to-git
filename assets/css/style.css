@@ -63,7 +63,8 @@ main {
 .logo-wrap {
   display: flex;
   align-items: center;
-  height: 100%;
+  justify-content: center;
+  margin: 10px 10px;
 }
 
 #logo {
@@ -71,7 +72,7 @@ main {
   height: 55px;
   border-radius: 50%;
   margin-right: 20px;
-  border: solid 2px #6c1288;
+  border: solid 2px black;
 }
 
 .my-container {
