@@ -4,6 +4,9 @@ $(document).ready(function(){
     case 'forest':
       changeTheme(forest)
       break;
+    case 'beach':
+      changeTheme(beach);
+      break;
     default:
       changeTheme(pageDefault)
   }
@@ -37,8 +40,25 @@ let forest = {
   'comment-slide-background': '#95ff91'
 }
 
+let beach = {
+  'themeName': 'beach',
+  'page-background': '#F1F1F3',
+  'buttonContainer-background': '#F1F1F3',
+  'header-background': '#C7D0D8',
+  'header-color': '#4F545D',
+  'contributor-background': '#E1CFBC',
+  'chooseTheme-background': '#E1CFBC',
+  'btn-default-background': '#8999AD',
+  'btn-primary-background': '#8999AD',
+  'btn-primary-color': 'white',
+  'comment-slide-background': '#E1CFBC'
+}
+
 forestTheme.onclick = () => {
   changeTheme(forest)
+}
+beachTheme.onclick = () => {
+  changeTheme(beach)
 }
 defaultTheme.onclick = () => {
   changeTheme(pageDefault)
