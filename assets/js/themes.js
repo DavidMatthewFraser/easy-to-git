@@ -7,8 +7,8 @@ $(document).ready(function(){
     case 'beach':
       changeTheme(beach);
       break;
-    case 'springGreen':
-      changeTheme(springGreen);
+    case 'summerday':
+      changeTheme(summerday);
       break;
     default:
       changeTheme(pageDefault)
@@ -57,22 +57,26 @@ let beach = {
   'comment-slide-background': '#E1CFBC'
 }
 
-const darkgreen = '#1e470b';
-const mediumgreen = "#306704";
-const spring = "#d4f070";
-const lightestgreen = "#e0face";
-let springGreen = {
-  'themeName': 'springGreen',
-  'page-background': '{lightestgreen}',
-  'buttonContainer-background': '{darkgreen}',
-  'header-background': '{mediumgreen}',
-  'header-color': '{lightestgreen}',
-  'contributor-background': '{spring}',
-  'chooseTheme-background': '{spring}',
-  'btn-default-background': '{spring}',
-  'btn-primary-background': '{spring}',
-  'btn-primary-color': '{darkgreen}',
-  'comment-slide-background': '{spring}'
+const lightyellow = '#FDE1A9';
+const lightorange = "#F89D70";
+const deepcoral = '#D5544B';
+const almostwhite = '#E3EAF3';
+const lightblue = '#BADCF6';
+const blue = '#A4CAED';
+const brick = '#6b2a1d'
+let summerday = {
+  'themeName': 'summerday',
+  'page-background': lightblue,
+  'buttonContainer-background': blue,
+  'header-background': lightorange,
+  'header-color': 'white',
+  'contributor-background': deepcoral,
+  'chooseTheme-background': deepcoral,
+  'btn-default-background': lightyellow,
+  'btn-default-color': brick,
+  'btn-primary-background': lightyellow,
+  'btn-primary-color': brick,
+  'comment-slide-background': lightyellow
 }
 
 forestTheme.onclick = () => {
@@ -81,8 +85,8 @@ forestTheme.onclick = () => {
 beachTheme.onclick = () => {
   changeTheme(beach)
 }
-springGreenTheme.onclick = () => {
-  changeTheme(springGreen)
+summerdayTheme.onclick = () => {
+  changeTheme(summerday)
 }
 defaultTheme.onclick = () => {
   changeTheme(pageDefault)
