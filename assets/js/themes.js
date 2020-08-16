@@ -1,14 +1,15 @@
 
 let pageDefault = {
-  'page-background': '#f1a7e4', //
-  'buttonContainer-background': '#c69dfc', //
-  'header-background': '#900e78',//
-  'header-color': 'white', //
-  'contributor-background': '#b9189c', //
-  'chooseTheme-background': '#b9189c', //
+  'page-background': '#f1a7e4',
+  'buttonContainer-background': '#c69dfc',
+  'header-background': '#900e78',
+  'header-color': 'white',
+  'contributor-background': '#b9189c',
+  'chooseTheme-background': '#b9189c',
   'btn-default-background': '##f2f2f2',
-  'btn-primary-background': '#24a0ed', //
-  'btn-primary-color': 'white' //
+  'btn-primary-background': '#24a0ed',
+  'btn-primary-color': 'white',
+  'comment-slide-background': '#fdc4ff'
 }
 
 let forest = {
@@ -20,7 +21,8 @@ let forest = {
   'chooseTheme-background': '#8f6f5e',
   'btn-default-background': '#e7ffe6',
   'btn-primary-background': '#6fff69',
-  'btn-primary-color': '#875735'
+  'btn-primary-color': '#875735',
+  'comment-slide-background': '#95ff91'
 }
 
 let changeTheme = (theme) => {
@@ -34,5 +36,5 @@ let changeTheme = (theme) => {
   $('.btn-default').css('color', theme['btn-default-color']);
   $('.btn-primary').css('background-color', theme['btn-primary-background']);
   $('.btn-primary').css('color', theme['btn-primary-color']);
-  $('body').addClass('.forest');
+  $('.carousel-inner').css('background-color', theme['comment-slide-background']);
 }
