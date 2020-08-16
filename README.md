@@ -2,7 +2,6 @@
 # Easy to Git
 The idea of this repo is to get you started with Git and GitHub.
 <br>
-<img align="right" width="450" src="assets/img/e2g.png" alt="git status" />
 Live version of `master`: https://davidmatthewfraser.github.io/easy-to-git/
 <br>
 **ASK QUESTIONS HERE**: https://gitter.im/Easy-To-Git/community
