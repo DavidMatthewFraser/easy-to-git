@@ -1,7 +1,8 @@
 body {
   position: relative;
-  background: url("../img/sky.jpg");
-  overflow: hidden;
+  background: url('../img/sky.jpg');
+  overflow:hidden;
+  width:100%;
 }
 
 .cover {
@@ -172,6 +173,29 @@ body {
       2px -2px 4px #fff;
   }
 }
+#nobody_se{
+position:absolute;
+animation:nobody 3s forwards;
+top:0;
+left:0;
+z-index:-1;
+width:10%;
+}
+@keyframes nobody {
+  0%{
+   top:0%;
+   left:0%;
+   width:10%;
+  }
+  50%{
+   top:40%;
+   left:40%;
+   width:50%;
+  }
+  100%{
+   top:40%;
+   left:2000px;
+  }
 
 #terris_comet {
   position: absolute;
