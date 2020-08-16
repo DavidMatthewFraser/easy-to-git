@@ -7,6 +7,9 @@ $(document).ready(function(){
     case 'beach':
       changeTheme(beach);
       break;
+    case 'summerday':
+      changeTheme(summerday);
+      break;
     default:
       changeTheme(pageDefault)
   }
@@ -54,11 +57,36 @@ let beach = {
   'comment-slide-background': '#E1CFBC'
 }
 
+const lightyellow = '#FDE1A9';
+const lightorange = "#F89D70";
+const deepcoral = '#D5544B';
+const almostwhite = '#E3EAF3';
+const lightblue = '#BADCF6';
+const blue = '#A4CAED';
+const brick = '#6b2a1d'
+let summerday = {
+  'themeName': 'summerday',
+  'page-background': lightblue,
+  'buttonContainer-background': blue,
+  'header-background': lightorange,
+  'header-color': 'white',
+  'contributor-background': deepcoral,
+  'chooseTheme-background': deepcoral,
+  'btn-default-background': lightyellow,
+  'btn-default-color': brick,
+  'btn-primary-background': lightyellow,
+  'btn-primary-color': brick,
+  'comment-slide-background': lightyellow
+}
+
 forestTheme.onclick = () => {
   changeTheme(forest)
 }
 beachTheme.onclick = () => {
   changeTheme(beach)
+}
+summerdayTheme.onclick = () => {
+  changeTheme(summerday)
 }
 defaultTheme.onclick = () => {
   changeTheme(pageDefault)
