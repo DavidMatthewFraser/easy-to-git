@@ -7,6 +7,9 @@ $(document).ready(function(){
     case 'beach':
       changeTheme(beach);
       break;
+    case 'springGreen':
+      changeTheme(springGreen);
+      break;
     default:
       changeTheme(pageDefault)
   }
@@ -54,11 +57,32 @@ let beach = {
   'comment-slide-background': '#E1CFBC'
 }
 
+const darkgreen = '#1e470b';
+const mediumgreen = "#306704";
+const spring = "#d4f070";
+const lightestgreen = "#e0face";
+let springGreen = {
+  'themeName': 'springGreen',
+  'page-background': '{lightestgreen}',
+  'buttonContainer-background': '{darkgreen}',
+  'header-background': '{mediumgreen}',
+  'header-color': '{lightestgreen}',
+  'contributor-background': '{spring}',
+  'chooseTheme-background': '{spring}',
+  'btn-default-background': '{spring}',
+  'btn-primary-background': '{spring}',
+  'btn-primary-color': '{darkgreen}',
+  'comment-slide-background': '{spring}'
+}
+
 forestTheme.onclick = () => {
   changeTheme(forest)
 }
 beachTheme.onclick = () => {
   changeTheme(beach)
+}
+springGreenTheme.onclick = () => {
+  changeTheme(springGreen)
 }
 defaultTheme.onclick = () => {
   changeTheme(pageDefault)
