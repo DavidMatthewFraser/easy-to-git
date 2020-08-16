@@ -1,5 +1,16 @@
+$(document).ready(function(){
+  let theme = localStorage.getItem('theme')
+  switch (theme) {
+    case 'forest':
+      changeTheme(forest)
+      break;
+    default:
+      changeTheme(pageDefault)
+  }
+})
 
 let pageDefault = {
+  'themeName': 'pageDefault',
   'page-background': '#f1a7e4',
   'buttonContainer-background': '#c69dfc',
   'header-background': '#900e78',
@@ -13,6 +24,7 @@ let pageDefault = {
 }
 
 let forest = {
+  'themeName': 'forest',
   'page-background': '#73b36b',
   'buttonContainer-background': '#bd9477',
   'header-background': '#4f784a',
@@ -25,7 +37,15 @@ let forest = {
   'comment-slide-background': '#95ff91'
 }
 
+forestTheme.onclick = () => {
+  changeTheme(forest)
+}
+defaultTheme.onclick = () => {
+  changeTheme(pageDefault)
+}
+
 let changeTheme = (theme) => {
+  localStorage.setItem('theme', theme['themeName']);
   $('.container-fluid').css('background-color', theme['page-background']);
   $('.buttons-container').css('background-color', theme['buttonContainer-background']);
   $('.header').css('background-color', theme['header-background']);
