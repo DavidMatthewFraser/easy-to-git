@@ -126,6 +126,12 @@ padding:0.5rem;
 #misterybodon img{
 clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 56%, 66% 60%, 48% 100%, 33% 61%, 0 58%, 0% 35%, 20% 10%);
 }
+#fort3{
+  background-color: grey;
+  border: 3px solid darkgreen;
+  box-shadow: 1px 1px 1px 1px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 @media (max-width: 600px) {
   .camperCell {
     min-width: 100%;

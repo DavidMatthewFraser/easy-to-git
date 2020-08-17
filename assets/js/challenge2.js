@@ -68,7 +68,7 @@ function ufoFollow(x) {
     setTimeout(() => {
       ufo.animate(
         {
-          top: "-=100",
+          top: "-=200",
         },
         100,
         () => {
@@ -77,6 +77,6 @@ function ufoFollow(x) {
       );
     }, 2400);
   } else {
-    ufo.css({ left: x - 50 });
+    ufo.css({ left: x - 350 });
   }
 }

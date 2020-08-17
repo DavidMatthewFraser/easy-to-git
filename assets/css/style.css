@@ -371,3 +371,8 @@ html {
   height:50px;*/
   padding:5px;
 }
+@media(max-width: 768px){
+  header .row .dropdown, .show-time{
+    text-align: center;
+  }
+}

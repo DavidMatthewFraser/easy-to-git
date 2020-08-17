@@ -7,7 +7,7 @@ body {
 
 .cover {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   position: absolute;
   background: #000000d5;
   z-index: 0;
@@ -17,31 +17,36 @@ body {
   position: relative;
   z-index: 1;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .intructions-popup {
-  position: fixed;
+  position: relative;
   width: 100%;
-  min-height: 100vh;
+  min-height: 80vh;
   left: 0;
   top: 0;
-  z-index: 20;
+  z-index: 2;
   background: #000000ab;
   display: none;
 }
-
+code{
+  background-color: #2e2e2e;
+  color: #fff;
+}
 .intructions-popup h3 {
   align-items: center;
 }
 
 .center-wrap {
-  width: 700px;
+  width: 500px;
   background: white;
   text-align: center;
   padding: 20px;
-  white-space: pre-wrap;
-  font-size: 14px;
-  line-height: 16px;
+  /* white-space: pre-wrap; */
+  font-size: 12px;
+  line-height: 2.0em;
   margin: 20px auto;
   border-radius: 10px;
   animation-duration: 0.2s;
@@ -59,12 +64,27 @@ body {
   color: rgb(11, 34, 88);
   padding: 15px 25px;
   border: solid rgb(11, 34, 88) 2px;
-  position: absolute;
-  top: 20px;
-  right: 20px;
+  position: relative;
+  /* top: 20px;
+  right: 20px; */
   font-weight: bold;
   cursor: pointer;
   border-radius: 5px;
+}
+
+@media(max-width: 768px){
+  .intructions-popup {
+    width: 80%;
+    z-index: 2;
+    background: #000000ab;
+    display: none;
+    text-align: center;
+    margin-left: 10%;
+  }
+  .center-wrap{
+    font-size: 12px;
+    line-height: 1.5em;
+  }
 }
 
 .navbar {
@@ -72,27 +92,51 @@ body {
   top: 0;
   left: 0;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 200px;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
 }
-
+@media(max-width:768px){
+  .navbar{
+    flex-direction: column;
+    width: 100%;
+  }
+  .btn {
+    width: 100px;
+    margin-top: 20px;
+    margin-right: 1%;
+  }
+}
+#solar-system{
+  margin-top: 8%;
+}
 .btn {
-  width: 150px;
+  width: 120px;
   margin-top: 20px;
+  margin-right: 1%;
 }
-
+.navbar a{
+  margin-right: 1%;
+}
 #title {
   color: #8efafa;
+  margin-right: 1.2rem;
+
+}
+@media(max-width:768px){
+  #title{
+    text-align: center;
+    font-size: 1.0em;
+  }
 }
 
 /*Your Space Objects*/
 
 #davids_planet {
   width: 100px;
-  position: absolute;
+  position: relative;
   margin-top: 300px;
-  margin-left: 300px;
+  margin-left: 80%;
 }
 
 #davids_spaceship {
@@ -112,12 +156,31 @@ body {
   position: absolute;
   width: 10rem;
   right: 2rem;
-  top: 10rem;
+  top: 3rem;
   transform: rotate(-10deg);
   animation-name: jupiter;
   animation-duration: 5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+}
+@media(max-width:768px){
+  #emma_planet{
+    position: absolute;
+    margin-top: 9%;
+    margin-left: 65%;
+    width: 6rem;
+  }
+  #davids_planet {
+    width: 4rem;
+    position: relative;
+    margin-top: 280px;
+    margin-left: 100px;
+  }
+  #biscuit_ufo {
+    position: relative;
+    width: 200px;
+    top: -390px;
+  }
 }
 
 @keyframes jupiter {
@@ -146,7 +209,7 @@ body {
 #emma_star {
   position: absolute;
   right: 10rem;
-  top: 5rem;
+  top: 1rem;
   width: 2px;
   height: 2px;
   border-radius: 50%;
@@ -196,7 +259,7 @@ width:10%;
    top:40%;
    left:2000px;
   }
-
+}
 #terris_comet {
   position: absolute;
   top: 750px;
@@ -221,5 +284,10 @@ width:10%;
 @media (max-width: 1024px) {
   .center-wrap {
     width: 100%;
+  }
+  #terris_comet {
+    position: absolute;
+    top: 400px;
+    left: -600px;
   }
 }
