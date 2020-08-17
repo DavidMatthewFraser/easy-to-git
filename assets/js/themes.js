@@ -10,6 +10,9 @@ $(document).ready(function(){
     case 'summerday':
       changeTheme(summerday);
       break;
+      case 'dark':
+        changeTheme(dark);
+        break;
     default:
       changeTheme(pageDefault)
   }
@@ -23,8 +26,9 @@ let pageDefault = {
   'header-color': 'white',
   'contributor-background': '#b9189c',
   'chooseTheme-background': '#b9189c',
-  'btn-default-background': '##f2f2f2',
+  'btn-default-background': '#f2f2f2',
   'btn-primary-background': '#24a0ed',
+  'btn-default-color': 'black',
   'btn-primary-color': 'white',
   'comment-slide-background': '#fdc4ff'
 }
@@ -39,6 +43,7 @@ let forest = {
   'chooseTheme-background': '#8f6f5e',
   'btn-default-background': '#e7ffe6',
   'btn-primary-background': '#6fff69',
+  'btn-default-color': 'black',
   'btn-primary-color': '#875735',
   'comment-slide-background': '#95ff91'
 }
@@ -53,8 +58,24 @@ let beach = {
   'chooseTheme-background': '#E1CFBC',
   'btn-default-background': '#8999AD',
   'btn-primary-background': '#8999AD',
+  'btn-default-color': 'white',
   'btn-primary-color': 'white',
   'comment-slide-background': '#E1CFBC'
+}
+
+let dark = {
+  'themeName': 'dark',
+  'page-background': '#190F26',
+  'buttonContainer-background': '#F1F1F3',
+  'header-background': '#392259',
+  'header-color': 'white',
+  'contributor-background': '#5A378C',
+  'chooseTheme-background': '#392259',
+  'btn-default-background': '#392259',
+  'btn-default-color': 'white',
+  'btn-primary-background': '#5A378C',
+  'btn-primary-color': 'white',
+  'comment-slide-background': '#392259'
 }
 
 const lightyellow = '#FDE1A9';
@@ -79,6 +100,12 @@ let summerday = {
   'comment-slide-background': lightyellow
 }
 
+
+
+darkTheme.onclick = () => {
+  changeTheme(dark)
+}
+
 forestTheme.onclick = () => {
   changeTheme(forest)
 }
@@ -88,9 +115,11 @@ beachTheme.onclick = () => {
 summerdayTheme.onclick = () => {
   changeTheme(summerday)
 }
+
 defaultTheme.onclick = () => {
   changeTheme(pageDefault)
 }
+
 
 let changeTheme = (theme) => {
   localStorage.setItem('theme', theme['themeName']);
