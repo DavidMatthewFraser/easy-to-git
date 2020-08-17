@@ -118,6 +118,7 @@ body {
   animation-duration: 5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+  z-index: 100;
 }
 
 @keyframes jupiter {
@@ -173,6 +174,55 @@ body {
       2px -2px 4px #fff;
   }
 }
+
+#emma_moon {
+  position: absolute;
+  right: 15rem;
+  top: 16rem;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: #fff;
+  animation: moon;
+  animation-duration: 10s;
+  animation-timing-function:  linear;
+  animation-iteration-count: infinite;
+  z-index: 110;
+}
+
+@keyframes moon {
+  0%{
+    background: #555;
+  }
+  25%{
+    background: #fff;
+  }
+  50%{
+    right: 0;
+    top: 13rem;
+    width: 5px;
+    height: 5px;
+    background: #fff;
+    box-shadow: 2px 2px 4px #fff, -2px -2px 4px #fff, -2px 2px 4px #fff, 2px -2px 4px #fff;
+  }
+  60%{
+    z-index: 99;
+  }
+  75%{
+    background: #555;
+    z-index: 99;
+  }
+  100%{
+    right: 15rem;
+    top: 16rem;
+    width: 2px;
+    height: 2px;
+    background: #fff;
+    box-shadow: 2px 2px 4px #fff, -2px -2px 4px #fff, -2px 2px 4px #fff, 2px -2px 4px #fff;
+    z-index: 99;
+  }
+}
+
 #nobody_se{
 position:absolute;
 animation:nobody 3s forwards;
