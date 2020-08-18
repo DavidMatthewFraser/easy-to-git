@@ -29,7 +29,7 @@
 - click 'compare and create pull request' on your forked GitHub repo
 - click 'create pull request'
 
-# How to contribute (the long version)
+# How to contribute (long version)
 1. **Create a fork** of the easy-to-git repo, this is what you will be making changes on. To create a fork, click the ‘fork’ button in the top right of the screen.
 
 2. You can **create a copy or ‘clone’** of your ‘fork’ on your local machine using the ‘Git’ version control system. To use ‘Git’ on Linux or Mac, open up the ‘Terminal’ application. Linux users may need to install git using the command line. Windows users will need to install Git Bash to use Git. Once you have the ‘Terminal’ or ‘Git Bash’ opened, use `git clone https://github.com/your-user-name/easy-to-git.git` and navigate into this new directory with `cd easy-to-git`. Note that your-user-name is your GitHub username.
