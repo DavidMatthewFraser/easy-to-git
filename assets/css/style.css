@@ -354,9 +354,6 @@ html {
 }
 @media (max-width: 550px) {
   .section-header{
-    font-size: 1em;
-  }
-  .btn-default{
-    font-size: .3em;
+    font-size: 2em;
   }
 }
