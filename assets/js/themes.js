@@ -111,7 +111,7 @@ defaultTheme.onclick = () => {
 let changeTheme = (theme) => {
   localStorage.setItem('theme', JSON.stringify(theme));
   $('.container-fluid').css('background-color', theme['page-background']);
-  $('.buttons-container').css('background-color', theme['buttonContainer-background']);
+  $('.section-container').css('background-color', theme['buttonContainer-background']);
   $('.header').css('background-color', theme['header-background']);
   $('.header').css('color', theme['header-color']);
   $('.dropdown-toggle').css('background-color', theme['chooseTheme-background']);
