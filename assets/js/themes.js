@@ -6,7 +6,7 @@ $(document).ready(function(){
 let pageDefault = {
   'themeName': 'pageDefault',
   'page-background': '#f1a7e4',
-  'buttonContainer-background': '#c69dfc',
+  'sectionContainer-background': '#c69dfc',
   'header-background': '#900e78',
   'header-color': 'white',
   'contributor-background': '#b9189c',
@@ -15,13 +15,16 @@ let pageDefault = {
   'btn-primary-background': '#24a0ed',
   'btn-default-color': 'black',
   'btn-primary-color': 'white',
-  'comment-slide-background': '#fdc4ff'
+  'comment-slide-background': '#fdc4ff',
+  'comment-slide-color': 'black',
+  'widget-background': '#e3baff',
+  'section-header-color': 'black'
 }
 
 let forest = {
   'themeName': 'forest',
   'page-background': '#73b36b',
-  'buttonContainer-background': '#bd9477',
+  'sectionContainer-background': '#60805c',
   'header-background': '#4f784a',
   'header-color': 'black',
   'contributor-background': '#8f6f5e',
@@ -30,13 +33,16 @@ let forest = {
   'btn-primary-background': '#6fff69',
   'btn-default-color': 'black',
   'btn-primary-color': '#875735',
-  'comment-slide-background': '#95ff91'
+  'comment-slide-background': '#95ff91',
+  'comment-slide-color': 'black',
+  'widget-background': '#9eb89a',
+  'section-header-color': 'black'
 }
 
 let beach = {
   'themeName': 'beach',
   'page-background': '#F1F1F3',
-  'buttonContainer-background': '#F1F1F3',
+  'sectionContainer-background': '#C7D0D8',
   'header-background': '#C7D0D8',
   'header-color': '#4F545D',
   'contributor-background': '#E1CFBC',
@@ -45,13 +51,16 @@ let beach = {
   'btn-primary-background': '#8999AD',
   'btn-default-color': 'white',
   'btn-primary-color': 'white',
-  'comment-slide-background': '#E1CFBC'
+  'comment-slide-background': '#E1CFBC',
+  'comment-slide-color': 'black',
+  'widget-background': 'white',
+  'section-header-color': 'black'
 }
 
 let dark = {
   'themeName': 'dark',
   'page-background': '#190F26',
-  'buttonContainer-background': '#F1F1F3',
+  'sectionContainer-background': '#F1F1F3',
   'header-background': '#392259',
   'header-color': 'white',
   'contributor-background': '#5A378C',
@@ -60,7 +69,10 @@ let dark = {
   'btn-default-color': 'white',
   'btn-primary-background': '#5A378C',
   'btn-primary-color': 'white',
-  'comment-slide-background': '#392259'
+  'comment-slide-background': '#392259',
+  'comment-slide-color': 'white',
+  'widget-background': 'white',
+  'section-header-color': '#c57ee6'
 }
 
 const lightyellow = '#FDE1A9';
@@ -69,11 +81,12 @@ const deepcoral = '#D5544B';
 const almostwhite = '#E3EAF3';
 const lightblue = '#BADCF6';
 const blue = '#A4CAED';
-const brick = '#6b2a1d'
+const brick = '#6b2a1d';
+const orange = '#ff9900';
 let summerday = {
   'themeName': 'summerday',
-  'page-background': lightblue,
-  'buttonContainer-background': blue,
+  'page-background': lightyellow,
+  'sectionContainer-background': lightorange,
   'header-background': lightorange,
   'header-color': 'white',
   'contributor-background': deepcoral,
@@ -82,7 +95,10 @@ let summerday = {
   'btn-default-color': brick,
   'btn-primary-background': lightyellow,
   'btn-primary-color': brick,
-  'comment-slide-background': lightyellow
+  'comment-slide-background': lightyellow,
+  'comment-slide-color': 'black',
+  'widget-background': deepcoral,
+  'section-header-color': deepcoral
 }
 
 
@@ -111,7 +127,7 @@ defaultTheme.onclick = () => {
 let changeTheme = (theme) => {
   localStorage.setItem('theme', JSON.stringify(theme));
   $('.container-fluid').css('background-color', theme['page-background']);
-  $('.buttons-container').css('background-color', theme['buttonContainer-background']);
+  $('.section-container').css('background-color', theme['sectionContainer-background']);
   $('.header').css('background-color', theme['header-background']);
   $('.header').css('color', theme['header-color']);
   $('.dropdown-toggle').css('background-color', theme['chooseTheme-background']);
@@ -121,4 +137,8 @@ let changeTheme = (theme) => {
   $('.btn-primary').css('background-color', theme['btn-primary-background']);
   $('.btn-primary').css('color', theme['btn-primary-color']);
   $('.carousel-inner').css('background-color', theme['comment-slide-background']);
+  $('.carousel-comment').css('color', theme['comment-slide-color']);
+  $('.widget').css('background-color', theme['widget-background']);
+  $('.section-header').css('color', theme['section-header-color']);
+
 }

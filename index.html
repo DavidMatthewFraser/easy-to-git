@@ -60,96 +60,85 @@
         <!--<div class="my-container">-->
 
           <!--added a google search option by Mamun Abdullah-->
-        <div class='row'>
-          <div class='spacer col-md-4 col-lg-4 col-sm-4 col-xs-4'></div>
-            <!--added a google search option by Mamun Abdullah-->
-          <div class="google-search-container col-md-4 col-lg-4 col-sm-4 col-xs-4">
-            <form id="googleSearch">
-              <div class="btn-group">
-                <input id="searchMe" class="google-search" type="text" placeholder="Google Search" />
-                <button type="submit" class="btn btn-lg btn-primary">Search</button>
-              </div>
-            </form>
-          </div>
-          <div class='spacer col-md-4 col-lg-4 col-sm-4 col-xs-4'></div>
-        </div>
         <div class='website-navigation'>
-          <div class='row buttons-container'>
+          <h1 class='section-header'>Website Navigation</h1>
+          <div class='row section-container'>
             <div class='col-md-6 col-lg-6 col-sm-12 col-xs-12 mt-3'>
-              <a href='challenges/challenge1.html'><button class='btn btn-default btn-block'>Challenge One</button></a>
+              <a href='challenges/challenge1.html'><button class='btn btn-default btn-block web-nav'><img class='nav-thumbnail' src='assets/img/thumbnails/c1.png' alt=''><p>Challenge One</p></button></a>
             </div>
             <div class='col-md-6 col-lg-6 col-sm-12 col-xs-12 mt-3'>
-              <a href='challenges/challenge2.html'><button class='btn btn-default btn-block'>Challenge Two</button></a>
+              <a href='challenges/challenge2.html'><button class='btn btn-default btn-block web-nav'><img class='nav-thumbnail' src='assets/img/thumbnails/c2.png' alt=''><p>Challenge Two</p></button></a>
             </div>
             <div class='col-md-6 col-lg-6 col-sm-12 col-xs-12 mt-3'>
-              <a href='quiz/quiz.html'><button class='btn btn-default btn-block'>Quiz</button></a>
+              <a href='quiz/quiz.html'><button class='btn btn-default btn-block web-nav'><img class='nav-thumbnail' src='assets/img/thumbnails/quiz.png' alt=''><p>Quiz</p></button></a>
             </div>
             <div class='col-md-6 col-lg-6 col-sm-12 col-xs-12 mt-3'>
-              <a href='Useful-links/Useful-links.html'><button class='btn btn-default btn-block'>Useful Links</button></a>
-            </div>
-            <div class='col-md-12 col-lg-12 col-sm-12 col-xs-12 mt-3'>
-              <div class="btn_div">
-                <button id="btn_com" class="btn btn-primary btn-block">Click to see Comments</button>
-              </div>
+              <a href='Useful-links/Useful-links.html'><button class='btn btn-default btn-block web-nav'><img class='nav-thumbnail' src='assets/img/thumbnails/ul.png' alt=''><p>Useful Links</p></button></a>
             </div>
           </div>
-        </div>
-        <!-- a section including a carousel slide from bootstrap.-->
-        <section id="randSec" class="hidden">
-          <p>
-            <h2 style="margin-left: 6%; margin-top: 4%;">
-              Carousel Comments Slide</h2>
-          </p>
-
-          <div id="reviewFade" class="carousel slide carousel-fade" data-ride="carousel">
-            <div class="carousel-inner" style="color: black; font-family: 'cardo';">
-              <div class="carousel-item active" data-interval="20000">
-                <div class="d-block w-100">
-                  <div class="rev_div">
-                    <p><img src="./assets/img/quote.svg" alt="quote" style="width: 4%; height: 4%;float: left;"><br> comment
-                      something exciting here!
-                      <img src="./assets/img/quote-2.svg" alt="quote" style="width: 4%; height: 4%;float: right;">
-                    </p>
+          <h1 class='section-header'>Widgets</h1>
+          <div class='section-container'>
+            <!-- Google Search Widget by Mamun Abdullah-->
+            <div class='widget row'>
+              <div class='spacer col-md-4 col-lg-4 col-sm-4 col-xs-4'></div>
+              <div class="google-search-container col-md-4 col-lg-4 col-sm-4 col-xs-4">
+                <form id="googleSearch">
+                  <div class="btn-group">
+                    <input id="searchMe" class="google-search" type="text" placeholder="Google Search" />
+                    <button type="submit" class="btn btn-lg btn-primary">Search</button>
                   </div>
-                </div>
+                </form>
               </div>
-
-              <div class="carousel-item" data-interval="20000">
-                <div class="d-block w-100">
-                  <div class="rev_div">
-                    <p><img src="./assets/img/quote.svg" alt="quote" style="width: 4%; height: 4%;float: left;"><br> comment
-                      something here too! <img src="./assets/img/quote-2.svg" alt="quote"
-                        style="width: 4%; height: 4%;float: right;"></p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="carousel-item" data-interval="10000">
-                <div class="d-block w-100">
-                  <div class="rev_div">
-                    <p><img src="./assets/img/quote.svg" alt="quote" style="width: 4%; height: 4%;float: left;"><br> You might
-                      as well say something here if you skipped the rest :) or add yours <img src="./assets/img/quote-2.svg"
-                        alt="quote" style="width: 4%; height: 4%;float: right;"></p>
-                  </div>
-                </div>
-              </div>
+              <div class='spacer col-md-4 col-lg-4 col-sm-4 col-xs-4'></div>
             </div>
-
-            <!-- go to previous comment -->
-            <a class="carousel-control-prev" href="#reviewFade" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-
-            <!-- go to next comment -->
-            <a class="carousel-control-next" href="#reviewFade" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          <!--</div>-->
-        </section>
+            <!-- Comment Slide Widget by Fortune Okon-->
+            <div class='widget row'>
+              <div class='col-md-3 col-lg-3 col-sm-3 col-xs-3 mt-3'></div>
+              <div class='col-md-6 col-lg-6 col-sm-6 col-xs-6 mt-3'>
+                <div class="btn_div">
+                  <button id="btn_com" class="btn btn-primary btn-block">Click to see Comments</button>
+                </div>
+              </div>
+              <div class='col-md-3 col-lg-3 col-sm-3 col-xs-3 mt-3'></div>
+              <div class='col-md-2 col-lg-2 col-sm-2 col-xs-2 mt-2'></div>
+              <section id="randSec" class="hidden col-md-8 col-lg-8 col-sm-8 col-xs-8 mt-3'">
+                <div id="reviewFade" class="carousel slide carousel-fade" data-ride="carousel">
+                  <div class="carousel-inner" style="">
+                    <div class="carousel-item active">
+                      <div class="rev_div">
+                        <p class='carousel-comment'> comment something exciting here!</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="rev_div">
+                        <p class='carousel-comment'> comment something here too!</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="rev_div">
+                        <p class='carousel-comment'> You might as well say something here :) </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- go to previous comment -->
+                  <a class="carousel-control-prev" href="#reviewFade" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <!-- go to next comment -->
+                  <a class="carousel-control-next" href="#reviewFade" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </section>
+              <div class='col-md-2 col-lg-2 col-sm-2 col-xs-2 mt-3'></div>
+            </div>
+        </div>
       <!--</main>-->
     </div>
+  </div>
+</div>
     <!-- Scripts -->
     <!-- Proper.js --->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js'></script>
