@@ -44,4 +44,4 @@
 
 ### Code of conduct for any pull request
 
-Please review the <a href='CODE-OF-CONDUCT.md'>code of conduct</a> before making any contribution
+Please review the <a href='./CODE_OF_CONDUCT.md'>code of conduct</a> before making any contribution

@@ -44,7 +44,7 @@
 
 7. **Add your new branch** with all its changes **to your ‘remote fork’** (which Git calls ‘origin’) with `git push origin name-of-branch`. Your remote copy should now have a `master` branch and a branch called `name-of-branch`. You can toggle between them by clicking the branches button on your repository toolbar.
 
-8. Make sure the `name-of-branch` branch is selected and 'click compare with master'. This will open up a window where you can describe the changes you’ve made in more detail (which again is helpful for bookkeeping) and click **'create a pull request'**. If there are no conflicts I will merge your changes with easy-to-git master.
+8. Make sure the `name-of-branch` branch is selected and click 'compare & pull request'. This will open up a window where you can describe the changes you’ve made in more detail (which again is helpful for bookkeeping) and click **'create a pull request'**. If there are no conflicts I will merge your changes with easy-to-git master.
 
 
 # Keeping your branches up to date
@@ -54,11 +54,22 @@
 - `git merge upstream/master` will merge upstream with your current branch, if there are conflicts you will have to resolve them
 
 # Resolving conflicts
-
-- A file with a conflict will look like this:
-
-- A file after you've edited it to resolve the conflict will look like this
-
+- navigate to the files that have conflicts
+- A conflict in a file will look like this:
+```
+<<<<<<< HEAD
+this is some text that conflicts with your text
+here is some more conflicting text
+=======
+hey man why you gotta conflict with me
+>>>>>>> name-of-branch
+```
+- Here's an example of how you might edit the file to resolve the conflict
+```
+this is some text that conflicts with your text
+here is some more conflicting text
+hey man why you gotta conflict with me
+```
 # What are starter projects that I can work on?
 
 Before making any contributions to these projects, please read our CONTRIBUTING.md file that outlines our contributing policy.
@@ -75,11 +86,11 @@ Before making any contributions to these projects, please read our CONTRIBUTING.
 
 # What are the standards for pull requests?
 
-- You can read about our standards in the contributing.md file
+- You can read about our standards in the <a href='./CONTRIBUTING.md'>CONTRIBUTING.md</a> file
 
 # What is the code of conduct enforced in this community?
 
-- You can read about our code of conduct in the CODE_OF_CONDUCT.md file
+- You can read about our code of conduct in the <a href='./CODE_OF_CONDUCT.md'>CODE_OF_CONDUCT.md</a> file
 
 # I'm stuck, where can I find help?
 
