@@ -1,21 +1,6 @@
 $(document).ready(function(){
-  let theme = localStorage.getItem('theme')
-  switch (theme) {
-    case 'forest':
-      changeTheme(forest)
-      break;
-    case 'beach':
-      changeTheme(beach);
-      break;
-    case 'summerday':
-      changeTheme(summerday);
-      break;
-      case 'dark':
-        changeTheme(dark);
-        break;
-    default:
-      changeTheme(pageDefault)
-  }
+  if(localStorage.getItem('theme') == null){changeTheme(pageDefault)}
+  else{changeTheme(JSON.parse(localStorage.getItem('theme')))}
 })
 
 let pageDefault = {
@@ -109,9 +94,11 @@ darkTheme.onclick = () => {
 forestTheme.onclick = () => {
   changeTheme(forest)
 }
+
 beachTheme.onclick = () => {
   changeTheme(beach)
 }
+
 summerdayTheme.onclick = () => {
   changeTheme(summerday)
 }
@@ -122,7 +109,7 @@ defaultTheme.onclick = () => {
 
 
 let changeTheme = (theme) => {
-  localStorage.setItem('theme', theme['themeName']);
+  localStorage.setItem('theme', JSON.stringify(theme));
   $('.container-fluid').css('background-color', theme['page-background']);
   $('.buttons-container').css('background-color', theme['buttonContainer-background']);
   $('.header').css('background-color', theme['header-background']);
