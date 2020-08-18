@@ -62,7 +62,7 @@ main {
 
 .logo-wrap {
   display: flex;
-  align-items: center;
+  align-items: center;section-container
   justify-content: center;
   margin: 10px 10px;
 }
@@ -287,7 +287,7 @@ html {
   text-align: center;
 }
 
-.buttons-container{
+.section-container{
   background-color: #c69dfc;
   padding: 40px;
   border-radius: 10px;
@@ -305,7 +305,7 @@ html {
 }
 
 @media (max-width: 450px) {
-  .buttons-container{
+  .section-container{
     width: 100%;
   }
 }
@@ -348,4 +348,15 @@ html {
   margin: 1em;
   border-radius: 5px;
   background-color: white;
+}
+.section-header{
+  margin: 1em;
+}
+@media (max-width: 550px) {
+  .section-header{
+    font-size: 1em;
+  }
+  .btn-default{
+    font-size: .3em;
+  }
 }
