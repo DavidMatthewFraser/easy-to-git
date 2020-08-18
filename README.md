@@ -13,7 +13,7 @@
 - Git and GitHub are the industry standards for collaboration on coding projects, it is good to become familiar with these tools
 - Teamwork and collaboration are important skills ... and they can also be really fun! This project encourages both teamwork and collaboration. Further, we have a small, active community that is happy to work with you.
 - There are a lot of open-source projects out there and it can be hard to find one to get started with. This project offers several ways to start your journey as an open-source contributor.
-- There are GitHub projects that offer an easy way to make your first contribution. This project further offers fun and interactive challenges to get you even more comfortable using version control.
+- There are GitHub projects that offer an easy way to make your first contribution. Further, this project offers fun and interactive challenges to get you even more comfortable using version control.
 
 # How to contribute (short version)
 
