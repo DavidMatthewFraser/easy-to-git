@@ -121,3 +121,9 @@ clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 56%, 66% 60%, 48% 100%, 33% 6
     min-width: 100%;
   }
 }
+/* Youtube */
+#youtubeCell{
+  background: yellow;
+  border-color: red;
+  color: purple;
+}
