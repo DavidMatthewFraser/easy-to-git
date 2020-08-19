@@ -6,14 +6,11 @@
   --box-shadow: 10px 10px 25px -19px #2f2f2f8f;
   --linear-background: linear-gradient(0deg, var(--main), var(--light-main));
 }
-
-
-
+/*HTML Elements*/
 * {
   margin: 0;
   box-sizing: border-box;
 }
-
 body {
   color: #333;
   background: #eeeeee;
@@ -25,12 +22,10 @@ body::-webkit-scrollbar-track {
   background-color: #f5f5f5;
   border-radius: 10px;
 }
-
 body::-webkit-scrollbar {
   width: 10px;
   background-color: #f5f5f5;
 }
-
 body::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-image: -webkit-gradient(
@@ -42,7 +37,7 @@ body::-webkit-scrollbar-thumb {
     color-stop(0.86, #90183c)
   );
 }
-
+/*Classes*/
 .header {
   width: 100%;
   height: 80px;
@@ -52,35 +47,23 @@ body::-webkit-scrollbar-thumb {
   top: 0;
   z-index: 10;
 }
-
 .logo-wrap {
   display: flex;
   align-items: center;
   height: 100%;
 }
-
-#logo {
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
-  margin-right: 20px;
-  border: solid 2px var(--main);
-}
-
 .container {
     width: 100%;
     max-width: 1460px;
     margin: 0 auto;
     padding: 0 30px;
 }
-
 .header-container {
   width: 100%;
   max-width: 1660px;
   margin: 0 auto;
   padding: 0 30px;
 }
-
 .back-button {
   letter-spacing: 0.5px;
   padding: 18px 20px;
@@ -90,27 +73,22 @@ body::-webkit-scrollbar-thumb {
   font-size: 14px;
   cursor: pointer;
 }
-
 .relative {
   position: relative;
 }
-
 .flex {
   display: flex;
 }
-
 .flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .flex-between {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .back {
   position: absolute;
   left: 0;
@@ -118,31 +96,20 @@ body::-webkit-scrollbar-thumb {
   color: white;
   text-decoration: none;
 }
-
-.header h3 {
-  padding: 30px 20px;
-}
-
 .score-section {
-    height: 150px;
+  height: 150px;
 }
-
-
 .title-section .title {
-    padding-bottom: 10px;
-    text-transform: capitalize;
-    color: rgb(87, 87, 87);
-  
+  padding-bottom: 10px;
+  text-transform: capitalize;
+  color: rgb(87, 87, 87);
 }
-
 .quiz {
- 
   padding-top: 80px;
 }
-
 .quiz-wrap {
-    display: flex;
-    flex-wrap: wrap-reverse;
+  display: flex;
+  flex-wrap: wrap-reverse;
 }
 .quiz-container {
   width: 100%;
@@ -152,14 +119,12 @@ body::-webkit-scrollbar-thumb {
   margin-right: 10px;
   box-shadow: var(--box-shadow);
 }
-
 .question-wrap {
   position: relative;
   height: 420px;
   overflow: hidden;
   background: #5f1735;
 }
-
 .question-area {
   height: 100%;
   width: 100%;
@@ -167,18 +132,15 @@ body::-webkit-scrollbar-thumb {
   display: none;
   animation-duration: .7s;
   padding: 10px;
-
 }
 .question {
   text-align: center;
   padding: 30px 0;
 }
-
 .answers {
   width: 600px;
   margin: 50px auto 0 auto;
 }
-
 .answer {
   padding: 5px;
   min-height: 30px;
@@ -188,34 +150,25 @@ body::-webkit-scrollbar-thumb {
   margin-top: 5px;
   cursor: pointer;
   align-items: center;
-
 }
-
 .answer-button {
   height: 100%;
   width: 40px;
 }
-
 .answer-circle {
   width: 15px;
   height: 15px;
   border-radius: 50%;
   border: solid 2px white;
 }
-
 .answer-text {
   font-weight: 300;
   padding-left: 10px;
 }
-
 .quiz-over {
   text-align: center;
   padding-top: 60px;
 }
-
-
-
-
 .start-screen {
   position: absolute;
   background: white;
@@ -234,7 +187,6 @@ body::-webkit-scrollbar-thumb {
  color: rgb(75, 75, 75);
  font-weight: 400;
 }
-
 .start-btn {
   height: 50px;
   width: 200px;
@@ -250,12 +202,9 @@ body::-webkit-scrollbar-thumb {
   transition: 0.5s;
   margin: 20px auto;
 }
-
-
 .start-btn:hover {
   transform: scale(0.9);
 }
-
 .quiz-footer {
   height: 100px;
   background: var(--linear-background);
@@ -265,27 +214,21 @@ body::-webkit-scrollbar-thumb {
   justify-content: space-around;
   align-items: center;
 }
-
 .slide-amount {
   color: #ffffff;
   font-weight: 100;
   font-size: 14px;
 }
-
 .slides {
   width: 100%;
   height: 100%;
 }
-
 .quiz-section-wrap {
   flex-grow: 1;
-  
 }
-
 .quiz-selector-wrap {
   flex-grow: 1;
 }
-
 .quiz-section-chooser {
   width: 400px;
   height: 520px;
@@ -301,37 +244,30 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   align-items: flex-end;
 }
-
 .number-title {
   letter-spacing: 0.5px;
   padding-bottom: 10px;
 }
-
 .chooser-button {
   height: 90px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-bottom: solid white 1px;
-
   cursor: pointer;
 }
-
 .chooser-button:last-child {
     border: none;
 }
-
 .number {
   flex: 1;
 }
 .chooser-text {
   flex: 6;
 }
-
 .fill {
   background: white;
 }
-
 .chooser-title {
   text-transform: capitalize;
   letter-spacing: 0.5px;
@@ -353,34 +289,41 @@ body::-webkit-scrollbar-thumb {
   flex: 1;
   height: 100%;
 }
-
 .circle {
   width: 25px;
   height: 25px;
   border-radius: 50%;
   border: solid 3px white;
 }
-
-
-
-
+/* IDs */
+#logo {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin-right: 20px;
+  border: solid 2px var(--main);
+}
+/* Nested Elements */
+.header h3 {
+  padding: 30px 20px;
+}
+/* Media Queries */
 @media (max-width: 1024px) {
   .quiz-selector-wrap, .quiz-sections-wrap {
     width: 100%;
-    
+
   }
   .quiz-section-chooser {
     margin: 10px auto 50px auto;
-    
+
   }
 }
-
 @media (max-width: 600px) {
   .quiz-section-chooser {
     width: 100%;
-    
   }
   .answers {
     width: 100%;
   }
 }
+/* keyframes */
