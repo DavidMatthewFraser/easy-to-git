@@ -1,7 +1,7 @@
 # What is Easy to Git?
 
 - Easy to Git is an open-source project that offers many ways to get started with Git and GitHub
-- More specifically, the master branch of this project is the code for https://davidmatthewfraser.github.io/easy-to-git/ (soon to be www.easytogit.com), where you can see the results of your contributions
+- More specifically, the master branch of this project is the code for www.easytogit.com where you can see the results of your contributions
 
 # What are the Goals?
 
