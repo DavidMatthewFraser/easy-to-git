@@ -82,7 +82,7 @@ Before making any contributions to these projects, please read our CONTRIBUTING.
 
 - **QuizQuestions**: To add some questions to the quiz open the quizQuestions.js file and add a question with some answers and add the correct answer. That’s it! You can add HTML, CSS or Javascript
 
-- **Add useful links**: This is a place to share any websites, videos, books, etc. that you would recommend to other developers. You add your own suggestions by modifying the quiz.html file.
+- **Add useful links**: This is a place to share any websites, videos, books, etc. that you would recommend to other developers. You add your own suggestions by modifying the Useful-links.html file.
 
 # What are the standards for pull requests?
 
