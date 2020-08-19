@@ -39,6 +39,25 @@ let forest = {
   'section-header-color': 'black'
 }
 
+let youtube = {
+  'themeName': 'youtubeTheme',
+  'page-background': '#fa528a',
+  'sectionContainer-background': '#60805c',
+  'header-background': '#4f784a',
+  'header-color': 'black',
+  'contributor-background': '#8f6f5e',
+  'chooseTheme-background': '#8f6f5e',
+  'btn-default-background': '#fa528a',
+  'btn-primary-background': '#6fff69',
+  'btn-default-color': 'black',
+  'btn-primary-color': '#875735',
+  'comment-slide-background': '#95ff91',
+  'comment-slide-color': 'black',
+  'widget-background': '#9eb89a',
+  'section-header-color': 'black'
+}
+
+
 let beach = {
   'themeName': 'beach',
   'page-background': '#F1F1F3',
@@ -105,6 +124,10 @@ let summerday = {
 
 darkTheme.onclick = () => {
   changeTheme(dark)
+}
+
+youtubeTheme.onclick = () => {
+  changeTheme(youtube)
 }
 
 forestTheme.onclick = () => {
