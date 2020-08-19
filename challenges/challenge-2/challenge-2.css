@@ -262,3 +262,11 @@ width:10%;
     width: 100%;
   }
 }
+/* youtube */
+#youtubePlanet {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 500px;
+  left: 50px;
+}
