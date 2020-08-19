@@ -5,7 +5,7 @@
 - CSS styles are grouped by HTML element, Classes, Ids, Nested Elements, Media Queries, Keyframes
 - there should be no whitespaces between lines of code
 - challenges that require you to modify CSS will specify where your CSS styles should go
-# File and Directory Naming
+### File and Directory Naming
 - both use lower-kebab-case
 ### Adding your name to Contributors.md
 - you may add your name, GitHub profile, and or email on a single line in this file
