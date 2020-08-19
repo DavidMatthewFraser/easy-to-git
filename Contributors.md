@@ -12,3 +12,4 @@
 - [Vansh Jain](https://github.com/VJ1224)
 - [tfrick47](https://github.com/tfrick47)
 - [Devansh Singh](https://github.com/Devansh3712)
+- [newName](https://github.com/easytogit)
