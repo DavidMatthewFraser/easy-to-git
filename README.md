@@ -49,7 +49,7 @@
 
 # Keeping your branches up to date
 
-- `git add remote upstream https://github.com/DavidMatthewFraser/easy-to-git.git` (you only need to do this once)
+- `git remote add upstream https://github.com/DavidMatthewFraser/easy-to-git.git` (you only need to do this once)
 - `git fetch upstream`
 - `git merge upstream/master` will merge upstream with your current branch, if there are conflicts you will have to resolve them
 
