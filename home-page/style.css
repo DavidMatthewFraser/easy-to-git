@@ -192,6 +192,9 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
   width: 70%;
 }
+.section-container a {
+  text-decoration: none;
+}
 .website-navigation{
   display: flex;
   flex-direction: column;
@@ -224,12 +227,13 @@ body::-webkit-scrollbar-thumb {
   margin: 1em;
 }
 .nav-thumbnail{
-  width: 200px;
-  height: 200px;
-  border: 2px solid black;
-  margin: 1em;
+  width: 300px;
+  padding: 20px 10px;
+  background: #0000005b;
+  border-radius: 5px 20px;
+  margin: 2em;
   object-fit: contain;
-  background: rgba(0, 0, 0, 0.247);
+ 
 }
 .web-nav{
   display: flex;
