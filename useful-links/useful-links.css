@@ -21,6 +21,7 @@ body {
 }
 h1 {
   text-align: center;
+  font-size: 3rem;
 }
 body::-webkit-scrollbar-track {
   background-color: #f5f5f5;
@@ -82,33 +83,19 @@ footer {
   align-items: center;
 }
 .description {
-  margin: 2rem;
+  margin: 1rem;
   font-size: 1.3rem;
   line-height: 2rem;
 }
-.list {
-  width: 50%;
-  height: 8rem;
-  overflow: auto;
-  margin-top: 2rem;
+.info-container {
+  margin: auto;
+  width: 70%;
 }
-.list::-webkit-scrollbar{
-  background: #fff;
-  width: 6px;
-}
-.list::-webkit-scrollbar-thumb {
-  background: #000;
-  border-radius: 5px;
-}
-.info-container{
+.info-header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  flex-grow: 1;
-  flex-wrap: wrap;
-  background: #f8fa7a;
-  width: 100%;
-  padding: 1rem;
+  font-size: 1.1rem;
+  box-shadow: 2px 2px 2px #555;
 }
 /* IDs */
 #logo {
@@ -118,6 +105,11 @@ footer {
   margin-right: 20px;
   border: solid 2px var(--main);
 }
+#cover-img {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
 /* Nested Elements */
 .header h3 {
   padding: 30px 20px;
@@ -125,20 +117,9 @@ footer {
 .description p {
   margin: 1rem 0;
 }
-.info-container ul{
-  list-style: none;
-  padding: 0;
-}
-.info-container h3{
-  margin: 1rem 2rem;
-  padding: 1rem;
-  border-left: 2px solid #000;
-}
-.info-container li{
-  padding: 1rem;
-}
-.info-container a{
-  margin: 0.5rem;
+.info-header img {
+  width: 4rem;
+  margin: 1rem;
 }
 /* Media Queries */
 @media (max-width: 768px){
