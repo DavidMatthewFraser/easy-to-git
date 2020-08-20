@@ -1,249 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>EasyToGit</title>
-    <!-- Fontawesome CDN-->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
-    />
-    <!-- Bootstrap CDN-->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <!-- Custom CSS-->
-    <link rel="stylesheet" href="home-page/style.css" type="text/css" />
-  </head>
-  <body>
-    <header>
-      <div class="header container-fluid">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 col-sm-12">
-            <div class="logo-wrap">
-              <img id="logo" src="global/img/e2g.png" />
-              <h3>Home</h3>
-            </div>
-          </div>
-          <div
-            class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-center justify-content-center py-3"
-          >
-            <div class="dropdown show">
-              <a
-                class="btn btn-secondary dropdown-toggle"
-                href="#"
-                role="button"
-                id="dropdownMenuLink"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Choose a Theme
-              </a>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="#" id="defaultTheme">Default</a>
-                <a class="dropdown-item" href="#" id="forestTheme"
-                  >Forest Theme</a
-                >
-                <a class="dropdown-item" href="#" id="beachTheme"
-                  >Beach Theme</a
-                >
-                <a class="dropdown-item" href="#" id="summerdayTheme"
-                  >Summer Day Theme</a
-                >
-                <a class="dropdown-item" href="#" id="darkTheme">dark Theme</a>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-lg-3 col-md-12 col-sm-12 d-flex align-items-center justify-content-center py-3"
-          >
-            <div class="show-time">
-              <span id="date"></span>
-              <span id="time"></span>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-12 col-sm-12">
-            <div class="contributors-btn">contributors</div>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EasyToGit</title>
+  <!-- Fontawesome CDN-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" />
+  <!-- Bootstrap CDN-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <!-- Custom CSS-->
+  <link rel="stylesheet" href="home-page/style.css" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <div class="header container-fluid">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="logo-wrap">
+            <img id="logo" src="global/img/e2g.png" />
+            <h3>Home</h3>
           </div>
         </div>
-      </div>
-    </header>
-    <div class="container-fluid">
-      <div class="panel">
-        <!-- contributor components are here - add your name to the array in contributorsPanel.js -->
-      </div>
-      <div class="website-navigation">
-        <h1 class="section-header">Website Navigation</h1>
-        <div class="section-container">
-          <a href="challenges/challenge-1/challenge-1.html" class="web-nav">
-            <img
-              class="nav-thumbnail"
-              src="home-page/img/thumbnails/challenge01.png"
-              alt=""
-            />
-            <p>Challenge One</p>
-          </a>
-
-          <a href="challenges/challenge-2/challenge-2.html" class="web-nav">
-            <img
-              class="nav-thumbnail"
-              src="home-page/img/thumbnails/challenge02.png"
-              alt=""
-            />
-            <p>Challenge Two</p>
-          </a>
-
-          <a href="quiz/quiz.html" class="web-nav">
-            <img
-              class="nav-thumbnail"
-              src="home-page/img/thumbnails/quiz01.png"
-              alt=""
-            />
-            <p>Quiz</p>
-          </a>
-
-          <a href="useful-links/useful-links.html" class="web-nav">
-            <img
-              class="nav-thumbnail"
-              src="home-page/img/thumbnails/links.png"
-              alt=""
-            />
-            <p>Useful Links</p>
-          </a>
-        </div>
-        <h1 class="section-header">Widgets</h1>
-        <div class="container-fluid google-wrap">
-          <!-- Google Search Widget by Mamun Abdullah-->
-          <div class="widget row d-flex justify-content-center">
-            <div class="google-search-container">
-              <form id="googleSearch">
-                <div class="btn-group">
-                  <input
-                    id="searchMe"
-                    class="google-search"
-                    type="text"
-                    placeholder="Google Search"
-                  />
-                  <button type="submit" class="btn btn-lg btn-primary">
-                    Search
-                  </button>
-                </div>
-                <div class="btn-group-vertical">
-                  <input
-                    id="searchMe"
-                    class="google-search"
-                    type="text"
-                    placeholder="Google Search"
-                  />
-                  <button type="submit" class="btn btn-lg btn-primary">
-                    Search
-                  </button>
-                </div>
-              </form>
+        <div class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-center justify-content-center py-3">
+          <div class="dropdown show">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Choose a Theme
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#" id="defaultTheme">Default</a>
+              <a class="dropdown-item" href="#" id="forestTheme">Forest Theme</a>
+              <a class="dropdown-item" href="#" id="beachTheme">Beach Theme</a>
+              <a class="dropdown-item" href="#" id="summerdayTheme">Summer Day Theme</a>
+              <a class="dropdown-item" href="#" id="darkTheme">dark Theme</a>
             </div>
           </div>
-          <!-- Comment Slide Widget by Fortune Okon-->
-          <div class="widget row d-flex justify-content-center">
-            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 my-3">
-              <div class="btn_div">
-                <button id="btn_com" class="btn btn-primary btn-block">
-                  Click to see Comments
+        </div>
+        <div class="col-lg-3 col-md-12 col-sm-12 d-flex align-items-center justify-content-center py-3">
+          <div class="show-time">
+            <span id="date"></span>
+            <span id="time"></span>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-12 col-sm-12">
+          <div class="contributors-btn">contributors</div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container-fluid">
+    <div class="panel">
+      <!-- contributor components are here - add your name to the array in contributorsPanel.js -->
+    </div>
+    <div class="website-navigation">
+      <h1 class="section-header">Website Navigation</h1>
+      <div class="section-container">
+        <a href="challenges/challenge-1/challenge-1.html" class="web-nav">
+          <img class="nav-thumbnail" src="home-page/img/thumbnails/challenge01.png" alt="" />
+          <p>Challenge One</p>
+        </a>
+
+        <a href="challenges/challenge-2/challenge-2.html" class="web-nav">
+          <img class="nav-thumbnail" src="home-page/img/thumbnails/challenge02.png" alt="" />
+          <p>Challenge Two</p>
+        </a>
+
+        <a href="quiz/quiz.html" class="web-nav">
+          <img class="nav-thumbnail" src="home-page/img/thumbnails/quiz01.png" alt="" />
+          <p>Quiz</p>
+        </a>
+
+        <a href="useful-links/useful-links.html" class="web-nav">
+          <img class="nav-thumbnail" src="home-page/img/thumbnails/links.png" alt="" />
+          <p>Useful Links</p>
+        </a>
+      </div>
+      <h1 class="section-header">Widgets</h1>
+      <div class="container-fluid google-wrap">
+        <!-- Google Search Widget by Mamun Abdullah-->
+        <div class="widget row d-flex justify-content-center">
+          <div class="google-search-container">
+            <form id="googleSearch">
+              <div class="btn-group">
+                <input id="searchMe" class="google-search" type="text" placeholder="Google Search" />
+                <button type="submit" class="btn btn-lg btn-primary">
+                  Search
                 </button>
               </div>
-            </div>
-
-            <section
-              id="randSec"
-              class="hidden col-md-8 col-lg-8 col-sm-12 col-xs-12 mt-3'"
-            >
-              <div
-                id="reviewFade"
-                class="carousel slide carousel-fade"
-                data-ride="carousel"
-              >
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="rev_div">
-                      <p class="carousel-comment">
-                        comment something exciting here!
-                      </p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="rev_div">
-                      <p class="carousel-comment">
-                        comment something here too!
-                      </p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="rev_div">
-                      <p class="carousel-comment">
-                        You might as well say something here :)
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <!-- go to previous comment -->
-                <a
-                  class="carousel-control-prev"
-                  href="#reviewFade"
-                  role="button"
-                  data-slide="prev"
-                >
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <!-- go to next comment -->
-                <a
-                  class="carousel-control-next"
-                  href="#reviewFade"
-                  role="button"
-                  data-slide="next"
-                >
-                  <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="sr-only">Next</span>
-                </a>
+              <div class="btn-group-vertical">
+                <input id="searchMe" class="google-search" type="text" placeholder="Google Search" />
+                <button type="submit" class="btn btn-lg btn-primary">
+                  Search
+                </button>
               </div>
-            </section>
+            </form>
           </div>
         </div>
-      </div>
-      <footer class="p-4">
-        <p class="name text-center">EasyToGit</p>
-      </footer>
-    </div>
+        <!-- Comment Slide Widget by Fortune Okon-->
+        <div class="widget row d-flex justify-content-center">
+          <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 my-3">
+            <div class="btn_div">
+              <button id="btn_com" class="btn btn-primary btn-block">
+                Click to see Comments
+              </button>
+            </div>
+          </div>
 
-    <!-- Scripts -->
-    <!-- Proper.js --->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <!-- JQuery -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.js"
-      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-      crossorigin="anonymous"
-    ></script>
-    <!-- Bootstrap -->
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Contributor Panel -->
-    <script src="home-page/contributors-panel.js"></script>
-    <!-- Custom Javascript -->
-    <script src="home-page/widgets.js"></script>
-    <script src="home-page/themes.js"></script>
-  </body>
+          <section id="randSec" class="hidden col-md-8 col-lg-8 col-sm-12 col-xs-12 mt-3'">
+            <div id="reviewFade" class="carousel slide carousel-fade" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="rev_div">
+                    <p class="carousel-comment">
+                      comment something exciting here!
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="rev_div">
+                    <p class="carousel-comment">
+                      comment something here too!
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="rev_div">
+                    <p class="carousel-comment">
+                      You might as well say something here :)
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- go to previous comment -->
+              <a class="carousel-control-prev" href="#reviewFade" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <!-- go to next comment -->
+              <a class="carousel-control-next" href="#reviewFade" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <footer class="p-4">
+      <p class="name text-center">EasyToGit</p>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <!-- Proper.js --->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <!-- Contributor Panel -->
+  <script src="home-page/contributors-panel.js"></script>
+  <!-- Custom Javascript -->
+  <script src="home-page/widgets.js"></script>
+  <script src="home-page/themes.js"></script>
+</body>
+
 </html>
