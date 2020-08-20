@@ -1,6 +1,6 @@
-$(document).ready(function(){
-  if(localStorage.getItem('theme') == null){changeTheme(pageDefault)}
-  else{changeTheme(JSON.parse(localStorage.getItem('theme')))}
+$(document).ready(function () {
+  if (localStorage.getItem('theme') == null) { changeTheme(pageDefault) }
+  else { changeTheme(JSON.parse(localStorage.getItem('theme'))) }
 })
 
 let pageDefault = {
