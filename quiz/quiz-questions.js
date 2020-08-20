@@ -67,19 +67,29 @@ const htmlQuestions = [
   {
     question: "Where in my html code would I place a line that determines the size of the viewport?",
     answers: ["<body>", "<header>", "<footer>", "<head>"],
-    correctAnswer: "<head>"
+    correctAnswer: "<head>",
   },
   {
     question: "In what order should the following tags be located?",
     answers: ["<html>, <body>, <head>", "<body>, <html>, <head>",
               "<head>, <body> <html>", "<html>, <head>, <body>"],
-    correctAnswer: "<html>, <head>, <body>"
+    correctAnswer: "<html>, <head>, <body>",
   },
   {
     question: "In which element would I usually find <footer>?",
     answers: ["<header>", "<body>", "<head>", "<nav>"],
-    correctAnswer: "<body>"
-  }
+    correctAnswer: "<body>",
+  },
+  {
+    question: "Which of the following can never contain an attribute?",
+    answers: ["<body>", "<html>", "<!DOCTYPE html>", "<a>"],
+    correctAnswer: "<!DOCTYPE html>",
+  },
+  {
+    question: "Which of the following is not a list tag?",
+    answers: ["<dl>", "<ol>", "<dd>", "<ul>"],
+    correctAnswer: "<dd>",
+  },
 ];
 
 const cssQuestions = [
@@ -156,7 +166,12 @@ const javascriptQuestions = [
   {
     question: "What is the file extension for JavaScript?",
     answers: [".j", ".jscript", ".js", ".jasc"],
-    correctAnswer: ".js"
+    correctAnswer: ".js",
+  },
+  {
+    question: "What is the result of the expression 'var1 && var2' if var1 = true and var2 = false",
+    answers: ["false", "null", "true", "undefined"],
+    correctAnswer: "false",
   },
 ];
 
