@@ -90,15 +90,19 @@ let summerday = {
   'header-background': lightorange,
   'header-color': 'white',
   'contributor-background': deepcoral,
+  'panel-background': deepcoral,
+  'panel-border-left': lightorange,
+  'role-color': brick,
+  'github-btn-background': lightorange,
   'chooseTheme-background': deepcoral,
   'btn-default-background': lightyellow,
   'btn-default-color': brick,
   'btn-primary-background': lightyellow,
   'btn-primary-color': brick,
   'comment-slide-background': lightyellow,
-  'comment-slide-color': 'black',
+  'comment-slide-color': brick,
   'widget-background': deepcoral,
-  'section-header-color': deepcoral
+  'section-header-color': brick,
 }
 
 
@@ -140,5 +144,8 @@ let changeTheme = (theme) => {
   $('.carousel-comment').css('color', theme['comment-slide-color']);
   $('.widget').css('background-color', theme['widget-background']);
   $('.section-header').css('color', theme['section-header-color']);
-
+  $('.panel').css('background', theme['panel-background'])
+  $('.panel').css('border-left', theme['panel-border-left'])
+  $('.role').css('color', theme['role-color'])
+  $('.github-btn').css('background', theme['github-btn-background'])
 }
