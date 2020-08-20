@@ -107,6 +107,7 @@ let summerday = {
   "comment-slide-color": brick,
   "widget-background": deepcoral,
   "section-header-color": brick,
+
 };
 
 darkTheme.onclick = () => {
@@ -136,6 +137,10 @@ let changeTheme = (theme) => {
     "background-color",
     theme["sectionContainer-background"]
   );
+  $(".google-wrap").css(
+    "background-color",
+    theme["sectionContainer-background"]
+  );
   $(".header").css("background-color", theme["header-background"]);
   $(".header").css("color", theme["header-color"]);
   $(".dropdown-toggle").css(
@@ -148,6 +153,9 @@ let changeTheme = (theme) => {
   );
   $(".btn-default").css("background-color", theme["btn-default-background"]);
   $(".btn-default").css("color", theme["btn-default-color"]);
+  $(".web-nav").css("background-color", theme["btn-default-background"]);
+  $(".web-nav").css("color", theme["btn-default-color"]);
+  $(".name").css("color", theme["header-background"]);
   $(".btn-primary").css("background-color", theme["btn-primary-background"]);
   $(".btn-primary").css("color", theme["btn-primary-color"]);
   $(".carousel-inner").css(
