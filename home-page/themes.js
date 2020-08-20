@@ -54,7 +54,7 @@ let beach = {
   'comment-slide-background': '#E1CFBC',
   'comment-slide-color': 'black',
   'widget-background': 'white',
-  'section-header-color': 'black'
+  'section-header-color': 'black',
 }
 
 let dark = {
@@ -92,6 +92,7 @@ let summerday = {
   'contributor-background': deepcoral,
   'panel-background': deepcoral,
   'panel-border-left': lightorange,
+  'contributor-name-color': lightyellow,
   'role-color': brick,
   'github-btn-background': lightorange,
   'chooseTheme-background': deepcoral,
@@ -148,4 +149,5 @@ let changeTheme = (theme) => {
   $('.panel').css('border-left', theme['panel-border-left'])
   $('.role').css('color', theme['role-color'])
   $('.github-btn').css('background', theme['github-btn-background'])
+  $('.name').css('color', theme['contributor-name-color'])
 }
