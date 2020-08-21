@@ -111,7 +111,7 @@ let summerday = {
   "header-color": "white",
   "contributor-background": deepcoral,
   "panel-background": deepcoral,
-  "panel-border-left": "15px solid #F89D70",
+  "panel-border-left": "15px solid #cf4449",
   "contributor-name-color": lightyellow,
   "role-color": brick,
   "github-btn-background": lightorange,
@@ -164,6 +164,7 @@ let changeTheme = (theme) => {
   $(".section-header").css("color", theme["section-header-color"]);
   $(".panel").css("background", theme["panel-background"]);
   $(".panel").css("border-left", theme["panel-border-left"]);
+  $(".panel").css("border-bottom", theme["panel-border-left"]);
   $(".role").css("color", theme["role-color"]);
   $(".github-btn").css("background", theme["github-btn-background"]);
   $(".name").css("color", theme["contributor-name-color"]);
