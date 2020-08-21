@@ -5,9 +5,30 @@ $(document).ready(function () {
     changeTheme(JSON.parse(localStorage.getItem("theme")));
   }
 });
-
+// Homepage Themes
 let pageDefault = {
-  themeName: "pageDefault",
+  "page-background": "#190F26",
+  "sectionContainer-background": "#F1F1F3",
+  "header-background": "#392259",
+  "header-color": "white",
+  "contributor-background": "#5A378C",
+  "panel-background": "#1f011a",
+  "panel-border-left": "15px solid #620050",
+  "contributor-name-color": "#900e78",
+  "role-color": "#620050",
+  "github-btn-background": "#3b0632",
+  "chooseTheme-background": "#392259",
+  "btn-default-background": "#392259",
+  "btn-default-color": "white",
+  "btn-primary-background": "#5A378C",
+  "btn-primary-color": "white",
+  "comment-slide-background": "#392259",
+  "comment-slide-color": "white",
+  "widget-background": "white",
+  "section-header-color": "#c57ee6",
+};
+let light = {
+  themeName: "light",
   "page-background": "#f1a7e4",
   "sectionContainer-background": "#c69dfc",
   "header-background": "#900e78",
@@ -19,16 +40,15 @@ let pageDefault = {
   "role-color": "#620050",
   "github-btn-background":  "#3b0632",
   "chooseTheme-background": "#b9189c",
-  "btn-default-background": "#f2f2f2",
+  "btn-default-background": "#e3baff",
   "btn-primary-background": "#24a0ed",
   "btn-default-color": "black",
   "btn-primary-color": "white",
   "comment-slide-background": "#fdc4ff",
   "comment-slide-color": "black",
   "widget-background": "#e3baff",
-  "section-header-color": "black",
+  "section-header-color": "#900e78",
 };
-
 let forest = {
   themeName: "forest",
   "page-background": "#73b36b",
@@ -51,7 +71,6 @@ let forest = {
   "widget-background": "#9eb89a",
   "section-header-color": "black",
 };
-
 let beach = {
   themeName: "beach",
   "page-background": "#F1F1F3",
@@ -74,30 +93,7 @@ let beach = {
   "widget-background": "white",
   "section-header-color": "black",
 };
-
-let dark = {
-  themeName: "dark",
-  "page-background": "#190F26",
-  "sectionContainer-background": "#F1F1F3",
-  "header-background": "#392259",
-  "header-color": "white",
-  "contributor-background": "#5A378C",
-  "panel-background": "#1f011a",
-  "panel-border-left": "15px solid #620050",
-  "contributor-name-color": "#900e78",
-  "role-color": "#620050",
-  "github-btn-background": "#3b0632",
-  "chooseTheme-background": "#392259",
-  "btn-default-background": "#392259",
-  "btn-default-color": "white",
-  "btn-primary-background": "#5A378C",
-  "btn-primary-color": "white",
-  "comment-slide-background": "#392259",
-  "comment-slide-color": "white",
-  "widget-background": "white",
-  "section-header-color": "#c57ee6",
-};
-
+// Summer Day Colors
 const lightyellow = "#FDE1A9";
 const lightorange = "#F89D70";
 const deepcoral = "#D5544B";
@@ -106,6 +102,7 @@ const lightblue = "#BADCF6";
 const blue = "#A4CAED";
 const brick = "#6b2a1d";
 const orange = "#ff9900";
+//
 let summerday = {
   themeName: "summerday",
   "page-background": lightyellow,
@@ -127,50 +124,33 @@ let summerday = {
   "comment-slide-color": brick,
   "widget-background": deepcoral,
   "section-header-color": brick,
-
 };
-
-darkTheme.onclick = () => {
-  changeTheme(dark);
-};
-
-forestTheme.onclick = () => {
-  changeTheme(forest);
-};
-
-beachTheme.onclick = () => {
-  changeTheme(beach);
-};
-
-summerdayTheme.onclick = () => {
-  changeTheme(summerday);
-};
-
+//Dropdown onclick listeners
 defaultTheme.onclick = () => {
   changeTheme(pageDefault);
 };
-
+lightTheme.onclick = () => {
+  changeTheme(light);
+};
+forestTheme.onclick = () => {
+  changeTheme(forest);
+};
+beachTheme.onclick = () => {
+  changeTheme(beach);
+};
+summerdayTheme.onclick = () => {
+  changeTheme(summerday);
+};
+//Change Theme with jQuery selectors
 let changeTheme = (theme) => {
   localStorage.setItem("theme", JSON.stringify(theme));
   $(".container-fluid").css("background-color", theme["page-background"]);
-  $(".section-container").css(
-    "background-color",
-    theme["sectionContainer-background"]
-  );
-  $(".google-wrap").css(
-    "background-color",
-    theme["sectionContainer-background"]
-  );
+  $(".section-container").css("background-color",theme["sectionContainer-background"]);
+  $(".google-wrap").css("background-color",theme["sectionContainer-background"]);
   $(".header").css("background-color", theme["header-background"]);
   $(".header").css("color", theme["header-color"]);
-  $(".dropdown-toggle").css(
-    "background-color",
-    theme["chooseTheme-background"]
-  );
-  $(".contributors-btn").css(
-    "background-color",
-    theme["contributor-background"]
-  );
+  $(".dropdown-toggle").css("background-color",theme["chooseTheme-background"]);
+  $(".contributors-btn").css("background-color",theme["contributor-background"]);
   $(".btn-default").css("background-color", theme["btn-default-background"]);
   $(".btn-default").css("color", theme["btn-default-color"]);
   $(".web-nav").css("background-color", theme["btn-default-background"]);
@@ -178,10 +158,7 @@ let changeTheme = (theme) => {
   $(".name").css("color", theme["header-background"]);
   $(".btn-primary").css("background-color", theme["btn-primary-background"]);
   $(".btn-primary").css("color", theme["btn-primary-color"]);
-  $(".carousel-inner").css(
-    "background-color",
-    theme["comment-slide-background"]
-  );
+  $(".carousel-inner").css("background-color",theme["comment-slide-background"]);
   $(".carousel-comment").css("color", theme["comment-slide-color"]);
   $(".widget").css("background-color", theme["widget-background"]);
   $(".section-header").css("color", theme["section-header-color"]);
