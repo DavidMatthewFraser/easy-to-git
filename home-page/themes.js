@@ -13,6 +13,11 @@ let pageDefault = {
   "header-background": "#900e78",
   "header-color": "white",
   "contributor-background": "#b9189c",
+  "panel-background":
+  "panel-border-left":
+  "contributor-name-color":
+  "role-color":
+  "github-btn-background": 
   "chooseTheme-background": "#b9189c",
   "btn-default-background": "#f2f2f2",
   "btn-primary-background": "#24a0ed",
@@ -31,6 +36,11 @@ let forest = {
   "header-background": "#4f784a",
   "header-color": "black",
   "contributor-background": "#8f6f5e",
+  "panel-background":
+  "panel-border-left":
+  "contributor-name-color":
+  "role-color":
+  "github-btn-background":
   "chooseTheme-background": "#8f6f5e",
   "btn-default-background": "#e7ffe6",
   "btn-primary-background": "#6fff69",
@@ -49,6 +59,11 @@ let beach = {
   "header-background": "#C7D0D8",
   "header-color": "#4F545D",
   "contributor-background": "#E1CFBC",
+  "panel-background":
+  "panel-border-left":
+  "contributor-name-color":
+  "role-color":
+  "github-btn-background":
   "chooseTheme-background": "#E1CFBC",
   "btn-default-background": "#8999AD",
   "btn-primary-background": "#8999AD",
@@ -67,6 +82,11 @@ let dark = {
   "header-background": "#392259",
   "header-color": "white",
   "contributor-background": "#5A378C",
+  "panel-background":
+  "panel-border-left":
+  "contributor-name-color":
+  "role-color":
+  "github-btn-background":
   "chooseTheme-background": "#392259",
   "btn-default-background": "#392259",
   "btn-default-color": "white",
