@@ -62,6 +62,11 @@ const contributors = [
     githubName: "terrifricker",
     displayName: "Terri Fricker",
     roll: ""
+  },
+  {
+    githubName: "boulderresident",
+    displayName: "Boulderresident",
+    roll: ""
   }
 ];
 
