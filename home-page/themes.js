@@ -8,20 +8,38 @@ $(document).ready(function () {
 
 let pageDefault = {
   themeName: "pageDefault",
+  "page-background": "#190F26",
+  "sectionContainer-background": "#F1F1F3",
+  "header-background": "#392259",
+  "header-color": "white",
+  "contributor-background": "#5A378C",
+  "chooseTheme-background": "#392259",
+  "btn-default-background": "#392259",
+  "btn-default-color": "white",
+  "btn-primary-background": "#5A378C",
+  "btn-primary-color": "white",
+  "comment-slide-background": "#392259",
+  "comment-slide-color": "white",
+  "widget-background": "white",
+  "section-header-color": "#c57ee6",
+};
+
+let light = {
+  themeName: "light",
   "page-background": "#f1a7e4",
   "sectionContainer-background": "#c69dfc",
   "header-background": "#900e78",
   "header-color": "white",
   "contributor-background": "#b9189c",
   "chooseTheme-background": "#b9189c",
-  "btn-default-background": "#f2f2f2",
+  "btn-default-background": "#e3baff",
   "btn-primary-background": "#24a0ed",
   "btn-default-color": "black",
   "btn-primary-color": "white",
   "comment-slide-background": "#fdc4ff",
   "comment-slide-color": "black",
   "widget-background": "#e3baff",
-  "section-header-color": "black",
+  "section-header-color": "#900e78",
 };
 
 let forest = {
@@ -60,24 +78,6 @@ let beach = {
   "section-header-color": "black",
 };
 
-let dark = {
-  themeName: "dark",
-  "page-background": "#190F26",
-  "sectionContainer-background": "#F1F1F3",
-  "header-background": "#392259",
-  "header-color": "white",
-  "contributor-background": "#5A378C",
-  "chooseTheme-background": "#392259",
-  "btn-default-background": "#392259",
-  "btn-default-color": "white",
-  "btn-primary-background": "#5A378C",
-  "btn-primary-color": "white",
-  "comment-slide-background": "#392259",
-  "comment-slide-color": "white",
-  "widget-background": "white",
-  "section-header-color": "#c57ee6",
-};
-
 const lightyellow = "#FDE1A9";
 const lightorange = "#F89D70";
 const deepcoral = "#D5544B";
@@ -104,8 +104,12 @@ let summerday = {
   "section-header-color": deepcoral,
 };
 
-darkTheme.onclick = () => {
-  changeTheme(dark);
+defaultTheme.onclick = () => {
+  changeTheme(pageDefault);
+};
+
+lightTheme.onclick = () => {
+  changeTheme(light);
 };
 
 forestTheme.onclick = () => {
@@ -118,10 +122,6 @@ beachTheme.onclick = () => {
 
 summerdayTheme.onclick = () => {
   changeTheme(summerday);
-};
-
-defaultTheme.onclick = () => {
-  changeTheme(pageDefault);
 };
 
 let changeTheme = (theme) => {
