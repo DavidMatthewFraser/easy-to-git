@@ -64,7 +64,7 @@ body::-webkit-scrollbar-thumb {
   z-index: 5;
   border-left: 15px solid #620050;
   border-bottom: 15px solid #620050;
-  border-radius: 5px;
+  border-bottom-left-radius: 5px;
   overflow-y: auto;
 }
 .panel::-webkit-scrollbar {
@@ -344,6 +344,9 @@ body::-webkit-scrollbar-thumb {
   }
   #reviewFade {
     margin: 20px 0;
+  }
+  .get-started {
+    text-align: center;
   }
 }
 
