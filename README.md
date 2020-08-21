@@ -36,9 +36,9 @@
 
 3. The next step is to **create a branch** where you can make your changes. Type `git branch` into your terminal, this will display all the versions or branches of ‘easy-to-git’ on your local machine. For now, you should only see one branch: `*master`. You could start making changes to your ‘master branch’ but it is common practice to make all your changes on separate branches. To create a new branch use `git checkout -b name-of-branch`. Again run `git branch` and you should now see `master` and `*name-of-branch`. You can switch branches with `git checkout any-branch`. Note that you can delete a branch with `git branch -d branch` and force delete by using `-D`.
 
-4. Now you can **make changes** to your newly created branch. Open the 'contributors.md' file with your favorite text editor, add your name, and save your changes. Note that running the command `git status` will show you all the files that you have changed.
+4. Now you can **make changes** to your newly created branch. Open the 'Contributors.md' file with your favorite text editor, add your name, and save your changes. Note that running the command `git status` will show you all the files that you have changed.
 
-5. We will now **add the changes** on your ‘local’ machine to your ‘remote fork’ on GitHub. Tell git that you want to track changes made to the 'contributors.md' file by using `git add contributors.md`. Note that you can add changes to multiple files by listing all the modified files separated by a space: `git add file1 file2 … fileN`.
+5. We will now **add the changes** on your ‘local’ machine to your ‘remote fork’ on GitHub. Tell git that you want to track changes made to the 'Contributors.md' file by using `git add Contributors.md`. Note that you can add changes to multiple files by listing all the modified files separated by a space: `git add file1 file2 … fileN`.
 
 6. **Package up all the changes** that GitHub is tracking with `git commit -m ‘a message describing what you’ve changed’`. Note that the message you associate with the commit is helpful for bookkeeping.
 
