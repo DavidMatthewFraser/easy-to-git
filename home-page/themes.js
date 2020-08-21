@@ -26,6 +26,7 @@ let pageDefault = {
   "comment-slide-color": "white",
   "widget-background": "white",
   "section-header-color": "#c57ee6",
+  "contributor-btn-color": "#fff"
 };
 let light = {
   themeName: "light",
@@ -151,6 +152,7 @@ let changeTheme = (theme) => {
   $(".header").css("color", theme["header-color"]);
   $(".dropdown-toggle").css("background-color",theme["chooseTheme-background"]);
   $(".contributors-btn").css("background-color",theme["contributor-background"]);
+  $(".contributors-btn").css("color", theme["contributor-btn-color"] || "black" );
   $(".btn-default").css("background-color", theme["btn-default-background"]);
   $(".btn-default").css("color", theme["btn-default-color"]);
   $(".web-nav").css("background-color", theme["btn-default-background"]);
