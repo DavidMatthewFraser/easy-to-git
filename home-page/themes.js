@@ -13,6 +13,11 @@ let pageDefault = {
   "header-background": "#900e78",
   "header-color": "white",
   "contributor-background": "#b9189c",
+  "panel-background": "#1f011a",
+  "panel-border-left": "15px solid #620050",
+  "contributor-name-color": "#900e78",
+  "role-color": "#620050",
+  "github-btn-background":  "#3b0632",
   "chooseTheme-background": "#b9189c",
   "btn-default-background": "#f2f2f2",
   "btn-primary-background": "#24a0ed",
@@ -31,6 +36,11 @@ let forest = {
   "header-background": "#4f784a",
   "header-color": "black",
   "contributor-background": "#8f6f5e",
+  "panel-background": "#1f011a",
+  "panel-border-left": "15px solid #620050",
+  "contributor-name-color": "#900e78",
+  "role-color": "#620050",
+  "github-btn-background": "#3b0632",
   "chooseTheme-background": "#8f6f5e",
   "btn-default-background": "#e7ffe6",
   "btn-primary-background": "#6fff69",
@@ -49,6 +59,11 @@ let beach = {
   "header-background": "#C7D0D8",
   "header-color": "#4F545D",
   "contributor-background": "#E1CFBC",
+  "panel-background": "#1f011a",
+  "panel-border-left": "15px solid #620050",
+  "contributor-name-color": "#900e78",
+  "role-color": "#620050",
+  "github-btn-background": "#3b0632",
   "chooseTheme-background": "#E1CFBC",
   "btn-default-background": "#8999AD",
   "btn-primary-background": "#8999AD",
@@ -67,6 +82,11 @@ let dark = {
   "header-background": "#392259",
   "header-color": "white",
   "contributor-background": "#5A378C",
+  "panel-background": "#1f011a",
+  "panel-border-left": "15px solid #620050",
+  "contributor-name-color": "#900e78",
+  "role-color": "#620050",
+  "github-btn-background": "#3b0632",
   "chooseTheme-background": "#392259",
   "btn-default-background": "#392259",
   "btn-default-color": "white",
@@ -93,15 +113,21 @@ let summerday = {
   "header-background": lightorange,
   "header-color": "white",
   "contributor-background": deepcoral,
+  "panel-background": deepcoral,
+  "panel-border-left": "15px solid #F89D70",
+  "contributor-name-color": lightyellow,
+  "role-color": brick,
+  "github-btn-background": lightorange,
   "chooseTheme-background": deepcoral,
   "btn-default-background": lightyellow,
   "btn-default-color": brick,
   "btn-primary-background": lightyellow,
   "btn-primary-color": brick,
   "comment-slide-background": lightyellow,
-  "comment-slide-color": "black",
+  "comment-slide-color": brick,
   "widget-background": deepcoral,
-  "section-header-color": deepcoral,
+  "section-header-color": brick,
+
 };
 
 darkTheme.onclick = () => {
@@ -145,6 +171,8 @@ let changeTheme = (theme) => {
     "background-color",
     theme["contributor-background"]
   );
+  $(".btn-default").css("background-color", theme["btn-default-background"]);
+  $(".btn-default").css("color", theme["btn-default-color"]);
   $(".web-nav").css("background-color", theme["btn-default-background"]);
   $(".web-nav").css("color", theme["btn-default-color"]);
   $(".name").css("color", theme["header-background"]);
@@ -157,4 +185,9 @@ let changeTheme = (theme) => {
   $(".carousel-comment").css("color", theme["comment-slide-color"]);
   $(".widget").css("background-color", theme["widget-background"]);
   $(".section-header").css("color", theme["section-header-color"]);
+  $(".panel").css("background", theme["panel-background"]);
+  $(".panel").css("border-left", theme["panel-border-left"]);
+  $(".role").css("color", theme["role-color"]);
+  $(".github-btn").css("background", theme["github-btn-background"]);
+  $(".name").css("color", theme["contributor-name-color"]);
 };
