@@ -2,7 +2,7 @@
 - use 1 tab for nested HTML elements
 - there should be no whitespace between lines of code
 ### CSS Style
-- CSS styles are grouped by HTML element, Classes, Ids, Nested Elements, Media Queries, Keyframes
+- CSS styles are grouped by HTML elements, Classes, Ids, Nested Elements, Media Queries, Keyframes
 - there should be no whitespaces between lines of code
 - challenges that require you to modify CSS will specify where your CSS styles should go
 ### File and Directory Naming
