@@ -1,5 +1,5 @@
 ### HTML Style
-- use 1 tab for a nested HTML elements
+- use 1 tab for nested HTML elements
 - there should be no whitespace between lines of code
 ### CSS Style
 - CSS styles are grouped by HTML element, Classes, Ids, Nested Elements, Media Queries, Keyframes
