@@ -14,4 +14,5 @@
 - [Devansh Singh](https://github.com/Devansh3712)
 - [Brian Loveless](https://github.com/BrianLoveGa)
 - [Boulderresident](https://github.com/boulderresident)
+- [Neely Mann](https://github.com/NeelyAnne)
 
