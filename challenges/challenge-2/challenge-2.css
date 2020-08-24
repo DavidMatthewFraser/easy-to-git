@@ -276,3 +276,78 @@ width:10%;
     width: 100%;
   }
 }
+/* michal */
+#michal_asteroid {
+  position: absolute;
+  opacity: 0;
+  animation: michalasteroid;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  height: 1px;
+}
+  @keyframes michalasteroid{
+    0% {
+        transform:rotate(0deg);
+        top: 900px;
+        left: 100vw;
+        height: 75px;
+        opacity: 1;
+    }
+    17%{
+      transform:rotate(360deg);
+    }
+    35%{
+      transform:rotate(720deg);
+    }
+    50% {
+      transform:rotate(1080deg);
+    }
+    75%{
+      transform:rotate(1440deg);
+    }
+    90% {
+      transform:rotate(1700deg);
+      top: 475px;
+      left:35vw;
+      height: 2px;
+      opacity: 1;
+    }
+    100% {
+        transform:rotate(1800deg);
+        top: 450px;
+        left:30vw;
+        opacity: 0;
+    }
+}
+#michal_dustcloud {
+  position: absolute;
+  animation: michaldust; 
+  animation-duration: 15s;
+  animation-delay: 15.5s;
+  animation-timing-function: linear;
+  z-index:1;
+  opacity: 0;
+}
+@keyframes michaldust{
+  0%{
+    height:0px;
+    width: 0px;
+    opacity: 1;
+    top: 445px;
+    left: 29vw;
+  }
+  10%{
+    height:45px; 
+    width: 45px;
+  }
+  98%{
+    height: 120px;
+    width: 120px;
+    opacity: .1;
+    top: 470px;
+    left:34vw;
+  }
+  100%{
+    opacity: 0
+  }
+}

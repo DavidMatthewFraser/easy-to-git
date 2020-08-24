@@ -122,6 +122,13 @@ clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 56%, 66% 60%, 48% 100%, 33% 6
   border: 3px solid hotpink;
 }
 
+#neelyanne {
+  background-color: red;
+  border: 5px solid black;
+  box-shadow: 2px 3px 3px 3px gray;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 @media (max-width: 600px) {
   .camperCell {
     min-width: 100%;
