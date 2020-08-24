@@ -67,6 +67,11 @@ const contributors = [
     githubName: "boulderresident",
     displayName: "Boulderresident",
     roll: ""
+  },
+  {
+    githubName: "mrterranova",
+    displayName: "Michal Terranova",
+    roll: ""
   }
 ];
 
