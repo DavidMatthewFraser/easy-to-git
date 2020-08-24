@@ -69,6 +69,11 @@ const contributors = [
     roll: ""
   },
   {
+    githubName: "mrterranova",
+    displayName: "Michal Terranova",
+    roll: ""
+  },
+  {
     githubName: "BrianLoveGa",
     displayName: "Brian Loveless",
     roll: "Contributor / Full Stack Engineer"
