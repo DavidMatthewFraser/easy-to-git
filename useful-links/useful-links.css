@@ -290,16 +290,26 @@ margin: auto;
     height: 10rem;
   }
   .menu {
-    top: 7rem;
+    top: 5.4rem;
   }
   iframe {
     width: 100%;
   }
 }
-@media (max-width: 400px){
+@media (max-width: 444px) {
+  .menu {
+    top: 7rem;
+  }
   body {
     margin-top: 10rem;
   }
-
+}
+@media (max-width: 400px){
+  .menu {
+    top: 8.6rem;
+  }
+  body {
+    margin-top: 11rem;
+  }
 }
 /* Keyframes */
