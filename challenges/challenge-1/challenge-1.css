@@ -121,12 +121,16 @@ clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 56%, 66% 60%, 48% 100%, 33% 6
   background-color: rgb(16, 163, 16);
   border: 3px solid hotpink;
 }
-
 #bilikis{
   background-color: rgb(238, 238, 22);
   border: 5px blue solid;
 }
-
+#neelyanne {
+  background-color: red;
+  border: 5px solid black;
+  box-shadow: 2px 3px 3px 3px gray;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 @media (max-width: 600px) {
   .camperCell {
     min-width: 100%;
