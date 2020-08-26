@@ -17,3 +17,4 @@
 - [Michal Terranova](https://github.com/mrterranova)
 - [Neely Mann](https://github.com/NeelyAnne)
 - [Bilikis Orulebaja](https://github.com/borulebaja)
+- [Brandt Campbell](https://github.com/Reboot82)
