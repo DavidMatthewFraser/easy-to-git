@@ -5,3 +5,65 @@ so they are included but can be overridden by this stylesheet when needed
 for the Widgets page.
 */
 
+:root {
+  --galaxy-black: #190f26;
+  --lightest-gray: #f1f1f3;
+  --deep-purple: #392259;
+  --medium-purple: #5a378c;
+  --violet: #c57ee6;
+}
+
+body {
+  padding: 0;
+  background: var(--galaxy-black);
+  color: var(--violet);
+}
+
+header {
+  width: 100%;
+  height: 10%;
+  background: var(--deep-purple);
+  color: white;
+}
+
+#logo-wrap {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+#logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 20px;
+}
+
+main {
+  width: 75%;
+  height: auto;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+article {
+  padding: 20px;
+
+}
+button {
+  text-align: center;
+  letter-spacing: 0.5px;
+  padding: 18px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  background: #5A378C;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 10px auto;
+  border: none;
+}
