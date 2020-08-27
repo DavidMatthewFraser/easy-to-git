@@ -380,6 +380,8 @@ body {
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 	z-index: 110;
+	height: 100px;
+	width: 73px;
 }
 @keyframes rotateOut {
 	from {
