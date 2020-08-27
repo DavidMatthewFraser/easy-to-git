@@ -252,6 +252,16 @@ width:10%;
    left:2000px;
   }
 }
+
+/* bilikis */
+#planet_b {
+  width: 100px;
+  position: absolute;
+  margin-top: 500px;
+  margin-left: 400px;
+  transform: rotate(-10deg);
+}
+
 #terris_comet {
   position: absolute;
   top: 750px;
@@ -277,11 +287,4 @@ width:10%;
   }
 }
 
-/* bilikis */
-#planetB {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: 500px;
-  left: 50px;
-}
+
