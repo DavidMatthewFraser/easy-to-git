@@ -375,39 +375,39 @@ body {
 	position: absolute;
 	top: 25rem;
 	left: 25rem;
-	animation: tardis_spin;
+	animation: rotateOut;
 	animation-duration: 10s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 	z-index: 110;
 }
-@keyframes tardis_spin {
+@keyframes rotateOut {
 	from {
-		transform: rotate(0deg);
+		transform: rotate(0deg) translateX(150px) rotate(0deg);
 	}
 	to {
-		transform: rotate(359deg);
+		transform: rotate(360deg) translateX(150px) rotate(-360deg);
 	}
 	0% {
 		top: 25rem;
 		left: 25rem;
+		transform: rotate(-360deg);
 	}
 	25% {
 		top: 28rem;
 		left: 40rem;
 	}
 	50% {
-		right: 0;
-		top: 41rem;
-		left: 75rem;
+		top: 33rem;
+		left: 46rem;
 	}
 	75% {
-		right: 0;
-		top: 41rem;
-		left: 75rem;
+		top: 37rem;
+		left: 40rem;
 	}
 	100% {
-		top: 12rem;
-		left: 30rem;
+		top: 25rem;
+		left: 25rem;
+		transform: rotate(360deg);
 	}
 }
