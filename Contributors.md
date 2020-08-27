@@ -18,3 +18,4 @@
 - [Neely Mann](https://github.com/NeelyAnne)
 - [Bilikis Orulebaja](https://github.com/borulebaja)
 - [Brandt Campbell](https://github.com/Reboot82)
+- [Trevor Taylor](https://github.com/Trevis42)
