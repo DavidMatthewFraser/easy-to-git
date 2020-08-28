@@ -371,6 +371,17 @@ body {
 	top: 8rem;
 }
 
+#delta_corp {
+	position: absolute;
+	height: 3rem;
+	right: 60rem;
+	top: 25rem;
+	animation: beat .25s infinite alternate;
+	transform-origin: center;
+}
+@keyframes beat{
+	to { transform: scale(0.4); }
+}
 #trevor_tardis {
 	position: absolute;
 	top: 25rem;
