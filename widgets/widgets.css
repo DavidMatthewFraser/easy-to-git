@@ -54,17 +54,6 @@ article {
   padding: 20px;
 
 }
-button {
-  text-align: center;
-  letter-spacing: 0.5px;
-  padding: 18px 20px;
-  margin: 5px;
-  border-radius: 5px;
-  background: #5A378C;
-  color: white;
-  text-transform: uppercase;
-  font-size: 14px;
-  cursor: pointer;
-  margin: 10px auto;
-  border: none;
+.show-time {
+  font-size: 1.3rem;
 }
