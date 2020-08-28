@@ -1,3 +1,24 @@
+### News 😎
+Create your remote github repo from the command line! How? 
+
+**First Install the client**
+* On Mac: `brew install github/gh/gh`
+* On Windows: `choco install gh` 
+* Debian/Ubuntu: [Download `.deb`](https://github.com/cli/cli/releases/tag/v0.11.1) and run `sudo apt install ./gh_*_linux_amd64.deb`
+* Arch Linux: `pacman -S github-cli`
+*You might need root privileges to install, and to upgrade after install.
+
+Any problems? Follow [steps from the official repository](https://github.com/cli/cli). 
+
+**Get Started**
+1. Initialize the local repo running `git init` (If not already initialized).
+2. To create a new _remote_ repo run: `gh repo create user/repo`
+  * A concrete example would be: `gh repo create misterybodon/progressive-react`
+  
+**Enjoy!**
+
+-----------
+
 # What is Easy to Git?
 
 - Easy to Git is an open-source project that offers many ways to get started with Git and GitHub
