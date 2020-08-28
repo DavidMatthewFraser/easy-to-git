@@ -434,5 +434,15 @@ body {
 		transform: rotate(360deg);
 	}
 }
+#avalojcCelestialObject{
+	position: absolute;
+	top: 150px;
+	left: 200px;
+	z-index: -1000;
+	animation: rotateOut;
+	animation-duration: 1500s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
 
 
