@@ -20,3 +20,4 @@
 - [Brandt Campbell](https://github.com/Reboot82)
 - [Trevor Taylor](https://github.com/Trevis42)
 - [Satyam Rastogi](https://github.com/satyamrastogi)
+- [JC Avalo](https://github.com/avalojc)
