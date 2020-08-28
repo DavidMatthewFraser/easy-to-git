@@ -15,19 +15,33 @@
         <img id="logo" src="../global/img/e2g.png" />
         <h3>Useful Links To Share</h3>
       </div>
-        <a class="back-button" href="../index.html">HOME</a>
+      <a class="back-button" href="../index.html">HOME</a>
     </div>
   </header>
 
-<!--delete later-->
-  <div class="work">
-    <p>We are working so that you have a better experience. Please come back soon!</p>
-    <img src="img/work.gif" alt="">
-  </div>
-
+  <header class="menu">
+    <input type="checkbox" id="menu" checked>
+    <div class="btn-menu"><label for="menu">MENU</label></div>
+    <div class="categories">
+      <ul>
+        <a href="#websites"><li>Useful websites</li></a>
+        <a href="#learn"><li>Websites to learn for free</li></a>
+        <a href="#books"><li>Books</li></a>
+        <a href="#youtube"><li>Youtube channels</li></a>
+        <a href="#podcasts"><li>Podcasts</li></a>
+        <a href="#challenges"><li>Platforms for code challenges</li></a>
+        <a href="#apps"><li>Mobile apps</li></a>
+        <a href="#games"><li>Games</li></a>
+      </ul>
+    </div>
+  </header>
 
   <h1>Useful links for developers</h1>
-  <img id="cover-img" src="img/cover.png" alt="">
+  <img id="cover-img" src="img/cover.jpg" alt="">
+
+  <input type="checkbox" id="instructions" checked>
+  <div class="btn-instructions"><label for="instructions">To start collaborating, click here</label></div>
+
   <div class="description">
     <p>This section is designed so that we can all share useful links or any useful information to progress on our path to being better developers.</p>
     <p>For example we can share the following:</p>
@@ -44,18 +58,21 @@
     <p>The above are just examples, feel free to share what you think is helpful.</p>
     <p>How can I share?</p>
     <ol>
-      <li>Enter the document <i><b>Useful-links.html</b></i>.</li>
-      <li>Then place the container <i><b>div</b></i> with the class <i><b>info-container</b></i>, inside it are the containers that must be modified.</li>
+      <li>Enter the document <i><b>Useful-links.html</b></i> on the easyToGit <a href="https://github.com/DavidMatthewFraser/easy-to-git" target="_blank">Repo</a>.</li>
+      <li>Each source type is wrapped in a div of class <i><b>.list</b></i> and all these divs are wrapped in a div of class <i><b>.info-container</b></i></li>
       <li>Inside the containers, we have an <i><b>h3</b></i> (title of the section) and a <i><b>ul</b></i> with several <i><b>li</b></i>.</li>
-      <li>Within the <i><b>li</b></i> share your useful links along with a small description.</li>
+      <li>Within the <i><b>li</b></i> share your useful links along with a small description. Don't forget to put a website icon.</li>
     </ol>
+    <p>A short introduction to the command line <a href="https://learntocodewith.me/getting-started/topics/command-line/">for beginners</a>.</p>
+    <p>To make your contributions correctly, we recommend that you watch the following video:</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/RGOj5yH7evk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 
   <div class="info-container">
     <div class="list">
       <div class="info-header">
         <img src="img/web.png" alt="">
-        <h3>Useful websites</h3>
+        <h3 id="websites">Useful websites</h3>
       </div>
       <p>The Internet is full of useful webpages for developers, here we are going to name some that will make our way easier.</p>
       <ul>
@@ -74,8 +91,9 @@
     <div class="list">
       <div class="info-header">
         <img src="img/study.png" alt="">
-        <h3>Websites to learn for free</h3>
+        <h3 id="learn">Websites to learn for free</h3>
       </div>
+      <p>To many it must happen of not having the resources to pay for a Courses, BootCamp or University Career. These websites teach for free, take advantage of the opportunity and that lack of resources is not an impediment.</p>
       <ul>
         <li><a href="https://www.freecodecamp.org/" target="_blank"><img src="img/freecodecamp.png" alt=""></a>FreeCodeCamp: Learn for free</li>
         <li><a href="https://www.khanacademy.org" target="_blank"><img src="img/khanacademy.png" alt=""></a>Khan Academy: Learn for free</li>
@@ -83,27 +101,86 @@
         <li>.</li> <!-- Share your information here -->
       </ul>
     </div>
-
     <div class="list">
       <div class="info-header">
         <img src="img/books.png" alt="">
-        <h3>Books</h3>
+        <h3 id="books">Books</h3>
       </div>
+      <p>Maybe sometimes skipping concepts, basic and not so much, is a good way to accelerate learning, but there are times when this has consequences and makes us get stuck in learning, in these cases it is best to take time to read a book relaxed .</p>
     </div>
-    <ul class="books-img">
-      <li><img src="img/javascriptforkids.jpg" alt=""></li>
-      <li><img src="img/learnpythonthehardway.jpg" alt=""></li>
-      <li><img src="img/javascript&jquery.jpg" alt=""></li>
-      <li><img src="img/html&css.jpg" alt=""></li>
-      <li><img src="img/learningwebdesign.jpg" alt=""></li>
-      <li>.</li> <!-- Share your information here -->
-    </ul>
+
+    <div class="container-of-all-cards">
+      <div class="card-container">
+        <figure>
+          <img class="front" src="img/javascriptforkids.jpg" alt="">
+          <figcaption class="back">
+            <h4>JavaScript for Kids: A Playful Introduction to Programming</h4>
+            <hr>
+            <p>JavaScript is the programming language of the Internet, the secret sauce that makes the Web awesome, your favorite sites interactive, and online games fun!</p>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="card-container">
+      <figure>
+        <img class="front" src="img/learnpythonthehardway.jpg" alt="">
+        <figcaption class="back">
+          <h4>Learn Python The Hard Way</h4>
+          <hr>
+          <p>This is a very beginner book for people who want to learn to code. It has been downloaded by over 300 thousand people since the 1st Edition last year. If you can already code then the book will probably drive you insane. It's intended for people who have no coding chops to build up their skills before starting a more detailed book.</p>
+        </figcaption>
+      </figure>
+      </div>
+      <div class="card-container">
+      <figure>
+        <img class="front" src="img/javascript&jquery.jpg" alt="">
+        <figcaption class="back">
+          <h4>JavaScript and JQuery: Interactive Front-End Web Development</h4>
+          <hr>
+          <p>This full-color book will show you how to make your websites more interactive and your interfaces more interesting and intuitive.</p>
+        </figcaption>
+      </figure>
+      </div>
+      <div class="card-container">
+      <figure>
+        <img class="front" src="img/html&css.jpg" alt="">
+        <figcaption class="back">
+          <h4>HTML and CSS: Design and Build Websites</h4>
+          <hr>
+          <p>Every day, more and more people want to learn some HTML and CSS. Joining the professional web designers and programmers are new audiences who need to know a little bit of code at work (update a content management system or e-commerce store) and those who want to make their personal blogs more attractive. Many books teaching HTML and CSS are dry and only written for those who want to become programmers, which is why this book takes an entirely new approach.</p>
+        </figcaption>
+      </figure>
+      </div>
+      <div class="card-container">
+      <figure>
+        <img class="front" src="img/learningwebdesign.jpg" alt="">
+        <figcaption class="back">
+          <h4>Learning Web Design: A Beginner's Guide to HTML, CSS, JavaScript, and Web Graphics</h4>
+          <hr>
+          <p>Do you want to build web pages but have no prior experience? This friendly guide is the perfect place to start. You’ll begin at square one, learning how the web and web pages work, and then steadily build from there. By the end of the book, you’ll have the skills to create a simple site with multicolumn pages that adapt for mobile devices.</p>
+        </figcaption>
+      </figure>
+      </div>
+
+      <div class="card-container"> <!-- Copy and paste the entire container and fill in the blanks -->
+      <figure>
+        <img class="front" src="#" alt=""><!--Put the cover here-->
+        <figcaption class="back">
+          <h4></h4><!--Put the title here-->
+          <hr>
+          <p></p><!--Put a description here-->
+        </figcaption>
+      </figure>
+      </div>
+
+    </div>
+
 
     <div class="list">
       <div class="info-header">
         <img src="img/youtube.png" alt="">
-        <h3>Youtube channels</h3>
+        <h3 id="youtube">Youtube channels</h3>
       </div>
+      <p>Do you want to know how to make a certain design? Do you want to see the theory you read in a book in action? The best way is to watch videos on Youtube, ATTENTION! You must put it into practice as well, but they will not do you any good.</p>
       <ul>
         <li><a href="https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA" target="_blank"><img src="img/traversy.png" alt=""></a>Traversy Media: Programming tutorials</li>
         <li><a href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg" target="_blank"><img src="img/netninja.jpg" alt=""></a>The Net Ninja: Programming tutorials</li>
@@ -117,8 +194,9 @@
     <div class="list">
       <div class="info-header">
         <img src="img/podcast.png" alt="">
-        <h3>Podcasts</h3>
+        <h3 id="podcasts">Podcasts</h3>
       </div>
+      <p>The best option to listen to counterpoints of different technologies and the direction of development.</p>
       <ul>
         <li><a href="https://blog.codepen.io/radio/" target="_blank"><img src="img/codepen.png" alt=""></a>CodePen Radio: The good, the bad, and the ugly.</li>
         <li><a href="https://www.youtube.com/playlist?list=PLhQjrBD2T381-QVEPQ5GODGTgMNfpvYzU" target="_blank"><img src="img/cs50.png" alt=""></a>CS50: different areas and topics</li>
@@ -129,8 +207,9 @@
     <div class="list">
       <div class="info-header">
         <img src="img/challenge.png" alt="">
-        <h3>Platforms for code challenges</h3>
+        <h3 id="challenges">Platforms for code challenges</h3>
       </div>
+      <p>This may sound repetitive but you have to practice, practice, practice, practice ...</p>
       <ul>
         <li><a href="https://www.codewars.com/" target="_blank"><img src="img/codewars.png" alt=""></a>Codewars: Train to improve</li>
         <li><a href="https://edabit.com/" target="_blank"><img src="img/edabit.png" alt=""></a>Edabit: Code challenges &amp; algorithms</li>
@@ -144,8 +223,9 @@
     <div class="list">
       <div class="info-header">
         <img src="img/mobil.png" alt="">
-        <h3>Mobile apps</h3>
+        <h3 id="apps">Mobile apps</h3>
       </div>
+      <p>If you don't have too much time to sit in front of a computer screen, these are good applications to practice.</p>
       <ul>
         <li><a href="https://www.programming-hero.com/" target="_blank"><img src="img/programminghero.png" alt=""></a>Programming Hero: Beginner friendly</li>
         <li><a href="https://play.google.com/store/apps/details?id=com.sololearn" target="_blank"><img src="img/sololearn.png" alt=""></a>SoloLearn: Code playground, learning, coding challenges</li>
@@ -156,8 +236,9 @@
     <div class="list">
       <div class="info-header">
         <img src="img/games.png" alt="">
-        <h3>Games</h3>
+        <h3 id="games">Games</h3>
       </div>
+      <p>Programming doesn't have to be boring. Relax with these games and reinforce concepts.</p>
       <ul>
         <li><a href="https://flexboxfroggy.com/" target="_blank"><img src="img/flexbox.ico" alt=""></a>flexbox froggy: Css Flexbox Game</li>
         <li><a href="http://www.flexboxdefense.com/" target="_blank"><img src="img/shield.png" alt=""></a>flexbox defense: Css Flexbox Game</li>
@@ -168,10 +249,6 @@
       </ul>
     </div>
   </div>
-
-
-  <li><a href="https://learntocodewith.me/getting-started/topics/command-line/">understanding the command line</a> for beginners</li>
-  <li><a href="https://www.youtube.com/watch?v=RGOj5yH7evk" target="_blank">Git and GitHub for Beginners - Crash Course</a>
-    a video for absolute beginners to learn Git and Github using the command line</li>
-  </body>
-  </html>
+  <footer></footer>
+</body>
+</html>

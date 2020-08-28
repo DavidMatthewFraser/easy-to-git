@@ -17,17 +17,17 @@
 
 # How to contribute (short version)
 
-- pull requests are the way to go
-- fork our project
+- Pull requests are the way to go
+- Fork our project
 - `git clone https://github.com/your-github-username/easy-to-git.git`
 - `cd easy-to-git`
 - `git branch checkout -b name-of-branch`
-- make your changes
+- Make your changes
 - `git add file-1 file-2 ... file-n`
 - `git commit -m ‘descriptive/concise message’`
 - `git push origin master`
-- click 'compare and create pull request' on your forked GitHub repo
-- click 'create pull request'
+- Click 'compare and create pull request' on your forked GitHub repo
+- Click 'create pull request'
 
 # How to contribute (long version)
 1. **Create a fork** of the easy-to-git repo, this is what you will be making changes on. To create a fork, click the ‘fork’ button in the top right of the screen.
@@ -36,7 +36,7 @@
 
 3. The next step is to **create a branch** where you can make your changes. Type `git branch` into your terminal, this will display all the versions or branches of ‘easy-to-git’ on your local machine. For now, you should only see one branch: `*master`. You could start making changes to your ‘master branch’ but it is common practice to make all your changes on separate branches. To create a new branch use `git checkout -b name-of-branch`. Again run `git branch` and you should now see `master` and `*name-of-branch`. You can switch branches with `git checkout any-branch`. Note that you can delete a branch with `git branch -d branch` and force delete by using `-D`.
 
-4. Now you can **make changes** to your newly created branch. Open the 'Contributors.md' file with your favorite text editor, add your name, and save your changes. Note that running the command `git status` will show you all the files that you have changed.
+4. Now you can **make changes** to your newly created branch. Open the 'Contributors.md' file with your favorite text editor, add your name, and save the changes. Note that running the command `git status` will show you all the files that you have changed.
 
 5. We will now **add the changes** on your ‘local’ machine to your ‘remote fork’ on GitHub. Tell git that you want to track changes made to the 'Contributors.md' file by using `git add Contributors.md`. Note that you can add changes to multiple files by listing all the modified files separated by a space: `git add file1 file2 … fileN`.
 
@@ -54,7 +54,7 @@
 - `git merge upstream/master` will merge upstream with your current branch, if there are conflicts you will have to resolve them
 
 # Resolving conflicts
-- navigate to the files that have conflicts
+- Navigate to the files that have conflicts
 - A conflict in a file will look like this:
 ```
 <<<<<<< HEAD
