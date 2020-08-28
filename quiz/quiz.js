@@ -21,6 +21,11 @@ const questionSections = [
     title: "javascript",
     totalQuestions: javascriptQuestions.length,
   },
+  {
+    number: 4,
+    title: "Data Structure",
+    totalQuestions: dataStructure.length,
+  }
 ];
 
 const addToCorrect = () => correct++;
