@@ -63,3 +63,19 @@ article {
   padding: 20px;
 
 }
+.widget {
+  margin: 1em;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.section-container {
+  background-color: #f1f1f3;
+}
+.google-search-container {
+  background-color: white;
+}
+.btn-primary {
+  background-color: #5A378C;
+  color: white;
+}
