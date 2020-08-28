@@ -231,12 +231,6 @@ body::-webkit-scrollbar-thumb {
 .google-search {
   padding: 5px;
 }
-
-.widget {
-  margin: 1em;
-  border-radius: 5px;
-  background-color: white;
-}
 .section-header {
   margin: 1em;
 }
