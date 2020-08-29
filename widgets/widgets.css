@@ -69,10 +69,47 @@ main {
 .section-container {
   background-color: #f1f1f3;
 }
-.google-search-container {
+
+
+.google-wrap {
   background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 1300px;
+  margin: 0 10px;
+}
+.google-search-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+  background-color: transparent;
+}
+.google-search {
+  padding: 5px;
+}
+
+
+
+
+
 }
 .btn-primary {
   background-color: #5A378C;
   color: white;
+}
+
+.btn-group-vertical {
+  display: none;
+}
+#reviewFade {
+  margin: 2em;
+}
+#reviewFade .carousel-control-prev,
+#reviewFade .carousel-control-next {
+  opacity: 0.5;
+}
+#reviewFade .carousel-control-prev:hover,
+#reviewFade .carousel-control-next:hover {
+  opacity: 1;
 }

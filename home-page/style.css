@@ -213,7 +213,7 @@ body::-webkit-scrollbar-thumb {
 /* moved to widgets.css
 .show-time {
   font-size: 1.3rem;
-} */
+}
 .google-wrap {
   background-color: white;
   padding: 40px;
@@ -231,6 +231,7 @@ body::-webkit-scrollbar-thumb {
 .google-search {
   padding: 5px;
 }
+*/
 .section-header {
   margin: 1em;
 }
@@ -252,10 +253,12 @@ body::-webkit-scrollbar-thumb {
   padding: 20px;
   border-radius: 5px;
 }
-
+/* moved to widgets.css
 .btn-group-vertical {
   display: none;
 }
+*/
+
 /* IDs */
 #dropdownMenuLink {
   background-color: #b9189c;
@@ -267,6 +270,7 @@ body::-webkit-scrollbar-thumb {
   margin-right: 20px;
   border: solid 2px black;
 }
+/* moved to widgets.css
 #reviewFade {
   margin: 2em;
 }
@@ -278,6 +282,7 @@ body::-webkit-scrollbar-thumb {
 #reviewFade .carousel-control-next:hover {
   opacity: 1;
 }
+*/
 /* Nested Elements */
 .panel p {
   margin: 0;
