@@ -21,3 +21,4 @@
 - [Trevor Taylor](https://github.com/Trevis42)
 - [Satyam Rastogi](https://github.com/satyamrastogi)
 - [JC Avalo](https://github.com/avalojc)
+- [Nilaksh Agarwal](https://github.com/nilax97)
