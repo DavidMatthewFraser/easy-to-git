@@ -53,16 +53,13 @@ main {
   width: 75%;
   height: auto;
   border-radius: 5px;
-  background-color: white;
+  background-color: var(--lightest-gray);
   color: black;
   margin: 0 auto;
   margin-top: 50px;
-}
-
-article {
   padding: 20px;
-
 }
+
 .widget {
   margin: 1em;
   border-radius: 5px;
