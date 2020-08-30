@@ -90,15 +90,13 @@ main {
 }
 
 
-
-
-
-}
 .btn-primary {
   background-color: #5A378C;
   color: white;
 }
-
+.btn_div {
+  text-align: center;
+}
 .btn-group-vertical {
   display: none;
 }
@@ -112,4 +110,9 @@ main {
 #reviewFade .carousel-control-prev:hover,
 #reviewFade .carousel-control-next:hover {
   opacity: 1;
+}
+.rev_div p {
+  text-align: center;
+  padding: 1em;
+  font-family: "cardo";
 }
