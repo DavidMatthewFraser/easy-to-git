@@ -5,6 +5,7 @@ so they are included but can be overridden by this stylesheet when needed
 for the Widgets page.
 */
 
+/* Page css */
 :root {
   --galaxy-black: #190f26;
   --lightest-gray: #f1f1f3;
@@ -29,6 +30,16 @@ header {
   justify-content: center;
 }
 
+main {
+  width: 75%;
+  height: auto;
+  border-radius: 5px;
+  background-color: var(--lightest-gray);
+  color: black;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 20px;
+}
 #logo-wrap {
   flex: 4;
   display: flex;
@@ -44,28 +55,24 @@ header {
   border: solid 2px black;
 }
 
+/* Show Time css */
 .show-time {
   flex: 1;
   font-size: 1.3rem;
 }
 
-main {
-  width: 75%;
-  height: auto;
-  border-radius: 5px;
-  background-color: var(--lightest-gray);
-  color: black;
-  margin: 0 auto;
-  margin-top: 50px;
-  padding: 20px;
-}
+
 
 .widget {
   margin: 1em;
   border-radius: 5px;
   background-color: white;
 }
+.btn-group-vertical {
+  display: none;
+}
 
+/*
 .section-container {
   background-color: #f1f1f3;
 }
@@ -78,6 +85,7 @@ main {
   max-width: 1300px;
   margin: 0 10px;
 }
+*/
 .google-search-container {
   display: flex;
   flex-direction: row;
@@ -94,12 +102,15 @@ main {
   background-color: #5A378C;
   color: white;
 }
-.btn_div {
+.btn-div {
   text-align: center;
 }
-.btn-group-vertical {
-  display: none;
+.rev-div p {
+  text-align: center;
+  padding: 1em;
+  font-family: "cardo";
 }
+
 #reviewFade {
   margin: 2em;
 }
@@ -110,9 +121,4 @@ main {
 #reviewFade .carousel-control-prev:hover,
 #reviewFade .carousel-control-next:hover {
   opacity: 1;
-}
-.rev_div p {
-  text-align: center;
-  padding: 1em;
-  font-family: "cardo";
 }
