@@ -287,11 +287,13 @@ body::-webkit-scrollbar-thumb {
 .panel p {
   margin: 0;
 }
+/* moved to widgets.css
 .rev_div p {
   text-align: center;
   padding: 1em;
   font-family: "cardo";
 }
+*/
 .github-btn i {
   font-size: 30px;
 }
