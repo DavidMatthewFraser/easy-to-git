@@ -184,12 +184,12 @@ figure {
 }
 .card-container {
   margin: 1rem;
-  width: 25%;
+  width: 28%;
 }
 .front,
 .back {
   width: 100%;
-  height: 18rem;
+  height: 21.5rem;
   object-fit: cover;
 }
 .front {
@@ -336,14 +336,14 @@ figure {
     width: 100%;
   }
 }
-@media (max-width: 444px) {
+@media (max-width: 450px) {
   .card-container {
     margin: 0.5rem;
-    width: 40%;
+    width: 45%;
   }
   .front,
   .back {
-    height: 14rem;
+    height: 16.5rem;
   }
   .menu {
     top: 7rem;
@@ -353,6 +353,14 @@ figure {
   }
 }
 @media (max-width: 400px){
+  .card-container {
+    margin: 0.4rem;
+    width: 46%;
+  }
+  .front,
+  .back {
+    height: 14rem;
+  }
   .menu {
     top: 8.6rem;
   }
