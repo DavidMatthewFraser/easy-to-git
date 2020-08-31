@@ -72,7 +72,7 @@ hey man why you gotta conflict with me
 ```
 # What are starter projects that I can work on?
 
-Before making any contributions to these projects, please read our CONTRIBUTING.md file that outlines our contributing policy.
+Before making any contributions to these projects, please read our <a href='./CONTRIBUTING.md'>CONTRIBUTING.md</a> file that outlines our contributing policy.
 
 - **Challenges**: These are puzzles that are solved by modifying the HTML, CSS, and sometimes Javascript of the associated challenge files.
 
