@@ -175,4 +175,27 @@ const javascriptQuestions = [
   },
 ];
 
-const sections = [htmlQuestions, cssQuestions, javascriptQuestions];
+const dataStructure= [
+  {
+    question: "Process of inserting an element in stack is called ____________.",
+    answers: ["Create", "Push", "Evaluation","Pop"],
+    correctAnswer: "Push",
+  },
+  {
+    question: "Process of removing an element from stack is called __________",
+    answers: ["Create", "Push", "Evaluation", "Pop"],
+    correctAnswer: "Pop",
+  },
+  {
+    question: "In a stack, if a user tries to remove an element from empty stack it is called _________",
+    answers: ["Underflow", "Empty collection", "Overflow", "Garbage Collection"],
+    correctAnswer: "Underflow",
+  },
+  {
+    question: " Pushing an element into stack already having five elements and stack size of 5, then stack becomes?",
+    answers: ["Overflow", "Crash","Underflow","User flow"],
+    correctAnswer: "Overflow",
+  }
+];
+
+const sections = [htmlQuestions, cssQuestions, javascriptQuestions,dataStructure];

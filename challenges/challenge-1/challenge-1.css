@@ -131,6 +131,24 @@ clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 56%, 66% 60%, 48% 100%, 33% 6
   box-shadow: 2px 3px 3px 3px gray;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+#satyamrastogi {
+  background-color: lightblue;
+  border: 5px solid black;
+  box-shadow: 2px 3px 3px 3px gray;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#avalojc{
+  background-color: #4f25d9;
+  border:3px dashed rgba(0,0,0,0.7);
+  color: rgba(152, 252, 255, 1);
+  font-family: fantasy;
+}
+#nilax97{
+  background-color: #1a1a2e;
+  border:5px solid rgba(233,69,96,0.8);
+  color: rgba(236,236,236, 0.8);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 @media (max-width: 600px) {
   .camperCell {
     min-width: 100%;

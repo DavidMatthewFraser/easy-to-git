@@ -17,3 +17,8 @@
 - [Michal Terranova](https://github.com/mrterranova)
 - [Neely Mann](https://github.com/NeelyAnne)
 - [Bilikis Orulebaja](https://github.com/borulebaja)
+- [Brandt Campbell](https://github.com/Reboot82)
+- [Trevor Taylor](https://github.com/Trevis42)
+- [Satyam Rastogi](https://github.com/satyamrastogi)
+- [JC Avalo](https://github.com/avalojc)
+- [Nilaksh Agarwal](https://github.com/nilax97)

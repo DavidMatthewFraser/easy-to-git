@@ -126,6 +126,36 @@ let summerday = {
   "widget-background": deepcoral,
   "section-header-color": brick,
 };
+/// Brian Loveless Pumpkin Spice fall
+// Pumpkin Colors
+const BLlightyellow = "#ccff99";
+const BLlightorange = "#ffcc66";
+const BLblack = "#000000";
+const BLorange = "#ff9900";
+//
+let pumpkinSpice = {
+  themeName: "pumpkinSpice",
+  "page-background": BLorange,
+  "sectionContainer-background": BLlightorange,
+  "header-background": BLlightorange,
+  "header-color": "white",
+  "contributor-background": BLorange,
+  "panel-background": BLorange,
+  "panel-border-left": "15px dotted #A4CAED",
+  "contributor-name-color": BLlightyellow,
+  "role-color": BLblack,
+  "github-btn-background": BLlightorange,
+  "chooseTheme-background": BLorange,
+  "btn-default-background": BLlightyellow,
+  "btn-default-color": BLblack,
+  "btn-primary-background": BLlightyellow,
+  "btn-primary-color": BLblack,
+  "comment-slide-background": BLlightyellow,
+  "comment-slide-color": BLblack,
+  "widget-background": BLorange,
+  "section-header-color": BLblack,
+};
+
 //Dropdown onclick listeners
 defaultTheme.onclick = () => {
   changeTheme(pageDefault);
@@ -141,6 +171,9 @@ beachTheme.onclick = () => {
 };
 summerdayTheme.onclick = () => {
   changeTheme(summerday);
+};
+pumpkinSpiceTheme.onclick = () => {
+  changeTheme(pumpkinSpice);
 };
 //Change Theme with jQuery selectors
 let changeTheme = (theme) => {
