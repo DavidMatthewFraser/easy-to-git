@@ -37,6 +37,11 @@ main {
   margin-top: 50px;
   padding: 20px;
 }
+.widget {
+  margin: 1em;
+  border-radius: 5px;
+  background-color: white;
+}
 #logo-wrap {
   flex: 4;
   display: flex;
@@ -54,11 +59,6 @@ main {
 .show-time {
   flex: 1;
   font-size: 1.3rem;
-}
-.widget {
-  margin: 1em;
-  border-radius: 5px;
-  background-color: white;
 }
 .btn-group-vertical {
   display: none;
