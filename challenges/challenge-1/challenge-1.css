@@ -63,6 +63,17 @@ header > ol > li {
   background: #45a3a3;
   border-color: #4f25d9;
 }
+#unclebay{
+  background: dodgerblue;
+  border-color: orange;
+  color: #fff; 
+  cursor: pointer;
+  font-family: cursive;
+  opacity: 0.8;
+}
+#unclebay:hover{
+  opacity: 1;
+}
 /*camper2*/
 #camper2 {
   color: purple;
