@@ -153,6 +153,9 @@ body::-webkit-scrollbar-thumb {
   text-transform: capitalize;
   letter-spacing: 1px;
 }
+.no-decoration {
+  text-decoration: none;
+}
 .greeting {
   padding: 20px 0;
 }
@@ -209,10 +212,13 @@ body::-webkit-scrollbar-thumb {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 100px;
 }
+
 .show-time {
   font-size: 1.3rem;
 }
+/*
 .google-wrap {
   background-color: white;
   padding: 40px;
@@ -230,12 +236,7 @@ body::-webkit-scrollbar-thumb {
 .google-search {
   padding: 5px;
 }
-
-.widget {
-  margin: 1em;
-  border-radius: 5px;
-  background-color: white;
-}
+*/
 .section-header {
   margin: 1em;
 }
@@ -257,10 +258,12 @@ body::-webkit-scrollbar-thumb {
   padding: 20px;
   border-radius: 5px;
 }
-
+/* moved to widgets.css
 .btn-group-vertical {
   display: none;
 }
+*/
+
 /* IDs */
 #dropdownMenuLink {
   background-color: #b9189c;
@@ -272,6 +275,10 @@ body::-webkit-scrollbar-thumb {
   margin-right: 20px;
   border: solid 2px black;
 }
+#widgets-btn {
+  text-decoration: none;
+}
+/* moved to widgets.css
 #reviewFade {
   margin: 2em;
 }
@@ -283,15 +290,18 @@ body::-webkit-scrollbar-thumb {
 #reviewFade .carousel-control-next:hover {
   opacity: 1;
 }
+*/
 /* Nested Elements */
 .panel p {
   margin: 0;
 }
+/* moved to widgets.css
 .rev_div p {
   text-align: center;
   padding: 1em;
   font-family: "cardo";
 }
+*/
 .github-btn i {
   font-size: 30px;
 }
