@@ -51,6 +51,8 @@ main {
   color: white;
   font-size: 14px;
   cursor: pointer;
+  text-align: center;
+  font-size: 1.25em;
 }
 #logo-wrap {
   flex: 4;
@@ -99,6 +101,11 @@ main {
   padding: 1em;
   font-family: "cardo";
   color: white;
+}
+.section-header {
+  margin: 1em;
+  color: white;
+  text-align: center;
 }
 #reviewFade {
   margin: 2em;
