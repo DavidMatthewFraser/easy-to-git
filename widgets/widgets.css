@@ -105,10 +105,14 @@ main {
 .btn-div {
   text-align: center;
 }
-.rev-div p {
+.carousel-inner {
+  background-color: var(--deep-purple);
+}
+.carousel-comment {
   text-align: center;
   padding: 1em;
   font-family: "cardo";
+  color: white;
 }
 
 #reviewFade {
