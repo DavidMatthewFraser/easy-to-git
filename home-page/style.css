@@ -153,6 +153,9 @@ body::-webkit-scrollbar-thumb {
   text-transform: capitalize;
   letter-spacing: 1px;
 }
+.no-decoration {
+  text-decoration: none;
+}
 .greeting {
   padding: 20px 0;
 }
@@ -270,6 +273,9 @@ body::-webkit-scrollbar-thumb {
   border-radius: 50%;
   margin-right: 20px;
   border: solid 2px black;
+}
+#widgets-btn {
+  text-decoration: none;
 }
 /* moved to widgets.css
 #reviewFade {
