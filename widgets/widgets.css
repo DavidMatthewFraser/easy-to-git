@@ -13,13 +13,11 @@ for the Widgets page.
   --medium-purple: #5a378c;
   --violet: #c57ee6;
 }
-
 body {
   padding: 0;
   background: var(--galaxy-black);
   color: var(--violet);
 }
-
 header {
   display: flex;
   width: 100%;
@@ -29,7 +27,6 @@ header {
   align-items: center;
   justify-content: center;
 }
-
 main {
   width: 75%;
   height: auto;
@@ -46,7 +43,6 @@ main {
   align-items: center;
   padding-left: 20px;
 }
-
 #logo {
   width: 55px;
   height: 55px;
@@ -54,15 +50,11 @@ main {
   padding: 20px;
   border: solid 2px black;
 }
-
 /* Show Time css */
 .show-time {
   flex: 1;
   font-size: 1.3rem;
 }
-
-
-
 .widget {
   margin: 1em;
   border-radius: 5px;
@@ -71,21 +63,7 @@ main {
 .btn-group-vertical {
   display: none;
 }
-
-/*
-.section-container {
-  background-color: #f1f1f3;
-}
-
-
-.google-wrap {
-  background-color: white;
-  padding: 40px;
-  border-radius: 10px;
-  max-width: 1300px;
-  margin: 0 10px;
-}
-*/
+/* google search css */
 .google-search-container {
   display: flex;
   flex-direction: row;
@@ -96,8 +74,6 @@ main {
 .google-search {
   padding: 5px;
 }
-
-
 .btn-primary {
   background-color: #5A378C;
   color: white;
@@ -105,6 +81,7 @@ main {
 .btn-div {
   text-align: center;
 }
+/* carousel css */
 .carousel-inner {
   background-color: var(--deep-purple);
 }
@@ -114,7 +91,6 @@ main {
   font-family: "cardo";
   color: white;
 }
-
 #reviewFade {
   margin: 2em;
 }
