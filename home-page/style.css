@@ -210,10 +210,11 @@ body::-webkit-scrollbar-thumb {
   justify-content: center;
   align-items: center;
 }
-/* moved to widgets.css
+
 .show-time {
   font-size: 1.3rem;
 }
+/*
 .google-wrap {
   background-color: white;
   padding: 40px;
