@@ -42,6 +42,16 @@ main {
   border-radius: 5px;
   background-color: white;
 }
+.back-button {
+  letter-spacing: 0.5px;
+  padding: 18px 20px;
+  margin-right: 15px;
+  border-radius: 5px;
+  background: var(--galaxy-black);
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
 #logo-wrap {
   flex: 4;
   display: flex;
