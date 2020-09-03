@@ -160,6 +160,13 @@ clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 56%, 66% 60%, 48% 100%, 33% 6
   color: rgba(236,236,236, 0.8);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+/* James's styling */
+#james{
+  background-image: linear-gradient(45deg, #28009f 0%, #3d0276 45%, #7b17e6 100%);
+  border: 10px solid #fee302;
+  color: whitesmoke;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 @media (max-width: 600px) {
   .camperCell {
     min-width: 100%;
