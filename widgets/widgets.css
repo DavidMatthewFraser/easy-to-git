@@ -20,12 +20,12 @@ body {
 }
 header {
   display: flex;
+  margin: 0;
   width: 100%;
   height: 100px;
   background: var(--deep-purple);
   color: white;
   align-items: center;
-  justify-content: center;
 }
 main {
   width: 75%;
@@ -42,10 +42,17 @@ main {
   border-radius: 5px;
   background-color: white;
 }
+#back-button-wrapper {
+  flex: 2;
+  padding-right: 15px;
+}
 .back-button {
+  display: inline-flex;
+  align-self: center;
+  justify-content: center;
+  float: right;
   letter-spacing: 0.5px;
   padding: 18px 20px;
-  margin-right: 15px;
   border-radius: 5px;
   background: var(--galaxy-black);
   color: white;
@@ -54,21 +61,20 @@ main {
   font-size: 1.25em;
 }
 #logo-wrap {
-  flex: 4;
-  display: flex;
-  align-items: center;
-  padding-left: 20px;
+  flex: 2;
 }
 #logo {
   width: 55px;
   height: 55px;
   border-radius: 50%;
   border: solid 2px black;
+  margin-left: 15px;
 }
 /* Show Time css */
 .show-time {
-  flex: 1;
+  flex: 3;
   font-size: 1.3rem;
+  text-align: center;
 }
 .btn-group-vertical {
   display: none;
@@ -123,10 +129,22 @@ main {
   }
 }
 @media (max-width: 600px) {
+  main {
+    padding: 10px;
+    width: 85%;
+  }
+  .show-time {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
   .back-button {
-    padding: 4px 2px;
-    margin-right: 4px;
+    padding: 8px 12px;
     font-size: 1.25em;
+  }
+  .back-button:hover {
+    text-decoration: none;
+    color: white;
   }
   .rev-div > p {
     font-size: 22px;
@@ -143,9 +161,6 @@ main {
   .google-wrap {
     width: 100%;
     padding: 5px;
-  }
-  .widget {
-    margin: 5px;
   }
   #reviewFade {
     margin: 20px 0;
