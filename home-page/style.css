@@ -301,7 +301,7 @@ body::-webkit-scrollbar-thumb {
   margin: 0;
 }
 /* moved to widgets.css
-.rev_div p {
+.rev-div p {
   text-align: center;
   padding: 1em;
   font-family: "cardo";
@@ -315,9 +315,11 @@ body::-webkit-scrollbar-thumb {
 }
 /* Media Queries */
 @media (max-width: 1024px) {
-  .rev_div p {
+/* moved to widgets.css
+  .rev-div p {
     font-size: 1em;
   }
+*/
   .section-header {
     margin: 20px 0;
     text-align: center;
@@ -327,9 +329,11 @@ body::-webkit-scrollbar-thumb {
   .section-header {
     font-size: 2em;
   }
-  .rev_div > p {
+/* moved to widgets.css
+  .rev-div > p {
     font-size: 22px;
   }
+*/
   .section-container {
     width: 100%;
     padding: 20px;
@@ -344,11 +348,12 @@ body::-webkit-scrollbar-thumb {
     margin: 20px 0;
     text-align: center;
   }
+/* moved to widgets.css
   .btn-group {
     display: none;
   }
   .btn-group-vertical {
-    display: inline-flex;
+    display: block;
   }
   .google-wrap {
     width: 100%;
@@ -360,6 +365,7 @@ body::-webkit-scrollbar-thumb {
   #reviewFade {
     margin: 20px 0;
   }
+*/
   .get-started {
     text-align: center;
   }
