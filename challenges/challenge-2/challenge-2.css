@@ -445,4 +445,9 @@ body {
 	animation-iteration-count: infinite;
 }
 
-
+#james_ship {
+	position: absolute;
+	right: 200px;
+	top: 300px;
+	height: 10rem;
+}
