@@ -22,4 +22,5 @@
 - [Satyam Rastogi](https://github.com/satyamrastogi)
 - [JC Avalo](https://github.com/avalojc)
 - [Nilaksh Agarwal](https://github.com/nilax97)
-- [Ayodele Samuel Adebayo](https://github.com/unclebay143) - unclebigbay@gmail.com
+- [Ayodele Samuel Adebayo](https://github.com/unclebay143) - unclebigbay@gmail.
+- [James Price](https://github.com/jamesmp88)
