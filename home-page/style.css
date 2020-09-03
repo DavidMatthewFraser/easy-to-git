@@ -301,7 +301,7 @@ body::-webkit-scrollbar-thumb {
   margin: 0;
 }
 /* moved to widgets.css
-.rev_div p {
+.rev-div p {
   text-align: center;
   padding: 1em;
   font-family: "cardo";
@@ -315,7 +315,7 @@ body::-webkit-scrollbar-thumb {
 }
 /* Media Queries */
 @media (max-width: 1024px) {
-  .rev_div p {
+  .rev-div p {
     font-size: 1em;
   }
   .section-header {
@@ -327,7 +327,7 @@ body::-webkit-scrollbar-thumb {
   .section-header {
     font-size: 2em;
   }
-  .rev_div > p {
+  .rev-div > p {
     font-size: 22px;
   }
   .section-container {
