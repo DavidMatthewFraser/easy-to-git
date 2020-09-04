@@ -62,7 +62,8 @@ main {
 }
 .back-button:hover {
   text-decoration: none;
-  color: white;
+  opacity: 0.7;
+  font-weight: 600;
 }
 #logo-wrap {
   flex: 2;
