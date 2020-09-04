@@ -54,7 +54,7 @@ main {
   letter-spacing: 0.5px;
   padding: 18px 20px;
   border-radius: 5px;
-  background: var(--galaxy-black);
+  background: var(--medium-purple);
   color: white;
   cursor: pointer;
   text-align: center;
