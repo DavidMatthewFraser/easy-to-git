@@ -54,11 +54,17 @@ main {
   letter-spacing: 0.5px;
   padding: 18px 20px;
   border-radius: 5px;
-  background: var(--galaxy-black);
+  background: var(--medium-purple);
   color: white;
   cursor: pointer;
   text-align: center;
   font-size: 1.25em;
+}
+.back-button:hover {
+  text-decoration: none;
+  opacity: 0.7;
+  font-weight: 600;
+  color: white;
 }
 #logo-wrap {
   flex: 2;
@@ -141,10 +147,6 @@ main {
   .back-button {
     padding: 8px 12px;
     font-size: 1.25em;
-  }
-  .back-button:hover {
-    text-decoration: none;
-    color: white;
   }
   .rev-div > p {
     font-size: 22px;
