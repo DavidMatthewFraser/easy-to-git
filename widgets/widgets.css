@@ -60,6 +60,10 @@ main {
   text-align: center;
   font-size: 1.25em;
 }
+.back-button:hover {
+  text-decoration: none;
+  color: white;
+}
 #logo-wrap {
   flex: 2;
 }
@@ -141,10 +145,6 @@ main {
   .back-button {
     padding: 8px 12px;
     font-size: 1.25em;
-  }
-  .back-button:hover {
-    text-decoration: none;
-    color: white;
   }
   .rev-div > p {
     font-size: 22px;
