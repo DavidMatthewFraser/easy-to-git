@@ -29,12 +29,30 @@ $('#googleSearch').submit((e)=>{
      window.open(searchUrl);
     });
 // weather ninja widget
-// added by Terri Fricker, based on tutorial by NetNina
-const cityForm = document.querySelector('form');
+// added by Terri Fricker, based on tutorial by NetNinja
+const key = 'SIOTsEz9ysEBcldZ8iAw1eHDwA4F3iAg';
+const cityForm = document.querySelector('#weather-form');
 const display = document.querySelector('.display');
 const details = document.querySelector('.details');
 const image = document.querySelector('.display img');
 const icon = document.querySelector('.icon img');
+
+
+const getCity = async (city) => {
+  const base = 'http://dataservice.accuweather.com/locations/v1/cities/search';
+  const query = `?apikey=${key}&q=${city}`;
+  const response = await fetch(base + query);
+  const data = await response.json();
+  return data[0];
+}
+
+const getWeather = async (cityId) => {
+  const base = 'http://dataservice.accuweather.com/currentconditions/v1/';
+  const query = `${cityId}?apikey=${key}`;
+  const response = await fetch(base + query);
+  const data = await response.json();
+  return data[0];
+}
 
 const updateDisplay = data => {
   const cityDetails = data.cityDetails;
@@ -47,6 +65,7 @@ const updateDisplay = data => {
       <span>&deg;F</span>
     </div>
   `;
+
   let imageSource = null;
   if(weather.IsDayTime) {
     imageSource = 'images/day.svg';
@@ -59,12 +78,15 @@ const updateDisplay = data => {
   if (display.classList.contains('hidden')) {
     display.classList.remove('hidden');
   }
+  // Please Help Here
+  // I would like the <div class='display'> to be
+  // located at the bottom of the screen.
+  // I tried:  display.scrollIntoView(false);
 }
 
 const updateCity = async (city) => {
   const cityDetails = await getCity(city);
   const weather = await getWeather(cityDetails.Key);
-  console.log(weather);
   return {
     cityDetails: cityDetails,
     weather: weather
