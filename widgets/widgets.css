@@ -15,6 +15,7 @@ for the Widgets page.
 }
 body {
   padding: 0;
+  margin: 0 auto;
   background: var(--galaxy-black);
   color: var(--violet);
 }
@@ -70,10 +71,6 @@ main {
   flex: 2;
 }
 #logo {
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
-  border: solid 2px black;
   margin-left: 15px;
 }
 /* Show Time css */
@@ -81,9 +78,6 @@ main {
   flex: 3;
   font-size: 1.3rem;
   text-align: center;
-}
-.btn-group-vertical {
-  display: none;
 }
 /* google search css */
 .google-search-container {
@@ -103,6 +97,9 @@ main {
 .btn-div {
   text-align: center;
 }
+.btn-group-vertical {
+  display: none;
+}
 /* carousel css */
 .carousel-inner {
   background-color: var(--deep-purple);
@@ -114,7 +111,6 @@ main {
   color: white;
 }
 .section-header {
-  margin: 1em;
   color: var(--violet);
   text-align: center;
 }
@@ -162,6 +158,7 @@ main {
   margin: 10px;
   font-size: 1rem;
 }
+/* media queries */
 @media (max-width: 1024px) {
   .rev-div p {
     font-size: 1em;
