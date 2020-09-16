@@ -184,9 +184,6 @@ body::-webkit-scrollbar-thumb {
 .hidden {
   display: none;
 }
-.btn_div {
-  text-align: center;
-}
 .btn:hover,
 .contributors-btn:hover{
   opacity: 0.7;
@@ -219,29 +216,6 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   padding-bottom: 100px;
 }
-
-.show-time {
-  font-size: 1.3rem;
-}
-/*
-.google-wrap {
-  background-color: white;
-  padding: 40px;
-  border-radius: 10px;
-  max-width: 1300px;
-  margin: 0 10px;
-}
-.google-search-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 20px;
-  background-color: transparent;
-}
-.google-search {
-  padding: 5px;
-}
-*/
 .section-header {
   margin: 1em;
 }
@@ -263,12 +237,6 @@ body::-webkit-scrollbar-thumb {
   padding: 20px;
   border-radius: 5px;
 }
-/* moved to widgets.css
-.btn-group-vertical {
-  display: none;
-}
-*/
-
 /* IDs */
 #dropdownMenuLink {
   background-color: #b9189c;
@@ -283,30 +251,10 @@ body::-webkit-scrollbar-thumb {
 #widgets-btn {
   text-decoration: none;
 }
-/* moved to widgets.css
-#reviewFade {
-  margin: 2em;
-}
-#reviewFade .carousel-control-prev,
-#reviewFade .carousel-control-next {
-  opacity: 0.5;
-}
-#reviewFade .carousel-control-prev:hover,
-#reviewFade .carousel-control-next:hover {
-  opacity: 1;
-}
-*/
 /* Nested Elements */
 .panel p {
   margin: 0;
 }
-/* moved to widgets.css
-.rev-div p {
-  text-align: center;
-  padding: 1em;
-  font-family: "cardo";
-}
-*/
 .github-btn i {
   font-size: 30px;
 }
@@ -315,11 +263,6 @@ body::-webkit-scrollbar-thumb {
 }
 /* Media Queries */
 @media (max-width: 1024px) {
-/* moved to widgets.css
-  .rev-div p {
-    font-size: 1em;
-  }
-*/
   .section-header {
     margin: 20px 0;
     text-align: center;
@@ -329,11 +272,6 @@ body::-webkit-scrollbar-thumb {
   .section-header {
     font-size: 2em;
   }
-/* moved to widgets.css
-  .rev-div > p {
-    font-size: 22px;
-  }
-*/
   .section-container {
     width: 100%;
     padding: 20px;
@@ -348,24 +286,6 @@ body::-webkit-scrollbar-thumb {
     margin: 20px 0;
     text-align: center;
   }
-/* moved to widgets.css
-  .btn-group {
-    display: none;
-  }
-  .btn-group-vertical {
-    display: block;
-  }
-  .google-wrap {
-    width: 100%;
-    padding: 5px;
-  }
-  .widget {
-    margin: 5px;
-  }
-  #reviewFade {
-    margin: 20px 0;
-  }
-*/
   .get-started {
     text-align: center;
   }

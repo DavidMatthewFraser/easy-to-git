@@ -129,6 +129,11 @@ main {
 #reviewFade .carousel-control-next:hover {
   opacity: 1;
 }
+.rev-div p {
+  text-align: center;
+  padding: 1em;
+  font-family: "cardo";
+}
 @media (max-width: 1024px) {
   .rev-div p {
     font-size: 1em;
