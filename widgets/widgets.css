@@ -129,6 +129,39 @@ main {
 #reviewFade .carousel-control-next:hover {
   opacity: 1;
 }
+/* weather widget css */
+.weather {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  background-color: var(--medium-purple);
+}
+.weather h1 {
+  margin: 0;
+  padding: 10px;
+}
+.form input {
+  width: 100%;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+.display {
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+.display .icon {
+  position: relative;
+  top: -50px;
+  width: 100px;
+  background: aliceblue;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: -50px;
+}
+.details h5, .condition {
+  margin: 10px;
+  font-size: 1rem;
+}
 @media (max-width: 1024px) {
   .rev-div p {
     font-size: 1em;
