@@ -125,6 +125,7 @@ main {
 #reviewFade .carousel-control-next:hover {
   opacity: 1;
 }
+
 /* weather widget css */
 
 .weather {
@@ -170,6 +171,13 @@ main {
   color: black;
 }
 /* media queries */
+
+.rev-div p {
+  text-align: center;
+  padding: 1em;
+  font-family: "cardo";
+}
+
 @media (max-width: 1024px) {
   .rev-div p {
     font-size: 1em;
