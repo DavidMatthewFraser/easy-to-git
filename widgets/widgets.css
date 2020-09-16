@@ -126,11 +126,13 @@ main {
   opacity: 1;
 }
 /* weather widget css */
+
 .weather {
-  padding: 0;
-  text-align: center;
   color: white;
+  text-align: center;
+  flex-direction: column;
 }
+
 .weather h1 {
   font-size: 1.5rem;
   margin: 0;
@@ -162,9 +164,10 @@ main {
   margin: 0 auto;
   margin-bottom: -50px;
 }
-.details h5, .condition {
+.details h5, .condition, .temperature {
   margin: 10px;
   font-size: 1rem;
+  color: black;
 }
 /* media queries */
 @media (max-width: 1024px) {
