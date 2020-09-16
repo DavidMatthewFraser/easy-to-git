@@ -15,6 +15,7 @@ for the Widgets page.
 }
 body {
   padding: 0;
+  margin: 0 auto;
   background: var(--galaxy-black);
   color: var(--violet);
 }
@@ -70,10 +71,6 @@ main {
   flex: 2;
 }
 #logo {
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
-  border: solid 2px black;
   margin-left: 15px;
 }
 /* Show Time css */
@@ -81,9 +78,6 @@ main {
   flex: 3;
   font-size: 1.3rem;
   text-align: center;
-}
-.btn-group-vertical {
-  display: none;
 }
 /* google search css */
 .google-search-container {
@@ -103,6 +97,9 @@ main {
 .btn-div {
   text-align: center;
 }
+.btn-group-vertical {
+  display: none;
+}
 /* carousel css */
 .carousel-inner {
   background-color: var(--deep-purple);
@@ -114,7 +111,6 @@ main {
   color: white;
 }
 .section-header {
-  margin: 1em;
   color: var(--violet);
   text-align: center;
 }
@@ -129,11 +125,59 @@ main {
 #reviewFade .carousel-control-next:hover {
   opacity: 1;
 }
+
+/* weather widget css */
+
+.weather {
+  color: white;
+  text-align: center;
+  flex-direction: column;
+}
+
+.weather h1 {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 10px;
+}
+.form {
+  margin: 20px;
+  background-color: var(--medium-purple);
+  border-radius: 5px;
+}
+.form input {
+  width: 100%;
+  font-size: 1rem;
+  line-height: 2rem;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 1px solid var(--medium-purple);
+}
+.display {
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+.display .icon {
+  position: relative;
+  top: -50px;
+  width: 100px;
+  background: aliceblue;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: -50px;
+}
+.details h5, .condition, .temperature {
+  margin: 10px;
+  font-size: 1rem;
+  color: black;
+}
+/* media queries */
+
 .rev-div p {
   text-align: center;
   padding: 1em;
   font-family: "cardo";
 }
+
 @media (max-width: 1024px) {
   .rev-div p {
     font-size: 1em;
