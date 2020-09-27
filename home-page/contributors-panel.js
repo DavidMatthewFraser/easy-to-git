@@ -91,7 +91,7 @@ const contributors = [
   {
     githubName: "sauravk7077",
     displayName: "Saurav Kumar",
-    roll: ""
+    roll: "Contributor / Full Stack"
   }
 ];
 

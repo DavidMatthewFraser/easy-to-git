@@ -171,6 +171,7 @@ let abyss = {
   "panel-border-left": "15px solid #ba301e",
   "contributor-name-color": 'hsl(0,0%, 70%)',
   "contributor-btn-color": 'hsl(0,0%, 90%)',
+  "contributor-border-radius": '2px',
   "role-color": brick,
   "github-btn-background": lightorange,
   "chooseTheme-background": deepcoral,
@@ -180,6 +181,7 @@ let abyss = {
   "btn-primary-color": '#ba301e',
   "web-nav-border": "2px solid #fff",
   "web-nav-shadow": "0px 10px 10px 2px hsl(0,0%,15%)",
+  "web-nav-border-radius": "2px",
   "comment-slide-background": lightyellow,
   "comment-slide-color": brick,
   "widget-background": deepcoral,
@@ -222,12 +224,14 @@ let changeTheme = (theme) => {
   $(".dropdown-toggle").css("background-color",theme["chooseTheme-background"]);
   $(".contributors-btn").css("background-color",theme["contributor-background"]);
   $(".contributors-btn").css("color", theme["contributor-btn-color"] || "black" );
+  $(".contributors-btn").css("border-radius", theme['contributor-border-radius'] || '5px');
   $(".btn-default").css("background-color", theme["btn-default-background"]);
   $(".btn-default").css("color", theme["btn-default-color"]);
   $(".web-nav").css("background-color", theme["btn-default-background"]);
   $(".web-nav").css("color", theme["btn-default-color"]);
   $(".web-nav").css("border", theme["web-nav-border"] || 'initial');
-  $(".web-nav").css("box-shadow", theme["web-nav-shadow"] || 'initial')
+  $(".web-nav").css("box-shadow", theme["web-nav-shadow"] || 'initial');
+  $(".web-nav").css("border-radius", theme["web-nav-border-radius"], "5px");
   $(".name").css("color", theme["header-background"]);
   $(".btn-primary").css("background-color", theme["btn-primary-background"]);
   $(".btn-primary").css("color", theme["btn-primary-color"]);
