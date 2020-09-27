@@ -87,6 +87,11 @@ const contributors = [
     githubName: "unclebay143",
     displayName: "Ayodele Samuel Adebayo",
     roll: "Contributor / Full Stack Engineer"
+  },
+  {
+    githubName: "sauravk7077",
+    displayName: "Saurav Kumar",
+    roll: "Contributor / Full Stack"
   }
 ];
 

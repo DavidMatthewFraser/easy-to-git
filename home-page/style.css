@@ -2,6 +2,7 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  transition: all 200ms ease-in-out;
 }
 body {
   color: #333;
@@ -38,6 +39,7 @@ body::-webkit-scrollbar-thumb {
 .header {
   background-color: #900e78;
   color: white;
+  padding-top: 10px;
 }
 .logo-wrap {
   display: flex;
@@ -175,10 +177,10 @@ body::-webkit-scrollbar-thumb {
   letter-spacing: 0.5px;
   padding: 18px 20px;
   margin: 5px;
-  border-radius: 5px;
+  border-radius: 2px;
   background: #b9189c;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 0.875em;
   cursor: pointer;
 }
 .hidden {
@@ -235,7 +237,10 @@ body::-webkit-scrollbar-thumb {
   flex: 1 1 220px;
   margin: 15px;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 2px;
+}
+.web-nav:hover{
+  filter: brightness(0.8);
 }
 /* IDs */
 #dropdownMenuLink {

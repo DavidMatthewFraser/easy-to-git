@@ -156,6 +156,38 @@ let pumpkinSpice = {
   "section-header-color": BLblack,
 };
 
+//New
+let abyss = {
+  themeName: "abyss",
+  "body-font": "'Montserrat', sans-serif",
+  "home-text-size": "1.2em",
+  "page-background": 'black',
+  "sectionContainer-background": 'hsla(0,0%,10%, 0.5)',
+  "sectionContainer-text": 'hsl(0,0%, 85%)',
+  "header-background": 'black',
+  "header-color": "#fff",
+  "contributor-background": 'hsl(7, 72%, 50%)',
+  "panel-background": deepcoral,
+  "panel-border-left": "15px solid #ba301e",
+  "contributor-name-color": 'hsl(0,0%, 70%)',
+  "contributor-btn-color": 'hsl(0,0%, 90%)',
+  "contributor-border-radius": '2px',
+  "role-color": brick,
+  "github-btn-background": lightorange,
+  "chooseTheme-background": deepcoral,
+  "btn-default-background": 'transparent',
+  "btn-default-color": 'hsl(0,0%,80%)',
+  "btn-primary-background": lightyellow,
+  "btn-primary-color": '#ba301e',
+  "web-nav-border": "2px solid #fff",
+  "web-nav-shadow": "0px 10px 10px 2px hsl(0,0%,15%)",
+  "web-nav-border-radius": "2px",
+  "comment-slide-background": lightyellow,
+  "comment-slide-color": brick,
+  "widget-background": deepcoral,
+  "section-header-color": '#ba301e',
+};
+
 //Dropdown onclick listeners
 defaultTheme.onclick = () => {
   changeTheme(pageDefault);
@@ -175,21 +207,31 @@ summerdayTheme.onclick = () => {
 pumpkinSpiceTheme.onclick = () => {
   changeTheme(pumpkinSpice);
 };
+abyssTheme.onclick = () => {
+  changeTheme(abyss);
+}
 //Change Theme with jQuery selectors
 let changeTheme = (theme) => {
   localStorage.setItem("theme", JSON.stringify(theme));
+  $("body").css('font-family', theme["body-font" || 'sans-serif']);
+  $("h3").css('font-size', theme["home-text-size"] || '1.75rem')
   $(".container-fluid").css("background-color", theme["page-background"]);
   $(".section-container").css("background-color",theme["sectionContainer-background"]);
+  $(".section-container").css("color", theme["sectionContainer-text"] ||'inherit');
   $(".google-wrap").css("background-color",theme["sectionContainer-background"]);
   $(".header").css("background-color", theme["header-background"]);
   $(".header").css("color", theme["header-color"]);
   $(".dropdown-toggle").css("background-color",theme["chooseTheme-background"]);
   $(".contributors-btn").css("background-color",theme["contributor-background"]);
   $(".contributors-btn").css("color", theme["contributor-btn-color"] || "black" );
+  $(".contributors-btn").css("border-radius", theme['contributor-border-radius'] || '5px');
   $(".btn-default").css("background-color", theme["btn-default-background"]);
   $(".btn-default").css("color", theme["btn-default-color"]);
   $(".web-nav").css("background-color", theme["btn-default-background"]);
   $(".web-nav").css("color", theme["btn-default-color"]);
+  $(".web-nav").css("border", theme["web-nav-border"] || 'initial');
+  $(".web-nav").css("box-shadow", theme["web-nav-shadow"] || 'initial');
+  $(".web-nav").css("border-radius", theme["web-nav-border-radius"], "5px");
   $(".name").css("color", theme["header-background"]);
   $(".btn-primary").css("background-color", theme["btn-primary-background"]);
   $(".btn-primary").css("color", theme["btn-primary-color"]);
