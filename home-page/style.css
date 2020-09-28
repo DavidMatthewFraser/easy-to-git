@@ -294,6 +294,12 @@ body::-webkit-scrollbar-thumb {
   .get-started {
     text-align: center;
   }
+  .panel{
+    width:100%;
+  }
+  .contributors-btn{
+    width: 100%;
+  }
 }
 
 /* keyframes */
