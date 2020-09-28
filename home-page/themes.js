@@ -167,9 +167,10 @@ let abyss = {
   "header-background": 'black',
   "header-color": "#fff",
   "contributor-background": 'hsl(7, 72%, 50%)',
-  "panel-background": deepcoral,
-  "panel-border-left": "15px solid #ba301e",
-  "contributor-name-color": 'hsl(0,0%, 70%)',
+  "panel-background": 'hsl(0,0%,5%)',
+  "panel-border-left": "2px solid #ba301e",
+  "panel-box-shadow": "0 0 10px 2px #ba301e",
+  "contributor-name-color": 'hsl(0,0%, 95%)',
   "contributor-btn-color": 'hsl(0,0%, 90%)',
   "contributor-border-radius": '2px',
   "role-color": brick,
@@ -242,6 +243,7 @@ let changeTheme = (theme) => {
   $(".panel").css("background", theme["panel-background"]);
   $(".panel").css("border-left", theme["panel-border-left"]);
   $(".panel").css("border-bottom", theme["panel-border-left"]);
+  $(".panel").css("box-shadow", theme["panel-box-shadow"] || "none");
   $(".role").css("color", theme["role-color"]);
   $(".github-btn").css("background", theme["github-btn-background"]);
   $(".name").css("color", theme["contributor-name-color"]);

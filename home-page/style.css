@@ -294,6 +294,9 @@ body::-webkit-scrollbar-thumb {
   .get-started {
     text-align: center;
   }
+  .panel{
+    width:100%;
+  }
 }
 
 /* keyframes */
