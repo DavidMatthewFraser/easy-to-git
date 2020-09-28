@@ -172,3 +172,48 @@ clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 56%, 66% 60%, 48% 100%, 33% 6
     min-width: 100%;
   }
 }
+
+/* 
+----------------------
+Saurav Kumar's styling
+----------------------
+*/
+
+#myCamperCell{
+  background: #fff;
+  box-shadow: 0 0 10px 2px hsl(197, 71%, 75%);
+  border: none;
+  padding: 10px;
+  animation: appear 1s ease-in-out 1s 1 forwards;
+  animation-fill-mode: both;
+}
+
+#myCamperCell *{
+  margin: 5px;
+}
+#myCamperCell h1{
+  margin-bottom: 10px;
+  font-weight: 600;
+  animation: appear 400ms ease-in-out 2s 1 forwards;
+  animation-fill-mode: both;
+}
+#myCamperCell img{
+  margin-bottom: 10px;
+  animation: appear 400ms ease-in-out 2400ms 1 forwards;
+  animation-fill-mode: both;
+}
+#myCamperCell p{
+  animation: appear 400ms ease-in-out 2800ms 1 forwards;
+  animation-fill-mode: both;
+}
+
+@keyframes appear{
+  0%{
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

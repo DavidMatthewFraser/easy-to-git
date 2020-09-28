@@ -187,6 +187,7 @@ let abyss = {
   "comment-slide-color": brick,
   "widget-background": deepcoral,
   "section-header-color": '#ba301e',
+  "footer-bg": "hsl(0,0%,5%)"
 };
 
 //Dropdown onclick listeners
@@ -247,4 +248,5 @@ let changeTheme = (theme) => {
   $(".role").css("color", theme["role-color"]);
   $(".github-btn").css("background", theme["github-btn-background"]);
   $(".name").css("color", theme["contributor-name-color"]);
+  $("footer").css("background", theme["footer-bg"] || "initial");
 };
