@@ -297,6 +297,9 @@ body::-webkit-scrollbar-thumb {
   .panel{
     width:100%;
   }
+  .contributors-btn{
+    width: 100%;
+  }
 }
 
 /* keyframes */
