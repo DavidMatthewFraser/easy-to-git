@@ -78,6 +78,11 @@ const updateDisplay = data => {
   if (display.classList.contains('hidden')) {
     display.classList.remove('hidden');
   }
+  $('#bottom')[0].scrollIntoView({
+    behavior: 'smooth',
+    block: 'end',
+    inline: 'nearest'
+  });
   // Please Help Here
   // I would like the <div class='display'> to be
   // located at the bottom of the screen.
