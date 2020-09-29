@@ -3,7 +3,7 @@ $("document").ready(function () {
   loadInstructions();
 });
 
-const popup = $(".intructions-popup");
+const popup = $(".instructions-popup");
 
 async function loadInstructions() {
   const res = await fetch("Instructions-2.txt");
