@@ -451,3 +451,30 @@ body {
 	top: 300px;
 	height: 10rem;
 }
+
+/* 
+---------------
+Saurav Kumar's earth
+---------------
+*/
+
+#earth{
+	filter: drop-shadow(0 0 4px #fff);
+	position: absolute;
+	top: 100px;
+	left: calc(50% - 125px);
+	z-index: 999;
+	animation: earthMovement 2s cubic-bezier(0,1.62,.22,-0.49) 200ms infinite normal both;
+}
+
+@keyframes earthMovement{
+	0%{
+		left: -250px;
+		transform: rotateZ(180deg);
+	}
+	100%{
+		left: calc(100% + 250px);
+		transform: rotateZ(0);
+	}
+}
+
