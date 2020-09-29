@@ -19,7 +19,7 @@ body {
 	z-index: 1;
 	min-height: 100vh;
 }
-.intructions-popup {
+.instructions-popup {
 	position: fixed;
 	width: 100%;
 	min-height: 100vh;
@@ -29,7 +29,7 @@ body {
 	background: #000000ab;
 	display: none;
 }
-.intructions-popup h3 {
+.instructions-popup h3 {
 	align-items: center;
 }
 .center-wrap {
@@ -450,4 +450,24 @@ body {
 	right: 200px;
 	top: 300px;
 	height: 10rem;
+}
+
+/* Ayodele Samuel Adebayo alien style */
+
+#unclebay_alien{
+	position: absolute;
+	left: 950px;
+	bottom: 380px;
+	animation: swagAround;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+@keyframes swagAround {
+	from {
+		transform: rotate(0deg) translateX(10px) rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg) translateX(10px) rotate(-360deg);
+	}
 }
