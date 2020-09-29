@@ -178,6 +178,13 @@ main {
   font-family: "cardo";
 }
 
+/* Bottom */
+
+#bottom{
+  display: block;
+  height: 20px;
+}
+
 @media (max-width: 1024px) {
   .rev-div p {
     font-size: 1em;
