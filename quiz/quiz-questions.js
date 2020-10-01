@@ -39,6 +39,24 @@ const htmlQuestions = [
   },
   {
     question:
+      "All HTML tags are just 6",
+    answers: ["true", "false"],
+    correctAnswer: "false",
+  },
+  {
+    question:
+      "Which of this does no require a closing tag",
+    answers: ["img", "h1", "a", "p"],
+    correctAnswer: "img",
+  },
+  {
+    question:
+      "In HTML5 the break tag requires a closing tag to work",
+    answers: ["false", "true"],
+    correctAnswer: "false",
+  },
+  {
+    question:
       "Which of the following characters indicates the closing of a tag?",
     answers: [".", "\\", "/", ","],
     correctAnswer: "/",
@@ -124,18 +142,6 @@ const cssQuestions = [
       "Which of the following is not a valid border-style property value",
     answers: ["dotted", "solid", "double", "slashes"],
     correctAnswer: "slashes",
-  },
-  {
-    question:
-      "How many heading tags does HTML have",
-    answers: ["3", "6", "7", "6"],
-    correctAnswer: "6",
-  },
-  {
-    question:
-      "Which of this does no require a closing tag",
-    answers: ["img", "h1", "a", "p"],
-    correctAnswer: "img",
   },
 
 ];
