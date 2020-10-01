@@ -45,7 +45,7 @@ const htmlQuestions = [
   },
   {
     question:
-      "Which of this does no require a closing tag",
+      "Which of this does not require a closing tag",
     answers: ["img", "h1", "a", "p"],
     correctAnswer: "img",
   },
@@ -104,9 +104,24 @@ const htmlQuestions = [
     correctAnswer: "<!DOCTYPE html>",
   },
   {
-    question: "Which of the following is not a list tag?",
-    answers: ["<dl>", "<ol>", "<dd>", "<ul>"],
-    correctAnswer: "<dd>",
+    question: "Which of the tag is the grandparent of tag <i> in this expression? <div><span><i></i></span></div>",
+    answers: ["<span>", "<div>", "</i>", "no grandparent tag"],
+    correctAnswer: "<div>",
+  },
+  {
+    question: "All this html extensions are valid except",
+    answers: [".html", ".html5", ".htm"],
+    correctAnswer: ".html5",
+  },
+  {
+    question: "The tag that displays texts as italics is?",
+    answers: ["<li>", "<i>", "<italics>", "<bend>"],
+    correctAnswer: "<i>",
+  },
+  {
+    question: "HTML is a programming language?",
+    answers: ["false", "true"],
+    correctAnswer: "false",
   },
 ];
 
@@ -140,6 +155,12 @@ const cssQuestions = [
   {
     question:
       "Which of the following is not a valid border-style property value",
+    answers: ["dotted", "solid", "double", "slashes"],
+    correctAnswer: "slashes",
+  },
+  {
+    question:
+      "Which of this spe",
     answers: ["dotted", "solid", "double", "slashes"],
     correctAnswer: "slashes",
   },
