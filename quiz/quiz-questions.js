@@ -125,6 +125,19 @@ const cssQuestions = [
     answers: ["dotted", "solid", "double", "slashes"],
     correctAnswer: "slashes",
   },
+  {
+    question:
+      "How many heading tags does HTML have",
+    answers: ["3", "6", "7", "6"],
+    correctAnswer: "6",
+  },
+  {
+    question:
+      "Which of this does no require a closing tag",
+    answers: ["img", "h1", "a", "p"],
+    correctAnswer: "img",
+  },
+
 ];
 
 const javascriptQuestions = [
@@ -195,7 +208,7 @@ const dataStructure= [
     question: " Pushing an element into stack already having five elements and stack size of 5, then stack becomes?",
     answers: ["Overflow", "Crash","Underflow","User flow"],
     correctAnswer: "Overflow",
-  }
+  },
 ];
 
 const sections = [htmlQuestions, cssQuestions, javascriptQuestions,dataStructure];
