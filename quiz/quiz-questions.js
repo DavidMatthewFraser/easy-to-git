@@ -160,10 +160,41 @@ const cssQuestions = [
   },
   {
     question:
-      "Which of this spe",
-    answers: ["dotted", "solid", "double", "slashes"],
-    correctAnswer: "slashes",
+      "Which of this selector specificity will take precedence over others",
+    answers: ["h1.red", "h1#yellow", "h1"],
+    correctAnswer: "h1#yellow",
   },
+  {
+    question:
+      " dot (.) is to id while hash (#) is to class. This statement is?",
+    answers: ["correct", "wrong"],
+    correctAnswer: "wrong",
+  },
+  {
+    question:
+      "Internal css does not require the <style> tag in HTML 5",
+    answers: ["true", "false"],
+    correctAnswer: "false",
+  },
+  {
+    question:
+      "______ is used to select an html tag with an id in css",
+    answers: ["/", ".", "#", "#/"],
+    correctAnswer: "#",
+  },
+  {
+    question:
+      "If css is a Cascading Stylesheet then which of this will be displayed? h1{color:red} h1{color:blue} h1{color: green}",
+    answers: ["red", "blue", "green"],
+    correctAnswer: "green",
+  },
+  {
+    question:
+      "Which of this color value is not valid?",
+    answers: ["rgba(white)", "rgb(255, 255, 255)", "#fff", "white"],
+    correctAnswer: "rgba(white)",
+  },
+
 
 ];
 
@@ -238,4 +269,4 @@ const dataStructure= [
   },
 ];
 
-const sections = [htmlQuestions, cssQuestions, javascriptQuestions,dataStructure];
+const sections = [htmlQuestions, cssQuestions, javascriptQuestions, dataStructure];
