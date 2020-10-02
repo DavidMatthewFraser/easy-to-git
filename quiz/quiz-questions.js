@@ -39,6 +39,24 @@ const htmlQuestions = [
   },
   {
     question:
+      "All HTML tags are just 6",
+    answers: ["true", "false"],
+    correctAnswer: "false",
+  },
+  {
+    question:
+      "Which of this does not require a closing tag",
+    answers: ["img", "h1", "a", "p"],
+    correctAnswer: "img",
+  },
+  {
+    question:
+      "In HTML5 the break tag requires a closing tag to work",
+    answers: ["false", "true"],
+    correctAnswer: "false",
+  },
+  {
+    question:
       "Which of the following characters indicates the closing of a tag?",
     answers: [".", "\\", "/", ","],
     correctAnswer: "/",
@@ -86,9 +104,24 @@ const htmlQuestions = [
     correctAnswer: "<!DOCTYPE html>",
   },
   {
-    question: "Which of the following is not a list tag?",
-    answers: ["<dl>", "<ol>", "<dd>", "<ul>"],
-    correctAnswer: "<dd>",
+    question: "Which of the tag is the grandparent of tag <i> in this expression? <div><span><i></i></span></div>",
+    answers: ["<span>", "<div>", "</i>", "no grandparent tag"],
+    correctAnswer: "<div>",
+  },
+  {
+    question: "All this html extensions are valid except",
+    answers: [".html", ".html5", ".htm"],
+    correctAnswer: ".html5",
+  },
+  {
+    question: "The tag that displays texts as italics is?",
+    answers: ["<li>", "<i>", "<italics>", "<bend>"],
+    correctAnswer: "<i>",
+  },
+  {
+    question: "HTML is a programming language?",
+    answers: ["false", "true"],
+    correctAnswer: "false",
   },
 ];
 
@@ -125,6 +158,43 @@ const cssQuestions = [
     answers: ["dotted", "solid", "double", "slashes"],
     correctAnswer: "slashes",
   },
+  {
+    question:
+      "Which of this selector specificity will take precedence over others",
+    answers: ["h1.red", "h1#yellow", "h1"],
+    correctAnswer: "h1#yellow",
+  },
+  {
+    question:
+      " dot (.) is to id while hash (#) is to class. This statement is?",
+    answers: ["correct", "wrong"],
+    correctAnswer: "wrong",
+  },
+  {
+    question:
+      "Internal css does not require the <style> tag in HTML 5",
+    answers: ["true", "false"],
+    correctAnswer: "false",
+  },
+  {
+    question:
+      "______ is used to select an html tag with an id in css",
+    answers: ["/", ".", "#", "#/"],
+    correctAnswer: "#",
+  },
+  {
+    question:
+      "If css is a Cascading Stylesheet then which of this will be displayed? h1{color:red} h1{color:blue} h1{color: green}",
+    answers: ["red", "blue", "green"],
+    correctAnswer: "green",
+  },
+  {
+    question:
+      "Which of this color value is not valid?",
+    answers: ["rgba(white)", "rgb(255, 255, 255)", "#fff", "white"],
+    correctAnswer: "rgba(white)",
+  }
+
 ];
 
 const javascriptQuestions = [
@@ -195,7 +265,7 @@ const dataStructure= [
     question: " Pushing an element into stack already having five elements and stack size of 5, then stack becomes?",
     answers: ["Overflow", "Crash","Underflow","User flow"],
     correctAnswer: "Overflow",
-  }
+  },
 ];
 
-const sections = [htmlQuestions, cssQuestions, javascriptQuestions,dataStructure];
+const sections = [htmlQuestions, cssQuestions, javascriptQuestions, dataStructure];
