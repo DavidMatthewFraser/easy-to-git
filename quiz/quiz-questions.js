@@ -193,8 +193,7 @@ const cssQuestions = [
       "Which of this color value is not valid?",
     answers: ["rgba(white)", "rgb(255, 255, 255)", "#fff", "white"],
     correctAnswer: "rgba(white)",
-  },
-
+  }
 
 ];
 
