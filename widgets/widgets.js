@@ -43,7 +43,6 @@ const getCity = async (city) => {
   const query = `?apikey=${key}&q=${city}`;
   const response = await fetch(base + query);
   const data = await response.json();
-  console.log(data[0]);
   return data[0];
 }
 
@@ -52,14 +51,12 @@ const getWeather = async (cityId) => {
   const query = `${cityId}?apikey=${key}`;
   const response = await fetch(base + query);
   const data = await response.json();
-  console.log(data);
   return data[0];
 }
 
 const updateDisplay = data => {
   const cityDetails = data.cityDetails;
   const weather = data.weather;
-
   details.innerHTML = `
     <h5>${cityDetails.EnglishName}</h5>
     <div class="condition">${weather.WeatherText}</div>
@@ -76,26 +73,20 @@ const updateDisplay = data => {
     imageSource = 'images/night.svg';
   }
   image.setAttribute('src', imageSource);
-
   const iconSource = `images/icons/${weather.WeatherIcon}.svg`;
   icon.setAttribute('src', iconSource);
-
   if (display.classList.contains('hidden')) {
     display.classList.remove('hidden');
   }
-
-  //display.scrollIntoView();
-
-  //$('#bottom')[0].scrollIntoView({
-  //  behavior: 'smooth',
-  //  block: 'end',
-  //  inline: 'nearest'
-  //});
+  $('#bottom')[0].scrollIntoView({
+    behavior: 'smooth',
+    block: 'end',
+    inline: 'nearest'
+  });
   // Please Help Here
   // I would like the <div class='display'> to be
   // located at the bottom of the screen.
-  // I tried:
-
+  // I tried:  display.scrollIntoView(false);
 }
 
 const updateCity = async (city) => {
@@ -114,6 +105,5 @@ cityForm.addEventListener('submit', e => {
   updateCity(city)
     .then(data => updateDisplay(data))
     .catch(err => console.log(err));
-  display.scrollIntoView(false);
 })
 
