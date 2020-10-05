@@ -57,6 +57,7 @@ const getWeather = async (cityId) => {
 const updateDisplay = data => {
   const cityDetails = data.cityDetails;
   const weather = data.weather;
+
   details.innerHTML = `
     <h5>${cityDetails.EnglishName}</h5>
     <div class="condition">${weather.WeatherText}</div>
