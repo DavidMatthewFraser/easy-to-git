@@ -84,6 +84,8 @@ const updateDisplay = data => {
 
   //display.scrollIntoView();
 
+  document.querySelector('.display').scrollIntoView(false);
+
   //$('#bottom')[0].scrollIntoView({
   //  behavior: 'smooth',
   //  block: 'end',
@@ -113,6 +115,5 @@ cityForm.addEventListener('submit', e => {
   updateCity(city)
     .then(data => updateDisplay(data))
     .catch(err => console.log(err));
-  display.scrollIntoView(false);
 })
 
