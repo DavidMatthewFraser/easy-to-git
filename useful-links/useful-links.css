@@ -17,7 +17,7 @@ html {
 body {
   margin-top: 8rem;
   color: #333;
-  background: #7bb7fc;
+  background: #6aafff;
   font-family: 'Nunito', sans-serif;
   /* font-family: sans-serif; */
   overflow-x: hidden;
@@ -162,7 +162,7 @@ figure {
 }
 .info-container {
   width: 100%;
-  background: #7bb7fc;
+  background: #6aafff;
 }
 .info-header {
   display: flex;
@@ -287,7 +287,7 @@ figure {
   justify-content: space-between;
   height: 7rem;
   margin-bottom: 1rem;
-  box-shadow: 0 2px 2px #000;
+  box-shadow: 0 2px 2px rgba(80, 80, 80, 0.582);
   padding-right: 2rem;
 }
 .list li:hover {
