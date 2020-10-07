@@ -1,7 +1,7 @@
 :root {
-  --main: #D4B506;
+  --main: #4d50fa;
   --peach: #dba7a2;
-  --light-main: #F6BA07;
+  --light-main: #2e4bcc;
   --border-radius: 10px;
   --box-shadow: 10px 10px 25px -19px #2f2f2f8f;
   --linear-background: linear-gradient(0deg, var(--main), var(--light-main));
@@ -17,7 +17,7 @@ html {
 body {
   margin-top: 8rem;
   color: #333;
-  background: #f8fa7a;
+  background: #7bb7fc;
   font-family: 'Nunito', sans-serif;
   /* font-family: sans-serif; */
   overflow-x: hidden;
@@ -94,7 +94,7 @@ figure {
   letter-spacing: 0.5px;
   padding: 18px 20px;
   border-radius: 5px;
-  background: #EBE104;
+  background: #3b69f2;
   text-transform: uppercase;
   font-size: 14px;
   color: #fff;
@@ -119,7 +119,7 @@ figure {
 }
 .btn-menu {
   width: 5rem;
-  background: #EBE104;
+  background: #2e4bcc;
   text-align: center;
   padding: 10px;
   text-shadow: 1px 1px #000;
@@ -138,7 +138,7 @@ figure {
 }
 .btn-instructions {
   width: 16rem;
-  background: #EBE104;
+  background: #3b69f2;
   text-align: center;
   margin: auto;
   padding: 5px;
@@ -162,7 +162,7 @@ figure {
 }
 .info-container {
   width: 100%;
-  background: #f8fa7a;
+  background: #7bb7fc;
 }
 .info-header {
   display: flex;
