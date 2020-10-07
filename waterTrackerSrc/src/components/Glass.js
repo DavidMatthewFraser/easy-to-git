@@ -18,8 +18,8 @@ function Glass(props) {
         width: props.width,
         height: 1.5 * innerWidth,
         transform: "rotateX(-10deg)",
-        background: "#ddd",
-        boxShadow: `inset 0 -${props.percent * 0.01 * innerWidth*1.5}px 0 ${props.fill}`,
+        background: props.glassBG,
+        boxShadow: `inset 0 -${props.percent * 0.01 * innerWidth*1.5}px 0 ${props.fill}, inset 0 0 1px 1px ${props.fill}`,
         transition: 'all 200ms ease-in-out',
         margin: 'auto'
     }
@@ -36,7 +36,8 @@ function Glass(props) {
 Glass.defaultProps = {
     percent: 0,
     fill: 'skyblue',
-    size: 150
+    size: 150,
+    glassBG: '#ddd'
 }
 
 
