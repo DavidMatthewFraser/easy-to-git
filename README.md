@@ -78,9 +78,9 @@ Before making any contributions to these projects, please read our <a href='./CO
 
 - **Contributor Panel**: This displays the project’s contributors on the easy-to-git homepage and you can add your name and GitHub profile by modifying the contributorPanel.js file.
 
-- **HomepageThemes**: You can add your own custom theme to the easy-to-git homepage by modifying the themes.js file
+- **Homepage Themes**: You can add your own custom theme to the easy-to-git homepage by modifying the themes.js file
 
-- **QuizQuestions**: To add some questions to the quiz open the quizQuestions.js file and add a question with some answers and add the correct answer. That’s it! You can add HTML, CSS or Javascript
+- **Quiz Questions**: To add some questions to the quiz open the quizQuestions.js file and add a question with some answers and add the correct answer. That’s it! You can add HTML, CSS or Javascript
 
 - **Add useful links**: This is a place to share any websites, videos, books, etc. that you would recommend to other developers. You add your own suggestions by modifying the Useful-links.html file.
 
