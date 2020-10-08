@@ -217,3 +217,19 @@ Saurav Kumar's styling
     transform: translateY(0px);
   }
 }
+/* rzl */
+#rzl{
+  padding: 16px 24px;
+  background: #e8e8f7;
+  border: unset;
+  box-shadow: unset;
+  transition: 0.25s ease-in;
+}
+#rzl img{
+  margin: 16px 0;
+}
+#rzl:hover{
+  transform: translate(-1px, -2px);
+  box-shadow: 1px 2px 4px rgba(40, 40, 90, 0.4);
+  /* background: #f5f5ff; */
+}
