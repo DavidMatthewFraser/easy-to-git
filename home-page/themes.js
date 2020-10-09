@@ -189,6 +189,28 @@ let abyss = {
   "section-header-color": '#ba301e',
   "footer-bg": "hsl(0,0%,5%)"
 };
+let winter = {
+  themeName: "winter",
+  "page-background": "#19C9E1 ",
+  "sectionContainer-background": "#E3F5F8",
+  "header-background": "#97E7F5",
+  "header-color": "white",
+  "contributor-background": "#B6DCE2 ",
+  "panel-background": "#B6DCE2 ",
+  "panel-border-left": "15px solid #669DA5 ",
+  "contributor-name-color": "#4AB0C0 ",
+  "role-color": "#620050",
+  "github-btn-background":  "#3b0632",
+  "chooseTheme-background": "#B6DCE2",
+  "btn-default-background": "#B6DCE2  ",
+  "btn-primary-background": "#B6DCE2 ",
+  "btn-default-color": "black",
+  "btn-primary-color": "white",
+  "comment-slide-background": "#B6DCE2",
+  "comment-slide-color": "black",
+  "widget-background": "#B6DCE2",
+  "section-header-color": "white",
+};
 
 //Dropdown onclick listeners
 defaultTheme.onclick = () => {
@@ -211,6 +233,9 @@ pumpkinSpiceTheme.onclick = () => {
 };
 abyssTheme.onclick = () => {
   changeTheme(abyss);
+}
+winterTheme.onclick = () => {
+  changeTheme(winter);
 }
 //Change Theme with jQuery selectors
 let changeTheme = (theme) => {
