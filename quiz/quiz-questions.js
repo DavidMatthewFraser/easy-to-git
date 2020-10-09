@@ -17,7 +17,7 @@ const htmlQuestions = [
     correctAnswer: "hypertext markup language",
   },
   {
-    question: "How many types of heading does an HTML contain",
+    question: "How many section heading elements are there in HTML?",
     answers: ["5", "10", "8", "6"],
     correctAnswer: "6",
   },
@@ -44,13 +44,13 @@ const htmlQuestions = [
   },
   {
     question:
-      "Which of this does not require a closing tag",
+      "Which of these elements don't require a closing tag?",
     answers: ["img", "h1", "a", "p"],
     correctAnswer: "img",
   },
   {
     question:
-      "In HTML5 the break tag requires a closing tag to work",
+      "In HTML5 the break tag requires a closing tag.",
     answers: ["false", "true"],
     correctAnswer: "false",
   },
@@ -60,7 +60,6 @@ const htmlQuestions = [
     answers: [".", "\\", "/", ","],
     correctAnswer: "/",
   },
-
   {
     question: "How is the document type initialized in HTML5.?",
     answers: [
@@ -77,12 +76,12 @@ const htmlQuestions = [
     correctAnswer: "Tim Berners-Lee",
   },
   {
-    question: "Which of these adds a line break?",
+    question: "Which of these elements adds a line break?",
     answers: ["<break>", "<lb>", "<br>", "<linebreak>"],
     correctAnswer: "<br>",
   },
   {
-    question: "Where in my html code would I place a line that determines the size of the viewport?",
+    question: "Where in my HTML code would I place a line that determines the size of the viewport?",
     answers: ["<body>", "<header>", "<footer>", "<head>"],
     correctAnswer: "<head>",
   },
@@ -103,19 +102,19 @@ const htmlQuestions = [
     correctAnswer: "<!DOCTYPE html>",
   },
   {
-    question: "Which of the tag is the grandparent of tag <i> in this expression? <div><span><i></i></span></div>",
-    answers: ["<span>", "<div>", "</i>", "no grandparent tag"],
+    question: "Which of the tags is the grandparent of tag <strong> in this expression? <div><span><strong></strong></span></div>",
+    answers: ["<span>", "<div>", "</strong>", "no grandparent tag"],
     correctAnswer: "<div>",
   },
   {
-    question: "All this html extensions are valid except",
+    question: "Each of these html extensions are valid except",
     answers: [".html", ".html5", ".htm"],
     correctAnswer: ".html5",
   },
   {
     question: "The tag that displays texts as italics is?",
-    answers: ["<li>", "<i>", "<italics>", "<bend>"],
-    correctAnswer: "<i>",
+    answers: ["<li>", "<i>", "<italics>", "<em>"],
+    correctAnswer: "<em>",
   },
   {
     question: "HTML is a programming language?",
@@ -142,13 +141,13 @@ const cssQuestions = [
   },
   {
     question:
-      "What is the correct HTML for referring to an external style sheet?",
+      "What is the correct HTML element for referring to an external style sheet?",
     answers: [
       "<stylesheet>mystyle.css</stylesheet>",
-      '<link rel="stylesheet" type="text/css" href="mystyle.css">',
-      ' <style src="mystyle.css">',
+      '<link rel="stylesheet" href="mystyle.css">',
+      '<style src="mystyle.css">',
     ],
-    correctAnswer: '<link rel="stylesheet" type="text/css" href="mystyle.css">',
+    correctAnswer: '<link rel="stylesheet" href="mystyle.css">',
   },
   {
     question:
@@ -164,13 +163,13 @@ const cssQuestions = [
   },
   {
     question:
-      "Which of this selector specificity will take precedence over others",
+      "Which of these specificity will take precedence over others",
     answers: ["h1.red", "h1#yellow", "h1"],
     correctAnswer: "h1#yellow",
   },
   {
     question:
-      " Dot (.) is to id while hash (#) is to class. This statement is?",
+      "Dot (.) is to id while hash (#) is to class. This statement is?",
     answers: ["correct", "wrong"],
     correctAnswer: "wrong",
   },
@@ -188,13 +187,13 @@ const cssQuestions = [
   },
   {
     question:
-      "If css is a Cascading Stylesheet then which of this will be displayed? h1{color:red} h1{color:blue} h1{color: green}",
+      "If the following styles are found in this order, what color will be displayed? h1{color:red} h1{color:blue} h1{color: green}",
     answers: ["red", "blue", "green"],
     correctAnswer: "green",
   },
   {
     question:
-      "Which of this color value is not valid?",
+      "Which of these color values is not valid?",
     answers: ["rgba(white)", "rgb(255, 255, 255)", "#fff", "white"],
     correctAnswer: "rgba(white)",
   },
@@ -204,7 +203,6 @@ const cssQuestions = [
     answers: ["color", "border-color", "bg-color", "background-color"],
     correctAnswer: "background-color",
   }
-
 ];
 
 const javascriptQuestions = [
@@ -272,7 +270,7 @@ const dataStructure= [
     correctAnswer: "Underflow",
   },
   {
-    question: " Pushing an element into stack already having five elements and stack size of 5, then stack becomes?",
+    question: "Pushing an element into stack already having five elements and stack size of 5, then stack becomes?",
     answers: ["Overflow", "Crash","Underflow","User flow"],
     correctAnswer: "Overflow",
   },
