@@ -7,7 +7,7 @@ const questionTemplate = {
 
 const htmlQuestions = [
   {
-    question: "What does HTML stand for",
+    question: "What does HTML stand for?",
     answers: [
       "hypertemplate markup language",
       "hybridtext markup language",
@@ -22,23 +22,23 @@ const htmlQuestions = [
     correctAnswer: "6",
   },
   {
-    question: "What kind of element is a <div>",
+    question: "What kind of element is a <div>.",
     answers: ["inline", "block", "inline-block"],
     correctAnswer: "block",
   },
   {
-    question: "Which of the following tags defines superscript text",
+    question: "Which of the following tags defines superscript text?",
     answers: ["<sup>", "<downtext>", "<sub>", "<subscript>"],
     correctAnswer: "<sup>",
   },
   {
-    question: "Which tag defines an inline frame",
+    question: "Which tag defines an inline frame?",
     answers: ["<frame>", "<inline>", "<iframe>", "<inline frame>"],
     correctAnswer: "<iframe>",
   },
   {
     question:
-      "All HTML tags are just 6",
+      "All HTML tags are just 6.",
     answers: ["true", "false"],
     correctAnswer: "false",
   },
@@ -61,7 +61,7 @@ const htmlQuestions = [
     correctAnswer: "/",
   },
   {
-    question: "How is the document type initialized in HTML5.?",
+    question: "How is the document type initialized in HTML5?",
     answers: [
       "<DOCTYPE html>",
       "<!DOCTYPE>",
@@ -102,7 +102,7 @@ const htmlQuestions = [
     correctAnswer: "<!DOCTYPE html>",
   },
   {
-    question: "Which of the tags is the grandparent of tag <strong> in this expression? <div><span><strong></strong></span></div>",
+    question: "Which of the tags is the grandparent of tag <strong> in this expression? <div><span><strong></strong></span></div>?",
     answers: ["<span>", "<div>", "</strong>", "no grandparent tag"],
     correctAnswer: "<div>",
   },
@@ -117,7 +117,7 @@ const htmlQuestions = [
     correctAnswer: "<em>",
   },
   {
-    question: "HTML is a programming language?",
+    question: "HTML is a programming language.",
     answers: ["false", "true"],
     correctAnswer: "false",
   },
@@ -151,19 +151,19 @@ const cssQuestions = [
   },
   {
     question:
-      "Which position is not affected by the top, bottom, left, and right properties",
+      "Which position is not affected by the top, bottom, left, and right properties?",
     answers: ["relative", "absolute", "fixed", "static"],
     correctAnswer: "static",
   },
   {
     question:
-      "Which of the following is not a valid border-style property value",
+      "Which of the following is not a valid border-style property value?",
     answers: ["dotted", "solid", "double", "slashes"],
     correctAnswer: "slashes",
   },
   {
     question:
-      "Which of these specificity will take precedence over others",
+      "Which of these specificity will take precedence over others?",
     answers: ["h1.red", "h1#yellow", "h1"],
     correctAnswer: "h1#yellow",
   },
@@ -175,13 +175,13 @@ const cssQuestions = [
   },
   {
     question:
-      "Internal css does not require the <style> tag in HTML 5",
+      "Internal css does not require the <style> tag in HTML 5.",
     answers: ["true", "false"],
     correctAnswer: "false",
   },
   {
     question:
-      "______ is used to select an html tag with an id in css",
+      "______ is used to select an html tag with an id in css.",
     answers: ["/", ".", "#", "#/"],
     correctAnswer: "#",
   },
@@ -207,12 +207,12 @@ const cssQuestions = [
 
 const javascriptQuestions = [
   {
-    question: "Which of the following has function scope",
+    question: "Which of the following has function scope?",
     answers: ["var", "let", "const"],
     correctAnswer: "var",
   },
   {
-    question: "Which of the following values is not falsy",
+    question: "Which of the following values is not falsy?",
     answers: ["0", "undefined", "null", "'false'"],
     correctAnswer: "'false'",
   },
@@ -247,7 +247,7 @@ const javascriptQuestions = [
     correctAnswer: ".js",
   },
   {
-    question: "What is the result of the expression 'var1 && var2' if var1 = true and var2 = false",
+    question: "What is the result of the expression 'var1 && var2' if var1 = true and var2 = false?",
     answers: ["false", "null", "true", "undefined"],
     correctAnswer: "false",
   },
@@ -260,12 +260,12 @@ const dataStructure= [
     correctAnswer: "Push",
   },
   {
-    question: "Process of removing an element from stack is called __________",
+    question: "Process of removing an element from stack is called __________.",
     answers: ["Create", "Push", "Evaluation", "Pop"],
     correctAnswer: "Pop",
   },
   {
-    question: "In a stack, if a user tries to remove an element from empty stack it is called _________",
+    question: "In a stack, if a user tries to remove an element from empty stack it is called _________.",
     answers: ["Underflow", "Empty collection", "Overflow", "Garbage Collection"],
     correctAnswer: "Underflow",
   },
