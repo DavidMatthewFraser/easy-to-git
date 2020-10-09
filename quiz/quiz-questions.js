@@ -38,12 +38,6 @@ const htmlQuestions = [
   },
   {
     question:
-      "All HTML tags are just 6.",
-    answers: ["true", "false"],
-    correctAnswer: "false",
-  },
-  {
-    question:
       "Which of these elements don't require a closing tag?",
     answers: ["img", "h1", "a", "p"],
     correctAnswer: "img",
