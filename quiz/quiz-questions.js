@@ -3,8 +3,7 @@ const questionTemplate = {
   answers: ["", "", "", ""],
   correctAnswer: "",
 };
-
-// feel free to add some questions to the arrays a template is above, you can put more of less than for answers but dont have to many
+// Feel free to add more questions to the htmlQuestions array below.  The template above shows the expected format.  You can add more or less than the standard four answers, but don't add too many.
 
 const htmlQuestions = [
   {
@@ -198,7 +197,7 @@ const cssQuestions = [
       "Which of this color value is not valid?",
     answers: ["rgba(white)", "rgb(255, 255, 255)", "#fff", "white"],
     correctAnswer: "rgba(white)",
-  }
+  },
   {
     question:
     "what CSS property is used to apply a background color to a given HTML element?",
