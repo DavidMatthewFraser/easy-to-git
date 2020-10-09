@@ -202,8 +202,8 @@ const cssQuestions = [
   {
     question:
     "what CSS property is used to apply a background color to a given HTML element?",
-    answers: ["Color", "Border-color", "Backcolor", "Background-color"],
-    correctAnswer: "Background-color",
+    answers: ["color", "border-color", "bg-color", "background-color"],
+    correctAnswer: "background-color",
   }
 
 ];
