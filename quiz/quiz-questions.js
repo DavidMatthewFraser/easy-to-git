@@ -123,6 +123,11 @@ const htmlQuestions = [
     answers: ["false", "true"],
     correctAnswer: "false",
   },
+  {
+    question: "How do you insert a comment in HTML?",
+    answers: ["<!-- comment -->", "!! coment !!", "/* comment */", "% comment %"],
+    correctAnswer: "<!-- comment -->",
+  },
 ];
 
 const cssQuestions = [
@@ -193,6 +198,12 @@ const cssQuestions = [
       "Which of this color value is not valid?",
     answers: ["rgba(white)", "rgb(255, 255, 255)", "#fff", "white"],
     correctAnswer: "rgba(white)",
+  }
+  {
+    question:
+    "what CSS property is used to apply a background color to a given HTML element?",
+    answers: ["Color", "Border-color", "Backcolor", "Background-color"],
+    correctAnswer: "Background-color",
   }
 
 ];
