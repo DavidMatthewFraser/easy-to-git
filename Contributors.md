@@ -25,3 +25,4 @@
 - [Ayodele Samuel Adebayo](https://github.com/unclebay143) - unclebigbay@gmail.
 - [James Price](https://github.com/jamesmp88)
 - [Saurav Kumar](https://github.com/sauravk7077)
+- [Autumn Davis](https://github.com/AutumnWishes87)
