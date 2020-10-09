@@ -32,7 +32,7 @@ const htmlQuestions = [
     correctAnswer: "<sup>",
   },
   {
-    question: "which tag defines an inline frame",
+    question: "Which tag defines an inline frame",
     answers: ["<frame>", "<inline>", "<iframe>", "<inline frame>"],
     correctAnswer: "<iframe>",
   },
@@ -170,7 +170,7 @@ const cssQuestions = [
   },
   {
     question:
-      " dot (.) is to id while hash (#) is to class. This statement is?",
+      " Dot (.) is to id while hash (#) is to class. This statement is?",
     answers: ["correct", "wrong"],
     correctAnswer: "wrong",
   },
@@ -200,7 +200,7 @@ const cssQuestions = [
   },
   {
     question:
-    "what CSS property is used to apply a background color to a given HTML element?",
+    "What CSS property is used to apply a background color to a given HTML element?",
     answers: ["color", "border-color", "bg-color", "background-color"],
     correctAnswer: "background-color",
   }
