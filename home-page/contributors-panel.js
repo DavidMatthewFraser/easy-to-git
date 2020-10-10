@@ -1,6 +1,7 @@
-// add github name here
-
-// feel free to add a role if not it will default to contributor
+// Add yourself as a contributor to the contributor panel.
+// To see yourself, click on the Contributors Panel in the top
+// right of the home page.  The 'role' refers to your roll here
+// at easytogit.com. Leaving it blank will default to 'Contributor'.
 
 const contributors = [
 
@@ -77,27 +78,27 @@ const contributors = [
   {
     githubName: "BrianLoveGa",
     displayName: "Brian Loveless",
-    roll: "Contributor / Full Stack Engineer"
+    roll: ""
   },
   {
     githubName: "satyamrastogi",
     displayName: "Satyam Rastogi",
-    roll: "Contributor / Full Stack Engineer"
+    roll: ""
   },
   {
     githubName: "unclebay143",
     displayName: "Ayodele Samuel Adebayo",
-    roll: "Contributor / Full Stack Engineer"
+    roll: ""
   },
   {
     githubName: "sauravk7077",
     displayName: "Saurav Kumar",
-    roll: "Contributor / Full Stack"
+    roll: ""
   },
   {
     githubName: "Anushri20",
     displayName: "Amushri",
-    role: "Contributor/ Full Stack developer",
+    role: "",
   },
 ];
 
