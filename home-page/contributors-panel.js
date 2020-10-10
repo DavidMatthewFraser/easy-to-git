@@ -3,6 +3,7 @@
 // feel free to add a role if not it will default to contributor
 
 const contributors = [
+
   {
     githubName: "DavidMatthewFraser",
     displayName: "david fraser",
@@ -92,7 +93,12 @@ const contributors = [
     githubName: "sauravk7077",
     displayName: "Saurav Kumar",
     roll: "Contributor / Full Stack"
-  }
+  },
+  {
+    githubName: "Anushri20",
+    displayName: "Amushri",
+    role: "Contributor/ Full Stack developer",
+  },
 ];
 
 const sidePanel = document.querySelector(".panel");
