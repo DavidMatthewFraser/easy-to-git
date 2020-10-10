@@ -78,27 +78,27 @@ const contributors = [
   {
     githubName: "BrianLoveGa",
     displayName: "Brian Loveless",
-    roll: "Contributor / Full Stack Engineer"
+    roll: ""
   },
   {
     githubName: "satyamrastogi",
     displayName: "Satyam Rastogi",
-    roll: "Contributor / Full Stack Engineer"
+    roll: ""
   },
   {
     githubName: "unclebay143",
     displayName: "Ayodele Samuel Adebayo",
-    roll: "Contributor / Full Stack Engineer"
+    roll: ""
   },
   {
     githubName: "sauravk7077",
     displayName: "Saurav Kumar",
-    roll: "Contributor / Full Stack"
+    roll: ""
   },
   {
     githubName: "Anushri20",
     displayName: "Amushri",
-    role: "Contributor/ Full Stack developer",
+    role: "",
   },
 ];
 
