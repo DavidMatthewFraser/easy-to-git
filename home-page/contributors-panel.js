@@ -1,6 +1,7 @@
-// add github name here
-
-// feel free to add a role if not it will default to contributor
+// Add yourself as a contributor to the contributor panel.
+// To see yourself, click on the Contributors Panel in the top
+// right of the home page.  The 'role' refers to your roll here
+// at easytogit.com. Leaving it blank will default to 'Contributor'.
 
 const contributors = [
 
