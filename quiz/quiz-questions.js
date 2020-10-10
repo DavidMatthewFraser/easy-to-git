@@ -196,6 +196,25 @@ const cssQuestions = [
     "What CSS property is used to apply a background color to a given HTML element?",
     answers: ["color", "border-color", "bg-color", "background-color"],
     correctAnswer: "background-color",
+  },
+  {
+    question: "How do you insert a comment in a CSS file?",
+    answers: [
+      "// this is a comment",
+      "/* this is a comment */",
+      "// this is a comment //",
+      "' this is a comment"
+    ],
+    correctAnswer: "/* this is a comment */"
+  },
+  {
+    question: "How do you make the text bold?",
+    answers: [
+      "font: bold;",
+      "font-weight: bold;",
+      "style: bold;"
+    ],
+    correctAnswer: "font-weight: bold;"
   }
 ];
 
