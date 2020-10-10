@@ -233,3 +233,20 @@ Saurav Kumar's styling
   box-shadow: 1px 2px 4px rgba(40, 40, 90, 0.4);
   /* background: #f5f5ff; */
 }
+
+/* albertojauregui */
+#albertojauregui {
+  background: rebeccapurple;
+  border: unset;
+  box-shadow: unset;
+  color: white;
+  padding: 16px 24px;
+  transition: 0.25s ease-in;
+}
+#albertojauregui img{
+  margin: 16px 0;
+}
+#albertojauregui:hover{
+  box-shadow: 1px 2px 4px rgba(40, 40, 90, 0.4);
+  transform: translate(-1px, -2px);
+}
