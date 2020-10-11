@@ -268,6 +268,31 @@ const dataStructure= [
     answers: ["Overflow", "Crash","Underflow","User flow"],
     correctAnswer: "Overflow",
   },
+  {
+    question: "The smallest element of an array's index is called its ",
+    answers: ["Lower bound", "Upper bound","Range","Extraction"],
+    correctAnswer: "Lower bound",
+  },
+  {
+    question: "The largest element of an array's index is called its ",
+    answers: ["Lower bound","Range","Upper bound", "All of these"],
+    correctAnswer: "Upper bound",
+  },
+  {
+    question: "Each array declaration need not give, implicitly or explicitly, the information about ",
+    answers: ["The name of the array","The data type of array","The first data from the set to be stored", "The index set of the array"],
+    correctAnswer: "The first data from the set to be stored",
+  },
+  {
+    question: "Two dimensional arrays are also called  ",
+    answers: ["tables arrays","matrix arrays", "both of the above","none of the above"],
+    correctAnswer: "both of the above",
+  },
+  {
+    question: "The memory address of the first element of an array is called ",
+    answers: ["base address","floor address", "foundation address","first address"],
+    correctAnswer: "base address",
+  }
 ];
 
 const sections = [htmlQuestions, cssQuestions, javascriptQuestions, dataStructure];
