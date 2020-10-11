@@ -120,6 +120,12 @@ input[type=number]::-webkit-inner-spin-button {
     flex-wrap: wrap;
 }
 
+.gCloseBtn{
+    position: fixed;
+    bottom: 10px;
+
+}
+
 .gContainer{
     transition: all 0.2s ease-in-out;
     display: flex;

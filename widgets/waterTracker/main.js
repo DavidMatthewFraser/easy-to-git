@@ -71,7 +71,9 @@ const update = () => {
 const addWaterModal = () => {
     const modal = createElement('div', 'modal');
     const insideModal = createElement('div', 'gModal');
-    const waterArray = [5, 100, 250, 500, 750, 1000, 1500, 2000];
+    const waterArray = [50, 100, 250, 500, 750, 1000, 1500, 2000];
+    const gCloseBtn = createElement('button', 'btn gCloseBtn', 'Close');
+    gCloseBtn.addEventListener('click', e=>{modal.remove()});
     const waterBoxes = waterArray.map(e=>{
         const gContainer = createElement('div', 'gContainer');
 
@@ -81,7 +83,6 @@ const addWaterModal = () => {
             modal.remove();
         });
 
-        const gCloseBtn = createElement('button', 'btn', 'Close');
         const gIcon = createElement('div', 'gIcon');
         const gImg = createElement('img', 'gImg', null, 'src:res/water-glass.svg');
         gIcon.appendChild(gImg);
@@ -92,13 +93,14 @@ const addWaterModal = () => {
         return gContainer;
     });
     waterBoxes.forEach(e=>{insideModal.appendChild(e)});
+    insideModal.append(gCloseBtn);
     modal.appendChild(insideModal);
     main.appendChild(modal);
 }
 
 const createElement = (tag, cName, value=null, attr=null) => {
     const ele = document.createElement(tag);
-    ele.classList.add(cName);
+    ele.className = cName;
 
     if(attr !== null)
         ele.setAttribute(...attr.split(':'));
