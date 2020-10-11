@@ -4,6 +4,11 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
 .main{
     display: flex;
     width: 100%;
@@ -88,5 +93,89 @@ input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     
   }
+
+/* Modal */
+
+.modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background: hsla(0,0%,100%, 0.5);
+}
+
+/* Add Water modal */
+
+.gModal{
+    background-color: #fff;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gCloseBtn{
+    position: fixed;
+    bottom: 10px;
+
+}
+
+.gContainer{
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    flex-basis: 100px;
+    height: 100px;
+    cursor: pointer;
+    border: 2px solid var(--color2);
+    border-radius: 15px;
+    margin: 5px;
+    padding: 10px;
+    color: var(--color2);
+}
+
+.gContainer:hover{
+    filter: brightness(0.8);
+}
+
+.gIcon{
+    width: 80px;
+}
+
+.gImg{
+    width: 100%;
+}
+
+.gText{
+    text-align: center;
+}
+
+/* Footer */
+footer{
+    position: fixed;
+    bottom: 0;
+    margin-top: auto;
+    text-align: center;
+    font-size: 0.5em;
+}
+
+/* keyframes */
+@keyframes exit{
+    0%{
+        height: 100%;
+        opacity: 1;
+    }
+    100%{
+        height: 0;
+        opacity: 0;
+    }
+}
 
 /* More styles coming in the future */

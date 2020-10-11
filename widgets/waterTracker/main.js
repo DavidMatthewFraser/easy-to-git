@@ -25,6 +25,8 @@ const resetBtn = document.getElementById('reset');
 const goalInput = document.getElementById('goalWater');
 const submit = document.getElementById('submit');
 const waterFilledElement = document.getElementById('water');
+const waterAmountModalBtn = document.getElementById('addAmountWater');
+const main = document.getElementsByClassName('main')[0];
 
 //Event Listeners
 addWaterElement.addEventListener('click', e => {
@@ -40,6 +42,7 @@ submit.addEventListener('click', e => {
     goal = value > min ? (value < max ? value : goal): goal;
     update();
 });
+waterAmountModalBtn.addEventListener('click', _=>{addWaterModal()});
 
 
 
@@ -63,6 +66,48 @@ const update = () => {
     waterFilledElement.style.boxShadow = `inset 0 -${complete * 0.01 * height}px  0px 0px skyblue`;
     ls.set(waterArray);
     ls2.set(goal);
+}
+
+const addWaterModal = () => {
+    const modal = createElement('div', 'modal');
+    const insideModal = createElement('div', 'gModal');
+    const waterArray = [50, 100, 250, 500, 750, 1000, 1500, 2000];
+    const gCloseBtn = createElement('button', 'btn gCloseBtn', 'Close');
+    gCloseBtn.addEventListener('click', e=>{modal.remove()});
+    const waterBoxes = waterArray.map(e=>{
+        const gContainer = createElement('div', 'gContainer');
+
+        gContainer.addEventListener('click', _=>{
+            addWater(e, Date.now());
+            update();
+            modal.remove();
+        });
+
+        const gIcon = createElement('div', 'gIcon');
+        const gImg = createElement('img', 'gImg', null, 'src:res/water-glass.svg');
+        gIcon.appendChild(gImg);
+
+        const gText = createElement('div', 'gText', e + " ml");
+
+        gContainer.append(gIcon, gText);
+        return gContainer;
+    });
+    waterBoxes.forEach(e=>{insideModal.appendChild(e)});
+    insideModal.append(gCloseBtn);
+    modal.appendChild(insideModal);
+    main.appendChild(modal);
+}
+
+const createElement = (tag, cName, value=null, attr=null) => {
+    const ele = document.createElement(tag);
+    ele.className = cName;
+
+    if(attr !== null)
+        ele.setAttribute(...attr.split(':'));
+    if(value !== null)
+        ele.innerText = value
+
+    return ele;
 }
 
 const addWater = (quantity, time) => {
