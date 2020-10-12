@@ -19,7 +19,7 @@
 
 - Pull requests are the way to go
 - Fork our project
-- `git clone https://github.com/your-github-username/easy-to-git.git`
+- `git clone https://github.com/`<strong>your-github-username</strong>`/easy-to-git.git`
 - `cd easy-to-git`
 - `git branch checkout -b name-of-branch`
 - Make your changes
