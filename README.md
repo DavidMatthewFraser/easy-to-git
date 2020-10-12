@@ -21,11 +21,11 @@
 - Fork our project
 - `git clone https://github.com/`<strong>your-github-username</strong>`/easy-to-git.git`
 - `cd easy-to-git`
-- `git branch checkout -b name-of-branch`
+- `git checkout -b name-of-new-branch`
 - Make your changes
-- `git add file-1 file-2 ... file-n`
-- `git commit -m ‘descriptive/concise message’`
-- `git push origin master`
+- `git add name-of-changed-file`
+- `git commit -m "what you changed goes here"`
+- `git push origin name-of-new-branch`
 - Click 'compare and create pull request' on your forked GitHub repo
 - Click 'create pull request'
 
