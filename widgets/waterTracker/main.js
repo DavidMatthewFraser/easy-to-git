@@ -1,3 +1,4 @@
+// For storing data in the local storage
 class Storage {
     constructor(name) {
         this.name = name;
@@ -13,9 +14,9 @@ class Storage {
 
 // Constants
 const ls = new Storage('_waterArray');
-const ls2 = new Storage('_max');
-const min = 10;
-const max = 10000;
+const ls2 = new Storage('_otherProps');
+const min = 10; // Minimum amount of water
+const max = 10000; // Maximum amount of water
 
 // Components
 const waterDrankElement = document.getElementById('waterDrank');
@@ -28,7 +29,7 @@ const waterFilledElement = document.getElementById('water');
 const waterAmountModalBtn = document.getElementById('addAmountWater');
 const main = document.getElementsByClassName('main')[0];
 
-//Event Listeners
+// Event Listeners
 addWaterElement.addEventListener('click', e => {
     addWater(250, Date.now());
     update();
@@ -39,33 +40,45 @@ resetBtn.addEventListener('click', e => {
 });
 submit.addEventListener('click', e => {
     const value = goalInput.value;
-    goal = value > min ? (value < max ? value : goal): goal;
+    otherProps.goal = value > min ? (value < max ? value : goal): goal;
     update();
 });
 waterAmountModalBtn.addEventListener('click', _=>{addWaterModal()});
 
 
 
-// total water drank
+// Total water drank
 let waterArray = [];
-let goal = 2000; //default value
+let otherProps = {goal: 2000, time: 60 }; // Default value
 
-if(!ls.get()) {
-    ls.set(waterArray);
-}else {
-    waterArray = ls.get();
+const init = () => {
+
+    if(!ls.get()) {
+        ls.set(waterArray);
+    }else {
+        waterArray = ls.get();
+    }
+
+    if(!ls2.get()) {
+        ls2.set(otherProps);
+    }else {
+        otherProps = ls2.get();
+    }
+    runTimer();
 }
+
+
 
 const update = () => {
     const totalWaterDrank = waterArray.reduce((a,b)=> a + b.quantity, 0);
-    const complete = totalWaterDrank / goal * 100;
+    const complete = totalWaterDrank / otherProps.goal * 100;
     const height = Number(window.getComputedStyle(waterFilledElement).height.replace('px', ''));
     waterDrankElement.innerText = `${totalWaterDrank} ml`;
-    limit.innerText = `${goal} ml`;
+    limit.innerText = `${otherProps.goal} ml`;
     waterFilledElement.innerText = `${Math.round(complete)} %`;
     waterFilledElement.style.boxShadow = `inset 0 -${complete * 0.01 * height}px  0px 0px skyblue`;
     ls.set(waterArray);
-    ls2.set(goal);
+    ls2.set(otherProps);
 }
 
 const addWaterModal = () => {
@@ -98,6 +111,25 @@ const addWaterModal = () => {
     main.appendChild(modal);
 }
 
+const alertModal = (t, desc) => {
+    const modal = createElement('div', 'modal');
+    const alertContainer = createElement('div', 'alertContainer');
+    const title = createElement('h3', 'alertTitle', t);
+    const description = createElement('div', 'alertDesc', desc);
+    const drinkButton = createElement('button', 'btn', 'Drink 250 ml');
+    drinkButton.addEventListener('click', e=>{
+        addWater(250, Date.now());
+        modal.remove();
+    });
+    const closeBtn = createElement('button', 'btn', 'Close');
+    closeBtn.addEventListener('click', e=>{
+        modal.remove();
+    });
+    alertContainer.append(title, description, drinkButton, closeBtn);
+    modal.appendChild(alertContainer);
+    main.appendChild(modal);
+}
+
 const createElement = (tag, cName, value=null, attr=null) => {
     const ele = document.createElement(tag);
     ele.className = cName;
@@ -120,6 +152,24 @@ const removeWater = (id) => {
 
 const reset = () => {
     waterArray = [];
+    otherProps = {goal: 2000, time: 60};
 }
 
-update();
+const timerFunc = () => {
+    const lastRecordDate = new Date(waterArray[waterArray.length-1].time);
+    const now = new Date();
+    if(lastRecordDate.getDate() < now.getDate()){
+        waterArray = []
+    }
+    alertModal('Drink Water', `Drink some water. Drinking water at right time is good for your health.`);
+    update();
+}
+
+const runTimer = () => {
+    timerFunc();
+    setInterval(()=> {
+        timerFunc();
+    }, otherProps.time * 60000)
+}
+
+init();
