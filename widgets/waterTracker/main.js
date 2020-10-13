@@ -117,6 +117,10 @@ const alertModal = (t, desc) => {
     const title = createElement('h3', 'alertTitle', t);
     const description = createElement('div', 'alertDesc', desc);
     const drinkButton = createElement('button', 'btn', 'Drink 250 ml');
+    const sound = createElement('audio','audio',null, 'src:res/music.mp3');
+    sound.loop = true;
+    sound.volume = 0.5;
+    sound.play();
     drinkButton.addEventListener('click', e=>{
         addWater(250, Date.now());
         modal.remove();
@@ -125,7 +129,7 @@ const alertModal = (t, desc) => {
     closeBtn.addEventListener('click', e=>{
         modal.remove();
     });
-    alertContainer.append(title, description, drinkButton, closeBtn);
+    alertContainer.append(title, description, drinkButton, closeBtn, sound);
     modal.appendChild(alertContainer);
     main.appendChild(modal);
 }
