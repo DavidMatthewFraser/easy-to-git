@@ -26,3 +26,4 @@
 - [James Price](https://github.com/jamesmp88)
 - [Saurav Kumar](https://github.com/sauravk7077)
 - [Autumn Davis](https://github.com/AutumnWishes87)
+- [Vital Julien](https://github.com/JulienVital)
