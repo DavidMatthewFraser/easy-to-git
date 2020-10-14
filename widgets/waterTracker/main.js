@@ -171,11 +171,13 @@ const reset = () => {
 // then it resets waterArray and updates it.
 // And shows the alertModal.
 const timerFunc = () => {
-    const lastRecordDate = new Date(waterArray[waterArray.length-1].time);
-    const now = new Date();
-    if(lastRecordDate.getDate() < now.getDate()){
-        waterArray = []
-    }
+    if (waterArray.length > 0){
+        const lastRecordDate = new Date(waterArray[waterArray.length-1].time);
+        const now = new Date();
+        if(lastRecordDate.getDate() < now.getDate()){
+            waterArray = []
+        }
+    }   
     alertModal('Drink Water', `Drink some water. Drinking water at right time is good for your health.`);
     update();
 }
