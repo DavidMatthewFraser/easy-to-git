@@ -256,3 +256,22 @@ Saurav Kumar's styling
   background: #bca8fd;
   border-color: #23174c;
 }
+
+/* Tatiana's styling */
+#tatianatoc {
+  background: #6b486e;
+  color: #d1d1d1;
+  padding: 5px;
+  transition: width 2s, height 4s;
+}
+
+#tatianatoc img {
+  margin: 16px 0;
+}
+
+#tatianatoc:hover{
+  width: 150px;
+  height: 150px;
+}
+
+
