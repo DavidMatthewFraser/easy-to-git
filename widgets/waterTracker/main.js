@@ -68,7 +68,7 @@ const init = () => {
 }
 
 
-
+// Displays and updates the information on the screen.
 const update = () => {
     const totalWaterDrank = waterArray.reduce((a,b)=> a + b.quantity, 0);
     const complete = totalWaterDrank / otherProps.goal * 100;
@@ -81,6 +81,7 @@ const update = () => {
     ls2.set(otherProps);
 }
 
+// Add a modal to choose amount of water to drinks
 const addWaterModal = () => {
     const modal = createElement('div', 'modal');
     const insideModal = createElement('div', 'gModal');
@@ -111,6 +112,8 @@ const addWaterModal = () => {
     main.appendChild(modal);
 }
 
+
+// t is the title and desc is the description required for the alert modal
 const alertModal = (t, desc) => {
     const modal = createElement('div', 'modal');
     const alertContainer = createElement('div', 'alertContainer');
@@ -134,6 +137,8 @@ const alertModal = (t, desc) => {
     main.appendChild(modal);
 }
 
+// tag is the element with that tag you want to create, cName is the class name, value is innerText value
+// and attr is any attribute in format 'attr:value'
 const createElement = (tag, cName, value=null, attr=null) => {
     const ele = document.createElement(tag);
     ele.className = cName;
@@ -146,19 +151,25 @@ const createElement = (tag, cName, value=null, attr=null) => {
     return ele;
 }
 
+// quantity is the amount of water to be added in mL, and time should in milliseconds
 const addWater = (quantity, time) => {
     waterArray.push({id: Math.random(), quantity, time});
 }
 
+// id is the id of the water array's object.
 const removeWater = (id) => {
     waterArray = waterArray.filter(e=>e.id !== id);
 }
 
+// Resets everything back to default
 const reset = () => {
     waterArray = [];
     otherProps = {goal: 2000, time: 60};
 }
 
+// timerFunc checks wheather the previous record is of some other day than today,
+// then it resets waterArray and updates it.
+// And shows the alertModal.
 const timerFunc = () => {
     const lastRecordDate = new Date(waterArray[waterArray.length-1].time);
     const now = new Date();
@@ -169,6 +180,7 @@ const timerFunc = () => {
     update();
 }
 
+// Runs timerFunc every otherPros.time (default = 60 minutes).
 const runTimer = () => {
     timerFunc();
     setInterval(()=> {
@@ -176,4 +188,5 @@ const runTimer = () => {
     }, otherProps.time * 60000)
 }
 
+// Starts the program.
 init();
