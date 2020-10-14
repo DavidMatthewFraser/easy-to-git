@@ -52,6 +52,7 @@
 - `git remote add upstream https://github.com/DavidMatthewFraser/easy-to-git.git` (you only need to do this once)
 - `git fetch upstream`
 - `git merge upstream/master` will merge upstream with your current branch, if there are conflicts you will have to resolve them
+- `git push origin master` will push the new changes to your personal repository
 
 # Resolving conflicts
 - Navigate to the files that have conflicts
