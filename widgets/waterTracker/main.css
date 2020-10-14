@@ -157,6 +157,15 @@ input[type=number]::-webkit-inner-spin-button {
     text-align: center;
 }
 
+/* Alert Modal */
+
+.alertContainer {
+    padding: 20px;
+    background-color: #cffff6;
+    border-radius: 20px;
+    margin: 2px;
+}
+
 /* Footer */
 footer{
     position: fixed;
