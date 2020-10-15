@@ -212,6 +212,30 @@ let winter = {
   "section-header-color": "white",
 };
 
+let sky = {
+  themeName: "sky",
+  "page-background": "#58B1FF",
+  "sectionContainer-background": "#E3F5F8",
+  "header-background": "#239CFF",
+  "header-color": "white",
+  "contributor-background": "#B8DEFF ",
+  "panel-background": "#B8DEFF ",
+  "panel-border-left": "15px solid #669DA5 ",
+  "contributor-name-color": "#B8DEFF ",
+  "role-color": "#620050",
+  "github-btn-background":  "#3b0632",
+  "chooseTheme-background": "#B8DEFF",
+  "btn-default-background": "#B8DEFF  ",
+  "btn-primary-background": "#B8DEFF ",
+  "btn-default-color": "black",
+  "btn-primary-color": "white",
+  "comment-slide-background": "#B8DEFF",
+  "comment-slide-color": "black",
+  "widget-background": "#B8DEFF",
+  "section-header-color": "white",
+  "footer-bg": "hsl(0,0%,5%)"
+};
+
 //Dropdown onclick listeners
 defaultTheme.onclick = () => {
   changeTheme(pageDefault);
@@ -236,6 +260,9 @@ abyssTheme.onclick = () => {
 }
 winterTheme.onclick = () => {
   changeTheme(winter);
+}
+skyTheme.onclick = () => {
+  changeTheme(sky);
 }
 //Change Theme with jQuery selectors
 let changeTheme = (theme) => {
