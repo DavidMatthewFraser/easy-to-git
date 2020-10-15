@@ -257,6 +257,7 @@ Saurav Kumar's styling
   border-color: #23174c;
 }
 
+/* Tahirih Jaliri's styling */
 #ctahirih {
   color: #c6b5ed;
   background: #fcf6f5;
@@ -269,4 +270,21 @@ Saurav Kumar's styling
 #ctahirih:hover{
   box-shadow: 1px 2px 4px rgb(198, 181, 237);
   transform: translate(-1px, -2px);
+}
+
+/* Tatiana's styling */
+#tatianatoc {
+  background: #6b486e;
+  color: #d1d1d1;
+  padding: 5px;
+  transition: width 2s, height 4s;
+}
+
+#tatianatoc img {
+  margin: 16px 0;
+}
+
+#tatianatoc:hover{
+  width: 150px;
+  height: 150px;
 }

@@ -52,7 +52,10 @@ let waterArray = [];
 let otherProps = {goal: 2000, time: 60 }; // Default value
 
 const init = () => {
-
+    
+    window.onload = function() {
+    var context = new AudioContext();
+    }
     if(!ls.get()) {
         ls.set(waterArray);
     }else {
@@ -87,14 +90,14 @@ const addWaterModal = () => {
     const insideModal = createElement('div', 'gModal');
     const waterArray = [50, 100, 250, 500, 750, 1000, 1500, 2000];
     const gCloseBtn = createElement('button', 'btn gCloseBtn', 'Close');
-    gCloseBtn.addEventListener('click', e=>{modal.remove()});
+    gCloseBtn.addEventListener('click', e=>{removeNode(modal, 'fadeOutDown', 1000);});
     const waterBoxes = waterArray.map(e=>{
-        const gContainer = createElement('div', 'gContainer');
+        const gContainer = createElement('div', 'gContainer', null, null, 'bounceInDown');
 
         gContainer.addEventListener('click', _=>{
             addWater(e, Date.now());
             update();
-            modal.remove();
+            removeNode(modal, 'fadeOutDown', 1000);
         });
 
         const gIcon = createElement('div', 'gIcon');
@@ -126,20 +129,23 @@ const alertModal = (t, desc) => {
     sound.play();
     drinkButton.addEventListener('click', e=>{
         addWater(250, Date.now());
-        modal.remove();
+        removeNode(modal, 'fadeOutDown', 1000);
     });
     const closeBtn = createElement('button', 'btn', 'Close');
     closeBtn.addEventListener('click', e=>{
-        modal.remove();
+        removeNode(modal,'fadeOutDown', 1000);
     });
     alertContainer.append(title, description, drinkButton, closeBtn, sound);
+    addAnimation(alertContainer, 'fadeInUp')
     modal.appendChild(alertContainer);
     main.appendChild(modal);
 }
 
 // tag is the element with that tag you want to create, cName is the class name, value is innerText value
 // and attr is any attribute in format 'attr:value'
-const createElement = (tag, cName, value=null, attr=null) => {
+// animation is the animation be added from animation.css
+// Use only entrance animations or else, it will not look nice
+const createElement = (tag, cName, value=null, attr=null, animation) => {
     const ele = document.createElement(tag);
     ele.className = cName;
 
@@ -147,7 +153,8 @@ const createElement = (tag, cName, value=null, attr=null) => {
         ele.setAttribute(...attr.split(':'));
     if(value !== null)
         ele.innerText = value
-
+    if(animation)
+        addAnimation(ele, animation);
     return ele;
 }
 
@@ -188,6 +195,28 @@ const runTimer = () => {
     setInterval(()=> {
         timerFunc();
     }, otherProps.time * 60000)
+}
+
+// Remove the element with animation
+// node is the element to be removed and time is time until which the element will be removed
+// animation is the animation to be used from animate.css
+// Use only exit animation or else it will look bad
+const removeNode = (node,animation, time) => {
+    addAnimation(node, animation);
+    setTimeout(()=>{
+        node.remove();
+    }, time);
+}
+
+// node is the element you want to animate, name is the name of animation from animtate.css
+// delay is the delay to start the animation
+// delay should have values from 1 to 5 (integer only).
+const addAnimation = (node, name, delay) => {
+    if(!'animate__animated' in node.classList);
+        node.classList.add('animate__animated');
+    node.classList.add('animate__' + name);
+    if(delay)
+        node.classList.add(`animate__delay-${delay}s`)
 }
 
 // Starts the program.
