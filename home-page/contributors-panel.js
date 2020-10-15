@@ -100,6 +100,11 @@ const contributors = [
     displayName: "Amushri",
     role: "",
   },
+  {
+    githubName: "Sonechca",
+    displayName: "Mintae Kim",
+    role:""
+  }
 ];
 
 const sidePanel = document.querySelector(".panel");
