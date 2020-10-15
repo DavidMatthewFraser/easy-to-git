@@ -52,7 +52,10 @@ let waterArray = [];
 let otherProps = {goal: 2000, time: 60 }; // Default value
 
 const init = () => {
-
+    
+    window.onload = function() {
+    var context = new AudioContext();
+    }
     if(!ls.get()) {
         ls.set(waterArray);
     }else {
