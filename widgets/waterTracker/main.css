@@ -10,12 +10,16 @@ html, body{
     overflow: hidden;
 }
 
+.brand{
+    text-align: center;
+}
+
 .main{
     display: flex;
     width: 100%;
-    height: 100%;
+    height: calc(100vh - 2rem - 40px);
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 @supports (-webkit-text-stroke: 1px black) {
@@ -27,6 +31,24 @@ html, body{
 
 h1{
     font-family: 'Titillium Web', sans-serif;
+}
+
+.setGoalBox{
+    padding: 10px;
+    margin: 5px;
+}
+
+.goal{
+    margin: 5px;
+}
+
+.goal div{
+    display: inline;
+}
+
+#limit{
+    color: var(--color1);
+    filter: brightness(0.5);
 }
 
 .waterGlassContainer{
@@ -63,7 +85,7 @@ h1{
 .btn{
     font-family: 'Open Sans', sans-serif;
     padding: 5px;
-    margin: 5px;
+    margin: 10px;
     outline: none;
     border: none;
     cursor: pointer;
@@ -76,6 +98,10 @@ h1{
 }
 .btn:hover{
     filter: brightness(0.9);
+}
+
+.controlButtons{
+    text-align: center;
 }
 
 /* Input */
