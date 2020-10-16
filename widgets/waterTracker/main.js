@@ -21,6 +21,7 @@ const max = 10000; // Maximum amount of water
 // Components
 const waterDrankElement = document.getElementById('waterDrank');
 const addWaterElement = document.getElementById('addWater');
+const averageMonthElement = document.getElementById('averageMonth');
 const limit = document.getElementById('limit');
 const resetBtn = document.getElementById('reset');
 const goalInput = document.getElementById('goalWater');
@@ -80,6 +81,7 @@ const update = () => {
     limit.innerText = `${otherProps.goal} ml`;
     waterFilledElement.innerText = `${Math.round(complete)} %`;
     waterFilledElement.style.boxShadow = `inset 0 -${complete * 0.01 * height}px  0px 0px skyblue`;
+    averageMonthElement.innerText = `${waterOb.average.month | 0} ml`;
     ls.set(waterArray);
     ls2.set(otherProps);
 }
@@ -92,36 +94,37 @@ const update = () => {
 * average - contains average of month and year
 */
 const getDrank = () => {
-    const today = waterArray.reduce((a,b) => {
-        if((new Date(b.time)).getDate() === (new Date()).getDate())
-            return a + b.quantity
-        return a;
-    }, 0);
-    console.log(today);
-    let [monthDayCount, yearDayCount] = [0,0];
-    const month = waterArray.reduce((a,b) => {
-        if((new Date(b.time)).getMonth() === (new Date()).getMonth()){
-            monthDayCount++;
-            return a + b.quantity
-        }
-        return a;
-    }, 0);
-    const year = waterArray.reduce((a,b) => {
-        if((new Date(b.time)).getYear() === (new Date()).getYear()){
-            yearDayCount++;
-            return a + b.quantity
-        }
-        return a;
-    },0)
+    const now = new Date();
+    const today = getDaysConsumption(now.getTime());
+    let [month, year] = [0,0];
+    for(let i = 1;i <= now.getDate();i++) {
+        month += getDaysConsumption((new Date(now.getFullYear(), now.getMonth() +1, i)).getTime());
+    }
+    let totalDayTillNow = (now.getTime() - new Date(now.getFullYear(), 1,1).getTime()) / 86400000;
+    for(let i = 1; i <= totalDayTillNow;i++) {
+        year += getDaysConsumption((new Date(now.getFullYear(),1, i)).getTime());
+    }
     return{
         today: today,
         month: month,
         year: year,
         average: {
-            month: month/monthDayCount,
-            year: year/yearDayCount
+            month: month/now.getDate(),
+            year: year/totalDayTillNow
         }
     };
+}
+
+/*
+* time should be in milliseconds
+*/
+const getDaysConsumption = (time) => {
+    return waterArray.reduce((a,b) => {
+        if((new Date(b.time)).getDate() === (new Date(time)).getDate())
+            return a + b.quantity
+        return a;
+    }, 0);
+    
 }
 
 
