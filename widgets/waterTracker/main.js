@@ -31,9 +31,6 @@ const waterAmountModalBtn = document.getElementById('addAmountWater');
 const main = document.getElementsByClassName('main')[0];
 
 // Event Listeners
-window.onload = function() {
-    var context = new AudioContext();
-}
 addWaterElement.addEventListener('click', e => {
     addWater(250, Date.now());
     update();
@@ -57,6 +54,9 @@ let otherProps = {goal: 2000, time: 60 }; // Default value
 
 const init = () => {
     
+    window.onload = function() {
+    var context = new AudioContext();
+    }
     if(!ls.get()) {
         ls.set(waterArray);
     }else {
@@ -221,7 +221,14 @@ const reset = () => {
 // timerFunc checks wheather the previous record is of some other day than today,
 // then it resets waterArray and updates it.
 // And shows the alertModal.
-const timerFunc = () => {  
+const timerFunc = () => {
+    if (waterArray.length > 0){
+        const lastRecordDate = new Date(waterArray[waterArray.length-1].time);
+        const now = new Date();
+        if(lastRecordDate.getDate() < now.getDate()){
+            waterArray = []
+        }
+    }   
     alertModal('Drink Water', `Drink some water. Drinking water at right time is good for your health.`);
     update();
 }
