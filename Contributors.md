@@ -27,3 +27,4 @@
 - [Saurav Kumar](https://github.com/sauravk7077)
 - [Autumn Davis](https://github.com/AutumnWishes87)
 - [Vital Julien](https://github.com/JulienVital)
+- [Victor Castro Tarraga](https://github.com/soyvikman)
