@@ -30,6 +30,9 @@ const waterAmountModalBtn = document.getElementById('addAmountWater');
 const main = document.getElementsByClassName('main')[0];
 
 // Event Listeners
+window.onload = function() {
+    var context = new AudioContext();
+}
 addWaterElement.addEventListener('click', e => {
     addWater(250, Date.now());
     update();
@@ -53,9 +56,6 @@ let otherProps = {goal: 2000, time: 60 }; // Default value
 
 const init = () => {
     
-    window.onload = function() {
-    var context = new AudioContext();
-    }
     if(!ls.get()) {
         ls.set(waterArray);
     }else {
@@ -73,16 +73,57 @@ const init = () => {
 
 // Displays and updates the information on the screen.
 const update = () => {
-    const totalWaterDrank = waterArray.reduce((a,b)=> a + b.quantity, 0);
-    const complete = totalWaterDrank / otherProps.goal * 100;
+    const waterOb = getDrank();
+    const complete = waterOb.today / otherProps.goal * 100;
     const height = Number(window.getComputedStyle(waterFilledElement).height.replace('px', ''));
-    waterDrankElement.innerText = `${totalWaterDrank} ml`;
+    waterDrankElement.innerText = `${waterOb.today} ml`;
     limit.innerText = `${otherProps.goal} ml`;
     waterFilledElement.innerText = `${Math.round(complete)} %`;
     waterFilledElement.style.boxShadow = `inset 0 -${complete * 0.01 * height}px  0px 0px skyblue`;
     ls.set(waterArray);
     ls2.set(otherProps);
 }
+
+/* 
+* Returns object with total water consumtion of water
+* today- today's water consumption
+* month - this month's water consumption
+* year - this year's water consumption
+* average - contains average of month and year
+*/
+const getDrank = () => {
+    const today = waterArray.reduce((a,b) => {
+        if((new Date(b.time)).getDate() === (new Date()).getDate())
+            return a + b.quantity
+        return a;
+    }, 0);
+    console.log(today);
+    let [monthDayCount, yearDayCount] = [0,0];
+    const month = waterArray.reduce((a,b) => {
+        if((new Date(b.time)).getMonth() === (new Date()).getMonth()){
+            monthDayCount++;
+            return a + b.quantity
+        }
+        return a;
+    }, 0);
+    const year = waterArray.reduce((a,b) => {
+        if((new Date(b.time)).getYear() === (new Date()).getYear()){
+            yearDayCount++;
+            return a + b.quantity
+        }
+        return a;
+    },0)
+    return{
+        today: today,
+        month: month,
+        year: year,
+        average: {
+            month: month/monthDayCount,
+            year: year/yearDayCount
+        }
+    };
+}
+
 
 // Add a modal to choose amount of water to drinks
 const addWaterModal = () => {
@@ -177,14 +218,7 @@ const reset = () => {
 // timerFunc checks wheather the previous record is of some other day than today,
 // then it resets waterArray and updates it.
 // And shows the alertModal.
-const timerFunc = () => {
-    if (waterArray.length > 0){
-        const lastRecordDate = new Date(waterArray[waterArray.length-1].time);
-        const now = new Date();
-        if(lastRecordDate.getDate() < now.getDate()){
-            waterArray = []
-        }
-    }   
+const timerFunc = () => {  
     alertModal('Drink Water', `Drink some water. Drinking water at right time is good for your health.`);
     update();
 }
