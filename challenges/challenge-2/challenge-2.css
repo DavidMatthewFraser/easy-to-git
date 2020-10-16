@@ -99,6 +99,20 @@ body {
 /* Keyframes */
 /* ==================================================================================================================== */
 /* Add your space objects below*/
+
+/*jenna*/
+#snitch {
+	width: 150px;
+	position: absolute;
+	margin-top: 400px;
+	margin-left: 800px;
+	animation: rotateIn;
+animation-duration: 5s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+
+
 /*david*/
 #davids_planet {
 	width: 100px;
@@ -453,7 +467,7 @@ body {
 }
 
 
-/* 
+/*
 ---------------
 Saurav Kumar's earth
 ---------------
@@ -498,4 +512,3 @@ Saurav Kumar's earth
 		transform: rotate(360deg) translateX(10px) rotate(-360deg);
 	}
 }
-
