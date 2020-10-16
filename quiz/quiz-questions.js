@@ -264,6 +264,11 @@ const javascriptQuestions = [
     answers: ["false", "null", "true", "undefined"],
     correctAnswer: "false",
   },
+  {
+    question:"What happens if you try to destructure an undefined object?",
+    answers:["no error occurs","destructured variables are also undefined","null error is thrown"],
+    correctAnswer:"null error is thrown"
+  }
 ];
 
 const dataStructure= [
