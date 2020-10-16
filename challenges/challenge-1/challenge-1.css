@@ -57,6 +57,11 @@ header > ol > li {
 /* keyframes */
 /* ==================================================================================================================== */
 /* Add your unique styles below*/
+#jennaschultz {
+  background: #6a2a45;
+  color: #fff;
+}
+
 /*david*/
 #davidfraser {
   color: #5b45a3;
@@ -66,7 +71,7 @@ header > ol > li {
 #unclebay{
   background: dodgerblue;
   border-color: orange;
-  color: #fff; 
+  color: #fff;
   cursor: pointer;
   font-family: cursive;
   opacity: 0.8;
@@ -173,7 +178,7 @@ clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 56%, 66% 60%, 48% 100%, 33% 6
   }
 }
 
-/* 
+/*
 ----------------------
 Saurav Kumar's styling
 ----------------------
