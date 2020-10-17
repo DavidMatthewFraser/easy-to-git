@@ -21,6 +21,7 @@ const max = 10000; // Maximum amount of water
 // Components
 const waterDrankElement = document.getElementById('waterDrank');
 const addWaterElement = document.getElementById('addWater');
+const averageMonthElement = document.getElementById('averageMonth');
 const limit = document.getElementById('limit');
 const resetBtn = document.getElementById('reset');
 const goalInput = document.getElementById('goalWater');
@@ -73,16 +74,59 @@ const init = () => {
 
 // Displays and updates the information on the screen.
 const update = () => {
-    const totalWaterDrank = waterArray.reduce((a,b)=> a + b.quantity, 0);
-    const complete = totalWaterDrank / otherProps.goal * 100;
+    const waterOb = getDrank();
+    const complete = waterOb.today / otherProps.goal * 100;
     const height = Number(window.getComputedStyle(waterFilledElement).height.replace('px', ''));
-    waterDrankElement.innerText = `${totalWaterDrank} ml`;
+    waterDrankElement.innerText = `${waterOb.today} ml`;
     limit.innerText = `${otherProps.goal} ml`;
     waterFilledElement.innerText = `${Math.round(complete)} %`;
     waterFilledElement.style.boxShadow = `inset 0 -${complete * 0.01 * height}px  0px 0px skyblue`;
+    averageMonthElement.innerText = `${waterOb.average.month | 0} ml`;
     ls.set(waterArray);
     ls2.set(otherProps);
 }
+
+/* 
+* Returns object with total water consumtion of water
+* today- today's water consumption
+* month - this month's water consumption
+* year - this year's water consumption
+* average - contains average of month and year
+*/
+const getDrank = () => {
+    const now = new Date();
+    const today = getDaysConsumption(now.getTime());
+    let [month, year] = [0,0];
+    for(let i = 1;i <= now.getDate();i++) {
+        month += getDaysConsumption((new Date(now.getFullYear(), now.getMonth() +1, i)).getTime());
+    }
+    let totalDayTillNow = (now.getTime() - new Date(now.getFullYear(), 1,1).getTime()) / 86400000;
+    for(let i = 1; i <= totalDayTillNow;i++) {
+        year += getDaysConsumption((new Date(now.getFullYear(),1, i)).getTime());
+    }
+    return{
+        today: today,
+        month: month,
+        year: year,
+        average: {
+            month: month/now.getDate(),
+            year: year/totalDayTillNow
+        }
+    };
+}
+
+/*
+* time should be in milliseconds
+*/
+const getDaysConsumption = (time) => {
+    return waterArray.reduce((a,b) => {
+        if((new Date(b.time)).getDate() === (new Date(time)).getDate())
+            return a + b.quantity
+        return a;
+    }, 0);
+    
+}
+
 
 // Add a modal to choose amount of water to drinks
 const addWaterModal = () => {
