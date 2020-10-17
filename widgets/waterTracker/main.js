@@ -28,6 +28,9 @@ const goalInput = document.getElementById('goalWater');
 const submit = document.getElementById('submit');
 const waterFilledElement = document.getElementById('water');
 const waterAmountModalBtn = document.getElementById('addAmountWater');
+const drankSVG = document.getElementById('drankSVG');
+const waterCircle = document.getElementById('waterCircle');
+const averageCircle = document.getElementById('averageCicle');
 const main = document.getElementsByClassName('main')[0];
 
 // Event Listeners
@@ -82,6 +85,14 @@ const update = () => {
     waterFilledElement.innerText = `${Math.round(complete)} %`;
     waterFilledElement.style.boxShadow = `inset 0 -${complete * 0.01 * height}px  0px 0px skyblue`;
     averageMonthElement.innerText = `${waterOb.average.month | 0} ml`;
+    let percent = waterOb.today * 100 / 3700 /2 | 0;
+    waterCircle.style.width = `${percent}%`;
+    waterCircle.style.height = waterCircle.style.width;
+    waterCircle.style.top = `${50 - percent/2}%`;
+    waterCircle.style.left = waterCircle.style.top;
+    averageCircle.style.width = '50%';
+    averageCircle.style.height = '50%';
+
     ls.set(waterArray);
     ls2.set(otherProps);
 }
@@ -124,7 +135,6 @@ const getDaysConsumption = (time) => {
             return a + b.quantity
         return a;
     }, 0);
-    
 }
 
 

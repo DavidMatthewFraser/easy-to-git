@@ -202,15 +202,57 @@ footer{
     font-size: 0.5em;
 }
 
+/* Illustrations */
+
+#illustration{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 50%;
+    animation: enter 1s;
+    transition: all 0.4s ease-out;
+}
+
+#waterCircle{
+    box-shadow: 0 0 10px var(--color1);
+    border: 2px solid var(--color1);
+    background-color: #aeb8e577;
+}
+
+#averageCicle{
+    top: 25%;
+    left: 25%;
+    box-shadow: 0 0 10px var(--color2);
+    border: 2px solid var(--color2);
+    background-color: #74ebd5c5;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+}
+.info div:nth-child(1) {
+    width: 10px;
+    height: 10px;
+}
+
 /* keyframes */
-@keyframes exit{
+@keyframes enter{
     0%{
-        height: 100%;
-        opacity: 1;
+        r: 5px;
+        opacity: 0;
     }
     100%{
-        height: 0;
-        opacity: 0;
+        r: auto;
+        opacity: 1;
     }
 }
 
