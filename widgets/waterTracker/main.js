@@ -31,6 +31,7 @@ const waterAmountModalBtn = document.getElementById('addAmountWater');
 const drankSVG = document.getElementById('drankSVG');
 const waterCircle = document.getElementById('waterCircle');
 const averageCircle = document.getElementById('averageCicle');
+const showWaterListElement = document.getElementById('showWaterDetailModal');
 const main = document.getElementsByClassName('main')[0];
 
 // Event Listeners
@@ -47,6 +48,9 @@ submit.addEventListener('click', e => {
     otherProps.goal = value > min ? (value < max ? value : goal): goal;
     update();
 });
+showWaterListElement.addEventListener('click', e => {
+    addDrankDetailModal();
+})
 waterAmountModalBtn.addEventListener('click', _=>{addWaterModal()});
 
 
@@ -199,6 +203,7 @@ const alertModal = (t, desc) => {
 const addDrankDetailModal = () => {
     const modal = createElement('div', 'modal');
     const container = createElement('div', 'listContainer');
+    const head = createElement('h3', '', 'Water you drank.');
     const list = waterArray.filter(ob=> (new Date(ob.time)).getDate() === (new Date()).getDate())
     .map(ob => {
         const drankDetailContainer = createElement('div', 'drankDetailContainer');
@@ -208,7 +213,12 @@ const addDrankDetailModal = () => {
         const delBtn = createElement('button', 'btn delBtn');
 
         delBtn.addEventListener('click', () => {
-            removeNode(drankDetailContainer, 'fadeOutDown', 1000, () => {removeWater(ob.id)});
+            removeNode(drankDetailContainer, 'fadeOutDown', 1000, () => {
+                if(list.length === 0) 
+                    container.append(createElement('p', '', 'You haven\'t drank anything'));
+                
+                removeWater(ob.id)
+            });
         });
 
         const trashIcon = createElement('i','fas fa-trash');
@@ -217,6 +227,9 @@ const addDrankDetailModal = () => {
         
         return drankDetailContainer;
     });
+    container.append(head);
+    if(list.length === 0) 
+        container.append(createElement('p', '', 'You haven\'t drank anything'));
     list.forEach(ele => container.appendChild(ele));
     modal.appendChild(container);
     addAnimation(modal, 'fadeInUp');
