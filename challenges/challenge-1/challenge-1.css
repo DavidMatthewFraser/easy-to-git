@@ -57,6 +57,12 @@ header > ol > li {
 /* keyframes */
 /* ==================================================================================================================== */
 /* Add your unique styles below*/
+#tanyamott {
+  background: #00c9a9;
+  color: #7a25a2;
+  border-color: #00567e;
+}
+
 #jennaschultz {
   background: #6a2a45;
   color: #fff;

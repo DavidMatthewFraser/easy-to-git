@@ -104,6 +104,11 @@ const contributors = [
     githubName: "Sonechca",
     displayName: "Mintae Kim",
     role:""
+  },
+  {
+    githubName: "tmott13",
+    displayName: "Tanya Mott",
+    role:""
   }
 ];
 

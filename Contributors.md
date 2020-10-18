@@ -29,3 +29,4 @@
 - [Vital Julien](https://github.com/JulienVital)
 - [Victor Castro Tarraga](https://github.com/soyvikman)
 - [Jenna Schultz] (https://github.com/jennaschultz)
+- [Tanya Mott](https://github.com/tmott13)
