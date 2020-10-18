@@ -21,13 +21,17 @@ const max = 10000; // Maximum amount of water
 // Components
 const waterDrankElement = document.getElementById('waterDrank');
 const addWaterElement = document.getElementById('addWater');
-const averageMonthElement = document.getElementById('averageMonth');
+// const averageMonthElement = document.getElementById('averageMonth');
 const limit = document.getElementById('limit');
 const resetBtn = document.getElementById('reset');
 const goalInput = document.getElementById('goalWater');
 const submit = document.getElementById('submit');
 const waterFilledElement = document.getElementById('water');
 const waterAmountModalBtn = document.getElementById('addAmountWater');
+const drankSVG = document.getElementById('drankSVG');
+const waterCircle = document.getElementById('waterCircle');
+const averageCircle = document.getElementById('averageCicle');
+const showWaterListElement = document.getElementById('showWaterDetailModal');
 const main = document.getElementsByClassName('main')[0];
 
 // Event Listeners
@@ -44,6 +48,9 @@ submit.addEventListener('click', e => {
     otherProps.goal = value > min ? (value < max ? value : goal): goal;
     update();
 });
+showWaterListElement.addEventListener('click', e => {
+    addDrankDetailModal();
+})
 waterAmountModalBtn.addEventListener('click', _=>{addWaterModal()});
 
 
@@ -81,7 +88,15 @@ const update = () => {
     limit.innerText = `${otherProps.goal} ml`;
     waterFilledElement.innerText = `${Math.round(complete)} %`;
     waterFilledElement.style.boxShadow = `inset 0 -${complete * 0.01 * height}px  0px 0px skyblue`;
-    averageMonthElement.innerText = `${waterOb.average.month | 0} ml`;
+    // averageMonthElement.innerText = `${waterOb.average.month | 0} ml`;
+    let percent = waterOb.today * 100 / 3700 /2 | 0;
+    waterCircle.style.width = `${percent}%`;
+    waterCircle.style.height = waterCircle.style.width;
+    waterCircle.style.top = `${50 - percent/2}%`;
+    waterCircle.style.left = waterCircle.style.top;
+    averageCircle.style.width = '50%';
+    averageCircle.style.height = '50%';
+
     ls.set(waterArray);
     ls2.set(otherProps);
 }
@@ -124,7 +139,6 @@ const getDaysConsumption = (time) => {
             return a + b.quantity
         return a;
     }, 0);
-    
 }
 
 
@@ -185,6 +199,43 @@ const alertModal = (t, desc) => {
     main.appendChild(modal);
 }
 
+// It creates a modal which shows the details about today's water drank
+const addDrankDetailModal = () => {
+    const modal = createElement('div', 'modal');
+    const container = createElement('div', 'listContainer');
+    const head = createElement('h3', '', 'Water you drank.');
+    const list = waterArray.filter(ob=> (new Date(ob.time)).getDate() === (new Date()).getDate())
+    .map(ob => {
+        const drankDetailContainer = createElement('div', 'drankDetailContainer');
+        const quantity = createElement('div', 'qtyBox', ob.quantity+" ml");
+        const dateTime = new Date(ob.time);
+        const time = createElement('div', 'timeBox', `${dateTime.getHours()} : ${dateTime.getMinutes()}` );
+        const delBtn = createElement('button', 'btn delBtn');
+
+        delBtn.addEventListener('click', () => {
+            removeNode(drankDetailContainer, 'fadeOutDown', 1000, () => {
+                if(list.length === 0) 
+                    container.append(createElement('p', '', 'You haven\'t drank anything'));
+                
+                removeWater(ob.id)
+            });
+        });
+
+        const trashIcon = createElement('i','fas fa-trash');
+        delBtn.appendChild(trashIcon);
+        drankDetailContainer.append(quantity, time, delBtn);
+        
+        return drankDetailContainer;
+    });
+    container.append(head);
+    if(list.length === 0) 
+        container.append(createElement('p', '', 'You haven\'t drank anything'));
+    list.forEach(ele => container.appendChild(ele));
+    modal.appendChild(container);
+    addAnimation(modal, 'fadeInUp');
+    main.appendChild(modal);
+}
+
 // tag is the element with that tag you want to create, cName is the class name, value is innerText value
 // and attr is any attribute in format 'attr:value'
 // animation is the animation be added from animation.css
@@ -204,12 +255,13 @@ const createElement = (tag, cName, value=null, attr=null, animation) => {
 
 // quantity is the amount of water to be added in mL, and time should in milliseconds
 const addWater = (quantity, time) => {
-    waterArray.push({id: Math.random(), quantity, time});
+    waterArray.push({id: uuidv4(), quantity, time});
 }
 
 // id is the id of the water array's object.
 const removeWater = (id) => {
     waterArray = waterArray.filter(e=>e.id !== id);
+    update();
 }
 
 // Resets everything back to default
@@ -245,10 +297,12 @@ const runTimer = () => {
 // node is the element to be removed and time is time until which the element will be removed
 // animation is the animation to be used from animate.css
 // Use only exit animation or else it will look bad
-const removeNode = (node,animation, time) => {
+const removeNode = (node,animation, time, func) => {
     addAnimation(node, animation);
     setTimeout(()=>{
         node.remove();
+        if(func)
+            func();
     }, time);
 }
 
