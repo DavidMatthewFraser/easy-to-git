@@ -21,7 +21,7 @@ const max = 10000; // Maximum amount of water
 // Components
 const waterDrankElement = document.getElementById('waterDrank');
 const addWaterElement = document.getElementById('addWater');
-const averageMonthElement = document.getElementById('averageMonth');
+// const averageMonthElement = document.getElementById('averageMonth');
 const limit = document.getElementById('limit');
 const resetBtn = document.getElementById('reset');
 const goalInput = document.getElementById('goalWater');
@@ -84,7 +84,7 @@ const update = () => {
     limit.innerText = `${otherProps.goal} ml`;
     waterFilledElement.innerText = `${Math.round(complete)} %`;
     waterFilledElement.style.boxShadow = `inset 0 -${complete * 0.01 * height}px  0px 0px skyblue`;
-    averageMonthElement.innerText = `${waterOb.average.month | 0} ml`;
+    // averageMonthElement.innerText = `${waterOb.average.month | 0} ml`;
     let percent = waterOb.today * 100 / 3700 /2 | 0;
     waterCircle.style.width = `${percent}%`;
     waterCircle.style.height = waterCircle.style.width;
@@ -195,6 +195,25 @@ const alertModal = (t, desc) => {
     main.appendChild(modal);
 }
 
+// It creates a modal which shows the details about today's water drank
+const addDrankDetailModal = () => {
+    const modal = createElement('div', 'modal');
+    const container = createElement('div', 'listContainer');
+    const list = waterArray.filter(ob=> (new Date(ob.time)).getDate() === (new Date()).getDate())
+    .map(ob => {
+        const drankDetailContainer = createElement('div', 'drankDetailContainer');
+        const quantity = createElement('div', 'qtyBox', ob.quantity+" ml");
+        const dateTime = new Date(ob.time);
+        const time = createElement('div', 'timeBox', `${dateTime.getHours()} : ${dateTime.getMinutes()}` );
+        drankDetailContainer.append(quantity, time);
+        return drankDetailContainer;
+    });
+    list.forEach(ele => container.appendChild(ele));
+    modal.appendChild(container);
+    addAnimation(modal, 'fadeInUp');
+    main.appendChild(modal);
+}
+
 // tag is the element with that tag you want to create, cName is the class name, value is innerText value
 // and attr is any attribute in format 'attr:value'
 // animation is the animation be added from animation.css
@@ -214,7 +233,7 @@ const createElement = (tag, cName, value=null, attr=null, animation) => {
 
 // quantity is the amount of water to be added in mL, and time should in milliseconds
 const addWater = (quantity, time) => {
-    waterArray.push({id: Math.random(), quantity, time});
+    waterArray.push({id: uuidv4(), quantity, time});
 }
 
 // id is the id of the water array's object.

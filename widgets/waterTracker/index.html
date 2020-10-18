@@ -13,50 +13,58 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
   <!-- Custom Styles -->
   <link rel="stylesheet" href="./main.css" type="text/css" />
+  <!-- uuid for generating unique id's -->
+  <script src="https://unpkg.com/uuid@latest/dist/umd/uuidv4.min.js"></script>
   <script src="./main.js" defer></script>
 </head>
 <body>
     <div>
         <h1 class="brand">Water Tracker</h1>
         <div class="main">
-            <div class="waterGlassContainer">
-                <div class="glass">
-                    <div id="water"></div>
-                </div>
-            </div>
-            <div>
-                You have drank 
-                <span id="waterDrank">0 ml</span>
-                water.
-            </div>
-            <div class="setGoalBox">
-                <input id="goalWater" type="number" placeholder="300" min="10" max="10000"/>
-                <button class="btn" id="submit">Set your goal</button>
-            </div>
-            <div class="goal">
-                Your goal is to drink <div id="limit"></div> water.
-            </div>
-            <div class="controlButtons">
-                <button class="btn" id="addWater"><i class="fas fa-plus"></i> Add 250 ml</button>
-                <button class="btn" id="addAmountWater"><i class="fas fa-plus"></i> Choose Amount</button>
-                <button class="btn" id="reset"><i class="fas fa-redo"></i> Reset</button>
-            </div>
-            <div class="stats">
-                <div id="illustration">
-                    <div class="circle" id="averageCicle"></div>
-                    <div class="circle" id="waterCircle"></div>
+            <div class="middle">
+                <div class="waterGlassContainer">
+                    <div class="glass">
+                        <div id="water"></div>
+                    </div>
                 </div>
                 <div>
-                    <div class="info">
-                        <div></div>
-                        <div>Average</div>
-                    </div>
-                    <div class="info">
-                        <div></div>
-                        <div>You</div>
-                    </div>
+                    You have drank 
+                    <span id="waterDrank">0 ml</span>
+                    water.
                 </div>
-                <div id="averageMonth"></div>
+                <div class="setGoalBox">
+                    <input id="goalWater" type="number" placeholder="300" min="10" max="10000"/>
+                    <button class="btn" id="submit">Set your goal</button>
+                </div>
+                <div class="goal">
+                    Your goal is to drink <div id="limit"></div> water.
+                </div>
+                <div class="controlButtons">
+                    <button class="btn" id="addWater"><i class="fas fa-plus"></i> Add 250 ml</button>
+                    <button class="btn" id="addAmountWater"><i class="fas fa-plus"></i> Choose Amount</button>
+                    <button class="btn" id="reset"><i class="fas fa-redo"></i> Reset</button>
+                </div>
+            </div>
+            <div class="right">
+                <h3>Statistics</h3>
+                <!-- <div id="averageMonth"></div> -->
+                <div class="stats">
+                    <div id="illustration">
+                        <div class="circle" id="averageCicle"></div>
+                        <div class="circle" id="waterCircle"></div>
+                    </div>
+                    <div>
+                        <div class="info">
+                            <div></div>
+                            <div>Average</div>
+                        </div>
+                        <div class="info">
+                            <div></div>
+                            <div>You</div>
+                        </div>
+                    </div>
+                    <small>Water Consumption Today</small>
+                </div>
             </div>
         </div>
     </div>

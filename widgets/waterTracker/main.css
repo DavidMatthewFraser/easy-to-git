@@ -1,6 +1,7 @@
 body{
     --color1: #ACB6E5;
     --color2: #74ebd5;
+    --tranparent-green: #74ebd515;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -16,11 +17,12 @@ html, body{
 
 .main{
     display: flex;
-    width: 100%;
+    width: calc(100% - 20px);
     height: calc(100vh - 2rem - 40px);
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 10px;
 }
 @supports (-webkit-text-stroke: 1px black) {
     h1 {
@@ -34,6 +36,10 @@ h1{
 }
 
 .setGoalBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 10px;
     margin: 5px;
 }
@@ -76,6 +82,8 @@ h1{
     transition: all 0.2s ease-in-out;
     color: #fff;
     font-size: 2em;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -84,7 +92,6 @@ h1{
 /* Buttons */
 .btn{
     font-family: 'Open Sans', sans-serif;
-    padding: 5px;
     margin: 10px;
     outline: none;
     border: none;
@@ -134,17 +141,20 @@ input[type=number]::-webkit-inner-spin-button {
     z-index: 999;
     top: 0;
     left: 0;
-    background: hsla(0,0%,100%, 0.5);
+    background: var(--tranparent-green);
 }
 
 /* Add Water modal */
 
 .gModal{
-    background-color: #fff;
+    background-color: #e3fef9;
     max-width: 500px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #ececec;
 }
 
 .gCloseBtn{
@@ -163,7 +173,7 @@ input[type=number]::-webkit-inner-spin-button {
     cursor: pointer;
     border: 2px solid var(--color2);
     border-radius: 15px;
-    margin: 5px;
+    margin: 8px;
     padding: 10px;
     color: var(--color2);
 }
@@ -202,6 +212,25 @@ footer{
     font-size: 0.5em;
 }
 
+/* Sides */
+.left,.middle, .right {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    background-color: #84ffe823;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+.middle{
+    flex-basis: 300px;
+}
+
+.right{
+    flex-basis: 300px;
+}
+
 /* Illustrations */
 
 #illustration{
@@ -238,10 +267,22 @@ footer{
 .info{
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
-.info div:nth-child(1) {
+.info * {
+    margin: 5px;
+}
+.info > div:nth-child(1) {
     width: 10px;
     height: 10px;
+}
+
+.info:nth-child(1) > div:nth-child(1){
+    background-color: var(--color1);
+}
+
+.info:nth-child(2) > div:nth-child(1){
+    background-color: var(--color2);
 }
 
 /* keyframes */
@@ -253,6 +294,14 @@ footer{
     100%{
         r: auto;
         opacity: 1;
+    }
+}
+
+/* Mobile Styles */
+
+@media screen and (max-width: 700px) {
+    body{
+        overflow: auto;
     }
 }
 
