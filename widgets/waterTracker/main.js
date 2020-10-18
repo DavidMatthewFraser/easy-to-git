@@ -205,7 +205,16 @@ const addDrankDetailModal = () => {
         const quantity = createElement('div', 'qtyBox', ob.quantity+" ml");
         const dateTime = new Date(ob.time);
         const time = createElement('div', 'timeBox', `${dateTime.getHours()} : ${dateTime.getMinutes()}` );
-        drankDetailContainer.append(quantity, time);
+        const delBtn = createElement('button', 'btn delBtn');
+
+        delBtn.addEventListener('click', () => {
+            removeNode(drankDetailContainer, 'fadeOutDown', 1000, () => {removeWater(ob.id)});
+        });
+
+        const trashIcon = createElement('i','fas fa-trash');
+        delBtn.appendChild(trashIcon);
+        drankDetailContainer.append(quantity, time, delBtn);
+        
         return drankDetailContainer;
     });
     list.forEach(ele => container.appendChild(ele));
@@ -239,6 +248,7 @@ const addWater = (quantity, time) => {
 // id is the id of the water array's object.
 const removeWater = (id) => {
     waterArray = waterArray.filter(e=>e.id !== id);
+    update();
 }
 
 // Resets everything back to default
@@ -274,10 +284,12 @@ const runTimer = () => {
 // node is the element to be removed and time is time until which the element will be removed
 // animation is the animation to be used from animate.css
 // Use only exit animation or else it will look bad
-const removeNode = (node,animation, time) => {
+const removeNode = (node,animation, time, func) => {
     addAnimation(node, animation);
     setTimeout(()=>{
         node.remove();
+        if(func)
+            func();
     }, time);
 }
 

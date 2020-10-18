@@ -111,6 +111,11 @@ h1{
     text-align: center;
 }
 
+.delBtn {
+    background: red;
+    border-radius: 4px;
+}
+
 /* Input */
 
 input[type=number] {
@@ -201,6 +206,38 @@ input[type=number]::-webkit-inner-spin-button {
     background-color: #cffff6;
     border-radius: 20px;
     margin: 2px;
+}
+
+/* Water drink details modal */
+
+.listContainer{
+    background-color: #cffff6;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.drankDetailContainer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    width: 500px;
+    height: 50px;
+    border-radius: 20px;
+}
+
+.drankDetailContainer:hover{
+    background-color: #00000010;
+}
+
+.qtyBox{
+    flex-basis: 200px;
+}
+
+.timeBox{
+    flex-basis: 200px;
 }
 
 /* Footer */
