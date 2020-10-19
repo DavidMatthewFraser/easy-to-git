@@ -512,3 +512,14 @@ Saurav Kumar's earth
 		transform: rotate(360deg) translateX(10px) rotate(-360deg);
 	}
 }
+
+#vatsalvj {
+	position: absolute;
+	top: 15rem;
+	left: 70rem;
+	animation: rotateIn;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	z-index: 110;
+}
