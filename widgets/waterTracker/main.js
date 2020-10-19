@@ -1,3 +1,7 @@
+document.addEventListener('load', () => {
+    console.log('hey');
+})
+
 // For storing data in the local storage
 class Storage {
     constructor(name) {
