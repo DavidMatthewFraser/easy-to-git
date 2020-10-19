@@ -1,4 +1,5 @@
 # Contributors
+
 - [David Fraser](https://github.com/DavidMatthewFraser) - davidfraserwebdev@gmail.com
 - [Fortune Okon](https://github.com/fort3)
 - [Randell Dawson](https://github.com/RandellDawson)
@@ -30,3 +31,4 @@
 - [Victor Castro Tarraga](https://github.com/soyvikman)
 - [Jenna Schultz] (https://github.com/jennaschultz)
 - [Tanya Mott](https://github.com/tmott13)
+- [Malik Mukhtar](https://github.com/malikmukhtar)
