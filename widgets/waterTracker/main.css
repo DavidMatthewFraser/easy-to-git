@@ -212,10 +212,15 @@ input[type=number]::-webkit-inner-spin-button {
 
 .listContainer{
     background-color: #cffff6;
+    position: absolute;
+    max-height: 90%;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
     padding: 20px;
+    transition: all 200ms ease-in-out;
+    min-width: 500px;
+    overflow: auto;
 }
 
 .drankDetailContainer{
@@ -226,6 +231,7 @@ input[type=number]::-webkit-inner-spin-button {
     width: 500px;
     height: 50px;
     border-radius: 20px;
+    transition: all 0.2s ease-in-out;
 }
 
 .drankDetailContainer:hover{
