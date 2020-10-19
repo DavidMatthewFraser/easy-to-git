@@ -1,3 +1,7 @@
+document.addEventListener('load', () => {
+    console.log('hey');
+})
+
 // For storing data in the local storage
 class Storage {
     constructor(name) {
@@ -204,6 +208,10 @@ const addDrankDetailModal = () => {
     const modal = createElement('div', 'modal');
     const container = createElement('div', 'listContainer');
     const head = createElement('h3', '', 'Water you drank.');
+    const close = createElement('button', 'btn', '⨉');
+    close.addEventListener('click', ()=> {
+        removeNode(modal, 'zoomOut', 1000);
+    })
     const list = waterArray.filter(ob=> (new Date(ob.time)).getDate() === (new Date()).getDate())
     .map(ob => {
         const drankDetailContainer = createElement('div', 'drankDetailContainer');
@@ -213,10 +221,9 @@ const addDrankDetailModal = () => {
         const delBtn = createElement('button', 'btn delBtn');
 
         delBtn.addEventListener('click', () => {
-            removeNode(drankDetailContainer, 'fadeOutDown', 1000, () => {
-                if(list.length === 0) 
-                    container.append(createElement('p', '', 'You haven\'t drank anything'));
-                
+            removeNode(drankDetailContainer, 'zoomOut', 1000, () => {
+                if(container.childElementCount === 2) 
+                    removeNode(modal, 'zoomOut', 1000);
                 removeWater(ob.id)
             });
         });
@@ -224,13 +231,13 @@ const addDrankDetailModal = () => {
         const trashIcon = createElement('i','fas fa-trash');
         delBtn.appendChild(trashIcon);
         drankDetailContainer.append(quantity, time, delBtn);
-        
         return drankDetailContainer;
     });
     container.append(head);
     if(list.length === 0) 
         container.append(createElement('p', '', 'You haven\'t drank anything'));
     list.forEach(ele => container.appendChild(ele));
+    container.appendChild(close);
     modal.appendChild(container);
     addAnimation(modal, 'fadeInUp');
     main.appendChild(modal);

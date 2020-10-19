@@ -212,10 +212,14 @@ input[type=number]::-webkit-inner-spin-button {
 
 .listContainer{
     background-color: #cffff6;
+    max-height: 90%;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
     padding: 20px;
+    transition: all 200ms ease-in-out;
+    min-width: 500px;
+    overflow: auto;
 }
 
 .drankDetailContainer{
@@ -223,9 +227,9 @@ input[type=number]::-webkit-inner-spin-button {
     justify-content: flex-start;
     align-items: center;
     text-align: center;
-    width: 500px;
     height: 50px;
     border-radius: 20px;
+    transition: all 0.2s ease-in-out;
 }
 
 .drankDetailContainer:hover{
@@ -339,6 +343,11 @@ footer{
 @media screen and (max-width: 700px) {
     body{
         overflow: auto;
+    }
+
+    .listContainer{
+        flex-basis: 100%;
+        min-width: auto;
     }
 }
 
