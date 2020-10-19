@@ -1,326 +1,403 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge One</title>
+    <!-- Fontawesome CDN-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+    />
+    <!-- Bootstrap 4 CDN -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="challenge-1.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Challenge One</title>
-  <!-- Fontawesome CDN-->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" />
-  <!-- Bootstrap 4 CDN -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="challenge-1.css" />
-</head>
-
-<body>
-  <!-- return to homepage -->
-  <p id="home">
-    <a href="../../index.html" class="btn btn-primary">
-      <i class="fas fa-home"></i> Return Home</a>
-  </p>
-  <header>
-    <h1 class="display-4 text-center">Challenge #1</h1>
-    <div id="description">
-      <p>
-        <u><strong>Description:</strong></u> Now that you've added your name
-        to the <b>contributors.md</b> file, its time to change some actual
-        code. The following steps will have you add your own camper cell, html
-        elements, and custom styling.
-      </p>
-    </div>
-    <!-- steps for adding your picture/avatar to the contributors list -->
-    <p>
-      <u><strong>Steps:</strong></u>
+  <body>
+    <!-- return to homepage -->
+    <p id="home">
+      <a href="../../index.html" class="btn btn-primary">
+        <i class="fas fa-home"></i> Return Home</a
+      >
     </p>
-    <ol>
-      <li>
-        In the <b>cellPanel</b> div, add your own div and give it a class of
-        <i>'camperCell'</i>
-      </li>
-      <li>Give your div a unique <b>id</b></li>
-      <li>Inside your div, add an <b>h1</b> element that has your name</li>
-      <li>Inside your div, add an image that has a picture/avatar of you</li>
-      <li>
-        Inside your div, add a <b>p</b> element that contains your favorite
-        quote
-      </li>
-      <li>
-        Add any custom styling by targeting your custom <b>id</b> in the
-        <b>campers.css</b> file
-      </li>
-    </ol>
-  </header>
-  <main>
-    <div id="profiles">
-      <h1 class="display-4">Camper Cells</h1>
-      <!-- ====== Add your camperCell Here ======================================================================= -->
-      <div id="cellPanel" class="row">
-        <!-- cell for David Fraser -->
-        <div class="camperCell col-md-5 col-lg-3" id="davidfraser">
-          <h1>David Fraser</h1>
-          <img
-            src="https://avatars2.githubusercontent.com/u/47202564?s=460&u=35c8f87e6b9e00267c22664efd668db3b4ad7491&v=4"
-            alt="davidProfPic" />
-          <p>
-            "Alone we can do so little; together we can do so much." – Helen
-            Keller
-          </p>
-        </div>
-        <!-- cell for Camper 2 -->
-        <div class="camperCell col-md-5 col-lg-3" id="camper2">
-          <h1>Camper2</h1>
-          <img
-            src="https://avatars1.githubusercontent.com/u/583231?s=460&u=a59fef2a493e2b67dd13754231daf220c82ba84d&v=4"
-            alt="davidProfPic" />
-          <p>
-            “Be the change that you wish to see in the world.” ― Mahatma
-            Gandhi
-          </p>
-        </div>
-        <!-- cell for UncleBay -->
-        <div class="camperCell col-md-5 col-lg-3" id="unclebay">
-          <h1>Ayodele S. Adebayo</h1>
-          <img src="https://github.com/unclebay143.png" alt="unclebay profile" />
-          <p>
-            “I am a present from the Omni-present to my parent!.” ― Uncle Bay
-          </p>
-        </div>
-        <!-- cell for Biscuitman -->
-        <div class="camperCell col-md-5 col-lg-3" id="biscuit">
-          <h1>Biscuitman</h1>
-          <img src="https://github.com/syntappz.png" alt="syntappz profile" />
-          <p>
-            “I eat Green Berets for breakfast. And right now, I’m very
-            hungry!.” ― John Matrix
-          </p>
-        </div>
-        <!-- cell for Mamun Abdullah -->
-        <div id="theTradeCoder" class="camperCell col-md-5 col-lg-3">
-          <h1>Mamun Abdullah</h1>
-          <img src="https://res.cloudinary.com/tradecoder/image/upload/v1596337811/me/me-1_kqtvd6.jpg"
-            alt="Mamun's photo" />
-          <p>
-            <q>If there's NO INPUT, there'll be NO OUTPUT</q><br />
-            - Mamun Abdullah
-          </p>
-        </div>
-        <!-- cell for Emmanuel Zelarayán -->
-        <div class="camperCell col-md-5 col-lg-3" id="emmavz">
-          <h1>Emmanuel Zelarayán</h1>
-          <img
-            src="https://avatars3.githubusercontent.com/u/65980591?s=460&u=de713198558bb8df17b79aaa096fd165334b55a0&v=4"
-            alt="EmmanuelProfile" />
-          <p>
-            "Many of life's failures are people who did not realize how close
-            they were to success when they gave up." -Thomas A. Edison
-          </p>
-        </div>
-        <!-- cell for Benjamin Thorpe -->
-        <div class="camperCell col-md-5 col-lg-3" id="sparrow">
-          <h1>Benjamin Thorpe</h1>
-          <img src="https://avatars0.githubusercontent.com/u/61359802?v=4" alt="Benjamin's photo" />
-          <p><q>Stay Hungry, Stay Foolish</q> - Steve Jobs</p>
-        </div>
-        <!-- cell for Terri Fricker -->
-        <div class="camperCell col-md-5 col-lg-3" id="tfrick47">
-          <h1>Terri Fricker</h1>
-          <img
-            src="https://avatars3.githubusercontent.com/u/51532684?s=400&u=08b8427ecccfc597e69e685aa605acc0874cf470&v=4"
-            alt="Avatar for Terri Fricker" />
-          <p>
-            <q>Stop trying to make a point and focus on making a
-              difference.</q>
-            - Scott Martin
-          </p>
-        </div>
-        <!-- cell for Mister Nobody -->
-        <div class="camperCell col-md-5 col-lg-3" id="misterybodon">
-          <h1>Mister Nobody</h1>
-          <img src="https://i.imgur.com/ws5rzqB.jpg" alt="Avatar of Nobody" />
-          <p>
-            <q>Eternity is in love with the productions of time.</q><br />&dagger; William Blake &dagger;
-          </p>
-        </div>
-        <!-- cell for Brian Loveless -->
-        <div class="camperCell col-md-5 col-lg-3" id="loveless">
-          <h1>Brian Loveless</h1>
-          <img src="https://github.com/BrianLoveGa.png" alt="Brian Loveless profile headshot" />
-          <br />
-          <p>
-            <q>Always look on the bright side of life!</q> - Eric Idle
-            (Monty Python)
-          </p>
-        </div>
-        <div class='camperCell col-md-5 col-lg-3' id='bilikis'>
-          <h1>Bilikis Orulebaja</h1>
-          <img src="https://chandigarhx.com/wp-content/uploads/2017/02/635922928425667979730384032_image.jpeg"
-            alt="Bilikis" />
-          <p>
-            <q>There is no limit to what we, as women, can accomplish.</q> - Michelle Obama
-          </p>
-        </div>
-        <!-- cell for Neely Mann -->
-        <div id="neelyanne" class="camperCell col-md-5 col-lg-3">
-          <h1>Neely Mann</h1>
-          <img
-            src="https://media.istockphoto.com/photos/watermelon-sliced-on-wooden-background-picture-id935494836?k=6&m=935494836&s=612x612&w=0&h=GcFK1g_nFO3jGmr3AZhyonCawF9zUUkcbK1HNqqOfbA="
-            alt="Neely's photo" />
-          <p>
-            <q>Grool. I meant to say cool and then I started to say great.</q><br />
-            - Cady Heron
-          </p>
-        </div>
-        <!-- cell for Satyam Rastogi -->
-        <div id="satyamrastogi" class="camperCell col-md-5 col-lg-3">
-          <h1>Satyam Rastogi</h1>
-          <img src="https://github.com/satyamrastogi.png" alt="satyam's photo" />
-          <p>
-            <q>You can run from it or Learn from it </q><br />
-            - Anonymous
-          </p>
-        </div>
-        <!-- cell for JC Avalo -->
-        <div class="camperCell col-md-5 col-lg-3" id="avalojc">
-          <h1>JC Avalo</h1>
-          <img src="https://github.com/avalojc.png" alt="avalojc's photo" />
-          <p>
-            <q>How often have I said to you that when you have eliminated the impossible, whatever remains, however
-              improbable, must be the truth </q><br />
-            - Sherlock Holmes
-          </p>
-        </div>
-        <!-- cell for Nilaksh Agarwal -->
-        <div class="camperCell col-md-5 col-lg-3" id="nilax97">
-          <h1>Nilaksh Agarwal</h1>
-          <img src="https://github.com/nilax97.png" alt="nilaksh's photo" />
-          <p>
-            <q>The greatest glory in living lies not in never falling, but in rising every time we fall</q><br />
-            - Nelson Mandela
-          </p>
-        </div>
-        <!-- cell for JamesP -->
-        <div class="camperCell col-md-5 col-lg-3" id="james">
-          <h1>James Price</h1>
-          <img src="https://github.com/jamesmp88.png" alt="James's photo">
-          <br>
-          <br>
-          <p>
-            <q>Be yourself; everyone else is already taken.</q>
-            <br>
-            Oscar Wilde
-          </p>
-        </div>
-        <!-- A cell for Saurav Kumar -->
-        <div class="camperCell col-md-5 col-lg-3" id="myCamperCell">
-          <h1>Saurav Kumar</h1>
-          <img src="https://avatars3.githubusercontent.com/u/17443674?s=400&v=4" alt="Saurav Kumar" />
-          <p>
-            <q>I think it is possible for ordinary people to choose to be extraordinary.</q>
-            <br />
-            - Elon Musk
-          </p>
-        </div>
-        <!-- cell for rzl -->
-        <div class="camperCell col-md-5 col-lg-3" id="rzl">
-          <h1>Rizal M</h1>
-          <img src="https://github.com/RizalMadani.png" alt="github avatar">
-          <p>
-            <q>Learn something useful and spread it</q>
-            <br>Anonymous
-          </p>
-        </div>
-        <!--A cell for Autumn Davis -->
-        <div class="camperCell col-md-5 col-lg-3" id="AutumnWishes87">
-          <h1>Autumn Davis</h1>
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSPeryHatiW7UaUXsOckpzH63NyNGjlRZEbIg&usqp=CAU"
-            alt="Turtle photo" />
-          <p>
-            <q>You know, all that really matters is that the people you love are happy and healthy. Everything else is
-              just sprinkles on the sundae.</q>
-            <br />
-            Paul Walker
-          </p>
-        </div>
-        <!-- cell for Alberto Jauregui -->
-        <div class="camperCell col-md-5 col-lg-3" id="albertojauregui">
-          <h1>Alberto Jauregui</h1>
-          <img src="https://github.com/albertojauregui.png" alt="Alberto Jauregui">
-          <p>
-            <q>Code is like humor. When you have to explain it, it’s bad.</q>
-            <br>Cory House
-          </p>
-        </div>
-        <!-- cell for Julien Vital -->
-        <div class="camperCell col-md-5 col-lg-3" id="julienvital">
-          <h1>Vital Julien</h1>
-          <img src="https://github.com/julienvital.png" alt="Julien vital">
-          <p>
-            "If at first you don’t succeed, try, try again. ." – W. E.
-            Hickson
-          </p>
-        </div>
-        <!-- cell for next -->
-
-        <!-- cell for Julien Vital -->
-        <div class="camperCell col-md-5 col-lg-3" id="ctahirih">
-          <h1>Cintia Tahirih</h1>
-          <img src="https://github.com/ctahirih.png" alt="Tahirih Jaliri">
-          <br>
-          <span>---⭐---</span>
-          <p>
-            "The most damaging phrase in the language is: 'It's always been done that way."
-            <br>
-            <small>Grace Hopper</small>
-          </p>
-        </div>
-        <!-- cell for next -->
-
-        <!-- cell for Victor Castro -->
-        <div class="camperCell col-md-5 col-lg-3" id="soyvikman">
-          <h1>Victor Castro</h1>
-          <img src="https://github.com/soyvikman.png" alt="Victor Castro">
-          <br>
-          <span>---💪---</span>
-          <p>
-            "I love challenges. If you don't have any and can do whatever you want, then it's probably time to die."
-            <br>
-            <small>Jean-Claude Van Damme</small>
-          </p>
-        </div>
-        <!-- cell for next -->
-
-        <!-- cell for Jenna Schultz -->
-        <div class="camperCell col-md-5 col-lg-3" id="jennaschultz">
-          <h1>Jenna Schultz</h1>
-          <img src="https://github.com/jennaschultz.png" alt="Jenna Schultz, Web Designer & Developer">
-          <br>
-          <p>
-            “I also say to my team: Do 10% of your job shittily. It’s okay to do something shittily. Perfectionism
-            prevents us from taking double steps in our career. We think we have to be perfect, but we don’t.”
-            <br>
-            <small>Reshma Saujani, Founder of Girls Who Code</small>
-          </p>
-        </div>
-        <!-- cell for next -->
-
-        <!-- cell for Tanya Mott -->
-        <div class="camperCell col-md-5 col-lg-3" id="tanyamott">
-          <h1>Tanya Mott</h1>
-          <img src="https://avatars2.githubusercontent.com/u/10003710?s=400&u=19c68e54044d9379907ca633937050b3fba46d73&v=4" alt="Tanya Mott">
-          <br>
-          <p>
-            “Knowing is not enough; we must apply. Wishing is not enough; we must do.”
-            <br>
-            <small>Johann Wolfgang Von Goethe</small>
-          </p>
-        </div>
-        <!-- cell for next -->
+    <header>
+      <h1 class="display-4 text-center">Challenge #1</h1>
+      <div id="description">
+        <p>
+          <u><strong>Description:</strong></u> Now that you've added your name
+          to the <b>contributors.md</b> file, its time to change some actual
+          code. The following steps will have you add your own camper cell, html
+          elements, and custom styling.
+        </p>
       </div>
-    </div>
-  </main>
-</body>
+      <!-- steps for adding your picture/avatar to the contributors list -->
+      <p>
+        <u><strong>Steps:</strong></u>
+      </p>
+      <ol>
+        <li>
+          In the <b>cellPanel</b> div, add your own div and give it a class of
+          <i>'camperCell'</i>
+        </li>
+        <li>Give your div a unique <b>id</b></li>
+        <li>Inside your div, add an <b>h1</b> element that has your name</li>
+        <li>Inside your div, add an image that has a picture/avatar of you</li>
+        <li>
+          Inside your div, add a <b>p</b> element that contains your favorite
+          quote
+        </li>
+        <li>
+          Add any custom styling by targeting your custom <b>id</b> in the
+          <b>campers.css</b> file
+        </li>
+      </ol>
+    </header>
+    <main>
+      <div id="profiles">
+        <h1 class="display-4">Camper Cells</h1>
+        <!-- ====== Add your camperCell Here ======================================================================= -->
+        <div id="cellPanel" class="row">
+          <!-- cell for David Fraser -->
+          <div class="camperCell col-md-5 col-lg-3" id="davidfraser">
+            <h1>David Fraser</h1>
+            <img
+              src="https://avatars2.githubusercontent.com/u/47202564?s=460&u=35c8f87e6b9e00267c22664efd668db3b4ad7491&v=4"
+              alt="davidProfPic"
+            />
+            <p>
+              "Alone we can do so little; together we can do so much." – Helen
+              Keller
+            </p>
+          </div>
+          <!-- cell for Camper 2 -->
+          <div class="camperCell col-md-5 col-lg-3" id="camper2">
+            <h1>Camper2</h1>
+            <img
+              src="https://avatars1.githubusercontent.com/u/583231?s=460&u=a59fef2a493e2b67dd13754231daf220c82ba84d&v=4"
+              alt="davidProfPic"
+            />
+            <p>
+              “Be the change that you wish to see in the world.” ― Mahatma
+              Gandhi
+            </p>
+          </div>
+          <!-- cell for UncleBay -->
+          <div class="camperCell col-md-5 col-lg-3" id="unclebay">
+            <h1>Ayodele S. Adebayo</h1>
+            <img
+              src="https://github.com/unclebay143.png"
+              alt="unclebay profile"
+            />
+            <p>
+              “I am a present from the Omni-present to my parent!.” ― Uncle Bay
+            </p>
+          </div>
+          <!-- cell for Biscuitman -->
+          <div class="camperCell col-md-5 col-lg-3" id="biscuit">
+            <h1>Biscuitman</h1>
+            <img src="https://github.com/syntappz.png" alt="syntappz profile" />
+            <p>
+              “I eat Green Berets for breakfast. And right now, I’m very
+              hungry!.” ― John Matrix
+            </p>
+          </div>
+          <!-- cell for Mamun Abdullah -->
+          <div id="theTradeCoder" class="camperCell col-md-5 col-lg-3">
+            <h1>Mamun Abdullah</h1>
+            <img
+              src="https://res.cloudinary.com/tradecoder/image/upload/v1596337811/me/me-1_kqtvd6.jpg"
+              alt="Mamun's photo"
+            />
+            <p>
+              <q>If there's NO INPUT, there'll be NO OUTPUT</q><br />
+              - Mamun Abdullah
+            </p>
+          </div>
+          <!-- cell for Emmanuel Zelarayán -->
+          <div class="camperCell col-md-5 col-lg-3" id="emmavz">
+            <h1>Emmanuel Zelarayán</h1>
+            <img
+              src="https://avatars3.githubusercontent.com/u/65980591?s=460&u=de713198558bb8df17b79aaa096fd165334b55a0&v=4"
+              alt="EmmanuelProfile"
+            />
+            <p>
+              "Many of life's failures are people who did not realize how close
+              they were to success when they gave up." -Thomas A. Edison
+            </p>
+          </div>
+          <!-- cell for Benjamin Thorpe -->
+          <div class="camperCell col-md-5 col-lg-3" id="sparrow">
+            <h1>Benjamin Thorpe</h1>
+            <img
+              src="https://avatars0.githubusercontent.com/u/61359802?v=4"
+              alt="Benjamin's photo"
+            />
+            <p><q>Stay Hungry, Stay Foolish</q> - Steve Jobs</p>
+          </div>
+          <!-- cell for Terri Fricker -->
+          <div class="camperCell col-md-5 col-lg-3" id="tfrick47">
+            <h1>Terri Fricker</h1>
+            <img
+              src="https://avatars3.githubusercontent.com/u/51532684?s=400&u=08b8427ecccfc597e69e685aa605acc0874cf470&v=4"
+              alt="Avatar for Terri Fricker"
+            />
+            <p>
+              <q
+                >Stop trying to make a point and focus on making a
+                difference.</q
+              >
+              - Scott Martin
+            </p>
+          </div>
+          <!-- cell for Mister Nobody -->
+          <div class="camperCell col-md-5 col-lg-3" id="misterybodon">
+            <h1>Mister Nobody</h1>
+            <img src="https://i.imgur.com/ws5rzqB.jpg" alt="Avatar of Nobody" />
+            <p>
+              <q>Eternity is in love with the productions of time.</q
+              ><br />&dagger; William Blake &dagger;
+            </p>
+          </div>
+          <!-- cell for Brian Loveless -->
+          <div class="camperCell col-md-5 col-lg-3" id="loveless">
+            <h1>Brian Loveless</h1>
+            <img
+              src="https://github.com/BrianLoveGa.png"
+              alt="Brian Loveless profile headshot"
+            />
+            <br />
+            <p>
+              <q>Always look on the bright side of life!</q> - Eric Idle (Monty
+              Python)
+            </p>
+          </div>
+          <div class="camperCell col-md-5 col-lg-3" id="bilikis">
+            <h1>Bilikis Orulebaja</h1>
+            <img
+              src="https://chandigarhx.com/wp-content/uploads/2017/02/635922928425667979730384032_image.jpeg"
+              alt="Bilikis"
+            />
+            <p>
+              <q>There is no limit to what we, as women, can accomplish.</q> -
+              Michelle Obama
+            </p>
+          </div>
+          <!-- cell for Neely Mann -->
+          <div id="neelyanne" class="camperCell col-md-5 col-lg-3">
+            <h1>Neely Mann</h1>
+            <img
+              src="https://media.istockphoto.com/photos/watermelon-sliced-on-wooden-background-picture-id935494836?k=6&m=935494836&s=612x612&w=0&h=GcFK1g_nFO3jGmr3AZhyonCawF9zUUkcbK1HNqqOfbA="
+              alt="Neely's photo"
+            />
+            <p>
+              <q>Grool. I meant to say cool and then I started to say great.</q
+              ><br />
+              - Cady Heron
+            </p>
+          </div>
+          <!-- cell for Satyam Rastogi -->
+          <div id="satyamrastogi" class="camperCell col-md-5 col-lg-3">
+            <h1>Satyam Rastogi</h1>
+            <img
+              src="https://github.com/satyamrastogi.png"
+              alt="satyam's photo"
+            />
+            <p>
+              <q>You can run from it or Learn from it </q><br />
+              - Anonymous
+            </p>
+          </div>
+          <!-- cell for JC Avalo -->
+          <div class="camperCell col-md-5 col-lg-3" id="avalojc">
+            <h1>JC Avalo</h1>
+            <img src="https://github.com/avalojc.png" alt="avalojc's photo" />
+            <p>
+              <q
+                >How often have I said to you that when you have eliminated the
+                impossible, whatever remains, however improbable, must be the
+                truth </q
+              ><br />
+              - Sherlock Holmes
+            </p>
+          </div>
+          <!-- cell for Nilaksh Agarwal -->
+          <div class="camperCell col-md-5 col-lg-3" id="nilax97">
+            <h1>Nilaksh Agarwal</h1>
+            <img src="https://github.com/nilax97.png" alt="nilaksh's photo" />
+            <p>
+              <q
+                >The greatest glory in living lies not in never falling, but in
+                rising every time we fall</q
+              ><br />
+              - Nelson Mandela
+            </p>
+          </div>
+          <!-- cell for JamesP -->
+          <div class="camperCell col-md-5 col-lg-3" id="james">
+            <h1>James Price</h1>
+            <img src="https://github.com/jamesmp88.png" alt="James's photo" />
+            <br />
+            <br />
+            <p>
+              <q>Be yourself; everyone else is already taken.</q>
+              <br />
+              Oscar Wilde
+            </p>
+          </div>
+          <!-- A cell for Saurav Kumar -->
+          <div class="camperCell col-md-5 col-lg-3" id="myCamperCell">
+            <h1>Saurav Kumar</h1>
+            <img
+              src="https://avatars3.githubusercontent.com/u/17443674?s=400&v=4"
+              alt="Saurav Kumar"
+            />
+            <p>
+              <q
+                >I think it is possible for ordinary people to choose to be
+                extraordinary.</q
+              >
+              <br />
+              - Elon Musk
+            </p>
+          </div>
+          <!-- cell for rzl -->
+          <div class="camperCell col-md-5 col-lg-3" id="rzl">
+            <h1>Rizal M</h1>
+            <img src="https://github.com/RizalMadani.png" alt="github avatar" />
+            <p>
+              <q>Learn something useful and spread it</q>
+              <br />Anonymous
+            </p>
+          </div>
+          <!--A cell for Autumn Davis -->
+          <div class="camperCell col-md-5 col-lg-3" id="AutumnWishes87">
+            <h1>Autumn Davis</h1>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSPeryHatiW7UaUXsOckpzH63NyNGjlRZEbIg&usqp=CAU"
+              alt="Turtle photo"
+            />
+            <p>
+              <q
+                >You know, all that really matters is that the people you love
+                are happy and healthy. Everything else is just sprinkles on the
+                sundae.</q
+              >
+              <br />
+              Paul Walker
+            </p>
+          </div>
+          <!-- cell for Alberto Jauregui -->
+          <div class="camperCell col-md-5 col-lg-3" id="albertojauregui">
+            <h1>Alberto Jauregui</h1>
+            <img
+              src="https://github.com/albertojauregui.png"
+              alt="Alberto Jauregui"
+            />
+            <p>
+              <q>Code is like humor. When you have to explain it, it’s bad.</q>
+              <br />Cory House
+            </p>
+          </div>
+          <!-- cell for Julien Vital -->
+          <div class="camperCell col-md-5 col-lg-3" id="julienvital">
+            <h1>Vital Julien</h1>
+            <img src="https://github.com/julienvital.png" alt="Julien vital" />
+            <p>
+              "If at first you don’t succeed, try, try again. ." – W. E. Hickson
+            </p>
+          </div>
+          <!-- cell for next -->
 
+          <!-- cell for Julien Vital -->
+          <div class="camperCell col-md-5 col-lg-3" id="ctahirih">
+            <h1>Cintia Tahirih</h1>
+            <img src="https://github.com/ctahirih.png" alt="Tahirih Jaliri" />
+            <br />
+            <span>---⭐---</span>
+            <p>
+              "The most damaging phrase in the language is: 'It's always been
+              done that way."
+              <br />
+              <small>Grace Hopper</small>
+            </p>
+          </div>
+          <!-- cell for next -->
+
+          <!-- cell for Victor Castro -->
+          <div class="camperCell col-md-5 col-lg-3" id="soyvikman">
+            <h1>Victor Castro</h1>
+            <img src="https://github.com/soyvikman.png" alt="Victor Castro" />
+            <br />
+            <span>---💪---</span>
+            <p>
+              "I love challenges. If you don't have any and can do whatever you
+              want, then it's probably time to die."
+              <br />
+              <small>Jean-Claude Van Damme</small>
+            </p>
+          </div>
+          <!-- cell for next -->
+
+          <!-- cell for Jenna Schultz -->
+          <div class="camperCell col-md-5 col-lg-3" id="jennaschultz">
+            <h1>Jenna Schultz</h1>
+            <img
+              src="https://github.com/jennaschultz.png"
+              alt="Jenna Schultz, Web Designer & Developer"
+            />
+            <br />
+            <p>
+              “I also say to my team: Do 10% of your job shittily. It’s okay to
+              do something shittily. Perfectionism prevents us from taking
+              double steps in our career. We think we have to be perfect, but we
+              don’t.”
+              <br />
+              <small>Reshma Saujani, Founder of Girls Who Code</small>
+            </p>
+          </div>
+          <!-- cell for next -->
+
+          <!-- cell for Tanya Mott -->
+          <div class="camperCell col-md-5 col-lg-3" id="tanyamott">
+            <h1>Tanya Mott</h1>
+            <img
+              src="https://avatars2.githubusercontent.com/u/10003710?s=400&u=19c68e54044d9379907ca633937050b3fba46d73&v=4"
+              alt="Tanya Mott"
+            />
+            <br />
+            <p>
+              “Knowing is not enough; we must apply. Wishing is not enough; we
+              must do.”
+              <br />
+              <small>Johann Wolfgang Von Goethe</small>
+            </p>
+          </div>
+          <!-- cell for next -->
+
+          <!-- cell for Malik Mukhtar-->
+          <div class="camperCell col-md-5 col-lg-3" id="malikmukhtar63">
+            <h1>Malik Mukhtar</h1>
+            <img
+              src="https://avatars1.githubusercontent.com/u/16740784?s=460&u=4e25c11f83f2962f37c6c7b3386d55f6384ccf0c&v=4"
+              alt="Malik Mukhtar"
+            />
+            <br />
+            <p>
+              “You never know what you can do till you try.”
+              <br />
+              <small>William Cobbett</small>
+            </p>
+          </div>
+          <!-- cell for next -->
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
