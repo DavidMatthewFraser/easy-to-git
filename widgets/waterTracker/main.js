@@ -145,6 +145,22 @@ const getDaysConsumption = (time) => {
     }, 0);
 }
 
+// Add a modal to display settings
+// More setting's will come soon
+const settingModal = () => {
+    const modal = createElement('div', 'modal');
+    const settingContainer = createElement('div', 'settingContainer');
+    const head = createElement('h2', '', 'Basics');
+    const minTimeDiv = createElement('div', 'group');
+    const minTimelabel = createElement('label', '' ,'From');
+    const minTimeHr = createElement('input', '', null ,'type:number;placeholder:12')
+    const minTimeMn = createElement('input', '', null ,'type:number;placeholder:00')
+    minTimeDiv.append(minTimelabel, minTimeHr, minTimeMn);
+    settingContainer.append(head, minTimeDiv);
+    modal.append(settingContainer);
+    main.append(modal);
+}
+
 
 // Add a modal to choose amount of water to drinks
 const addWaterModal = () => {
@@ -252,7 +268,7 @@ const createElement = (tag, cName, value=null, attr=null, animation) => {
     ele.className = cName;
 
     if(attr !== null)
-        ele.setAttribute(...attr.split(':'));
+        attr.split(';').map(e=> ele.setAttribute(...e.split(':')));
     if(value !== null)
         ele.innerText = value
     if(animation)

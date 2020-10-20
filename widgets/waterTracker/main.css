@@ -118,6 +118,10 @@ h1{
 
 /* Input */
 
+input{
+    border-radius: 20px;
+}
+
 input[type=number] {
     width: 15rem;
     height: 2rem;
@@ -133,7 +137,11 @@ input[type=number]::-webkit-inner-spin-button {
     
   }
 
-/* Modal */
+/*
+----------------
+ Modal 
+----------------
+*/
 
 .modal{
     display: flex;
@@ -244,7 +252,38 @@ input[type=number]::-webkit-inner-spin-button {
     flex-basis: 200px;
 }
 
-/* Footer */
+/* Setting Modal */
+
+.settingContainer {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.group *{
+    margin: 5px;
+}
+
+.group{
+    border-bottom: 1px solid hsla(0, 0%, 90%, 0.9);
+    padding: 10px;
+    margin: 5px;
+}
+
+.group > label {
+    display: block;
+} 
+
+
+/*
+-------------
+ Footer 
+-------------
+ */
+
+
 footer{
     position: fixed;
     bottom: 0;
