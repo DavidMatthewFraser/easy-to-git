@@ -1,28 +1,28 @@
 # What is Easy to Git?
 
-- Easy to Git is an open-source project that offers many ways to get started with Git and GitHub
-- More specifically, the master branch of this project is the code for www.easytogit.com where you can see the results of your contributions
+- Easy to Git is an open-source project that offers many ways to get started with Git and GitHub.
+- More specifically, the master branch of this project is the code for www.easytogit.com where you can see the results of your contributions.
 
 # What are the Goals?
 
-- Our main objective is to cultivate a community that supports one another in learning how to collaborate with version control
-- Note: this project is not monetized and never will be
+- Our main objective is to cultivate a community that supports one another in learning how to collaborate with version control.
+- Note: this project is not monetized and never will be.
 
 # Why should I get involved?
 
-- Git and GitHub are the industry standards for collaboration on coding projects, it is good to become familiar with these tools
+- Git and GitHub are the industry standards for collaboration on coding projects, it is good to become familiar with these tools.
 - Teamwork and collaboration are important skills ... and they can also be really fun! This project encourages both teamwork and collaboration. Further, we have a small, active community that is happy to work with you.
 - There are a lot of open-source projects out there and it can be hard to find one to get started with. This project offers several ways to start your journey as an open-source contributor.
 - There are GitHub projects that offer an easy way to make your first contribution. Further, this project offers fun and interactive challenges to get you even more comfortable using version control.
 
 # How to contribute (short version)
 
-- Pull requests are the way to go
-- Fork our project
+- Pull requests are the way to go.
+- Fork our project.
 - `git clone https://github.com/`<strong>your-github-username</strong>`/easy-to-git.git`
 - `cd easy-to-git`
 - `git checkout -b name-of-new-branch`
-- Make your changes
+- Make your changes.
 - `git add name-of-changed-file`
 - `git commit -m "what you changed goes here"`
 - `git push origin name-of-new-branch`
@@ -87,15 +87,15 @@ Before making any contributions to these projects, please read our <a href='./CO
 
 # What are the standards for pull requests?
 
-- You can read about our standards in the <a href='./CONTRIBUTING.md'>CONTRIBUTING.md</a> file
+- You can read about our standards in the <a href='./CONTRIBUTING.md'>CONTRIBUTING.md</a> file.
 
 # What is the code of conduct enforced in this community?
 
-- You can read about our code of conduct in the <a href='./CODE_OF_CONDUCT.md'>CODE_OF_CONDUCT.md</a> file
+- You can read about our code of conduct in the <a href='./CODE_OF_CONDUCT.md'>CODE_OF_CONDUCT.md</a> file.
 
 # I'm stuck, where can I find help?
 
-- You can ask any questions in on our <a href='https://gitter.im/Easy-To-Git/community'>Gitter</a> chatroom
+- You can ask any questions in on our <a href='https://gitter.im/Easy-To-Git/community'>Gitter</a> chatroom.
 
 # How can I contact the owner of this repository?
 
