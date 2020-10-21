@@ -57,6 +57,11 @@ header > ol > li {
 /* keyframes */
 /* ==================================================================================================================== */
 /* Add your unique styles below*/
+#crenauro {
+  background: #991414;
+  color: #fff;
+  border-color: #991414;
+}
 #tanyamott {
   background: #00c9a9;
   color: #7a25a2;

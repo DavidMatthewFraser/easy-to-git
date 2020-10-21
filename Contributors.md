@@ -31,3 +31,4 @@
 - [Victor Castro Tarraga](https://github.com/soyvikman)
 - [Jenna Schultz] (https://github.com/jennaschultz)
 - [Tanya Mott](https://github.com/tmott13)
+- [Clara Renauro](https://github.com/CRenauro)
