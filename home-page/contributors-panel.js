@@ -4,7 +4,6 @@
 // at easytogit.com. Leaving it blank will default to 'Contributor'.
 
 const contributors = [
-
   {
     githubName: "DavidMatthewFraser",
     displayName: "david fraser",
@@ -63,37 +62,37 @@ const contributors = [
   {
     githubName: "terrifricker",
     displayName: "Terri Fricker",
-    roll: ""
+    roll: "",
   },
   {
     githubName: "boulderresident",
     displayName: "Boulderresident",
-    roll: ""
+    roll: "",
   },
   {
     githubName: "mrterranova",
     displayName: "Michal Terranova",
-    roll: ""
+    roll: "",
   },
   {
     githubName: "BrianLoveGa",
     displayName: "Brian Loveless",
-    roll: ""
+    roll: "",
   },
   {
     githubName: "satyamrastogi",
     displayName: "Satyam Rastogi",
-    roll: ""
+    roll: "",
   },
   {
     githubName: "unclebay143",
     displayName: "Ayodele Samuel Adebayo",
-    roll: ""
+    roll: "",
   },
   {
     githubName: "sauravk7077",
     displayName: "Saurav Kumar",
-    roll: ""
+    roll: "",
   },
   {
     githubName: "Anushri20",
@@ -103,13 +102,18 @@ const contributors = [
   {
     githubName: "Sonechca",
     displayName: "Mintae Kim",
-    role:""
+    role: "",
   },
   {
     githubName: "tmott13",
     displayName: "Tanya Mott",
-    role:""
-  }
+    role: "",
+  },
+  {
+    githubName: "malikmukhtar",
+    displayName: "Malik Mukhtar",
+    role: "",
+  },
 ];
 
 const sidePanel = document.querySelector(".panel");

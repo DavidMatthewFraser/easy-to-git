@@ -1,84 +1,135 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title></title>
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
     <!-- Animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
     <!-- Custom css -->
-    <link rel='stylesheet' href='challenge-2.css' type='text/css'>
+    <link rel="stylesheet" href="challenge-2.css" type="text/css" />
   </head>
   <body>
     <div class="cover"></div>
     <div class="instructions-popup">
       <div class="center-wrap">
         <h3>Instructions</h3>
-        <div id='instructions-container'>
+        <div id="instructions-container">
           <p class="instructions"></p>
         </div>
         <div class="png-link">Transparent Images</div>
-        <button class='close-instructions btn btn-primary text-center'>Close</button>
+        <button class="close-instructions btn btn-primary text-center">
+          Close
+        </button>
       </div>
     </div>
     <div class="container-fluid main">
-      <div class='navbar'>
-        <a href='../../index.html'><button class='btn btn-primary animated bounce'>Home</button></a>
-        <button class='instructions-open btn btn-primary animated shake'>Instructions</button>
-        <a href='https://gitter.im/Easy-To-Git/community' target="_blank"><button class='btn btn-primary animated wobble'>Get Help</button></a>
+      <div class="navbar">
+        <a href="../../index.html"
+          ><button class="btn btn-primary animated bounce">Home</button></a
+        >
+        <button class="instructions-open btn btn-primary animated shake">
+          Instructions
+        </button>
+        <a href="https://gitter.im/Easy-To-Git/community" target="_blank"
+          ><button class="btn btn-primary animated wobble">Get Help</button></a
+        >
       </div>
-      <h1 id='title' class='text-center p-4'>Open-Source Solar System</h1>
-      <div id='solar-system'>
+      <h1 id="title" class="text-center p-4">Open-Source Solar System</h1>
+      <div id="solar-system">
         <!-- ====== Add your Space Objects Here ======================================================================= -->
         <!-- david -->
-        <img id='davids_planet' src='img/planet.png' class='animated bounce infinite'>
-        <img id='davids_spaceship' src='img/spaceship.gif' class=''>
+        <img
+          id="davids_planet"
+          src="img/planet.png"
+          class="animated bounce infinite"
+        />
+        <img id="davids_spaceship" src="img/spaceship.gif" class="" />
         <!-- emma -->
-        <img id="emma_planet" src="img/jupiter.gif">
+        <img id="emma_planet" src="img/jupiter.gif" />
         <div id="emma_star"></div>
         <div id="emma_moon"></div>
         <!-- biscuit -->
-        <img id='biscuit_ufo' src='img/ufo.gif'>
+        <img id="biscuit_ufo" src="img/ufo.gif" />
         <!-- Brian Loveless was here added shaking saturn-->
-        <img id="BWLSaturn"  class="animated wobble infinite" src="img/saturnBWL.png">
+        <img
+          id="BWLSaturn"
+          class="animated wobble infinite"
+          src="img/saturnBWL.png"
+        />
         <!-- nobody -->
-        <img id="terris_comet" src="img/comet.png">
-        <img id='nobody_se' src='img/se.png'/>
+        <img id="terris_comet" src="img/comet.png" />
+        <img id="nobody_se" src="img/se.png" />
         <!-- bilikis -->
-        <img id="planet_b" src='img/planetB.png' class='animated heartBeat infinite'/>
+        <img
+          id="planet_b"
+          src="img/planetB.png"
+          class="animated heartBeat infinite"
+        />
         <!-- michal -->
-        <img id='michal_asteroid' src='img/asteroid.png' />
-        <img id='michal_dustcloud' src='img/planetdust.png' />
+        <img id="michal_asteroid" src="img/asteroid.png" />
+        <img id="michal_dustcloud" src="img/planetdust.png" />
         <!-- brandt-->
-        <img class='animated pulse' id='planet_brandt' src='img/planetBrandt.png' />
+        <img
+          class="animated pulse"
+          id="planet_brandt"
+          src="img/planetBrandt.png"
+        />
         <!-- trevor-->
-        <img id="trevor_tardis" src="img/tardis.png"/>
+        <img id="trevor_tardis" src="img/tardis.png" />
         <!-- jc-->
-        <img id="avalojcCelestialObject" src="img/thatsNoMoon.png"/>
+        <img id="avalojcCelestialObject" src="img/thatsNoMoon.png" />
         <!-- satyamrastogi -->
-        <img id='delta_corp' src='img/mercury.png' class="animated" />
+        <img id="delta_corp" src="img/mercury.png" class="animated" />
         <!-- james  -->
-        <img class="animated fadeInLeftBig" src="img/ship.gif" id="james_ship">
+        <img
+          class="animated fadeInLeftBig"
+          src="img/ship.gif"
+          id="james_ship"
+        />
 
         <!-- Saurav Kumar -->
         <img id="earth" src="./img/earth.png" class="animated" />
 
         <!-- Ayodele Samuel Adebayo -->
-        <img src="../challenge-2/img/unclebay_alien.png" alt="" id="unclebay_alien" class="animated bounce">
+        <img
+          src="../challenge-2/img/unclebay_alien.png"
+          alt=""
+          id="unclebay_alien"
+          class="animated bounce"
+        />
 
         <!--Jenna Schultz -->
-        <img src="img/harry-potter-snitch.png" alt="" id="snitch" class="animated infinite">
+        <img
+          src="img/harry-potter-snitch.png"
+          alt=""
+          id="snitch"
+          class="animated infinite"
+        />
+
+        <!-- Malik Mukhtar -->
+        <img
+          src="img/alienmal.jpg"
+          alt=""
+          id="alienmal"
+          class="animated rollOut"/>
 
          <!-- vatsalvj  -->
          <img class="animated" src="img/vjvatsal.png" width="250px" height="200px" id="vatsalvj">
-
       </div>
     </div>
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Custom Javascript-->
-    <script src='challenge-2.js'></script>
+    <script src="challenge-2.js"></script>
   </body>
 </html>
