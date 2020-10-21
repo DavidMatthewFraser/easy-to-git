@@ -118,6 +118,10 @@ h1{
 
 /* Input */
 
+input{
+    border-radius: 20px;
+}
+
 input[type=number] {
     width: 15rem;
     height: 2rem;
@@ -133,7 +137,11 @@ input[type=number]::-webkit-inner-spin-button {
     
   }
 
-/* Modal */
+/*
+----------------
+ Modal 
+----------------
+*/
 
 .modal{
     display: flex;
@@ -212,10 +220,14 @@ input[type=number]::-webkit-inner-spin-button {
 
 .listContainer{
     background-color: #cffff6;
+    max-height: 90%;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
     padding: 20px;
+    transition: all 200ms ease-in-out;
+    min-width: 500px;
+    overflow: auto;
 }
 
 .drankDetailContainer{
@@ -223,9 +235,9 @@ input[type=number]::-webkit-inner-spin-button {
     justify-content: flex-start;
     align-items: center;
     text-align: center;
-    width: 500px;
     height: 50px;
     border-radius: 20px;
+    transition: all 0.2s ease-in-out;
 }
 
 .drankDetailContainer:hover{
@@ -240,7 +252,46 @@ input[type=number]::-webkit-inner-spin-button {
     flex-basis: 200px;
 }
 
-/* Footer */
+/* Setting Modal */
+
+.settingContainer {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #cffff6;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #c5c5ff;
+}
+
+.group *{
+    margin: 5px;
+}
+
+.group{
+    border-bottom: 1px solid hsla(0, 0%, 90%, 0.9);
+    padding: 10px;
+    margin: 5px;
+}
+
+.group > label {
+    display: block;
+} 
+
+input[type='checkBox'] {
+    width: 32px;
+    height: 32px;
+}
+
+
+/*
+-------------
+ Footer 
+-------------
+ */
+
+
 footer{
     position: fixed;
     bottom: 0;
@@ -339,6 +390,11 @@ footer{
 @media screen and (max-width: 700px) {
     body{
         overflow: auto;
+    }
+
+    .listContainer{
+        flex-basis: 100%;
+        min-width: auto;
     }
 }
 

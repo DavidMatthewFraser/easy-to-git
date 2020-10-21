@@ -355,6 +355,7 @@ animation-iteration-count: infinite;
 		opacity: 0;
 	}
 }
+/*
 #michal_dustcloud {
 	position: absolute;
 	animation: michaldust;
@@ -387,12 +388,12 @@ animation-iteration-count: infinite;
 		opacity: 0;
 	}
 }
-
+*/
 #planet_brandt {
 	position: absolute;
 	height: 200px;
-	right: 50rem;
-	top: 8rem;
+	right: 200px;
+	top: 600px;
 }
 
 #delta_corp {
@@ -511,4 +512,15 @@ Saurav Kumar's earth
 	to {
 		transform: rotate(360deg) translateX(10px) rotate(-360deg);
 	}
+}
+
+#vatsalvj {
+	position: absolute;
+	top: 15rem;
+	left: 70rem;
+	animation: rotateIn;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	z-index: 110;
 }

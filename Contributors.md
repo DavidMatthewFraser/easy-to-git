@@ -27,8 +27,11 @@
 - [James Price](https://github.com/jamesmp88)
 - [Saurav Kumar](https://github.com/sauravk7077)
 - [Autumn Davis](https://github.com/AutumnWishes87)
+- [Vatsal Jain](https://github.com/vatsalvj)
 - [Vital Julien](https://github.com/JulienVital)
 - [Victor Castro Tarraga](https://github.com/soyvikman)
 - [Jenna Schultz] (https://github.com/jennaschultz)
 - [Tanya Mott](https://github.com/tmott13)
 - [Malik Mukhtar](https://github.com/malikmukhtar)
+- [Clara Renauro](https://github.com/CRenauro)
+
