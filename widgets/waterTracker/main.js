@@ -18,7 +18,7 @@ class Storage {
 
 // Constants
 const ls = new Storage('_waterArray');
-const ls2 = new Storage('_otherProps');
+const ls2 = new Storage('_settings');
 const min = 10; // Minimum amount of water
 const max = 10000; // Maximum amount of water
 
@@ -49,7 +49,7 @@ resetBtn.addEventListener('click', e => {
 });
 submit.addEventListener('click', e => {
     const value = goalInput.value;
-    otherProps.goal = value > min ? (value < max ? value : goal): goal;
+    settings.goal = value > min ? (value < max ? value : goal): goal;
     update();
 });
 showWaterListElement.addEventListener('click', e => {
@@ -61,7 +61,7 @@ waterAmountModalBtn.addEventListener('click', _=>{addWaterModal()});
 
 // Total water drank
 let waterArray = [];
-let otherProps = {goal: 2000, time: 60 }; // Default value
+let settings = {goal: 2000, time: 60, from: '07:00', till: '21:00', timerUsed: true }; // Default value
 
 const init = () => {
     
@@ -75,9 +75,9 @@ const init = () => {
     }
 
     if(!ls2.get()) {
-        ls2.set(otherProps);
+        ls2.set(settings);
     }else {
-        otherProps = ls2.get();
+        settings = ls2.get();
     }
     runTimer();
 }
@@ -86,10 +86,10 @@ const init = () => {
 // Displays and updates the information on the screen.
 const update = () => {
     const waterOb = getDrank();
-    const complete = waterOb.today / otherProps.goal * 100;
+    const complete = waterOb.today / settings.goal * 100;
     const height = Number(window.getComputedStyle(waterFilledElement).height.replace('px', ''));
     waterDrankElement.innerText = `${waterOb.today} ml`;
-    limit.innerText = `${otherProps.goal} ml`;
+    limit.innerText = `${settings.goal} ml`;
     waterFilledElement.innerText = `${Math.round(complete)} %`;
     waterFilledElement.style.boxShadow = `inset 0 -${complete * 0.01 * height}px  0px 0px skyblue`;
     // averageMonthElement.innerText = `${waterOb.average.month | 0} ml`;
@@ -102,7 +102,7 @@ const update = () => {
     averageCircle.style.height = '50%';
 
     ls.set(waterArray);
-    ls2.set(otherProps);
+    ls2.set(settings);
 }
 
 /* 
@@ -151,12 +151,57 @@ const settingModal = () => {
     const modal = createElement('div', 'modal');
     const settingContainer = createElement('div', 'settingContainer');
     const head = createElement('h2', '', 'Basics');
+
     const minTimeDiv = createElement('div', 'group');
     const minTimelabel = createElement('label', '' ,'From');
-    const minTimeHr = createElement('input', '', null ,'type:number;placeholder:12')
-    const minTimeMn = createElement('input', '', null ,'type:number;placeholder:00')
+    const minTimeHr = createElement('input', '', null ,`type:number;placeholder:12`)
+    const minTimeMn = createElement('input', '', null ,`type:number;placeholder:00`)
+    minTimeHr.disabled = settings.timerUsed;
+    minTimeMn.disabled = settings.timerUsed;
     minTimeDiv.append(minTimelabel, minTimeHr, minTimeMn);
-    settingContainer.append(head, minTimeDiv);
+
+    const maxTimeDiv = createElement('div', 'group');
+    const maxTimelabel = createElement('label', '' ,'Till');
+    const maxTimeHr = createElement('input', '', null ,`type:number;placeholder:12`)
+    const maxTimeMn = createElement('input', '', null ,`type:number;placeholder:00`)
+    maxTimeHr.disabled = settings.timerUsed;
+    maxTimeMn.disabled = settings.timerUsed;
+    maxTimeDiv.append(maxTimelabel, maxTimeHr, maxTimeMn);
+
+    const timerDiv = createElement('div', 'group');
+    const timerField = createElement('input', '', '',`type:number;placeholder: Time in minutes`);
+    timerField.disabled = !settings.timerUsed;
+    const checkBox = createElement('input', '', '', `type:checkbox`)
+    checkBox.checked = settings.timerUsed;
+    checkBox.addEventListener('change', (e) => {
+        if(e.target.checked) {
+            maxTimeHr.disabled = true;
+            maxTimeMn.disabled = true;
+            minTimeHr.disabled = true;
+            minTimeMn.disabled = true;
+            timerField.disabled = false;
+        }
+        else {
+            timerField.disabled = true;
+            maxTimeHr.disabled = false;
+            maxTimeMn.disabled = false;
+            minTimeHr.disabled = false;
+            minTimeMn.disabled = false;
+        }
+    })
+    timerDiv.append(checkBox, timerField)
+
+    const saveBtn = createElement('button', 'btn', 'Save');
+    saveBtn.addEventListener('click', () => {
+        settings.from = `${minTimeHr.value||"07"}:${minTimeMn.value||"00"}`;
+        settings.till = `${maxTimeHr.value||"21"}:${maxTimeMn.value||"00"}`;
+        settings.timerUsed = checkBox.checked;
+        settings.time = timerField.value | 60;
+        update();
+        removeNode(modal, 'fadeOutDown', 1000);
+    })
+    settingContainer.append(head, minTimeDiv, maxTimeDiv, timerDiv, saveBtn);
+    addAnimation(settingContainer, 'fadeInUp');
     modal.append(settingContainer);
     main.append(modal);
 }
@@ -290,7 +335,7 @@ const removeWater = (id) => {
 // Resets everything back to default
 const reset = () => {
     waterArray = [];
-    otherProps = {goal: 2000, time: 60};
+    settings = {goal: 2000, time: 60};
 }
 
 // timerFunc checks wheather the previous record is of some other day than today,
@@ -313,7 +358,7 @@ const runTimer = () => {
     timerFunc();
     setInterval(()=> {
         timerFunc();
-    }, otherProps.time * 60000)
+    }, settings.time * 60000)
 }
 
 // Remove the element with animation

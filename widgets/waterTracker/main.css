@@ -260,6 +260,9 @@ input[type=number]::-webkit-inner-spin-button {
     flex-basis: 400px;
     padding: 20px;
     box-sizing: border-box;
+    background: #cffff6;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #c5c5ff;
 }
 
 .group *{
@@ -275,6 +278,11 @@ input[type=number]::-webkit-inner-spin-button {
 .group > label {
     display: block;
 } 
+
+input[type='checkBox'] {
+    width: 32px;
+    height: 32px;
+}
 
 
 /*
