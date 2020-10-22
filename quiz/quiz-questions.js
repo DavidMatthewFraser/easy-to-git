@@ -268,6 +268,36 @@ const javascriptQuestions = [
     question:"What happens if you try to destructure an undefined object?",
     answers:["no error occurs","destructured variables are also undefined","null error is thrown"],
     correctAnswer:"null error is thrown"
+  },
+  {
+    question: "Type of null is ?",
+    answers: ["undefined", "null", "object", "NULL"],
+    correctAnswer: "object",
+  },
+  {
+    question: "Does 'for(;;)' result in a syntax error ?",
+    answers: ["True", "False"],
+    correctAnswer: "True",
+  },
+  {
+    question: "Two strings are equal when they have the same sequence of characters, same length, and same characters in corresponding positions.",
+    answers: ["True", "False"],
+    correctAnswer: "True",
+  },
+  {
+    question: "What is the output of this code ? alert('5' + 8 ); ",
+    answers: ["12", "13", "58", "40"],
+    correctAnswer: "58",
+  },
+  {
+    question: "JavaScript numbers are always stored as double precision floating point numbers.",
+    answers: ["True", "False"],
+    correctAnswer: "True",
+  },
+  {
+    question: "Is the code valid? `$a = &5; alert($a)`",
+    answers: ["Yes", "No"],
+    correctAnswer: "No"
   }
 ];
 
