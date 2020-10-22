@@ -1,7 +1,3 @@
-document.addEventListener('load', () => {
-    console.log('hey');
-})
-
 // For storing data in the local storage
 class Storage {
     constructor(name) {
@@ -36,6 +32,7 @@ const drankSVG = document.getElementById('drankSVG');
 const waterCircle = document.getElementById('waterCircle');
 const averageCircle = document.getElementById('averageCicle');
 const showWaterListElement = document.getElementById('showWaterDetailModal');
+const settingsBtn = document.getElementById('settings');
 const main = document.getElementsByClassName('main')[0];
 
 // Event Listeners
@@ -56,18 +53,23 @@ showWaterListElement.addEventListener('click', e => {
     addDrankDetailModal();
 })
 waterAmountModalBtn.addEventListener('click', _=>{addWaterModal()});
-
+settingsBtn.addEventListener('click', _=> settingModal())
+window.onload = function() {
+    context = new AudioContext();
+}
 
 
 // Total water drank
 let waterArray = [];
 let settings = {goal: 2000, time: 60, from: '07:00', till: '21:00', timerUsed: true }; // Default value
+// For audio context
+let context;
+// For timer
+let timerId;
 
 const init = () => {
     
-    window.onload = function() {
-    var context = new AudioContext();
-    }
+    
     if(!ls.get()) {
         ls.set(waterArray);
     }else {
@@ -79,6 +81,7 @@ const init = () => {
     }else {
         settings = ls2.get();
     }
+    update();
     runTimer();
 }
 
@@ -93,7 +96,7 @@ const update = () => {
     waterFilledElement.innerText = `${Math.round(complete)} %`;
     waterFilledElement.style.boxShadow = `inset 0 -${complete * 0.01 * height}px  0px 0px skyblue`;
     // averageMonthElement.innerText = `${waterOb.average.month | 0} ml`;
-    let percent = waterOb.today * 100 / 3700 /2 | 0;
+    let percent = waterOb.today * 100 / 3700 /2 || 0;
     waterCircle.style.width = `${percent}%`;
     waterCircle.style.height = waterCircle.style.width;
     waterCircle.style.top = `${50 - percent/2}%`;
@@ -196,7 +199,9 @@ const settingModal = () => {
         settings.from = `${minTimeHr.value||"07"}:${minTimeMn.value||"00"}`;
         settings.till = `${maxTimeHr.value||"21"}:${maxTimeMn.value||"00"}`;
         settings.timerUsed = checkBox.checked;
-        settings.time = timerField.value | 60;
+        settings.time = timerField.value || 60;
+        clearInterval(timerId);
+        runTimer();
         update();
         removeNode(modal, 'fadeOutDown', 1000);
     })
@@ -252,6 +257,7 @@ const alertModal = (t, desc) => {
     sound.play();
     drinkButton.addEventListener('click', e=>{
         addWater(250, Date.now());
+        update();
         removeNode(modal, 'fadeOutDown', 1000);
     });
     const closeBtn = createElement('button', 'btn', 'Close');
@@ -261,7 +267,8 @@ const alertModal = (t, desc) => {
     alertContainer.append(title, description, drinkButton, closeBtn, sound);
     addAnimation(alertContainer, 'fadeInUp')
     modal.appendChild(alertContainer);
-    main.appendChild(modal);
+    if(document.getElementsByClassName('alertContainer ').length == 0)
+        main.appendChild(modal);
 }
 
 // It creates a modal which shows the details about today's water drank
@@ -342,23 +349,38 @@ const reset = () => {
 // then it resets waterArray and updates it.
 // And shows the alertModal.
 const timerFunc = () => {
-    if (waterArray.length > 0){
-        const lastRecordDate = new Date(waterArray[waterArray.length-1].time);
-        const now = new Date();
-        if(lastRecordDate.getDate() < now.getDate()){
-            waterArray = []
-        }
-    }   
     alertModal('Drink Water', `Drink some water. Drinking water at right time is good for your health.`);
-    update();
+    // update();
 }
 
-// Runs timerFunc every otherPros.time (default = 60 minutes).
+// 5:50
+// Runs timerFunc every otherPros.time (default = 60 minutes)
+// Or runs automatically according to specified time in settings
 const runTimer = () => {
-    timerFunc();
-    setInterval(()=> {
-        timerFunc();
-    }, settings.time * 60000)
+    let time;
+    let willRun = true;
+    if(settings.timerUsed) {
+        time = settings.time * 60000;
+    }
+    else{
+        const lower = settings.from.split(':');
+        const upper = settings.till.split(':');
+        const now = new Date();
+        if(now.getHours() + now.getMinutes() >= lower[0] * 60 + lower[1] && now.getHours() + now.getMinutes() < upper[0] * 60 + upper[1]) {
+            const noOfTimeToDrink = (settings.goal - getDaysConsumption(now.getTime())) / 250; // 250 will be changed to some variable in the future
+            const value = (upper[0] * 60 + upper[1]) - (now.getHours() * 60 + now.getMinutes()) / noOfTimeToDrink;
+            time = value * 1000;
+        }
+        else{
+            willRun = false;
+        }
+    }
+    if(willRun){
+        timerId = setInterval(()=> {
+            timerFunc();
+        }, time)
+    }
+    
 }
 
 // Remove the element with animation
