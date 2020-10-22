@@ -32,6 +32,7 @@ const drankSVG = document.getElementById('drankSVG');
 const waterCircle = document.getElementById('waterCircle');
 const averageCircle = document.getElementById('averageCicle');
 const showWaterListElement = document.getElementById('showWaterDetailModal');
+const settingsBtn = document.getElementById('settings');
 const main = document.getElementsByClassName('main')[0];
 
 // Event Listeners
@@ -52,14 +53,10 @@ showWaterListElement.addEventListener('click', e => {
     addDrankDetailModal();
 })
 waterAmountModalBtn.addEventListener('click', _=>{addWaterModal()});
+settingsBtn.addEventListener('click', _=> settingModal())
 window.onload = function() {
-    //context = new AudioContext();
-    
+    context = new AudioContext();
 }
-document.addEventListener('mouseover', ()=> {
-    //context.resume();
-    //console.log(context.state);
-})
 
 
 // Total water drank
@@ -205,6 +202,7 @@ const settingModal = () => {
         settings.time = timerField.value || 60;
         clearInterval(timerId);
         runTimer();
+        update();
         removeNode(modal, 'fadeOutDown', 1000);
     })
     settingContainer.append(head, minTimeDiv, maxTimeDiv, timerDiv, saveBtn);
@@ -259,6 +257,7 @@ const alertModal = (t, desc) => {
     sound.play();
     drinkButton.addEventListener('click', e=>{
         addWater(250, Date.now());
+        update();
         removeNode(modal, 'fadeOutDown', 1000);
     });
     const closeBtn = createElement('button', 'btn', 'Close');
@@ -355,7 +354,8 @@ const timerFunc = () => {
 }
 
 // 5:50
-// Runs timerFunc every otherPros.time (default = 60 minutes).
+// Runs timerFunc every otherPros.time (default = 60 minutes)
+// Or runs automatically according to specified time in settings
 const runTimer = () => {
     let time;
     let willRun = true;
@@ -366,8 +366,8 @@ const runTimer = () => {
         const lower = settings.from.split(':');
         const upper = settings.till.split(':');
         const now = new Date();
-        if(now.getHours() >= lower[0] && now.getHours() < upper[0]) {
-            const noOfTimeToDrink = settings.goal / 250; // 250 will be changed to some variable in the future
+        if(now.getHours() + now.getMinutes() >= lower[0] * 60 + lower[1] && now.getHours() + now.getMinutes() < upper[0] * 60 + upper[1]) {
+            const noOfTimeToDrink = (settings.goal - getDaysConsumption(now.getTime())) / 250; // 250 will be changed to some variable in the future
             const value = (upper[0] * 60 + upper[1]) - (now.getHours() * 60 + now.getMinutes()) / noOfTimeToDrink;
             time = value * 1000;
         }
