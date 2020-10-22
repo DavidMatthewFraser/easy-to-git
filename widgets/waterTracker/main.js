@@ -1,7 +1,3 @@
-document.addEventListener('load', () => {
-    console.log('hey');
-})
-
 // For storing data in the local storage
 class Storage {
     constructor(name) {
@@ -56,18 +52,27 @@ showWaterListElement.addEventListener('click', e => {
     addDrankDetailModal();
 })
 waterAmountModalBtn.addEventListener('click', _=>{addWaterModal()});
-
+window.onload = function() {
+    //context = new AudioContext();
+    
+}
+document.addEventListener('mouseover', ()=> {
+    //context.resume();
+    //console.log(context.state);
+})
 
 
 // Total water drank
 let waterArray = [];
 let settings = {goal: 2000, time: 60, from: '07:00', till: '21:00', timerUsed: true }; // Default value
+// For audio context
+let context;
+// For timer
+let timerId;
 
 const init = () => {
     
-    window.onload = function() {
-    var context = new AudioContext();
-    }
+    
     if(!ls.get()) {
         ls.set(waterArray);
     }else {
@@ -79,6 +84,7 @@ const init = () => {
     }else {
         settings = ls2.get();
     }
+    update();
     runTimer();
 }
 
@@ -93,7 +99,7 @@ const update = () => {
     waterFilledElement.innerText = `${Math.round(complete)} %`;
     waterFilledElement.style.boxShadow = `inset 0 -${complete * 0.01 * height}px  0px 0px skyblue`;
     // averageMonthElement.innerText = `${waterOb.average.month | 0} ml`;
-    let percent = waterOb.today * 100 / 3700 /2 | 0;
+    let percent = waterOb.today * 100 / 3700 /2 || 0;
     waterCircle.style.width = `${percent}%`;
     waterCircle.style.height = waterCircle.style.width;
     waterCircle.style.top = `${50 - percent/2}%`;
@@ -196,8 +202,9 @@ const settingModal = () => {
         settings.from = `${minTimeHr.value||"07"}:${minTimeMn.value||"00"}`;
         settings.till = `${maxTimeHr.value||"21"}:${maxTimeMn.value||"00"}`;
         settings.timerUsed = checkBox.checked;
-        settings.time = timerField.value | 60;
-        update();
+        settings.time = timerField.value || 60;
+        clearInterval(timerId);
+        runTimer();
         removeNode(modal, 'fadeOutDown', 1000);
     })
     settingContainer.append(head, minTimeDiv, maxTimeDiv, timerDiv, saveBtn);
@@ -261,7 +268,8 @@ const alertModal = (t, desc) => {
     alertContainer.append(title, description, drinkButton, closeBtn, sound);
     addAnimation(alertContainer, 'fadeInUp')
     modal.appendChild(alertContainer);
-    main.appendChild(modal);
+    if(document.getElementsByClassName('alertContainer ').length == 0)
+        main.appendChild(modal);
 }
 
 // It creates a modal which shows the details about today's water drank
@@ -342,23 +350,37 @@ const reset = () => {
 // then it resets waterArray and updates it.
 // And shows the alertModal.
 const timerFunc = () => {
-    if (waterArray.length > 0){
-        const lastRecordDate = new Date(waterArray[waterArray.length-1].time);
-        const now = new Date();
-        if(lastRecordDate.getDate() < now.getDate()){
-            waterArray = []
-        }
-    }   
     alertModal('Drink Water', `Drink some water. Drinking water at right time is good for your health.`);
-    update();
+    // update();
 }
 
+// 5:50
 // Runs timerFunc every otherPros.time (default = 60 minutes).
 const runTimer = () => {
-    timerFunc();
-    setInterval(()=> {
-        timerFunc();
-    }, settings.time * 60000)
+    let time;
+    let willRun = true;
+    if(settings.timerUsed) {
+        time = settings.time * 60000;
+    }
+    else{
+        const lower = settings.from.split(':');
+        const upper = settings.till.split(':');
+        const now = new Date();
+        if(now.getHours() >= lower[0] && now.getHours() < upper[0]) {
+            const noOfTimeToDrink = settings.goal / 250; // 250 will be changed to some variable in the future
+            const value = (upper[0] * 60 + upper[1]) - (now.getHours() * 60 + now.getMinutes()) / noOfTimeToDrink;
+            time = value * 1000;
+        }
+        else{
+            willRun = false;
+        }
+    }
+    if(willRun){
+        timerId = setInterval(()=> {
+            timerFunc();
+        }, time)
+    }
+    
 }
 
 // Remove the element with animation
