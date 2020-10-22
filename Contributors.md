@@ -30,8 +30,9 @@
 - [Vatsal Jain](https://github.com/vatsalvj)
 - [Vital Julien](https://github.com/JulienVital)
 - [Victor Castro Tarraga](https://github.com/soyvikman)
-- [Jenna Schultz] (https://github.com/jennaschultz)
+- [Jenna Schultz](https://github.com/jennaschultz)
 - [Tanya Mott](https://github.com/tmott13)
 - [Malik Mukhtar](https://github.com/malikmukhtar)
 - [Clara Renauro](https://github.com/CRenauro)
+- [Nwaka Kizito](https://github.com/Kizito007)
 
