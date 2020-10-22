@@ -2,6 +2,7 @@
 
 - Easy to Git is an open-source project that offers many ways to get started with Git and GitHub.
 - More specifically, the master branch of this project is the code for www.easytogit.com where you can see the results of your contributions.
+- Interact with our community by joining the <a href='https://gitter.im/Easy-To-Git/community'>Easy to Git chatroom</a>. Feel free to ask questions, make suggestions, and get to know other contributors. 
 
 # What are the Goals?
 
