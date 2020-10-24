@@ -45,7 +45,11 @@ resetBtn.addEventListener('click', e => {
     update();
 });
 submit.addEventListener('click', e => {
-    const value = goalInput.value;
+    let value;
+    if(settings.units === 0)
+        value = goalInput.value;
+    else
+        value = toMilliliters(goalInput.value);
     settings.goal = value > min ? (value < max ? value : goal): goal;
     update();
 });
@@ -61,7 +65,14 @@ window.onload = function() {
 
 // Total water drank
 let waterArray = [];
-let settings = {goal: 2000, time: 60, from: '07:00', till: '21:00', timerUsed: true }; // Default value
+let settings = {
+    goal: 2000,
+    time: 60,
+    from: '07:00',
+    till: '21:00',
+    timerUsed: true,
+    units: 0
+}; // Default value
 // For audio context
 let context;
 // For timer
@@ -91,8 +102,16 @@ const update = () => {
     const waterOb = getDrank();
     const complete = waterOb.today / settings.goal * 100;
     const height = Number(window.getComputedStyle(waterFilledElement).height.replace('px', ''));
-    waterDrankElement.innerText = `${waterOb.today} ml`;
-    limit.innerText = `${settings.goal} ml`;
+    if(settings.units === 0){
+        addWaterElement.innerHTML = `<i class="fas fa-plus"></i> Add 250 mL`;
+        waterDrankElement.innerText = `${waterOb.today} ml`;
+        limit.innerText = `${settings.goal} ml`;
+    }
+    else{
+        addWaterElement.innerHTML = `<i class="fas fa-plus"></i> Add ${toOunce(250)} oz`;
+        waterDrankElement.innerText = `${toOunce(waterOb.today)} oz`;
+        limit.innerText = `${toOunce(settings.goal)} oz`;
+    }
     waterFilledElement.innerText = `${Math.round(complete)} %`;
     waterFilledElement.style.boxShadow = `inset 0 -${complete * 0.01 * height}px  0px 0px skyblue`;
     // averageMonthElement.innerText = `${waterOb.average.month | 0} ml`;
@@ -194,18 +213,28 @@ const settingModal = () => {
     })
     timerDiv.append(checkBox, timerField)
 
+    const unitsDiv = createElement('div', 'group');
+    const label = createElement('label', '', 'Select Units');
+    const select = createElement('select', '');
+    const option1 = createElement('option', 'option', 'mL (Milliliters)');
+    const option2 = createElement('option', 'option', 'oz');
+    select.append(option1, option2);
+    select.selectedIndex = settings.units;
+    unitsDiv.append(label,select);
+
     const saveBtn = createElement('button', 'btn', 'Save');
     saveBtn.addEventListener('click', () => {
         settings.from = `${minTimeHr.value||"07"}:${minTimeMn.value||"00"}`;
         settings.till = `${maxTimeHr.value||"21"}:${maxTimeMn.value||"00"}`;
         settings.timerUsed = checkBox.checked;
         settings.time = timerField.value || 60;
+        settings.units = select.selectedIndex;
         clearInterval(timerId);
         runTimer();
         update();
         removeNode(modal, 'fadeOutDown', 1000);
     })
-    settingContainer.append(head, minTimeDiv, maxTimeDiv, timerDiv, saveBtn);
+    settingContainer.append(head, minTimeDiv, maxTimeDiv, timerDiv, unitsDiv,saveBtn);
     addAnimation(settingContainer, 'fadeInUp');
     modal.append(settingContainer);
     main.append(modal);
@@ -231,8 +260,11 @@ const addWaterModal = () => {
         const gIcon = createElement('div', 'gIcon');
         const gImg = createElement('img', 'gImg', null, 'src:res/water-glass.svg');
         gIcon.appendChild(gImg);
-
-        const gText = createElement('div', 'gText', e + " ml");
+        let gText;
+        if(settings.units === 0)
+            gText = createElement('div', 'gText', e + " ml");
+        else
+            gText = createElement('div', 'gText', toOunce(e) + " oz");
 
         gContainer.append(gIcon, gText);
         return gContainer;
@@ -276,14 +308,18 @@ const addDrankDetailModal = () => {
     const modal = createElement('div', 'modal');
     const container = createElement('div', 'listContainer');
     const head = createElement('h3', '', 'Water you drank.');
-    const close = createElement('button', 'btn', '⨉');
+    const close = createElement('button', 'btn', 'Close');
     close.addEventListener('click', ()=> {
         removeNode(modal, 'zoomOut', 1000);
     })
     const list = waterArray.filter(ob=> (new Date(ob.time)).getDate() === (new Date()).getDate())
     .map(ob => {
         const drankDetailContainer = createElement('div', 'drankDetailContainer');
-        const quantity = createElement('div', 'qtyBox', ob.quantity+" ml");
+        let quantity;
+        if(settings.units === 0)
+            quantity = createElement('div', 'qtyBox', ob.quantity+" ml");
+        else
+            quantity = createElement('div', 'qtyBox', toOunce(ob.quantity) + " oz");
         const dateTime = new Date(ob.time);
         const time = createElement('div', 'timeBox', `${dateTime.getHours()} : ${dateTime.getMinutes()}` );
         const delBtn = createElement('button', 'btn delBtn');
@@ -337,6 +373,19 @@ const addWater = (quantity, time) => {
 const removeWater = (id) => {
     waterArray = waterArray.filter(e=>e.id !== id);
     update();
+}
+
+const ounceValue = 29.5735296;
+// Converts milliLitres to ounce
+// v is the value to be converted
+const toOunce = (v) => {
+    return Math.round(v / ounceValue);
+}
+
+// Converts ounce to milliLiters
+// v is the value to be converted
+const toMilliliters = (v) => {
+    return Math.round(v * ounceValue);
 }
 
 // Resets everything back to default

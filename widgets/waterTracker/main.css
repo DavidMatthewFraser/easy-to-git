@@ -279,11 +279,20 @@ input[type=number]::-webkit-inner-spin-button {
     display: block;
 } 
 
-input[type='checkBox'] {
+/* input[type='checkBox'] {
     width: 32px;
     height: 32px;
-}
+} */
 
+select{
+    width: 200px;
+    height: 40px;
+    border-radius: 2px;
+    border: none;
+    appearance: none;
+    box-shadow: 0 0 2px #ccc;
+}
+  
 
 /*
 -------------
@@ -350,6 +359,14 @@ footer{
     box-shadow: 0 0 10px var(--color2);
     border: 2px solid var(--color2);
     background-color: #74ebd5c5;
+}
+.stats {
+    display: flex;
+    flex-direction: column;
+}
+
+.stats > small {
+    text-align: center;
 }
 
 .info{
