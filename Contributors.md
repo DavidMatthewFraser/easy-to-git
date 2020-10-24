@@ -36,4 +36,6 @@
 - [Clara Renauro](https://github.com/CRenauro)
 - [Nwaka Kizito](https://github.com/Kizito007)
 - [Priyal Dubey](https://github.com/priyalweb)
+- [JC Palmes](https://github.com/khleomix/)
+
 
