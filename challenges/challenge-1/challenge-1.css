@@ -334,3 +334,66 @@ Saurav Kumar's styling
   box-shadow: 1px 2px 4px rgb(107, 103, 114);
   transform: translate(-1px, -2px);
 }
+
+
+#priyaldubey {
+  padding: 16px 24px;
+  border: 2px;
+  box-shadow: unset;
+  transition: 0.25s ease-in;
+  background-color: #eff68f;
+  border-radius: 10px;
+  border: 5px #390707 solid;
+  box-shadow: 2.5px 5px #acaaa1;
+  margin: 7px;
+  min-width: 300px;
+}
+#priyaldubey:hover{
+  color: #c91111;
+  box-shadow: 1px 2px 4px rgb(107, 103, 114);
+  transform: translate(-1px, -2px);
+}
+/* JC Palmes' styling */
+#khleomix {
+  background-color: #000;
+  border: none;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+  color: #D90B7C;
+  margin-top: 80px;
+  position: relative;
+}
+#khleomix h1 {
+  font-weight: 700;
+  margin-top: 90px;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 1;
+}
+#khleomix img {
+  background: url(https://avatars0.githubusercontent.com/u/46095761?s=460&u=e508382602aac25d10bd6a4fda6059cbd30c2c2c&v=4) no-repeat center center;
+  border-radius: 50%;
+  border: 10px solid rgba(255,255,255,0.5);
+  box-shadow: inset 1px 1px 4px rgba(0,0,0,0.5), 0 2px 3px rgba(0,0,0,0.6);
+  display: block;
+  height: 150px;
+  left: 25%;
+  margin: 0;
+  position: absolute;
+  top: -70px;
+  width: 150px;
+  z-index: 0;
+}
+#khleomix p {
+  text-transform: uppercase;
+  transform: rotate(-10deg) translateY(-26px);
+}
+#khleomix q {
+  color: #fcf779;
+  display: block;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 28px;
+  padding: 10px;
+  text-shadow: 7px 7px 2px rgba(0,0,0,0.2);
+  text-transform: none;
+}
