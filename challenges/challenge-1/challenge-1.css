@@ -335,6 +335,24 @@ Saurav Kumar's styling
   transform: translate(-1px, -2px);
 }
 
+
+#priyaldubey {
+  padding: 16px 24px;
+  border: 2px;
+  box-shadow: unset;
+  transition: 0.25s ease-in;
+  background-color: #eff68f;
+  border-radius: 10px;
+  border: 5px #390707 solid;
+  box-shadow: 2.5px 5px #acaaa1;
+  margin: 7px;
+  min-width: 300px;
+}
+#priyaldubey:hover{
+  color: #c91111;
+  box-shadow: 1px 2px 4px rgb(107, 103, 114);
+  transform: translate(-1px, -2px);
+}
 /* JC Palmes' styling */
 #khleomix {
   background-color: #000;
