@@ -35,4 +35,5 @@
 - [Malik Mukhtar](https://github.com/malikmukhtar)
 - [Clara Renauro](https://github.com/CRenauro)
 - [Nwaka Kizito](https://github.com/Kizito007)
+- [JC Palmes](https://github.com/khleomix/)
 
