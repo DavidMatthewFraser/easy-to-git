@@ -65,15 +65,17 @@ window.onload = function() {
 
 // Total water drank
 let waterArray = [];
-let settings = {
+const DEFAULT_SETTING = {
     goal: 2000,
     time: 60,
     from: '07:00',
     till: '21:00',
     timerUsed: true,
-    units: 0
+    units: 0,
+    lastDrank: 250
 }; // Default value
 // For audio context
+let setting = DEFAULT_SETTING;
 let context;
 // For timer
 let timerId;
@@ -102,16 +104,9 @@ const update = () => {
     const waterOb = getDrank();
     const complete = waterOb.today / settings.goal * 100;
     const height = Number(window.getComputedStyle(waterFilledElement).height.replace('px', ''));
-    if(settings.units === 0){
-        addWaterElement.innerHTML = `<i class="fas fa-plus"></i> Add 250 mL`;
-        waterDrankElement.innerText = `${waterOb.today} ml`;
-        limit.innerText = `${settings.goal} ml`;
-    }
-    else{
-        addWaterElement.innerHTML = `<i class="fas fa-plus"></i> Add ${toOunce(250)} oz`;
-        waterDrankElement.innerText = `${toOunce(waterOb.today)} oz`;
-        limit.innerText = `${toOunce(settings.goal)} oz`;
-    }
+    addWaterElement.innerHTML = `<i class="fas fa-plus"></i> Add ${toUnitString(250)}`;
+    waterDrankElement.innerText = toUnitString(waterOb.today);
+    limit.innerText = toUnitString(settings.goal);
     waterFilledElement.innerText = `${Math.round(complete)} %`;
     waterFilledElement.style.boxShadow = `inset 0 -${complete * 0.01 * height}px  0px 0px skyblue`;
     // averageMonthElement.innerText = `${waterOb.average.month | 0} ml`;
@@ -260,12 +255,7 @@ const addWaterModal = () => {
         const gIcon = createElement('div', 'gIcon');
         const gImg = createElement('img', 'gImg', null, 'src:res/water-glass.svg');
         gIcon.appendChild(gImg);
-        let gText;
-        if(settings.units === 0)
-            gText = createElement('div', 'gText', e + " ml");
-        else
-            gText = createElement('div', 'gText', toOunce(e) + " oz");
-
+        const gText = createElement('div', 'gText', toUnitString(e));
         gContainer.append(gIcon, gText);
         return gContainer;
     });
@@ -282,13 +272,13 @@ const alertModal = (t, desc) => {
     const alertContainer = createElement('div', 'alertContainer');
     const title = createElement('h3', 'alertTitle', t);
     const description = createElement('div', 'alertDesc', desc);
-    const drinkButton = createElement('button', 'btn', 'Drink 250 ml');
+    const drinkButton = createElement('button', 'btn', `Drink ${toUnitString(settings.lastDrank)}`);
     const sound = createElement('audio','audio',null, 'src:res/music.mp3');
     sound.loop = true;
-    sound.volume = 0.5;
+    sound.volume = 0.1;
     sound.play();
     drinkButton.addEventListener('click', e=>{
-        addWater(250, Date.now());
+        addWater(settings.lastDrank, Date.now());
         update();
         removeNode(modal, 'fadeOutDown', 1000);
     });
@@ -315,11 +305,7 @@ const addDrankDetailModal = () => {
     const list = waterArray.filter(ob=> (new Date(ob.time)).getDate() === (new Date()).getDate())
     .map(ob => {
         const drankDetailContainer = createElement('div', 'drankDetailContainer');
-        let quantity;
-        if(settings.units === 0)
-            quantity = createElement('div', 'qtyBox', ob.quantity+" ml");
-        else
-            quantity = createElement('div', 'qtyBox', toOunce(ob.quantity) + " oz");
+        const quantity = createElement('div', 'qtyBox',toUnitString(ob.quantity));
         const dateTime = new Date(ob.time);
         const time = createElement('div', 'timeBox', `${dateTime.getHours()} : ${dateTime.getMinutes()}` );
         const delBtn = createElement('button', 'btn delBtn');
@@ -367,6 +353,7 @@ const createElement = (tag, cName, value=null, attr=null, animation) => {
 // quantity is the amount of water to be added in mL, and time should in milliseconds
 const addWater = (quantity, time) => {
     waterArray.push({id: uuidv4(), quantity, time});
+    settings.lastDrank = quantity;
 }
 
 // id is the id of the water array's object.
@@ -388,10 +375,17 @@ const toMilliliters = (v) => {
     return Math.round(v * ounceValue);
 }
 
+// v is the value in milliliters
+const toUnitString = (v) => {
+    if(settings.units === 0)
+        return `${v} ml`;
+    return `${toOunce(v)} oz`;
+}
+
 // Resets everything back to default
 const reset = () => {
     waterArray = [];
-    settings = {goal: 2000, time: 60};
+    settings = DEFAULT_SETTING;
 }
 
 // timerFunc checks wheather the previous record is of some other day than today,

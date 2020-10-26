@@ -102,7 +102,9 @@ h1{
     color: #fff;
     background: -webkit-linear-gradient(to right, var(--color1), var(--color2));  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, var(--color1), var(--color2)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    transition: all 0.2s ease-in-out;
 }
+
 .btn:hover{
     filter: brightness(0.9);
 }
