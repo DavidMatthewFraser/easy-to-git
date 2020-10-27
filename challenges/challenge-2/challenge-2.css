@@ -535,9 +535,10 @@ Saurav Kumar's earth
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 }
-#priyal_blackhole{
+
+#priyal{
 	position: absolute;
-	margin-top: 30vh;
+	/*margin-top: 30vh;*/
 	left: 55%;
 	width: 190px;
 	height: 280px;
