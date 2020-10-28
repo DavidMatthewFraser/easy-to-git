@@ -397,3 +397,46 @@ Saurav Kumar's styling
   text-shadow: 7px 7px 2px rgba(0,0,0,0.2);
   text-transform: none;
 }
+
+/* Satya vinay's styling */
+#satya-vinay {
+  padding: 16px 24px;
+  border: 2px;
+  box-shadow: unset;
+  transition: 0.25s ease-in;
+  background-color: #fcf5fc;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border: 10px #390707 solid;
+  box-shadow: 3.5px 5px #acaaa1;
+  margin: 7px;
+  min-width: 300px;
+}
+#satya-vinay q{
+  font-family:Comic Sans MS, Comic Sans, cursive;
+  text-shadow: 0 0 3px #FF0000;
+}
+#satya-vinay p{
+  font-family: Brush Script MT, Brush Script Std, cursive;
+  text-shadow: 0 0 3px #FF0000;
+}
+
+#satya-vinay:hover{
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+#satya-vinay h1{
+  color: #7c795d;
+  font-family: 'Trocchi', serif;
+  font-weight: bold;
+  margin: 1;
+}
+
+#satya-vinay img {
+  flex-shrink: 0;
+  border-radius: 40%;
+	background-origin: border-box;
+	background-clip: content-box, border-box;
+	background-size: cover;
+	box-sizing: border-box;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.5);
+}
