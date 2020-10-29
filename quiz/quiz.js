@@ -25,6 +25,11 @@ const questionSections = [
     number: 4,
     title: "Data Structure",
     totalQuestions: dataStructure.length,
+  },
+  {
+    number: 5,
+    title: "SQL",
+    totalQuestions: sqlQuestions.length,
   }
 ];
 

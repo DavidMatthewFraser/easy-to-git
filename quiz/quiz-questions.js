@@ -349,4 +349,33 @@ const dataStructure= [
   }
 ];
 
-const sections = [htmlQuestions, cssQuestions, javascriptQuestions, dataStructure];
+
+const sqlQuestions= [
+  {
+    question: "What does SQL stand for?",
+    answers: ["Structured Query List", "Structured Query Language", "Simple Query Language","Simple Query linguistic"],
+    correctAnswer: "Structured Query Language",
+  },
+  {
+    question: "Which SQL statement is used to update data in a database?",
+    answers: ["SAVE", "UPDATE", "SAVE AS", "MODIFY"],
+    correctAnswer: "UPDATE",
+  },
+  {
+    question: "Which operator performs pattern matching?",
+    answers: ["BETWEEN operator", "LIKE operator", "EXISTS operator", "EQUAL operator"],
+    correctAnswer: "LIKE operator",
+  },
+  {
+    question: "In existing table, ALTER TABLE statement is used to",
+    answers: ["Add columns", "Add constraints","Delete columns","All of the above"],
+    correctAnswer: "All of the above",
+  },
+  {
+    question: "Which SQL keyword is used to sort the result-set?",
+    answers: ["SORT BY", "ORDER","ORDER BY","SORT"],
+    correctAnswer: "ORDER BY",
+  }
+];
+
+const sections = [htmlQuestions, cssQuestions, javascriptQuestions, dataStructure,sqlQuestions];
