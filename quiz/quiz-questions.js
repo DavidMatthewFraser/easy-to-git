@@ -50,6 +50,12 @@ const htmlQuestions = [
   },
   {
     question:
+      "How many types of CSS can be included in HTML?",
+    answers: ["4", "2", "3"],
+    correctAnswer: "3",
+  },
+  {
+    question:
       "Which of the following characters indicates the closing of a tag?",
     answers: [".", "\\", "/", ","],
     correctAnswer: "/",
@@ -215,6 +221,16 @@ const cssQuestions = [
       "style: bold;"
     ],
     correctAnswer: "font-weight: bold;"
+  },
+  {
+    question:
+      "How many types of positions are there in CSS?",
+    answers: [
+      "3",
+      '5',
+      '8',
+    ],
+    correctAnswer: '5',
   }
 ];
 

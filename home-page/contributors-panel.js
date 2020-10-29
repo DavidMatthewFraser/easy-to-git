@@ -114,6 +114,11 @@ const contributors = [
     displayName: "Malik Mukhtar",
     role: "",
   },
+  {
+    githubName: "Adityachaturvedi2906",
+    displayName: "Aditya Chaturvedi",
+    role: "",
+  },
 ];
 
 const sidePanel = document.querySelector(".panel");
