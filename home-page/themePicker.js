@@ -26,3 +26,6 @@ defaultTheme.onclick = () => {
   skyTheme.onclick = () => {
     changeTheme(sky);
   }
+  autumnTheme.onclick = () => {
+    changeTheme(autumn);
+  }

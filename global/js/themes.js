@@ -236,6 +236,33 @@ let sky = {
   "footer-bg": "hsl(0,0%,5%)"
 };
 
+let autumn = {
+  themeName: "autumn",
+  "page-background": "#141414",
+  "sectionContainer-background": "#EEF0F2",
+  "sectionContainer-text": "#141414",
+  "header-background": "#EEC643",
+  "header-color": "#011638",
+  "contributor-background": "#047bfe",
+  "panel-background": "#141414",
+  "panel-border-left": "15px solid #EEC643",
+  "contributor-name-color": "#EEC643",
+  "contributor-btn-color": 'white',
+  "role-color": "#141414",
+  "github-btn-background":  "#EEC643",
+  "chooseTheme-background": "#007bff",
+  "btn-default-background": "#EEF0F2",
+  "btn-primary-background": "#141414",
+  "btn-default-color": "#141414",
+  "btn-primary-color": "white",
+  "comment-slide-background": "#EEF0F2",
+  "comment-slide-color": "#141414",
+  "widget-background": "#EEF0F2",
+  "section-header-color": "#EEC643",
+  "footer-bg": "black",
+  "home-text-size": "1.2em",
+};
+
 //Change Theme with jQuery selectors
 let changeTheme = (theme) => {
   localStorage.setItem("theme", JSON.stringify(theme));
