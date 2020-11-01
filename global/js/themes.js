@@ -29,7 +29,7 @@ let pageDefault = {
   "contributor-btn-color": "#fff"
 };
 let light = {
-  themeName: "light",
+  "themeName": "light",
   "page-background": "#f1a7e4",
   "sectionContainer-background": "#c69dfc",
   "header-background": "#900e78",
@@ -51,7 +51,7 @@ let light = {
   "section-header-color": "#900e78",
 };
 let forest = {
-  themeName: "forest",
+  "themeName": "forest",
   "page-background": "#73b36b",
   "sectionContainer-background": "#60805c",
   "header-background": "#4f784a",
@@ -73,7 +73,7 @@ let forest = {
   "section-header-color": "black",
 };
 let beach = {
-  themeName: "beach",
+  "themeName": "beach",
   "page-background": "#F1F1F3",
   "sectionContainer-background": "#C7D0D8",
   "header-background": "#C7D0D8",
@@ -105,7 +105,7 @@ const brick = "#6b2a1d";
 const orange = "#ff9900";
 //
 let summerday = {
-  themeName: "summerday",
+  "themeName": "summerday",
   "page-background": lightyellow,
   "sectionContainer-background": lightorange,
   "header-background": lightorange,
@@ -134,7 +134,7 @@ const BLblack = "#000000";
 const BLorange = "#ff9900";
 //
 let pumpkinSpice = {
-  themeName: "pumpkinSpice",
+  "themeName": "pumpkinSpice",
   "page-background": BLorange,
   "sectionContainer-background": BLlightorange,
   "header-background": BLlightorange,
@@ -158,7 +158,7 @@ let pumpkinSpice = {
 
 //New
 let abyss = {
-  themeName: "abyss",
+  "themeName": "abyss",
   "body-font": "'Montserrat', sans-serif",
   "home-text-size": "1.2em",
   "page-background": 'black',
@@ -190,7 +190,7 @@ let abyss = {
   "footer-bg": "hsl(0,0%,5%)"
 };
 let winter = {
-  themeName: "winter",
+  "themeName": "winter",
   "page-background": "#19C9E1 ",
   "sectionContainer-background": "#E3F5F8",
   "header-background": "#97E7F5",
@@ -213,7 +213,7 @@ let winter = {
 };
 
 let sky = {
-  themeName: "sky",
+  "themeName": "sky",
   "page-background": "#58B1FF",
   "sectionContainer-background": "#E3F5F8",
   "header-background": "#239CFF",
