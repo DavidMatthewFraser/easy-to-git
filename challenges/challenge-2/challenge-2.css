@@ -107,11 +107,10 @@ body {
 	margin-top: 400px;
 	margin-left: 800px;
 	animation: rotateIn;
-animation-duration: 5s;
-animation-timing-function: linear;
-animation-iteration-count: infinite;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
 }
-
 
 /*david*/
 #davids_planet {
@@ -391,16 +390,16 @@ animation-iteration-count: infinite;
 */
 #planet_brandt {
 	position: absolute;
-	height: 200px;
-	right: 200px;
+	height: 80px;
+	left: 200px;
 	top: 600px;
 }
 
 #delta_corp {
 	position: absolute;
-	height: 3rem;
-	right: 60rem;
-	top: 25rem;
+	height: 30px;
+	top: 400px;
+	left: 400px;
 	animation: beat .25s infinite alternate;
 	transform-origin: center;
 }
@@ -477,12 +476,12 @@ Saurav Kumar's earth
 #earth{
 	filter: drop-shadow(0 0 4px #fff);
 	position: absolute;
-	top: 100px;
-	left: calc(50% - 125px);
+	top: 300px;
+	left: 20px;;
 	z-index: 999;
-	animation: earthMovement 2s cubic-bezier(0,1.62,.22,-0.49) 200ms infinite normal both;
+	/*animation: earthMovement 2s cubic-bezier(0,1.62,.22,-0.49) 200ms infinite normal both;*/
 }
-
+/*
 @keyframes earthMovement{
 	0%{
 		left: -250px;
@@ -493,15 +492,15 @@ Saurav Kumar's earth
 		transform: rotateZ(0);
 	}
 }
-
+*/
 /* Ayodele Samuel Adebayo alien style */
 
 #unclebay_alien{
 	position: absolute;
-	left: 950px;
-	bottom: 380px;
+	left: 750px;
+	top: 580px;
 	animation: swagAround;
-	animation-duration: 10s;
+	animation-duration: 5s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 }
@@ -516,32 +515,27 @@ Saurav Kumar's earth
 
 #vatsalvj {
 	position: absolute;
-	top: 15rem;
-	left: 70rem;
-	animation: rotateIn;
-	animation-duration: 5s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	z-index: 110;
+	top: 300px;
+	left: 550px;
 }
 #naut{
 	position: absolute;
-	margin-top: 70vh;
-	left: 15%;
+	top: 100px;
+	left: 200px;
 	width: 190px;
 	height: 280px;
 	animation: swagAround;
-	animation-duration: 10s;
+	animation-duration: 1s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 }
 
 #priyal{
 	position: absolute;
-	/*margin-top: 30vh;*/
-	left: 55%;
-	width: 190px;
-	height: 280px;
+	top: 100px;
+	left: 200px;
+	width: 210px;
+	height: 300px;
 	animation: swagAround;
 	animation-duration: 10s;
 	animation-timing-function: linear;
