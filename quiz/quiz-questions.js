@@ -140,7 +140,7 @@ const htmlQuestions = [
     question: "Which one of the following elements were introduced with HTML5?",
     answers: ["<body></body>", "<em></em>", "<header></header>", "<meta>"],
     correctAnswer: "<header></header>",
-  },
+  }
 ];
 
 const cssQuestions = [
