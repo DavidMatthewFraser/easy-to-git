@@ -126,6 +126,16 @@ const htmlQuestions = [
     answers: ["<!-- comment -->", "!! coment !!", "/* comment */", "% comment %"],
     correctAnswer: "<!-- comment -->",
   },
+  {
+    question: "Which of the following is not an inline element?",
+    answers: ["<code></code>", "<span></span>", "<a></a>", "<div></div>"],
+    correctAnswer: "<div></div>",
+  },
+  {
+    question: "Which one of the following elements were introduced with HTML5?",
+    answers: ["<body></body>", "<em></em>", "<header></header>", "<meta>"],
+    correctAnswer: "<header></header>",
+  }
 ];
 
 const cssQuestions = [
