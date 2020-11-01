@@ -119,6 +119,11 @@ const contributors = [
     displayName: "Aditya Chaturvedi",
     role: "",
   },
+  {
+    githubName: "mViolet",
+    displayName: "Maria Belan-Crawford",
+    role: "",
+  }
 ];
 
 const sidePanel = document.querySelector(".panel");

@@ -38,3 +38,4 @@
 - [Priyal Dubey](https://github.com/priyalweb)
 - [JC Palmes](https://github.com/khleomix/)
 - [Anshuman Mahato](https://github.com/AnshumanMahato/)
+- [Maria Belan-Crawford](https://github.com/mViolet/)
