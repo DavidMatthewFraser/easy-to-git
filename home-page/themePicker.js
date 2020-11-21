@@ -1,35 +1,35 @@
 //Dropdown onclick listeners
 defaultTheme.onclick = () => {
-    changeTheme(pageDefault);
+  changeTheme(pageDefault);
 };
 lightTheme.onclick = () => {
-    changeTheme(light);
+  changeTheme(light);
 };
 forestTheme.onclick = () => {
-    changeTheme(forest);
+  changeTheme(forest);
 };
 beachTheme.onclick = () => {
-    changeTheme(beach);
+  changeTheme(beach);
 };
 summerdayTheme.onclick = () => {
-    changeTheme(summerday);
+  changeTheme(summerday);
 };
 pumpkinSpiceTheme.onclick = () => {
-    changeTheme(pumpkinSpice);
+  changeTheme(pumpkinSpice);
 };
 abyssTheme.onclick = () => {
-    changeTheme(abyss);
-}
+  changeTheme(abyss);
+};
 winterTheme.onclick = () => {
-    changeTheme(winter);
-}
+  changeTheme(winter);
+};
 skyTheme.onclick = () => {
-    changeTheme(sky);
-}
+  changeTheme(sky);
+};
 autumnTheme.onclick = () => {
-    changeTheme(autumn);
-}
+  changeTheme(autumn);
+};
 
 CharcoalBlueTheme.onclick = () => {
-    changeTheme(CharcoalBlue);
-}
+  changeTheme(CharcoalBlue);
+};

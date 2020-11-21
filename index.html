@@ -1,115 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>EasyToGit</title>
-    <meta name="description" content="Learn how easy it is to learn git by practicing with an actual remote repository.  Start Now!">
+    <meta
+      name="description"
+      content="Learn how easy it is to learn git by practicing with an actual remote repository.  Start Now!"
+    />
     <!-- Fontawesome CDN-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+    />
     <!-- Bootstrap CDN-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <!-- Custom CSS-->
     <link rel="stylesheet" href="home-page/style.css" type="text/css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="header container-fluid">
-            <div class="row">
-                <div class="col-lg-2 col-md-6 col-sm-12">
-                    <div class="logo-wrap">
-                        <img id="logo" src="global/img/e2g.png" />
-                        <h3>Home</h3>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-6 col-sm-12 d-flex align-items-center justify-content-center py-3">
-                    <div class="dropdown show">
-                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Choose a Theme
-            </a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item" href="#" id="defaultTheme">Default</a>
-                            <a class="dropdown-item" href="#" id="lightTheme">Light Theme</a>
-                            <a class="dropdown-item" href="#" id="forestTheme">Forest Theme</a>
-                            <a class="dropdown-item" href="#" id="beachTheme">Beach Theme</a>
-                            <a class="dropdown-item" href="#" id="summerdayTheme">Summer Day Theme</a>
-                            <a class="dropdown-item" href="#" id="pumpkinSpiceTheme">Pumpkin Fall Theme</a>
-                            <a class="dropdown-item" href="#" id="abyssTheme">Abyss Theme</a>
-                            <a class="dropdown-item" href="#" id="winterTheme">Winter Theme</a>
-                            <a class="dropdown-item" href="#" id="skyTheme">Sky Theme</a>
-                            <a class="dropdown-item" href="#" id="autumnTheme">Autumn Theme</a>
-                            <a class="dropdown-item" href="#" id="CharcoalBlueTheme">Charcoal Blue Theme</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-12 col-sm-12 d-flex align-items-center justify-content-center py-3">
-                    <div class="show-time">
-                        <span id="date"></span>
-                        <span id="time"></span>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-12 col-sm-12">
-                    <div class="contributors-btn">contributors</div>
-                </div>
-                <div class="col-lg-2 col-md-12 col-sm-12">
-                    <a href="widgets/widgets.html" class="btn-block contributors-btn" id="widgets-btn">widgets</a>
-                </div>
+      <div class="header container-fluid">
+        <div class="row">
+          <div class="col-lg-2 col-md-6 col-sm-12">
+            <div class="logo-wrap">
+              <img id="logo" src="global/img/e2g.png" />
+              <h3>Home</h3>
             </div>
+          </div>
+          <div
+            class="col-lg-2 col-md-6 col-sm-12 d-flex align-items-center justify-content-center py-3"
+          >
+            <div class="dropdown show">
+              <a
+                class="btn btn-secondary dropdown-toggle"
+                href="#"
+                role="button"
+                id="dropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Choose a Theme
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#" id="defaultTheme">Default</a>
+                <a class="dropdown-item" href="#" id="lightTheme"
+                  >Light Theme</a
+                >
+                <a class="dropdown-item" href="#" id="forestTheme"
+                  >Forest Theme</a
+                >
+                <a class="dropdown-item" href="#" id="beachTheme"
+                  >Beach Theme</a
+                >
+                <a class="dropdown-item" href="#" id="summerdayTheme"
+                  >Summer Day Theme</a
+                >
+                <a class="dropdown-item" href="#" id="pumpkinSpiceTheme"
+                  >Pumpkin Fall Theme</a
+                >
+                <a class="dropdown-item" href="#" id="abyssTheme"
+                  >Abyss Theme</a
+                >
+                <a class="dropdown-item" href="#" id="winterTheme"
+                  >Winter Theme</a
+                >
+                <a class="dropdown-item" href="#" id="skyTheme">Sky Theme</a>
+                <a class="dropdown-item" href="#" id="autumnTheme"
+                  >Autumn Theme</a
+                >
+                <a class="dropdown-item" href="#" id="CharcoalBlueTheme"
+                  >Charcoal Blue Theme</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-12 col-sm-12 d-flex align-items-center justify-content-center py-3"
+          >
+            <div class="show-time">
+              <span id="date"></span>
+              <span id="time"></span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-12 col-sm-12">
+            <div class="contributors-btn">contributors</div>
+          </div>
+          <div class="col-lg-2 col-md-12 col-sm-12">
+            <a
+              href="widgets/widgets.html"
+              class="btn-block contributors-btn"
+              id="widgets-btn"
+              >widgets</a
+            >
+          </div>
         </div>
+      </div>
     </header>
     <div class="container-fluid">
-        <div class="panel">
-            <!-- contributor components are here - add your name to the array in contributorsPanel.js -->
+      <div class="panel">
+        <!-- contributor components are here - add your name to the array in contributorsPanel.js -->
+      </div>
+      <div class="page-content">
+        <h1 class="section-header">Welcome to EasyToGit.com</h1>
+        <div class="get-started section-container">
+          <h2>What is EasyToGit?</h2>
+          <p>
+            Easy to Git is an open-source project that offers many ways to get
+            started with Git and GitHub
+          </p>
+          <p>
+            We aim to cultivate a community that supports one another in
+            learning how to collaborate with version control
+          </p>
+          <a
+            target="_blank"
+            href="https://github.com/DavidMatthewFraser/easy-to-git#readme"
+            ><button class="btn contributors-btn">Start Contributing</button></a
+          >
         </div>
-        <div class="page-content">
-            <h1 class='section-header'>Welcome to EasyToGit.com</h1>
-            <div class='get-started section-container'>
-                <h2>What is EasyToGit?</h2>
-                <p>Easy to Git is an open-source project that offers many ways to get started with Git and GitHub</p>
-                <p>We aim to cultivate a community that supports one another in learning how to collaborate with version control</p>
-                <a target='_blank' href='https://github.com/DavidMatthewFraser/easy-to-git#readme'><button class='btn contributors-btn'>Start Contributing</button></a>
-            </div>
-            <h1 class="section-header">Website Navigation</h1>
-            <div class="section-container">
-                <a href="challenges/challenge-1/challenge-1.html" class="web-nav">
-                    <img class="nav-thumbnail" src="home-page/img/thumbnails/challenge01.png" alt="" />
-                    <p>Challenge One</p>
-                </a>
-                <a href="challenges/challenge-2/challenge-2.html" class="web-nav">
-                    <img class="nav-thumbnail" src="home-page/img/thumbnails/challenge02.png" alt="" />
-                    <p>Challenge Two</p>
-                </a>
-                <a href="quiz/quiz.html" class="web-nav">
-                    <img class="nav-thumbnail" src="home-page/img/thumbnails/quiz01.png" alt="" />
-                    <p>Quiz</p>
-                </a>
-                <a href="useful-links/useful-links.html" class="web-nav">
-                    <img class="nav-thumbnail" src="home-page/img/thumbnails/links.png" alt="" />
-                    <p>Useful Links</p>
-                </a>
-            </div>
+        <h1 class="section-header">Website Navigation</h1>
+        <div class="section-container">
+          <a href="challenges/challenge-1/challenge-1.html" class="web-nav">
+            <img
+              class="nav-thumbnail"
+              src="home-page/img/thumbnails/challenge01.png"
+              alt=""
+            />
+            <p>Challenge One</p>
+          </a>
+          <a href="challenges/challenge-2/challenge-2.html" class="web-nav">
+            <img
+              class="nav-thumbnail"
+              src="home-page/img/thumbnails/challenge02.png"
+              alt=""
+            />
+            <p>Challenge Two</p>
+          </a>
+          <a href="quiz/quiz.html" class="web-nav">
+            <img
+              class="nav-thumbnail"
+              src="home-page/img/thumbnails/quiz01.png"
+              alt=""
+            />
+            <p>Quiz</p>
+          </a>
+          <a href="useful-links/useful-links.html" class="web-nav">
+            <img
+              class="nav-thumbnail"
+              src="home-page/img/thumbnails/links.png"
+              alt=""
+            />
+            <p>Useful Links</p>
+          </a>
         </div>
+      </div>
     </div>
     <footer class="p-4">
-        <p class="name text-center">EasyToGit</p>
+      <p class="name text-center">EasyToGit</p>
     </footer>
     <!-- Scripts -->
     <!-- Proper.js --->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
     <!-- Bootstrap -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
     <!-- Custom Javascript -->
     <script src="home-page/contributors-panel.js"></script>
     <script src="global/js/themes.js"></script>
     <script src="home-page/timer.js"></script>
     <script src="home-page/themePicker.js"></script>
-</body>
-
+  </body>
 </html>
