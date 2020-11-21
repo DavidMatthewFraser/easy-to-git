@@ -1,31 +1,35 @@
 //Dropdown onclick listeners
 defaultTheme.onclick = () => {
     changeTheme(pageDefault);
-  };
-  lightTheme.onclick = () => {
+};
+lightTheme.onclick = () => {
     changeTheme(light);
-  };
-  forestTheme.onclick = () => {
+};
+forestTheme.onclick = () => {
     changeTheme(forest);
-  };
-  beachTheme.onclick = () => {
+};
+beachTheme.onclick = () => {
     changeTheme(beach);
-  };
-  summerdayTheme.onclick = () => {
+};
+summerdayTheme.onclick = () => {
     changeTheme(summerday);
-  };
-  pumpkinSpiceTheme.onclick = () => {
+};
+pumpkinSpiceTheme.onclick = () => {
     changeTheme(pumpkinSpice);
-  };
-  abyssTheme.onclick = () => {
+};
+abyssTheme.onclick = () => {
     changeTheme(abyss);
-  }
-  winterTheme.onclick = () => {
+}
+winterTheme.onclick = () => {
     changeTheme(winter);
-  }
-  skyTheme.onclick = () => {
+}
+skyTheme.onclick = () => {
     changeTheme(sky);
-  }
-  autumnTheme.onclick = () => {
+}
+autumnTheme.onclick = () => {
     changeTheme(autumn);
-  }
+}
+
+CharcoalBlueTheme.onclick = () => {
+    changeTheme(CharcoalBlue);
+}
