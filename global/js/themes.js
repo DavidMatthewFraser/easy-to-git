@@ -26,10 +26,10 @@ let pageDefault = {
   "comment-slide-color": "white",
   "widget-background": "white",
   "section-header-color": "#c57ee6",
-  "contributor-btn-color": "#fff"
+  "contributor-btn-color": "#fff",
 };
 let light = {
-  "themeName": "light",
+  themeName: "light",
   "page-background": "#f1a7e4",
   "sectionContainer-background": "#c69dfc",
   "header-background": "#900e78",
@@ -39,7 +39,7 @@ let light = {
   "panel-border-left": "15px solid #620050",
   "contributor-name-color": "#900e78",
   "role-color": "#620050",
-  "github-btn-background":  "#3b0632",
+  "github-btn-background": "#3b0632",
   "chooseTheme-background": "#b9189c",
   "btn-default-background": "#e3baff",
   "btn-primary-background": "#24a0ed",
@@ -51,7 +51,7 @@ let light = {
   "section-header-color": "#900e78",
 };
 let forest = {
-  "themeName": "forest",
+  themeName: "forest",
   "page-background": "#73b36b",
   "sectionContainer-background": "#60805c",
   "header-background": "#4f784a",
@@ -73,7 +73,7 @@ let forest = {
   "section-header-color": "black",
 };
 let beach = {
-  "themeName": "beach",
+  themeName: "beach",
   "page-background": "#F1F1F3",
   "sectionContainer-background": "#C7D0D8",
   "header-background": "#C7D0D8",
@@ -105,7 +105,7 @@ const brick = "#6b2a1d";
 const orange = "#ff9900";
 //
 let summerday = {
-  "themeName": "summerday",
+  themeName: "summerday",
   "page-background": lightyellow,
   "sectionContainer-background": lightorange,
   "header-background": lightorange,
@@ -134,7 +134,7 @@ const BLblack = "#000000";
 const BLorange = "#ff9900";
 //
 let pumpkinSpice = {
-  "themeName": "pumpkinSpice",
+  themeName: "pumpkinSpice",
   "page-background": BLorange,
   "sectionContainer-background": BLlightorange,
   "header-background": BLlightorange,
@@ -158,39 +158,39 @@ let pumpkinSpice = {
 
 //New
 let abyss = {
-  "themeName": "abyss",
+  themeName: "abyss",
   "body-font": "'Montserrat', sans-serif",
   "home-text-size": "1.2em",
-  "page-background": 'black',
-  "sectionContainer-background": 'hsla(0,0%,10%, 0.5)',
-  "sectionContainer-text": 'hsl(0,0%, 85%)',
-  "header-background": 'black',
+  "page-background": "black",
+  "sectionContainer-background": "hsla(0,0%,10%, 0.5)",
+  "sectionContainer-text": "hsl(0,0%, 85%)",
+  "header-background": "black",
   "header-color": "#fff",
-  "contributor-background": 'hsl(7, 72%, 50%)',
-  "panel-background": 'hsl(0,0%,5%)',
+  "contributor-background": "hsl(7, 72%, 50%)",
+  "panel-background": "hsl(0,0%,5%)",
   "panel-border-left": "2px solid #ba301e",
   "panel-box-shadow": "0 0 10px 2px #ba301e",
-  "contributor-name-color": 'hsl(0,0%, 95%)',
-  "contributor-btn-color": 'hsl(0,0%, 90%)',
-  "contributor-border-radius": '2px',
+  "contributor-name-color": "hsl(0,0%, 95%)",
+  "contributor-btn-color": "hsl(0,0%, 90%)",
+  "contributor-border-radius": "2px",
   "role-color": brick,
   "github-btn-background": lightorange,
   "chooseTheme-background": deepcoral,
-  "btn-default-background": 'transparent',
-  "btn-default-color": 'hsl(0,0%,80%)',
+  "btn-default-background": "transparent",
+  "btn-default-color": "hsl(0,0%,80%)",
   "btn-primary-background": lightyellow,
-  "btn-primary-color": '#ba301e',
+  "btn-primary-color": "#ba301e",
   "web-nav-border": "2px solid #fff",
   "web-nav-shadow": "0px 10px 10px 2px hsl(0,0%,15%)",
   "web-nav-border-radius": "2px",
   "comment-slide-background": lightyellow,
   "comment-slide-color": brick,
   "widget-background": deepcoral,
-  "section-header-color": '#ba301e',
-  "footer-bg": "hsl(0,0%,5%)"
+  "section-header-color": "#ba301e",
+  "footer-bg": "hsl(0,0%,5%)",
 };
 let winter = {
-  "themeName": "winter",
+  themeName: "winter",
   "page-background": "#19C9E1 ",
   "sectionContainer-background": "#E3F5F8",
   "header-background": "#97E7F5",
@@ -200,7 +200,7 @@ let winter = {
   "panel-border-left": "15px solid #669DA5 ",
   "contributor-name-color": "#4AB0C0 ",
   "role-color": "#620050",
-  "github-btn-background":  "#3b0632",
+  "github-btn-background": "#3b0632",
   "chooseTheme-background": "#B6DCE2",
   "btn-default-background": "#B6DCE2  ",
   "btn-primary-background": "#B6DCE2 ",
@@ -213,7 +213,7 @@ let winter = {
 };
 
 let sky = {
-  "themeName": "sky",
+  themeName: "sky",
   "page-background": "#58B1FF",
   "sectionContainer-background": "#E3F5F8",
   "header-background": "#239CFF",
@@ -223,7 +223,7 @@ let sky = {
   "panel-border-left": "15px solid #669DA5 ",
   "contributor-name-color": "#B8DEFF ",
   "role-color": "#620050",
-  "github-btn-background":  "#3b0632",
+  "github-btn-background": "#3b0632",
   "chooseTheme-background": "#B8DEFF",
   "btn-default-background": "#B8DEFF  ",
   "btn-primary-background": "#B8DEFF ",
@@ -233,7 +233,7 @@ let sky = {
   "comment-slide-color": "black",
   "widget-background": "#B8DEFF",
   "section-header-color": "white",
-  "footer-bg": "hsl(0,0%,5%)"
+  "footer-bg": "hsl(0,0%,5%)",
 };
 
 let autumn = {
@@ -247,9 +247,9 @@ let autumn = {
   "panel-background": "#2d1b00",
   "panel-border-left": "15px solid #EEC643",
   "contributor-name-color": "#EEC643",
-  "contributor-btn-color": 'white',
+  "contributor-btn-color": "white",
   "role-color": "#141414",
-  "github-btn-background":  "#EEC643",
+  "github-btn-background": "#EEC643",
   "chooseTheme-background": "#fd7e14",
   "btn-default-background": "#FC7E12",
   "btn-primary-background": "#141414",
@@ -263,32 +263,83 @@ let autumn = {
   "home-text-size": "1.2em",
 };
 
+let CharcoalBlue = {
+  themeName: "CharcoalBlue",
+  "page-background": "#36454f",
+  "sectionContainer-background": "#6b778d",
+  "sectionContainer-text": "#17223b",
+  "header-background": "#6b778d",
+  "header-color": "#17223b",
+  "contributor-background": "#36454f",
+  "panel-background": "#6b778d",
+  "panel-border-left": "15px solid #263859",
+  "contributor-name-color": "#17223b",
+  "contributor-btn-color": "e8e8e8",
+  "role-color": "#060930",
+  "github-btn-background": "#17223b",
+  "chooseTheme-background": "#283149",
+  "btn-default-background": "#36454f",
+  "btn-primary-background": "#e8e8e8",
+  "btn-default-color": "#e8e8e8",
+  "btn-primary-color": "white",
+  "comment-slide-background": "#36454f",
+  "comment-slide-color": "#e8e8e8",
+  "widget-background": "#17223b",
+  "section-header-color": "#e8e8e8",
+  "footer-bg": "#6b778d",
+  "home-text-size": "1.2em",
+};
+
 //Change Theme with jQuery selectors
 let changeTheme = (theme) => {
   localStorage.setItem("theme", JSON.stringify(theme));
-  $("body").css('font-family', theme["body-font" || 'sans-serif']);
-  $("h3").css('font-size', theme["home-text-size"] || '1.75rem')
+  $("body").css("font-family", theme["body-font" || "sans-serif"]);
+  $("h3").css("font-size", theme["home-text-size"] || "1.75rem");
   $(".container-fluid").css("background-color", theme["page-background"]);
-  $(".section-container").css("background-color",theme["sectionContainer-background"]);
-  $(".section-container").css("color", theme["sectionContainer-text"] ||'inherit');
-  $(".google-wrap").css("background-color",theme["sectionContainer-background"]);
+  $(".section-container").css(
+    "background-color",
+    theme["sectionContainer-background"]
+  );
+  $(".section-container").css(
+    "color",
+    theme["sectionContainer-text"] || "inherit"
+  );
+  $(".google-wrap").css(
+    "background-color",
+    theme["sectionContainer-background"]
+  );
   $(".header").css("background-color", theme["header-background"]);
   $(".header").css("color", theme["header-color"]);
-  $(".dropdown-toggle").css("background-color",theme["chooseTheme-background"]);
-  $(".contributors-btn").css("background-color",theme["contributor-background"]);
-  $(".contributors-btn").css("color", theme["contributor-btn-color"] || "black" );
-  $(".contributors-btn").css("border-radius", theme['contributor-border-radius'] || '5px');
+  $(".dropdown-toggle").css(
+    "background-color",
+    theme["chooseTheme-background"]
+  );
+  $(".contributors-btn").css(
+    "background-color",
+    theme["contributor-background"]
+  );
+  $(".contributors-btn").css(
+    "color",
+    theme["contributor-btn-color"] || "black"
+  );
+  $(".contributors-btn").css(
+    "border-radius",
+    theme["contributor-border-radius"] || "5px"
+  );
   $(".btn-default").css("background-color", theme["btn-default-background"]);
   $(".btn-default").css("color", theme["btn-default-color"]);
   $(".web-nav").css("background-color", theme["btn-default-background"]);
   $(".web-nav").css("color", theme["btn-default-color"]);
-  $(".web-nav").css("border", theme["web-nav-border"] || 'initial');
-  $(".web-nav").css("box-shadow", theme["web-nav-shadow"] || 'initial');
+  $(".web-nav").css("border", theme["web-nav-border"] || "initial");
+  $(".web-nav").css("box-shadow", theme["web-nav-shadow"] || "initial");
   $(".web-nav").css("border-radius", theme["web-nav-border-radius"], "5px");
   $(".name").css("color", theme["header-background"]);
   $(".btn-primary").css("background-color", theme["btn-primary-background"]);
   $(".btn-primary").css("color", theme["btn-primary-color"]);
-  $(".carousel-inner").css("background-color",theme["comment-slide-background"]);
+  $(".carousel-inner").css(
+    "background-color",
+    theme["comment-slide-background"]
+  );
   $(".carousel-comment").css("color", theme["comment-slide-color"]);
   $(".widget").css("background-color", theme["widget-background"]);
   $(".section-header").css("color", theme["section-header-color"]);
