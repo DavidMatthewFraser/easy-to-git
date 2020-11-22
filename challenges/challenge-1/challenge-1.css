@@ -1,14 +1,18 @@
 /* HTML Elements */
+
 strong {
   font-size: 1.2em;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
+
 header {
   background-color: #dedede;
   padding: 10px;
   font-size: 20px;
 }
+
 /* Classes */
+
 .camperCell {
   background-color: silver;
   border-radius: 10px;
@@ -17,7 +21,9 @@ header {
   margin: 7px;
   min-width: 300px;
 }
+
 /* IDs */
+
 #home {
   background-color: #dedede;
   margin: 0px;
@@ -26,42 +32,56 @@ header {
   padding: 5px;
   z-index: 20;
 }
-#cellPanel{
-  margin:0 10%;
+
+#cellPanel {
+  margin: 0 10%;
   display: flex;
   justify-content: center;
 }
+
 #profiles {
   text-align: center;
 }
+
 /* Nested Elements */
+
 .camperCell h1 {
   font-size: 1.5em;
 }
+
 .camperCell img {
   border-radius: 50%;
   width: 150px;
 }
+
 .camperCell p {
   font-size: 1.3em;
 }
+
 header > ol > li {
   margin-left: 5%;
   margin-bottom: 10px;
 }
+
 #profiles > h1 {
-    text-align: center;
-    margin: 30px auto;
+  text-align: center;
+  margin: 30px auto;
 }
+
 /* Media Queries */
+
 /* keyframes */
+
 /* ==================================================================================================================== */
+
 /* Add your unique styles below*/
+
 #crenauro {
   background: #991414;
   color: #fff;
   border-color: #991414;
 }
+
 #tanyamott {
   background: #00c9a9;
   color: #7a25a2;
@@ -74,12 +94,14 @@ header > ol > li {
 }
 
 /*david*/
+
 #davidfraser {
   color: #5b45a3;
   background: #45a3a3;
   border-color: #4f25d9;
 }
-#unclebay{
+
+#unclebay {
   background: dodgerblue;
   border-color: orange;
   color: #fff;
@@ -87,102 +109,142 @@ header > ol > li {
   font-family: cursive;
   opacity: 0.8;
 }
-#unclebay:hover{
+
+#unclebay:hover {
   opacity: 1;
 }
+
 /*camper2*/
+
 #camper2 {
   color: purple;
 }
+
 /*biscuit*/
+
 #biscuit {
   color: #f0296c;
   background: #333;
   border: solid 5px #d61052;
 }
+
 /*theTradeCoder*/
-div#theTradeCoder{
-  background-color:#00182b;
-  color:#bbbbbb;
-  border:5px solid #00182b;
+
+div#theTradeCoder {
+  background-color: #00182b;
+  color: #bbbbbb;
+  border: 5px solid #00182b;
   box-shadow: 3px 6px orange;
 }
+
 /*theTradeCoder*/
+
 #emmavz {
   color: #55ff55;
   background: #0055ff;
   border: solid 5px #55ff55;
 }
+
 #sparrow {
-  font-family: 'Segoe UI', Tahoma, sans-serif;
-  border-color:darkcyan;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  border-color: darkcyan;
 }
+
 /*tfrick47*/
+
 #tfrick47 {
   background-color: orange;
   border: 5px solid darkgreen;
   box-shadow: 2px 3px 3px 3px gray;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 #tfrick47 img {
   border: 1px solid black;
 }
-/*misterybodon*/
-#misterybodon{
-    background-color:#680000;
-    color:rgba(125,125,125);
-    letter-spacing:1px;
-    border: 2px #b35858 solid;
-    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.7), 2px 2px 2px 2px rgba(0,0,0,0.3);
+
+#/*misterybodon*/
+#misterybodon {
+  background-color: #680000;
+  color: rgba(125, 125, 125);
+  letter-spacing: 1px;
+  border: 2px #b35858 solid;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.7),
+    2px 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
-#misterybodon h1{color:rgba(150,150,150);
-font-family: "Comic Sans MS", cursive, sans-serif;
-font-size:1.8rem;
-padding:0.5rem;
+#misterybodon h1 {
+  color: rgba(150, 150, 150);
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 1.8rem;
+  padding: 0.5rem;
 }
-#misterybodon img{
-clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 56%, 66% 60%, 48% 100%, 33% 61%, 0 58%, 0% 35%, 20% 10%);
+#misterybodon img {
+  clip-path: polygon(
+    50% 0%,
+    80% 10%,
+    100% 35%,
+    100% 56%,
+    66% 60%,
+    48% 100%,
+    33% 61%,
+    0 58%,
+    0% 35%,
+    20% 10%
+  );
 }
 
-#loveless{
+#loveless {
   background-color: rgb(16, 163, 16);
   border: 3px solid hotpink;
 }
-#bilikis{
+
+#bilikis {
   background-color: rgb(238, 238, 22);
   border: 5px blue solid;
 }
+
 #neelyanne {
   background-color: red;
   border: 5px solid black;
   box-shadow: 2px 3px 3px 3px gray;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 #satyamrastogi {
   background-color: lightblue;
   border: 5px solid black;
   box-shadow: 2px 3px 3px 3px gray;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-#avalojc{
+
+#avalojc {
   background-color: #4f25d9;
-  border:3px dashed rgba(0,0,0,0.7);
+  border: 3px dashed rgba(0, 0, 0, 0.7);
   color: rgba(152, 252, 255, 1);
   font-family: fantasy;
 }
-#nilax97{
+
+#nilax97 {
   background-color: #1a1a2e;
-  border:5px solid rgba(233,69,96,0.8);
-  color: rgba(236,236,236, 0.8);
+  border: 5px solid rgba(233, 69, 96, 0.8);
+  color: rgba(236, 236, 236, 0.8);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 /* James's styling */
-#james{
-  background-image: linear-gradient(45deg, #28009f 0%, #3d0276 45%, #7b17e6 100%);
+
+#james {
+  background-image: linear-gradient(
+    45deg,
+    #28009f 0%,
+    #3d0276 45%,
+    #7b17e6 100%
+  );
   border: 10px solid #fee302;
   color: whitesmoke;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+
 @media (max-width: 600px) {
   .camperCell {
     min-width: 100%;
@@ -195,7 +257,7 @@ Saurav Kumar's styling
 ----------------------
 */
 
-#myCamperCell{
+#myCamperCell {
   background: #fff;
   box-shadow: 0 0 10px 2px hsl(197, 71%, 75%);
   border: none;
@@ -204,53 +266,61 @@ Saurav Kumar's styling
   animation-fill-mode: both;
 }
 
-#myCamperCell *{
+#myCamperCell * {
   margin: 5px;
 }
-#myCamperCell h1{
+
+#myCamperCell h1 {
   margin-bottom: 10px;
   font-weight: 600;
   animation: appear 400ms ease-in-out 2s 1 forwards;
   animation-fill-mode: both;
 }
-#myCamperCell img{
+
+#myCamperCell img {
   margin-bottom: 10px;
   animation: appear 400ms ease-in-out 2400ms 1 forwards;
   animation-fill-mode: both;
 }
-#myCamperCell p{
+
+#myCamperCell p {
   animation: appear 400ms ease-in-out 2800ms 1 forwards;
   animation-fill-mode: both;
 }
 
-@keyframes appear{
-  0%{
+@keyframes appear {
+  0% {
     opacity: 0;
     transform: translateY(5px);
   }
-  100%{
+  100% {
     opacity: 1;
     transform: translateY(0px);
   }
 }
+
 /* rzl */
-#rzl{
+
+#rzl {
   padding: 16px 24px;
   background: #e8e8f7;
   border: unset;
   box-shadow: unset;
   transition: 0.25s ease-in;
 }
-#rzl img{
+
+#rzl img {
   margin: 16px 0;
 }
-#rzl:hover{
+
+#rzl:hover {
   transform: translate(-1px, -2px);
   box-shadow: 1px 2px 4px rgba(40, 40, 90, 0.4);
   /* background: #f5f5ff; */
 }
 
 /* albertojauregui */
+
 #albertojauregui {
   background: rebeccapurple;
   border: unset;
@@ -259,10 +329,12 @@ Saurav Kumar's styling
   padding: 16px 24px;
   transition: 0.25s ease-in;
 }
-#albertojauregui img{
+
+#albertojauregui img {
   margin: 16px 0;
 }
-#albertojauregui:hover{
+
+#albertojauregui:hover {
   box-shadow: 1px 2px 4px rgba(40, 40, 90, 0.4);
   transform: translate(-1px, -2px);
 }
@@ -274,6 +346,7 @@ Saurav Kumar's styling
 }
 
 /* Tahirih Jaliri's styling */
+
 #ctahirih {
   color: #c6b5ed;
   background: #fcf6f5;
@@ -283,12 +356,13 @@ Saurav Kumar's styling
   transition: 0.25s ease-in;
 }
 
-#ctahirih:hover{
+#ctahirih:hover {
   box-shadow: 1px 2px 4px rgb(198, 181, 237);
   transform: translate(-1px, -2px);
 }
 
 /* Tatiana's styling */
+
 #tatianatoc {
   background: #6b486e;
   color: #d1d1d1;
@@ -300,12 +374,13 @@ Saurav Kumar's styling
   margin: 16px 0;
 }
 
-#tatianatoc:hover{
+#tatianatoc:hover {
   width: 150px;
   height: 150px;
 }
 
 /* Victor Castro's styling */
+
 #soyvikman {
   color: white;
   background: black;
@@ -315,11 +390,13 @@ Saurav Kumar's styling
   transition: 0.25s ease-in;
 }
 
-#soyvikman:hover{
+#soyvikman:hover {
   box-shadow: 1px 2px 4px rgb(107, 103, 114);
   transform: translate(-1px, -2px);
 }
+
 /* Nwaka Kizito's styling */
+
 #reformnigeria {
   color: rgba(87, 255, 9, 0.815);
   background: rgb(168, 32, 32);
@@ -329,12 +406,11 @@ Saurav Kumar's styling
   transition: 0.25s ease-in;
 }
 
-#reformnigeria:hover{
+#reformnigeria:hover {
   color: rgba(87, 255, 9, 0.87);
   box-shadow: 1px 2px 4px rgb(107, 103, 114);
   transform: translate(-1px, -2px);
 }
-
 
 #priyaldubey {
   padding: 16px 24px;
@@ -348,20 +424,24 @@ Saurav Kumar's styling
   margin: 7px;
   min-width: 300px;
 }
-#priyaldubey:hover{
+
+#priyaldubey:hover {
   color: #c91111;
   box-shadow: 1px 2px 4px rgb(107, 103, 114);
   transform: translate(-1px, -2px);
 }
+
 /* JC Palmes' styling */
+
 #khleomix {
   background-color: #000;
   border: none;
-  box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
-  color: #D90B7C;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  color: #d90b7c;
   margin-top: 80px;
   position: relative;
 }
+
 #khleomix h1 {
   font-weight: 700;
   margin-top: 90px;
@@ -369,11 +449,13 @@ Saurav Kumar's styling
   text-transform: uppercase;
   z-index: 1;
 }
+
 #khleomix img {
-  background: url(https://avatars0.githubusercontent.com/u/46095761?s=460&u=e508382602aac25d10bd6a4fda6059cbd30c2c2c&v=4) no-repeat center center;
+  background: url(https://avatars0.githubusercontent.com/u/46095761?s=460&u=e508382602aac25d10bd6a4fda6059cbd30c2c2c&v=4)
+    no-repeat center center;
   border-radius: 50%;
-  border: 10px solid rgba(255,255,255,0.5);
-  box-shadow: inset 1px 1px 4px rgba(0,0,0,0.5), 0 2px 3px rgba(0,0,0,0.6);
+  border: 10px solid rgba(255, 255, 255, 0.5);
+  box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.5), 0 2px 3px rgba(0, 0, 0, 0.6);
   display: block;
   height: 150px;
   left: 25%;
@@ -383,10 +465,12 @@ Saurav Kumar's styling
   width: 150px;
   z-index: 0;
 }
+
 #khleomix p {
   text-transform: uppercase;
   transform: rotate(-10deg) translateY(-26px);
 }
+
 #khleomix q {
   color: #fcf779;
   display: block;
@@ -394,11 +478,12 @@ Saurav Kumar's styling
   font-weight: 700;
   line-height: 28px;
   padding: 10px;
-  text-shadow: 7px 7px 2px rgba(0,0,0,0.2);
+  text-shadow: 7px 7px 2px rgba(0, 0, 0, 0.2);
   text-transform: none;
 }
 
 /* Satya vinay's styling */
+
 #satya-vinay {
   padding: 16px 24px;
   border: 2px;
@@ -411,22 +496,25 @@ Saurav Kumar's styling
   margin: 7px;
   min-width: 300px;
 }
-#satya-vinay q{
-  font-family:Comic Sans MS, Comic Sans, cursive;
-  text-shadow: 0 0 3px #FF0000;
-}
-#satya-vinay p{
-  font-family: Brush Script MT, Brush Script Std, cursive;
-  text-shadow: 0 0 3px #FF0000;
+
+#satya-vinay q {
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  text-shadow: 0 0 3px #ff0000;
 }
 
-#satya-vinay:hover{
-  transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+#satya-vinay p {
+  font-family: Brush Script MT, Brush Script Std, cursive;
+  text-shadow: 0 0 3px #ff0000;
 }
-#satya-vinay h1{
+
+#satya-vinay:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+#satya-vinay h1 {
   color: #7c795d;
-  font-family: 'Trocchi', serif;
+  font-family: "Trocchi", serif;
   font-weight: bold;
   margin: 1;
 }
@@ -434,16 +522,21 @@ Saurav Kumar's styling
 #satya-vinay img {
   flex-shrink: 0;
   border-radius: 40%;
-	background-origin: border-box;
-	background-clip: content-box, border-box;
-	background-size: cover;
-	box-sizing: border-box;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  background-size: cover;
+  box-sizing: border-box;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 #a-mahato-0935 {
-  background: rgb(2,0,36);
-  background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 30%, rgba(0,212,255,1) 100%);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    45deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 30%,
+    rgba(0, 212, 255, 1) 100%
+  );
   color: #bbbbbb;
   box-sizing: border-box;
   border-color: #00182b;
@@ -456,6 +549,45 @@ Saurav Kumar's styling
 }
 
 #a-mahato-0935 img {
- box-shadow: 2px 2px rgba(0, 0, 0, 0.438), 2px 2px rgba(0, 0, 0, 0.19);
- margin: 5% 0;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.438), 2px 2px rgba(0, 0, 0, 0.19);
+  margin: 5% 0;
+}
+
+/* Rushikesh Patil  */
+
+#rushikeshp {
+  border: none;
+  font-family: "Homemade Apple", cursive;
+  color: rgb(60, 60, 206);
+  background-color: white;
+  box-shadow: none;
+  background-image: repeating-linear-gradient(
+    white 0px,
+    white 24px,
+    steelblue 25px
+  );
+}
+
+#rushikeshp::before {
+  content: "";
+  position: absolute;
+  left: 28px;
+  height: 100%;
+  width: 2px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+#rushikeshp img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  border-radius: 50%;
+  width: 115px;
+}
+
+#rushikeshp h1 {
+  padding-top: 10px;
+}
+
+.rptext {
+  text-decoration: rgb(60, 60, 206) double underline;
 }
