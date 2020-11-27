@@ -75,7 +75,7 @@ const DEFAULT_SETTING = {
     lastDrank: 250
 }; // Default value
 // For audio context
-let setting = DEFAULT_SETTING;
+let settings = DEFAULT_SETTING;
 let context;
 // For timer
 let timerId;
