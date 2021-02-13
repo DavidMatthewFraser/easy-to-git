@@ -40,3 +40,4 @@
 - [Anshuman Mahato](https://github.com/AnshumanMahato/)
 - [Maria Belan-Crawford](https://github.com/mViolet/)
 - [Mukesh Gurpude](https://github.com/VpingDevil)
+- [Namraj Pudasaini](https://github.com/Namrajp)
