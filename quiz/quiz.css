@@ -53,10 +53,10 @@ body::-webkit-scrollbar-thumb {
   height: 100%;
 }
 .container {
-    width: 100%;
-    max-width: 1460px;
-    margin: 0 auto;
-    padding: 0 30px;
+  width: 100%;
+  max-width: 1460px;
+  margin: 0 auto;
+  padding: 0 30px;
 }
 .header-container {
   width: 100%;
@@ -103,6 +103,7 @@ body::-webkit-scrollbar-thumb {
   padding-bottom: 10px;
   text-transform: capitalize;
   color: rgb(87, 87, 87);
+  font-weight: 900;
 }
 .quiz {
   padding-top: 80px;
@@ -130,7 +131,7 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   background: white;
   display: none;
-  animation-duration: .7s;
+  animation-duration: 0.7s;
   padding: 10px;
 }
 .question {
@@ -177,7 +178,7 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   height: 100%;
   text-align: center;
-  animation-duration: .7s;
+  animation-duration: 0.7s;
 }
 .start-screen h1 {
   padding: 130px 0 10px 0;
@@ -185,9 +186,9 @@ body::-webkit-scrollbar-thumb {
   text-transform: uppercase;
 }
 .start-screen h3 {
- padding: 10px 0;
- color: rgb(75, 75, 75);
- font-weight: 400;
+  padding: 10px 0;
+  color: rgb(75, 75, 75);
+  font-weight: 400;
 }
 .start-btn {
   height: 50px;
@@ -259,7 +260,7 @@ body::-webkit-scrollbar-thumb {
   cursor: pointer;
 }
 .chooser-button:last-child {
-    border: none;
+  border: none;
 }
 .number {
   flex: 1;
@@ -297,6 +298,10 @@ body::-webkit-scrollbar-thumb {
   border-radius: 50%;
   border: solid 3px white;
 }
+.circle:hover,
+.answer-circle:hover {
+  background: white;
+}
 /* IDs */
 #logo {
   width: 55px;
@@ -311,13 +316,12 @@ body::-webkit-scrollbar-thumb {
 }
 /* Media Queries */
 @media (max-width: 1024px) {
-  .quiz-selector-wrap, .quiz-sections-wrap {
+  .quiz-selector-wrap,
+  .quiz-sections-wrap {
     width: 100%;
-
   }
   .quiz-section-chooser {
     margin: 10px auto 50px auto;
-
   }
 }
 @media (max-width: 600px) {
