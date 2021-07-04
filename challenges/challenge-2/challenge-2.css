@@ -1,98 +1,98 @@
 /*HTML Elements*/
 body {
-	position: relative;
-	background: url("../img/sky.jpg");
-	overflow: hidden;
-	width: 100%;
+  position: relative;
+  background: url('../img/sky.jpg');
+  overflow: hidden;
+  width: 100%;
 }
 /*Classes*/
 .cover {
-	width: 100%;
-	height: 100vh;
-	position: absolute;
-	background: #000000d5;
-	z-index: 0;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background: #000000d5;
+  z-index: 0;
 }
 .main {
-	position: relative;
-	overflow-x: hidden;
-	z-index: 1;
-	min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  z-index: 1;
+  min-height: 100vh;
 }
 .instructions-popup {
-	position: fixed;
-	width: 100%;
-	min-height: 100vh;
-	left: 0;
-	top: 0;
-	z-index: 20;
-	background: #000000ab;
-	display: none;
+  position: fixed;
+  width: 100%;
+  min-height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: 20;
+  background: #000000ab;
+  display: none;
 }
 .instructions-popup h3 {
-	align-items: center;
+  align-items: center;
 }
 .center-wrap {
-	width: 700px;
-	background: white;
-	text-align: center;
-	padding: 20px;
-	white-space: pre-wrap;
-	font-size: 14px;
-	line-height: 16px;
-	margin: 20px auto;
-	border-radius: 10px;
-	animation-duration: 0.2s;
-	position: relative;
+  width: 700px;
+  background: white;
+  text-align: center;
+  padding: 20px;
+  white-space: pre-wrap;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 20px auto;
+  border-radius: 10px;
+  animation-duration: 0.2s;
+  position: relative;
 }
 .instructions {
-	font-weight: bold;
-	color: #2e2e2e;
-	text-align: left;
-	padding: 10px;
+  font-weight: bold;
+  color: #2e2e2e;
+  text-align: left;
+  padding: 10px;
 }
 .png-link {
-	color: rgb(11, 34, 88);
-	padding: 15px 25px;
-	border: solid rgb(11, 34, 88) 2px;
-	position: absolute;
-	top: 20px;
-	right: 20px;
-	font-weight: bold;
-	cursor: pointer;
-	border-radius: 5px;
+  color: rgb(11, 34, 88);
+  padding: 15px 25px;
+  border: solid rgb(11, 34, 88) 2px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
 }
 .navbar {
-	z-index: 1;
-	position: fixed;
-	top: 0;
-	left: 0;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	width: 200px;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 200px;
 }
 .btn {
-	width: 150px;
-	margin-top: 20px;
+  width: 150px;
+  margin-top: 20px;
 }
 /* IDs */
 #title {
-	color: #8efafa;
+  color: #8efafa;
 }
 #instructions-container {
-	width: 100%;
-	height: 20rem;
-	overflow: auto;
-	margin-top: 2rem;
+  width: 100%;
+  height: 20rem;
+  overflow: auto;
+  margin-top: 2rem;
 }
 #instructions-container::-webkit-scrollbar {
-	background: #fff;
-	width: 6px;
+  background: #fff;
+  width: 6px;
 }
 #instructions-container::-webkit-scrollbar-thumb {
-	background: #000;
-	border-radius: 5px;
+  background: #000;
+  border-radius: 5px;
 }
 /* Nested Elements */
 /* Media Queries */
@@ -100,182 +100,191 @@ body {
 /* ==================================================================================================================== */
 /* Add your space objects below*/
 
+/*juliette*/
+
+#juliettes_UFO {
+  position: absolute;
+  margin-top: 365px;
+  width: 300px;
+  margin-left: 1200px;
+}
+
 /*jenna*/
 #snitch {
-	width: 150px;
-	position: absolute;
-	margin-top: 400px;
-	margin-left: 800px;
-	animation: rotateIn;
-	animation-duration: 5s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
+  width: 150px;
+  position: absolute;
+  margin-top: 400px;
+  margin-left: 800px;
+  animation: rotateIn;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 /*david*/
 #davids_planet {
-	width: 100px;
-	position: absolute;
-	margin-top: 300px;
-	margin-left: 300px;
+  width: 100px;
+  position: absolute;
+  margin-top: 300px;
+  margin-left: 300px;
 }
 #davids_spaceship {
-	width: 100px;
-	position: absolute;
-	margin-top: 500px;
-	margin-left: 50px;
+  width: 100px;
+  position: absolute;
+  margin-top: 500px;
+  margin-left: 50px;
 }
 /*biscuit*/
 #biscuit_ufo {
-	position: absolute;
-	width: 300px;
-	top: -30px;
+  position: absolute;
+  width: 300px;
+  top: -30px;
 }
 
 /* Brian Saturn  */
 #BWLSaturn {
-	position: absolute;
-	height: 300px;
-	left: 600px;
-	top: 200px;
+  position: absolute;
+  height: 300px;
+  left: 600px;
+  top: 200px;
 }
 
 /*emma*/
 #emma_planet {
-	position: absolute;
-	width: 10rem;
-	right: 2rem;
-	top: 10rem;
-	transform: rotate(-10deg);
-	animation-name: jupiter;
-	animation-duration: 5s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	z-index: 100;
+  position: absolute;
+  width: 10rem;
+  right: 2rem;
+  top: 10rem;
+  transform: rotate(-10deg);
+  animation-name: jupiter;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  z-index: 100;
 }
 @keyframes jupiter {
-	0% {
-		right: 2rem;
-		top: 10rem;
-	}
-	25% {
-		right: 2.5rem;
-		top: 10.5rem;
-	}
-	50% {
-		right: 3rem;
-		top: 10rem;
-	}
-	75% {
-		right: 2.5rem;
-		top: 9.5rem;
-	}
-	100% {
-		right: 2rem;
-		top: 10rem;
-	}
+  0% {
+    right: 2rem;
+    top: 10rem;
+  }
+  25% {
+    right: 2.5rem;
+    top: 10.5rem;
+  }
+  50% {
+    right: 3rem;
+    top: 10rem;
+  }
+  75% {
+    right: 2.5rem;
+    top: 9.5rem;
+  }
+  100% {
+    right: 2rem;
+    top: 10rem;
+  }
 }
 #emma_star {
-	position: absolute;
-	right: 10rem;
-	top: 5rem;
-	width: 2px;
-	height: 2px;
-	border-radius: 50%;
-	background: white;
-	animation: star;
-	animation-duration: 1.5s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
+  position: absolute;
+  right: 10rem;
+  top: 5rem;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: white;
+  animation: star;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 @keyframes star {
-	0% {
-		background: #555;
-	}
-	50% {
-		background: #fff;
-	}
-	100% {
-		width: 5px;
-		height: 5px;
-		background: #fff;
-		box-shadow: 2px 2px 4px #fff, -2px -2px 4px #fff, -2px 2px 4px #fff,
-			2px -2px 4px #fff;
-	}
+  0% {
+    background: #555;
+  }
+  50% {
+    background: #fff;
+  }
+  100% {
+    width: 5px;
+    height: 5px;
+    background: #fff;
+    box-shadow: 2px 2px 4px #fff, -2px -2px 4px #fff, -2px 2px 4px #fff,
+      2px -2px 4px #fff;
+  }
 }
 #emma_moon {
-	position: absolute;
-	right: 15rem;
-	top: 16rem;
-	width: 2px;
-	height: 2px;
-	border-radius: 50%;
-	background: #fff;
-	animation: moon;
-	animation-duration: 10s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	z-index: 110;
+  position: absolute;
+  right: 15rem;
+  top: 16rem;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: #fff;
+  animation: moon;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  z-index: 110;
 }
 @keyframes moon {
-	0% {
-		background: #555;
-	}
-	25% {
-		background: #fff;
-	}
-	50% {
-		right: 0;
-		top: 13rem;
-		width: 5px;
-		height: 5px;
-		background: #fff;
-		box-shadow: 2px 2px 4px #fff, -2px -2px 4px #fff, -2px 2px 4px #fff,
-			2px -2px 4px #fff;
-	}
-	60% {
-		z-index: 99;
-	}
-	75% {
-		background: #555;
-		z-index: 99;
-	}
-	100% {
-		right: 15rem;
-		top: 16rem;
-		width: 2px;
-		height: 2px;
-		background: #fff;
-		box-shadow: 2px 2px 4px #fff, -2px -2px 4px #fff, -2px 2px 4px #fff,
-			2px -2px 4px #fff;
-		z-index: 99;
-	}
+  0% {
+    background: #555;
+  }
+  25% {
+    background: #fff;
+  }
+  50% {
+    right: 0;
+    top: 13rem;
+    width: 5px;
+    height: 5px;
+    background: #fff;
+    box-shadow: 2px 2px 4px #fff, -2px -2px 4px #fff, -2px 2px 4px #fff,
+      2px -2px 4px #fff;
+  }
+  60% {
+    z-index: 99;
+  }
+  75% {
+    background: #555;
+    z-index: 99;
+  }
+  100% {
+    right: 15rem;
+    top: 16rem;
+    width: 2px;
+    height: 2px;
+    background: #fff;
+    box-shadow: 2px 2px 4px #fff, -2px -2px 4px #fff, -2px 2px 4px #fff,
+      2px -2px 4px #fff;
+    z-index: 99;
+  }
 }
 /*nobody*/
 #nobody_se {
-	position: absolute;
-	animation: nobody 3s forwards;
-	top: 0;
-	left: 0;
-	z-index: -1;
-	width: 10%;
+  position: absolute;
+  animation: nobody 3s forwards;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 10%;
 }
 @keyframes nobody {
-	0% {
-		top: 0%;
-		left: 0%;
-		width: 10%;
-	}
-	50% {
-		top: 40%;
-		left: 40%;
-		width: 50%;
-	}
-	100% {
-		top: 40%;
-		left: 2000px;
-	}
+  0% {
+    top: 0%;
+    left: 0%;
+    width: 10%;
+  }
+  50% {
+    top: 40%;
+    left: 40%;
+    width: 50%;
+  }
+  100% {
+    top: 40%;
+    left: 2000px;
+  }
 }
 
 /* bilikis */
@@ -288,71 +297,71 @@ body {
 }
 
 #terris_comet {
-	position: absolute;
-	top: 750px;
-	left: -750px;
-	animation: comet;
-	animation-duration: 1s;
-	animation-delay: 3s;
-	animation-timing-function: ease-out;
+  position: absolute;
+  top: 750px;
+  left: -750px;
+  animation: comet;
+  animation-duration: 1s;
+  animation-delay: 3s;
+  animation-timing-function: ease-out;
 }
 @keyframes comet {
-	from {
-		top: 750px;
-		left: -750px;
-	}
-	to {
-		top: -350px;
-		left: 1300px;
-	}
+  from {
+    top: 750px;
+    left: -750px;
+  }
+  to {
+    top: -350px;
+    left: 1300px;
+  }
 }
 @media (max-width: 1024px) {
-	.center-wrap {
-		width: 100%;
-	}
+  .center-wrap {
+    width: 100%;
+  }
 }
 /* michal */
 #michal_asteroid {
-	position: absolute;
-	opacity: 0;
-	animation: michalasteroid;
-	animation-duration: 15s;
-	animation-timing-function: linear;
-	height: 1px;
+  position: absolute;
+  opacity: 0;
+  animation: michalasteroid;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  height: 1px;
 }
 @keyframes michalasteroid {
-	0% {
-		transform: rotate(0deg);
-		top: 900px;
-		left: 100vw;
-		height: 75px;
-		opacity: 1;
-	}
-	17% {
-		transform: rotate(360deg);
-	}
-	35% {
-		transform: rotate(720deg);
-	}
-	50% {
-		transform: rotate(1080deg);
-	}
-	75% {
-		transform: rotate(1440deg);
-	}
-	90% {
-		transform: rotate(1700deg);
-		top: 475px;
-		left: 35vw;
-		height: 2px;
-		opacity: 1;
-	}
-	100% {
-		transform: rotate(1800deg);
-		top: 450px;
-		left: 30vw;
-		opacity: 0;
-	}
+  0% {
+    transform: rotate(0deg);
+    top: 900px;
+    left: 100vw;
+    height: 75px;
+    opacity: 1;
+  }
+  17% {
+    transform: rotate(360deg);
+  }
+  35% {
+    transform: rotate(720deg);
+  }
+  50% {
+    transform: rotate(1080deg);
+  }
+  75% {
+    transform: rotate(1440deg);
+  }
+  90% {
+    transform: rotate(1700deg);
+    top: 475px;
+    left: 35vw;
+    height: 2px;
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(1800deg);
+    top: 450px;
+    left: 30vw;
+    opacity: 0;
+  }
 }
 /*
 #michal_dustcloud {
@@ -389,83 +398,84 @@ body {
 }
 */
 #planet_brandt {
-	position: absolute;
-	height: 80px;
-	left: 200px;
-	top: 600px;
+  position: absolute;
+  height: 80px;
+  left: 200px;
+  top: 600px;
 }
 
 #delta_corp {
-	position: absolute;
-	height: 30px;
-	top: 400px;
-	left: 400px;
-	animation: beat .25s infinite alternate;
-	transform-origin: center;
+  position: absolute;
+  height: 30px;
+  top: 400px;
+  left: 400px;
+  animation: beat 0.25s infinite alternate;
+  transform-origin: center;
 }
-@keyframes beat{
-	to { transform: scale(0.4); }
+@keyframes beat {
+  to {
+    transform: scale(0.4);
+  }
 }
 #trevor_tardis {
-	position: absolute;
-	top: 25rem;
-	left: 25rem;
-	animation: rotateOut;
-	animation-duration: 10s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	z-index: 110;
-	height: 100px;
-	width: 73px;
+  position: absolute;
+  top: 25rem;
+  left: 25rem;
+  animation: rotateOut;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  z-index: 110;
+  height: 100px;
+  width: 73px;
 }
 @keyframes rotateOut {
-	from {
-		transform: rotate(0deg) translateX(150px) rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg) translateX(150px) rotate(-360deg);
-	}
-	0% {
-		top: 25rem;
-		left: 25rem;
-		transform: rotate(-360deg);
-	}
-	25% {
-		top: 28rem;
-		left: 40rem;
-	}
-	50% {
-		top: 33rem;
-		left: 46rem;
-	}
-	75% {
-		top: 37rem;
-		left: 40rem;
-	}
-	100% {
-		top: 25rem;
-		left: 25rem;
-		transform: rotate(360deg);
-	}
+  from {
+    transform: rotate(0deg) translateX(150px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(150px) rotate(-360deg);
+  }
+  0% {
+    top: 25rem;
+    left: 25rem;
+    transform: rotate(-360deg);
+  }
+  25% {
+    top: 28rem;
+    left: 40rem;
+  }
+  50% {
+    top: 33rem;
+    left: 46rem;
+  }
+  75% {
+    top: 37rem;
+    left: 40rem;
+  }
+  100% {
+    top: 25rem;
+    left: 25rem;
+    transform: rotate(360deg);
+  }
 }
-#avalojcCelestialObject{
-	position: absolute;
-	top: 150px;
-	left: 200px;
-	z-index: -1000;
-	animation: rotateOut;
-	animation-duration: 1500s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
+#avalojcCelestialObject {
+  position: absolute;
+  top: 150px;
+  left: 200px;
+  z-index: -1000;
+  animation: rotateOut;
+  animation-duration: 1500s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 #james_ship {
-	position: absolute;
-	right: 200px;
-	top: 300px;
-	height: 10rem;
+  position: absolute;
+  right: 200px;
+  top: 300px;
+  height: 10rem;
 }
-
 
 /*
 ---------------
@@ -473,13 +483,13 @@ Saurav Kumar's earth
 ---------------
 */
 
-#earth{
-	filter: drop-shadow(0 0 4px #fff);
-	position: absolute;
-	top: 300px;
-	left: 20px;;
-	z-index: 999;
-	/*animation: earthMovement 2s cubic-bezier(0,1.62,.22,-0.49) 200ms infinite normal both;*/
+#earth {
+  filter: drop-shadow(0 0 4px #fff);
+  position: absolute;
+  top: 300px;
+  left: 20px;
+  z-index: 999;
+  /*animation: earthMovement 2s cubic-bezier(0,1.62,.22,-0.49) 200ms infinite normal both;*/
 }
 /*
 @keyframes earthMovement{
@@ -495,49 +505,49 @@ Saurav Kumar's earth
 */
 /* Ayodele Samuel Adebayo alien style */
 
-#unclebay_alien{
-	position: absolute;
-	left: 750px;
-	top: 580px;
-	animation: swagAround;
-	animation-duration: 5s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
+#unclebay_alien {
+  position: absolute;
+  left: 750px;
+  top: 580px;
+  animation: swagAround;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 @keyframes swagAround {
-	from {
-		transform: rotate(0deg) translateX(10px) rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg) translateX(10px) rotate(-360deg);
-	}
+  from {
+    transform: rotate(0deg) translateX(10px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(10px) rotate(-360deg);
+  }
 }
 
 #vatsalvj {
-	position: absolute;
-	top: 300px;
-	left: 550px;
+  position: absolute;
+  top: 300px;
+  left: 550px;
 }
-#naut{
-	position: absolute;
-	top: 100px;
-	left: 200px;
-	width: 190px;
-	height: 280px;
-	animation: swagAround;
-	animation-duration: 1s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
+#naut {
+  position: absolute;
+  top: 100px;
+  left: 200px;
+  width: 190px;
+  height: 280px;
+  animation: swagAround;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
-#priyal{
-	position: absolute;
-	top: 100px;
-	left: 200px;
-	width: 210px;
-	height: 300px;
-	animation: swagAround;
-	animation-duration: 10s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
+#priyal {
+  position: absolute;
+  top: 100px;
+  left: 200px;
+  width: 210px;
+  height: 300px;
+  animation: swagAround;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
