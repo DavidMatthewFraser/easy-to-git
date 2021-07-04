@@ -41,3 +41,4 @@
 - [Maria Belan-Crawford](https://github.com/mViolet/)
 - [Mukesh Gurpude](https://github.com/VpingDevil)
 - [Namraj Pudasaini](https://github.com/Namrajp)
+- [Juliette Curran](https://github.com/juliettecurran)
