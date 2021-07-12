@@ -32,7 +32,7 @@
 - go to issues > new issues > bug report and use the template provided to report the bug.
 - after review from an admin, you may work on the bug.
 ### Adding a new feature
-- go to issues > new issues > bug report and use the template provided.
+- go to issues > new issues > Feature request and use the template provided.
 - after review from an admin, you may work on the feature.
 ### Code of conduct for any pull request
 Please review the <a href='./CODE_OF_CONDUCT.md'>code of conduct</a> before making any contribution
