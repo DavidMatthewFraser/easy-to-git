@@ -591,3 +591,17 @@ Saurav Kumar's styling
 .rptext {
   text-decoration: rgb(60, 60, 206) double underline;
 }
+
+/* Namraj styles */
+#nava-profile {
+  background-color: rgb(33, 107, 198);
+  border: 5px solid rgb(92, 3, 119);
+  font-family: helvetica, sans-serif;
+  letter-spacing: 2.5px;
+  color: #fff;
+}
+#nava-profile h1 {
+  color: hsl(40, 91%, 78%);
+  font-family: system-ui, sans-serif;
+  margin-top: 1rem;
+}
