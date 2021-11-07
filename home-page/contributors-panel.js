@@ -128,7 +128,12 @@ const contributors = [{
         githubName: "imrushikesh",
         displayName: "Rushikesh Patil",
         role: "Web Dev",
-    }
+    },
+    {
+        githubName: "Namrajp",
+        displayName: "Nava Raj Pudasaini",
+        role: "Contributor",
+    },             
 ];
 
 const sidePanel = document.querySelector(".panel");
