@@ -615,3 +615,8 @@ Saurav Kumar's styling
   font-family: system-ui, sans-serif;
   margin-top: 1rem;
 }
+
+#EOSValerioBelenkov {
+  background-color: lightgreen;
+  border: 5px solid black;
+}
