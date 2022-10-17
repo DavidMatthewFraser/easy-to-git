@@ -548,3 +548,13 @@ Saurav Kumar's earth
 	top:700px;
 	left: 10px;
 }
+
+#bluesun{
+	position: absolute;
+	top: 100px;
+	left: 1000px;
+	width: 200px;
+	height: 200px;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
