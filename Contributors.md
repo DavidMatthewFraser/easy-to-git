@@ -43,3 +43,4 @@
 - [Namraj Pudasaini](https://github.com/Namrajp)
 - [Divyanshu Parihar](https://github.com/divyanshuParihar265)
 - [Valerio Belenkov](https://github.com/EOSValerioBelenkov)
+- [Peter Dinh](https://github.com/PeterDevelops)
